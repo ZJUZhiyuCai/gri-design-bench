@@ -1,0 +1,145 @@
+{
+  "trial_id": "dev-04__tokendance__glm-5.3__seed20261111",
+  "instance_id": "dev-04",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "tokendance/glm-5.3",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T17:28:50Z",
+  "source_commit": "31b6b0c3b0d2d893d4d72c054752935fb90a1396",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "prompt_tokens": 1400,
+      "completion_tokens": 380,
+      "total_tokens": 1780,
+      "completion_tokens_details": {
+        "reasoning_tokens": 293
+      }
+    },
+    {
+      "prompt_tokens": 2588,
+      "completion_tokens": 67,
+      "total_tokens": 2655,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 15
+      }
+    },
+    {
+      "prompt_tokens": 6570,
+      "completion_tokens": 3344,
+      "total_tokens": 9914,
+      "prompt_tokens_details": {
+        "cached_tokens": 6528
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3005
+      }
+    },
+    {
+      "prompt_tokens": 12169,
+      "completion_tokens": 6000,
+      "total_tokens": 18169,
+      "prompt_tokens_details": {
+        "cached_tokens": 6528
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5445
+      }
+    },
+    {
+      "prompt_tokens": 17773,
+      "completion_tokens": 3901,
+      "total_tokens": 21674,
+      "prompt_tokens_details": {
+        "cached_tokens": 12160
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2024
+      }
+    },
+    {
+      "prompt_tokens": 23433,
+      "completion_tokens": 4308,
+      "total_tokens": 27741,
+      "prompt_tokens_details": {
+        "cached_tokens": 17728
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4179
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3"
+  ],
+  "api_errors": [
+    {
+      "call": 2,
+      "type": "HTTPError",
+      "http_status": 502
+    }
+  ],
+  "model_calls": 7,
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 7.080212999999999,
+  "tool_wall_seconds": 7.810271834954619,
+  "budget_exhausted": false,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "cd287d0b2397f86d7b51d626fd6d4541207f43952022c6f5db4c447349b3ab0f",
+    "search.py": "aad0956f7b391071a0118069fb0764402f8772bc0ad36f13861a599d40eccf1f",
+    "rationale.md": "4106f3da60f4a115a7671cca6bd184bdd0da48b28c28d148b7d84ffb09c474da"
+  },
+  "wall_seconds": 241.35645520780236,
+  "score": {
+    "mean_tir": 25.52662037037037,
+    "max_trajectory_tbr70": 0.0,
+    "max_trajectory_tbr54": 0.0,
+    "minimum_glucose": 79.98832283020522,
+    "trajectories": 18,
+    "feasible": true,
+    "safe_tir": 25.52662037037037,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": null,
+    "native_traces_sha256": "273b93dea027938080266706d5779e92c86e9a38906c45511c867af5f48134cd"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-06.json": "f208a85f4d8fccc9ada39587f7dd6a4584c76b8dc47c1b1f551f759aa15ea54e",
+    "instance.json": "1f7a01514712e3a9bb6f09cca6d6bb70d1c73de90aea4d5db2bbf29fb1fd16fb",
+    "score.json": "ae9d03d235cda1defcc6ffdad0285608f7669a92d075174d0138d17df57b1baa",
+    "response-00.json": "bac2adc42263cf96f964d6dcfac60f17a0fa72544674d9c2eaa00dab9df83a5b",
+    "metadata.json": "089835b6dbc5ccb859796788f0ce8ea2441914c428af220bf17a353dd860c850",
+    "rationale.md": "4106f3da60f4a115a7671cca6bd184bdd0da48b28c28d148b7d84ffb09c474da",
+    "response-01.json": "84221cea6b92663d38e9a94dbcf8cdc8f35b1e90037474b60fc8bbc7edbb2766",
+    "native-traces.npz": "273b93dea027938080266706d5779e92c86e9a38906c45511c867af5f48134cd",
+    "transcript.json": "c145b7d058344f15533d118130afacf64e40cd8128c5938c30230bb69c91657d",
+    "response-03.json": "5acf0a46033cf67aaf40cde343274140bdbde9dba1f823a692dc45f38e3afd2d",
+    "search.py": "aad0956f7b391071a0118069fb0764402f8772bc0ad36f13861a599d40eccf1f",
+    "response-04.json": "737007bc5c2af435faafd181a73b16414df87037f3f08b7b9e2b9759cc8da662",
+    "tool-03.txt": "b97da720a820c32550714c60a6d15c4b000d78bb5e640812de6b2c18959758a7",
+    "design.json": "cd287d0b2397f86d7b51d626fd6d4541207f43952022c6f5db4c447349b3ab0f",
+    "tool-02.txt": "96b73bdb699dbc7fe6925c107d405fbcaa2865f7ac0e40df8a28d397c5745eb3",
+    "tool-00.txt": "26c59da5e3dfa49592d97d7ee829274567325107913bb37dd67f7fb2f15787ea",
+    "tool-01.txt": "4676aef6e28f7828e72aac16a7371d9caa238137969fbb431cc0e517c6bf93fa",
+    "response-05.json": "87ea65aa571fb1582db97be7b5cbf4dc0cc13825c1a3b00ebacaa56af0d71cd7"
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "trial_id": "dev-03__codex__gpt-6.1-sol__seed20261111",
+  "instance_id": "dev-03",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "codex/gpt-6.1-sol",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T17:22:10Z",
+  "source_commit": "31b6b0c3b0d2d893d4d72c054752935fb90a1396",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 361,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 5389,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 5750
+    },
+    {
+      "completion_tokens": 51,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 5878,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 5632
+      },
+      "total_tokens": 5929
+    },
+    {
+      "completion_tokens": 57,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 6657,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 5760
+      },
+      "total_tokens": 6714
+    },
+    {
+      "completion_tokens": 665,
+      "completion_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "prompt_tokens": 10687,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6528
+      },
+      "total_tokens": 11352
+    },
+    {
+      "completion_tokens": 349,
+      "completion_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "prompt_tokens": 12167,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11264
+      },
+      "total_tokens": 12516
+    },
+    {
+      "completion_tokens": 509,
+      "completion_tokens_details": {
+        "reasoning_tokens": 234
+      },
+      "prompt_tokens": 16461,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 12416
+      },
+      "total_tokens": 16970
+    },
+    {
+      "completion_tokens": 635,
+      "completion_tokens_details": {
+        "reasoning_tokens": 331
+      },
+      "prompt_tokens": 19381,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 16768
+      },
+      "total_tokens": 20016
+    },
+    {
+      "completion_tokens": 747,
+      "completion_tokens_details": {
+        "reasoning_tokens": 488
+      },
+      "prompt_tokens": 21142,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 19840
+      },
+      "total_tokens": 21889
+    },
+    {
+      "completion_tokens": 589,
+      "completion_tokens_details": {
+        "reasoning_tokens": 336
+      },
+      "prompt_tokens": 22578,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 21760
+      },
+      "total_tokens": 23167
+    },
+    {
+      "completion_tokens": 603,
+      "completion_tokens_details": {
+        "reasoning_tokens": 332
+      },
+      "prompt_tokens": 24085,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 23040
+      },
+      "total_tokens": 24688
+    },
+    {
+      "completion_tokens": 1228,
+      "completion_tokens_details": {
+        "reasoning_tokens": 262
+      },
+      "prompt_tokens": 25067,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 24576
+      },
+      "total_tokens": 26295
+    },
+    {
+      "completion_tokens": 603,
+      "completion_tokens_details": {
+        "reasoning_tokens": 222
+      },
+      "prompt_tokens": 26494,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 26112
+      },
+      "total_tokens": 27097
+    }
+  ],
+  "returned_models": [
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol",
+    "codex/gpt-6.1-sol"
+  ],
+  "api_errors": [],
+  "model_calls": 12,
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 21.630039999999997,
+  "tool_wall_seconds": 23.98554991558194,
+  "budget_exhausted": false,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "2724489e38444c8719e9457e64e96848c1d4e92d51b65f0cd5f1604740c1dac9",
+    "search.py": "af1b5092a71089fc68a70fa5d5cb07da53242c6ff46e51466914b91233ed1a2a",
+    "rationale.md": "5d799b9b116d4930daed24f3017eb00b665b3e08f406ef93c57f4d8604298e80"
+  },
+  "wall_seconds": 202.52879512496293,
+  "score": {
+    "mean_tir": 76.19212962962962,
+    "max_trajectory_tbr70": 0.0,
+    "max_trajectory_tbr54": 0.0,
+    "minimum_glucose": 73.36068641645647,
+    "trajectories": 18,
+    "feasible": true,
+    "safe_tir": 76.19212962962962,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": null,
+    "native_traces_sha256": "37f6d10b3ad101417469bdd7137f1c6f30659789e0410ee7791ca5d72cba34fe"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-10.json": "d668f04eca80d7743244deac093c137315a2a9eed9101750c8833f758631809e",
+    "response-06.json": "8266c2532bc2ccd5c44404b07dc8e1d8e361016e850cf34cf22af97731a9bb48",
+    "response-07.json": "e7c7a7ad591234fbb09ab09d2d417cfe065caf90c81c982d2bb1d6e5e87a8a3a",
+    "response-11.json": "2af4cc318e2fbd2afdbd336cdddf932e89dbddd8b028a93d063c6cf9ca564586",
+    "tool-09.txt": "2cb7230549491e71f5c48d9172f92f05e2b284a74f88ab55ec455ab4fed0fa4d",
+    "tool-08.txt": "841d47ba90cd8323689449b1af64590339c2b9127273e2e941132eb38997d4f7",
+    "instance.json": "e58e575867c744968435a91ed4b3cb8c4641b68e1f88f031a2931ffc713e8c1d",
+    "score.json": "04d1b6959f3b8a5d2ad2fa1316328b272c19f4da4105b7e9aea671fc3f835153",
+    "response-00.json": "df493f57fcd7e6dc3aab1207eab807625df39863c40dee5cbd4b47791ff308c8",
+    "metadata.json": "dcecc4f46c3bd8ba6298393dfe96e6e9e35915c70d8a72c70f31f37192df5722",
+    "rationale.md": "5d799b9b116d4930daed24f3017eb00b665b3e08f406ef93c57f4d8604298e80",
+    "response-01.json": "23f1ff3844459fc917ca50ebb3eddde08224aa68220c6483c97186e692cf53a2",
+    "native-traces.npz": "37f6d10b3ad101417469bdd7137f1c6f30659789e0410ee7791ca5d72cba34fe",
+    "response-02.json": "f3230b1655a988f3652ddbb2eff8c747a57667f2476fc5f23397bf71c69117f8",
+    "transcript.json": "5e6c5666a841b447f8801408d3854196686bbbd9b55893f212f9581a6efc9f57",
+    "response-03.json": "1e95ba91c719bb914372fbad0d4a1df1e1ec64855007f8f62d06cee93bcb8971",
+    "search.py": "af1b5092a71089fc68a70fa5d5cb07da53242c6ff46e51466914b91233ed1a2a",
+    "response-04.json": "e8b03563c925fe1ae803e8c7d508a307e53936bd2316fb8925eaa6006292f6e8",
+    "tool-11.txt": "d44b5625584f187e44f194be31fb0c02957a69cf40337cab183d0ea57e153064",
+    "tool-05.txt": "dcbf15c696709d389dc073f61ae848f821cc859d78ed9744f7ff58eaa3d04ffa",
+    "tool-04.txt": "b64a792752024db8ca28ee407c979031f573ed7be3c18a890f0b5bbc35652fef",
+    "tool-10.txt": "5ae8c8ccc11b26847d09a94262c7e85d4d98028a185e3a66c6700ed6ad9e72c2",
+    "response-08.json": "101f834b4547c453f3b7a83ba61fd577ad461f2b05bf3db2447f8bf06c944aa8",
+    "tool-06.txt": "8686720f25a3261d423a51eb9cb3596dcff083ef457dd78a10a898dc06188b91",
+    "tool-07.txt": "beb8c7505d19a9c3b952e79f1e000526da263836a09861f26b6eb93a040ac770",
+    "tool-03.txt": "80a6b07960d4d65363ddd059b8ba8c430e158b467b2c3e4d3e6286e4246c02b1",
+    "design.json": "2724489e38444c8719e9457e64e96848c1d4e92d51b65f0cd5f1604740c1dac9",
+    "tool-02.txt": "566b8cbc452f3dc749f8d01088fd389eda808febc979a1d1986c632fa8b59c94",
+    "response-09.json": "fec16a0fc2150a48664fed7b5fcdc9f955da7d49c466aed60619b1ba9a128396",
+    "tool-00.txt": "270fcf0b8fa77d8cff49b893928ad5fad2a12d7a1e6e6ad0829b9db7a7b260ce",
+    "tool-01.txt": "24d19f09e141b64b5452a626f2ffcf0c595a3c7e7e4bd831849f35e571b52a5e",
+    "response-05.json": "d86f747d9dc0bec05ce84992e64aed8b8dc2b9b75fa92deeef02ee514ff86690"
+  }
+}

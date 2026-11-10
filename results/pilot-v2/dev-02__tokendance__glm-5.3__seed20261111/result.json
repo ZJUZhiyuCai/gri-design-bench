@@ -1,0 +1,123 @@
+{
+  "trial_id": "dev-02__tokendance__glm-5.3__seed20261111",
+  "instance_id": "dev-02",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "tokendance/glm-5.3",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T17:18:32Z",
+  "source_commit": "31b6b0c3b0d2d893d4d72c054752935fb90a1396",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "prompt_tokens": 1410,
+      "completion_tokens": 5370,
+      "total_tokens": 6780,
+      "completion_tokens_details": {
+        "reasoning_tokens": 4455
+      }
+    },
+    {
+      "prompt_tokens": 8385,
+      "completion_tokens": 325,
+      "total_tokens": 8710,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    {
+      "prompt_tokens": 12053,
+      "completion_tokens": 6000,
+      "total_tokens": 18053,
+      "prompt_tokens_details": {
+        "cached_tokens": 8384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5759
+      }
+    },
+    {
+      "prompt_tokens": 17937,
+      "completion_tokens": 2013,
+      "total_tokens": 19950,
+      "prompt_tokens_details": {
+        "cached_tokens": 12032
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 159
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3"
+  ],
+  "api_errors": [
+    {
+      "call": 4,
+      "type": "HTTPError",
+      "http_status": 502
+    },
+    {
+      "call": 5,
+      "type": "HTTPError",
+      "http_status": 502
+    }
+  ],
+  "model_calls": 6,
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 8.488227,
+  "tool_wall_seconds": 9.184047248214483,
+  "budget_exhausted": false,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "219eca7681aeeabc3b410541d5874f839d81de9310a62f0689e6f8b786742c51",
+    "search.py": "50ad6e3eb908e75e664886c2934834ff870240b205c552e4c6988e518595e1fb",
+    "rationale.md": "6a8963de629e727f24d5fea99a5e0cf3e3317f02e1111557fa1b04bf6a460256"
+  },
+  "wall_seconds": 218.8491463745013,
+  "score": {
+    "mean_tir": 67.93402777777777,
+    "max_trajectory_tbr70": 0.0,
+    "max_trajectory_tbr54": 0.0,
+    "minimum_glucose": 74.10976857789146,
+    "trajectories": 18,
+    "feasible": true,
+    "safe_tir": 67.93402777777777,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": null,
+    "native_traces_sha256": "820d3593ca24a06d0670723ec5d0f578998be8427c2a415bfcfd30881e618f63"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "76e9292d28546f012b74e0a8b0f8246a6a994470c989db9e3da19b91c557295f",
+    "score.json": "8cab71c90e2b57de2ca6fffdf4412634471cdc8851a5b205cb63060c95a3a989",
+    "response-00.json": "5d3b45eeb91da05f879d27166507bb36ed203d604609f4ef72879d86d83df51f",
+    "metadata.json": "9f8429a9a1fb91dd088efc90294198dd5331753047bf7d4f38ce5f6b60d8d60f",
+    "rationale.md": "6a8963de629e727f24d5fea99a5e0cf3e3317f02e1111557fa1b04bf6a460256",
+    "response-01.json": "b2747e91af1d484b3f735e9316fccf6c0ce643d3e7973f934649f64c5780371f",
+    "native-traces.npz": "820d3593ca24a06d0670723ec5d0f578998be8427c2a415bfcfd30881e618f63",
+    "response-02.json": "5d44c04a63a20b447a7d6ade05a9b4d4a5503eb79dcf1ca279bbb89d6616283d",
+    "transcript.json": "fac9da8dcfd9f68e76e22254ee250b041a32d299c2996efe6b7541a1e82aa1ef",
+    "response-03.json": "ca1383eee52450458f1af3892e36fd0037da0275a4f557ca8b60ff59ad8581cd",
+    "search.py": "50ad6e3eb908e75e664886c2934834ff870240b205c552e4c6988e518595e1fb",
+    "design.json": "219eca7681aeeabc3b410541d5874f839d81de9310a62f0689e6f8b786742c51",
+    "tool-02.txt": "9d64d52805a9d9d4b6dd556196345ae87db486473fe9621fed3f2ba63feff81b",
+    "tool-00.txt": "52058fd0c94150b67b05d28b2a4a934119d4abd4f27fca19f257e2d4742956a3",
+    "tool-01.txt": "06cac7c9282715a20c39c08b7e6eaf486e4d62432661b4084ef988ed8a8d3bde"
+  }
+}

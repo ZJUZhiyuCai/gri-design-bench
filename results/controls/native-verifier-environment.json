@@ -1,0 +1,15 @@
+{
+  "python": "3.12.13",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "source_version": "0.1.1",
+  "dependencies": {
+    "simglucose": "0.2.11",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.1",
+    "numba": "0.68.1",
+    "llvmlite": "0.50.0"
+  },
+  "verifier_location": "Trusted host process outside agent container; submitted Python never executed.",
+  "agent_environment": "Pinned Linux/arm64 Docker image and dependency lock, recorded per trial."
+}

@@ -35,4 +35,6 @@ fig.colorbar(im,ax=ax,label='Mean TIR, gated by all trajectory safety constraint
 fig.supxlabel('× = safety / submission failure. One run per case and route; no stable model ranking claim.',fontsize=10)
 fig.savefig(folder/'scorecard.png',dpi=180)
 fig.savefig(folder/'scorecard.svg')
+svg=folder/'scorecard.svg'
+svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
 print(folder/'scorecard.png')

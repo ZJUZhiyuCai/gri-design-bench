@@ -1,5 +1,7 @@
 # Pilot leaderboard
 
+Archived **baseline-only** table, committed before model trials. The original incomplete 6-call model calibration is documented separately in [CALIBRATION.md](CALIBRATION.md) and is not part of this table. The complete revised model comparison is in [pilot-v2](../pilot-v2/README.md), which reuses these unchanged baseline scores.
+
 One run per model/instance. Six development and six sealed cases in one task family. Safety gates were frozen before search. These are route-and-harness results, not authenticated upstream-model rankings. No significance claim.
 
 | Split | Method / requested route | Valid | Feasible | Mean safe TIR (%) | Mean CPU (s) | API errors |

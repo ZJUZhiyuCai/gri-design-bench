@@ -1,0 +1,224 @@
+{
+  "trial_id": "sealed-04__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+  "instance_id": "sealed-04",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "wanjie/deepseek-v4.1-flash-1017",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T17:55:48Z",
+  "source_commit": "31b6b0c3b0d2d893d4d72c054752935fb90a1396",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 190,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1524,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 1714
+    },
+    {
+      "completion_tokens": 61,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1982,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1408
+      },
+      "total_tokens": 2043
+    },
+    {
+      "completion_tokens": 51,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 3517,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1920
+      },
+      "total_tokens": 3568
+    },
+    {
+      "completion_tokens": 1848,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 6691,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 3456
+      },
+      "total_tokens": 8539
+    },
+    {
+      "completion_tokens": 2186,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 9578,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6656
+      },
+      "total_tokens": 11764
+    },
+    {
+      "completion_tokens": 1247,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 13245,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 9472
+      },
+      "total_tokens": 14492
+    },
+    {
+      "completion_tokens": 1869,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 15075,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 13184
+      },
+      "total_tokens": 16944
+    },
+    {
+      "completion_tokens": 3052,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 20475,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 14976
+      },
+      "total_tokens": 23527
+    },
+    {
+      "completion_tokens": 1830,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 25013,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 20352
+      },
+      "total_tokens": 26843
+    },
+    {
+      "completion_tokens": 5166,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 27045,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 24960
+      },
+      "total_tokens": 32211
+    },
+    {
+      "completion_tokens": 500,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 32452,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 27008
+      },
+      "total_tokens": 32952
+    }
+  ],
+  "returned_models": [
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017"
+  ],
+  "api_errors": [],
+  "model_calls": 11,
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 28.593828000000002,
+  "tool_wall_seconds": 31.075753709301353,
+  "budget_exhausted": false,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "953582695a0585070eb703326626dbbab09559afb3f62d6b51a8b071761be8ca",
+    "search.py": "178aa0c90ed284c2447c0da4410073be8423a33a5c0b042242ee2ff660d6fcb1",
+    "rationale.md": "dfc00fc856eae735d99e4a84795770b445e023be2729236914d64be0d24e2fd5"
+  },
+  "wall_seconds": 204.8685276666656,
+  "score": {
+    "mean_tir": 57.17592592592593,
+    "max_trajectory_tbr70": 0.0,
+    "max_trajectory_tbr54": 0.0,
+    "minimum_glucose": 72.14290077563804,
+    "trajectories": 18,
+    "feasible": true,
+    "safe_tir": 57.17592592592593,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": null,
+    "native_traces_sha256": "324fa8f441a064ceea53a9f439df3d7f92a1b98703d7942adaec2e628ef68bb0"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-10.json": "280e4136e193d518f923bab4a262255457b0e6667eeb75bc04937785ec2c860c",
+    "response-06.json": "ac188e8e88277083798fe993a95fb27de6ef530ed53ed841907007f34ef4a6cf",
+    "response-07.json": "886f9abc1ea007c53be21e3bbfa4a3e75f41ea3d9cc0f7f107a3795f640a4539",
+    "tool-09.txt": "963ccbca2e23971f249fc1741385ca3de50ba8d1f38908245ce4ecd96998f0e4",
+    "tool-08.txt": "3c5fbdac96f98d168f2f9f30214a7cb658a7b1814f15bad9f45ce55efd16e517",
+    "instance.json": "669daaa145d9cf923d16549d5c7d6bc9a8b667b0afe6adda88b945d30acc57e9",
+    "score.json": "861a0e85db9f5f69234b3c2591e41e051a710adacf401380855b1284d8a005f4",
+    "response-00.json": "502ddfa3a9de56068790a6de9644863d94b19e8c70cebbea3b5626d981743501",
+    "metadata.json": "f3ca3d76034cb75fd6bfb941a4cc56a2c4106a19664a018df9add432078015d8",
+    "rationale.md": "dfc00fc856eae735d99e4a84795770b445e023be2729236914d64be0d24e2fd5",
+    "response-01.json": "982a80735c7a9a4177f99cf38fef30ee8aa936060e0a4dc5eaa621e26b0c2fbe",
+    "native-traces.npz": "324fa8f441a064ceea53a9f439df3d7f92a1b98703d7942adaec2e628ef68bb0",
+    "response-02.json": "74c05c154c78ef0dbbadc5054c8b41f5537bb9ae82b25f8b732677f064acf532",
+    "transcript.json": "1c0456b538f46486eb28aeeb29bc9cace6100a8417d084604fa512597bd7cc37",
+    "response-03.json": "97de22a0b6d9f28833f7238c9b25d4c93f5188974fccae89217779406762b923",
+    "search.py": "178aa0c90ed284c2447c0da4410073be8423a33a5c0b042242ee2ff660d6fcb1",
+    "response-04.json": "8f2a46bd5fd624bd1ec514845b4f418c2f67bde4f87b7ad6324f2b1f7e7a67b8",
+    "tool-05.txt": "150b8b87bc0126ec92267348885c5b506c0ebc6876a4254c1579c044224fb577",
+    "tool-04.txt": "cde52386db352dd431e3bbfcaf47feaa201cfc0dcc8979d8852450a09d4dbc8a",
+    "response-08.json": "41d1ba6f18726e877aefd535709c2e95c5159fa508d69d4984d359f7aa9f1ab2",
+    "tool-06.txt": "c4be5df378b37b876a34faa8f6de3e6bd8ef365493e3ce4e824eaa1813270a09",
+    "tool-07.txt": "f78e1acd35f3e263c93bee0c10d4519e2f879c3110ebdef116dcdd99929a10af",
+    "tool-03.txt": "5fe5be6db44f965b475738efc09a70e96bfe32f5be4fe9bd12eb22aeac1a0c59",
+    "design.json": "953582695a0585070eb703326626dbbab09559afb3f62d6b51a8b071761be8ca",
+    "tool-02.txt": "530d5cc6146ba9cac497d8ad6c7a88fd21bead1b26c5154dc52525b786ac2a4a",
+    "response-09.json": "06c8c68ad10368c89a17d74dec45ccb9f01a3ea0dac8ab8a4b9c7b7527ba2b2c",
+    "tool-00.txt": "9213b473a524d70283fc08fea4678a87f43a932a38a8585b3dc6ce14596c687e",
+    "tool-01.txt": "400417c9e9f437703319c6d8cc576c68544c29a45670dba744c56be064be8fd4",
+    "response-05.json": "331027530ef1c1f173cb59bb06fd4429528c79ee5bcd4d0d30d01788bbd528a3"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "trial_id": "sealed-03__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+  "instance_id": "sealed-03",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "wanjie/deepseek-v4.1-flash-1017",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T17:52:48Z",
+  "source_commit": "31b6b0c3b0d2d893d4d72c054752935fb90a1396",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 159,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1527,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 1686
+    },
+    {
+      "completion_tokens": 220,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 2461,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1408
+      },
+      "total_tokens": 2681
+    },
+    {
+      "completion_tokens": 88,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 4197,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 2432
+      },
+      "total_tokens": 4285
+    },
+    {
+      "completion_tokens": 1932,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 6421,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 4096
+      },
+      "total_tokens": 8353
+    },
+    {
+      "completion_tokens": 5638,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 9122,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6400
+      },
+      "total_tokens": 14760
+    },
+    {
+      "completion_tokens": 433,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 15017,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 9088
+      },
+      "total_tokens": 15450
+    },
+    {
+      "completion_tokens": 3887,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 16669,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 14976
+      },
+      "total_tokens": 20556
+    },
+    {
+      "completion_tokens": 3032,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 21176,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 16640
+      },
+      "total_tokens": 24208
+    },
+    {
+      "completion_tokens": 182,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 24392,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 21120
+      },
+      "total_tokens": 24574
+    },
+    {
+      "completion_tokens": 260,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 24758,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 24320
+      },
+      "total_tokens": 25018
+    },
+    {
+      "completion_tokens": 2169,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 26018,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 24704
+      },
+      "total_tokens": 28187
+    }
+  ],
+  "returned_models": [
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017"
+  ],
+  "api_errors": [],
+  "model_calls": 11,
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 28.640563999999998,
+  "tool_wall_seconds": 31.160325245931745,
+  "budget_exhausted": false,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "4dd77bf41894f54d0e91a5952555e41e2fc2e415c50407c4d208927619342191",
+    "search.py": "aed611b4ffe23b81e14a4620dab942dd112e9bd20af4682ec064eb79497cd454",
+    "rationale.md": "b6b389f5d4d13aac42967981e93da3453a0e352f31f2f60c1dfc4a5ba2fe969b"
+  },
+  "wall_seconds": 180.23934458382428,
+  "score": {
+    "mean_tir": 84.65277777777777,
+    "max_trajectory_tbr70": 2.9166666666666665,
+    "max_trajectory_tbr54": 0.0,
+    "minimum_glucose": 68.95744487343266,
+    "trajectories": 18,
+    "feasible": true,
+    "safe_tir": 84.65277777777777,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": null,
+    "native_traces_sha256": "1f05a1d4ddcdf82fd479342643847a045f75db2a6a4475e08f40161ebcb8a363"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-10.json": "fd77e3f6a4a7cf70c71cf19be34291a09b9b6fb479aa582e2ae4d8ff2d7d3a57",
+    "response-06.json": "04d478c93fbeaf378950182d3ef028bfe93e72ca2cb27ef59b13cfc9db58a87c",
+    "response-07.json": "750bc3fb72bd4eb30dd3ec4322aeb9eaf7eebec1a4ef880256768b5a08b45219",
+    "tool-09.txt": "d8fdd29fdb416221eda3180065581b8199e3adbfb2c88037dbdfa1f862eda7e0",
+    "tool-08.txt": "d8fdd29fdb416221eda3180065581b8199e3adbfb2c88037dbdfa1f862eda7e0",
+    "instance.json": "ab1e8bc1a5523c01adf2941b549f742efc986e7196c93f863af0f820c58f7fad",
+    "score.json": "3a6d82ed41a53406fc86a51125fba4d98b47d6440156579e9f8539b258195455",
+    "response-00.json": "6624befc8b012be71708934f411231fee4fe0c190b890337be6ac4fb37db0b48",
+    "metadata.json": "10900faf2db6e50a45ef6800f5200eb05f121639bf7a9feb09f4981859691d7b",
+    "rationale.md": "b6b389f5d4d13aac42967981e93da3453a0e352f31f2f60c1dfc4a5ba2fe969b",
+    "response-01.json": "37bf2b256883aae1e051a1c5d3c3d22979dc2db91a836d24005faa0d16e39dd3",
+    "native-traces.npz": "1f05a1d4ddcdf82fd479342643847a045f75db2a6a4475e08f40161ebcb8a363",
+    "response-02.json": "d2921c3b1a65ee866e612150b6c62de7079c28a96d0e0337419a3086da9d933e",
+    "transcript.json": "635169df18d9c74c8bb660b3abd420119aad35069f68be23a6d42f81c52ae461",
+    "response-03.json": "f20be2216b3fa1fe6000636dc29cbde16528d4262d27ca8be7c12662a5b3d2d6",
+    "search.py": "aed611b4ffe23b81e14a4620dab942dd112e9bd20af4682ec064eb79497cd454",
+    "response-04.json": "b03b45d01800aa0e1365f4525acdb63343368af2483a38e5a396bb5fe8faffdb",
+    "tool-05.txt": "feab6800a9d3de565abce97e5968abeaa3094fc36ac960c310e1ed60cdc5ac41",
+    "tool-04.txt": "5ea7eae2a20e3246fe38d14224fb63d5c661231165f4477c1ed5386745abae87",
+    "tool-10.txt": "642b9d319a8b1376305aca110f836f2b91380bd8d9f4289681c276556bc4b52b",
+    "response-08.json": "e3ef2b45864b6010f69ccf8b6a8ce73ee28cf567850817e99f22341dacb37bc9",
+    "tool-06.txt": "feedc4975769d929294e8653d3843681ffeb0762a4346366001a1e4bd7f7c1fd",
+    "tool-07.txt": "35e1cb7549ca5c2415e00ac34984cb945fcf29457e9c0b211d8bd933ccab6957",
+    "tool-03.txt": "7f780dd38e7286721d4b62c9ed248b39c5b6f2ebe682327a9ca7e658abffa9cd",
+    "design.json": "4dd77bf41894f54d0e91a5952555e41e2fc2e415c50407c4d208927619342191",
+    "tool-02.txt": "eca0466e2514070474859aac41be7376464e4a88f4995fcd368f831659869e12",
+    "response-09.json": "0fdf82957e802e6396d76ce87fc9dc8622f9dce8a6a1ac281465a7de88b4227f",
+    "tool-00.txt": "00eb9133a5ff403fdb9304f2090b5a1e2b05d52080308d3fa2862832111a02ec",
+    "tool-01.txt": "db715c563755777d771cd6aea5bea47167bf08a5cee30d93c4ec9dd0c7db54f2",
+    "response-05.json": "97dfe306437e5ca0e29ef230615e29c1c99ecc5bc0a249a8462ae1b8b5c8a0df"
+  }
+}

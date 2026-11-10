@@ -16,7 +16,7 @@ def main():
         trials += [p for p in sorted((ROOT/'private/runs'/args.baseline_tag).glob('*/metadata.json'))
                    if json.loads(p.read_text())['method']!='agent']
     if len(trials)!=args.expected:raise AssertionError(f'Expected {args.expected} attempts, found {len(trials)}')
-    checked=0;failed=0;max_error=0.;max_cpu=0.;keys=set();errors=[]
+    checked=0;failed=0;safety_failed=0;max_error=0.;max_cpu=0.;keys=set();errors=[]
     for mpath in trials:
         folder=mpath.parent;meta=json.loads(mpath.read_text());score=json.loads((folder/'score.json').read_text())
         key=(meta['instance_id'],meta['requested_model'] or meta['method'])
@@ -24,11 +24,18 @@ def main():
         max_cpu=max(max_cpu,meta.get('cpu_seconds',0.))
         for name,expected in meta.get('artifact_sha256',{}).items():
             assert hashlib.sha256((folder/name).read_bytes()).hexdigest()==expected
+        source_tag=folder.parent.name
+        public_folder=ROOT/'results'/source_tag/folder.name
+        public=json.loads((public_folder/'result.json').read_text())
+        assert public['score']=={k:v for k,v in score.items() if k!='rows'}
+        if meta['split']=='sealed':
+            assert sorted(p.name for p in public_folder.iterdir())==['result.json']
         if score['status']!='verified':
             assert score['safe_tir'] in (0.,None)
             failed+=1;continue
         archive=folder/'native-traces.npz'
         assert hashlib.sha256(archive.read_bytes()).hexdigest()==score['native_traces_sha256']
+        assert len(score['rows'])==18
         computed=[]
         with np.load(archive,allow_pickle=False) as z:
             assert len(z.files)==36
@@ -47,17 +54,14 @@ def main():
         feasible=all(r['tbr70']<=4 and r['tbr54']<=1 and r['minimum']>=40 for r in computed)
         tir=sum(r['tir'] for r in computed)/18
         assert feasible==score['feasible']
+        if not feasible:safety_failed+=1
         assert abs(score['mean_tir']-tir)<1e-9
         assert abs(score['safe_tir']-(tir if feasible else 0.))<1e-9
-        source_tag=folder.parent.name
-        public=json.loads((ROOT/'results'/source_tag/folder.name/'result.json').read_text())
-        assert public['score']=={k:v for k,v in score.items() if k!='rows'}
-        if meta['split']=='sealed':
-            assert sorted(p.name for p in (ROOT/'results'/source_tag/folder.name).iterdir())==['result.json']
         checked+=1
     report={'passed':True,'attempts':len(trials),'verified_designs':checked,'failed_attempts_retained':failed,
+            'safety_failures_retained':safety_failed,
             'native_trajectories_recomputed':checked*18,'maximum_metric_error':max_error,'maximum_measured_cpu_seconds':max_cpu,
-            'note':'Independent arithmetic from saved native arrays; no submitted code executed and no model judge used.'}
+            'note':'Independent arithmetic from saved native arrays; no submitted code executed and no model judge used. failed_attempts_retained counts submission/technical failures; safety failures are counted separately.'}
     dump(ROOT/'results'/args.tag/'audit.json',report);print(json.dumps(report))
 
 

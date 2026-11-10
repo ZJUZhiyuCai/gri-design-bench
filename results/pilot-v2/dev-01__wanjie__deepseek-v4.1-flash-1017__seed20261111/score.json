@@ -1,0 +1,232 @@
+{
+  "mean_tir": 79.7511574074074,
+  "max_trajectory_tbr70": 0.0,
+  "max_trajectory_tbr54": 0.0,
+  "minimum_glucose": 70.48489690702179,
+  "trajectories": 18,
+  "feasible": true,
+  "safe_tir": 79.7511574074074,
+  "rows": [
+    {
+      "patient": "adult#001",
+      "seed": 30865847,
+      "variant": "ordinary",
+      "metrics": {
+        "tir": 72.29166666666667,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 72.03641397377599,
+        "mean_glucose": 146.73100097716494
+      }
+    },
+    {
+      "patient": "adult#001",
+      "seed": 30865847,
+      "variant": "missed_lunch",
+      "metrics": {
+        "tir": 83.75,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 75.2228528070278,
+        "mean_glucose": 136.4837570251365
+      }
+    },
+    {
+      "patient": "adult#001",
+      "seed": 30865847,
+      "variant": "large_dinner",
+      "metrics": {
+        "tir": 65.9375,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 70.48489690702179,
+        "mean_glucose": 151.7232164369844
+      }
+    },
+    {
+      "patient": "adult#001",
+      "seed": 168096887,
+      "variant": "ordinary",
+      "metrics": {
+        "tir": 78.64583333333334,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 76.4630502403204,
+        "mean_glucose": 141.24569988036055
+      }
+    },
+    {
+      "patient": "adult#001",
+      "seed": 168096887,
+      "variant": "missed_lunch",
+      "metrics": {
+        "tir": 78.64583333333334,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 76.4630502403204,
+        "mean_glucose": 141.24569988036055
+      }
+    },
+    {
+      "patient": "adult#001",
+      "seed": 168096887,
+      "variant": "large_dinner",
+      "metrics": {
+        "tir": 77.1875,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 76.4630502403204,
+        "mean_glucose": 150.16789219094224
+      }
+    },
+    {
+      "patient": "adult#002",
+      "seed": 30865847,
+      "variant": "ordinary",
+      "metrics": {
+        "tir": 79.27083333333333,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 75.25879351999558,
+        "mean_glucose": 138.56734548002655
+      }
+    },
+    {
+      "patient": "adult#002",
+      "seed": 30865847,
+      "variant": "missed_lunch",
+      "metrics": {
+        "tir": 83.02083333333333,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 78.81016896374588,
+        "mean_glucose": 130.60754130937687
+      }
+    },
+    {
+      "patient": "adult#002",
+      "seed": 30865847,
+      "variant": "large_dinner",
+      "metrics": {
+        "tir": 73.4375,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 73.64205342171054,
+        "mean_glucose": 142.9178219180659
+      }
+    },
+    {
+      "patient": "adult#002",
+      "seed": 168096887,
+      "variant": "ordinary",
+      "metrics": {
+        "tir": 80.625,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 80.15847768956976,
+        "mean_glucose": 134.7321175087846
+      }
+    },
+    {
+      "patient": "adult#002",
+      "seed": 168096887,
+      "variant": "missed_lunch",
+      "metrics": {
+        "tir": 80.625,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 80.15847768956976,
+        "mean_glucose": 134.7321175087846
+      }
+    },
+    {
+      "patient": "adult#002",
+      "seed": 168096887,
+      "variant": "large_dinner",
+      "metrics": {
+        "tir": 78.33333333333333,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 78.55763941731416,
+        "mean_glucose": 143.41885119646773
+      }
+    },
+    {
+      "patient": "adult#003",
+      "seed": 30865847,
+      "variant": "ordinary",
+      "metrics": {
+        "tir": 88.64583333333333,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 76.20946690688598,
+        "mean_glucose": 139.8164864848797
+      }
+    },
+    {
+      "patient": "adult#003",
+      "seed": 30865847,
+      "variant": "missed_lunch",
+      "metrics": {
+        "tir": 90.625,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 75.97692759081632,
+        "mean_glucose": 132.41364397251766
+      }
+    },
+    {
+      "patient": "adult#003",
+      "seed": 30865847,
+      "variant": "large_dinner",
+      "metrics": {
+        "tir": 79.0625,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 73.4035835167615,
+        "mean_glucose": 144.1911718980999
+      }
+    },
+    {
+      "patient": "adult#003",
+      "seed": 168096887,
+      "variant": "ordinary",
+      "metrics": {
+        "tir": 82.5,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 73.91449074908766,
+        "mean_glucose": 136.74862120409523
+      }
+    },
+    {
+      "patient": "adult#003",
+      "seed": 168096887,
+      "variant": "missed_lunch",
+      "metrics": {
+        "tir": 82.5,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 73.91449074908766,
+        "mean_glucose": 136.74862120409523
+      }
+    },
+    {
+      "patient": "adult#003",
+      "seed": 168096887,
+      "variant": "large_dinner",
+      "metrics": {
+        "tir": 80.41666666666667,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 72.54345207280326,
+        "mean_glucose": 144.60641994145027
+      }
+    }
+  ],
+  "format_valid": true,
+  "native_integrator": "simglucose-dopri5",
+  "status": "verified",
+  "reason": null,
+  "native_traces_sha256": "b83fbbf7f511545b5d2f138414e4328c827b27be16ed2d883378bbe5e54cb0db"
+}

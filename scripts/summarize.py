@@ -39,7 +39,7 @@ def main():
                                   'failure_denominator':'All attempted cases; infrastructure failures contribute zero to workflow aggregates and are counted separately.',
                                   'rows':rows})
     with (folder/'leaderboard.csv').open('w',newline='') as f:
-        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
     lines=['# Pilot leaderboard','',
            'One run per model/instance. Six development and six sealed cases in one task family. Safety gates were frozen before search. These are route-and-harness results, not authenticated upstream-model rankings. No significance claim.','',
            '| Split | Method / requested route | Valid | Feasible | Mean safe TIR (%) | Mean CPU (s) | API errors |',

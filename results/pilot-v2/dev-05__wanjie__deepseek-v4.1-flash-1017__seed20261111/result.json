@@ -1,0 +1,167 @@
+{
+  "trial_id": "dev-05__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+  "instance_id": "dev-05",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "wanjie/deepseek-v4.1-flash-1017",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T17:30:53Z",
+  "source_commit": "31b6b0c3b0d2d893d4d72c054752935fb90a1396",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 164,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1528,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 1692
+    },
+    {
+      "completion_tokens": 296,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 2507,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1408
+      },
+      "total_tokens": 2803
+    },
+    {
+      "completion_tokens": 1825,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 6506,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 2432
+      },
+      "total_tokens": 8331
+    },
+    {
+      "completion_tokens": 3481,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 9072,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6400
+      },
+      "total_tokens": 12553
+    },
+    {
+      "completion_tokens": 2991,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 14839,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 8960
+      },
+      "total_tokens": 17830
+    },
+    {
+      "completion_tokens": 2184,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 19317,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 14720
+      },
+      "total_tokens": 21501
+    },
+    {
+      "completion_tokens": 1536,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 22038,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 19200
+      },
+      "total_tokens": 23574
+    }
+  ],
+  "returned_models": [
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017"
+  ],
+  "api_errors": [],
+  "model_calls": 7,
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 29.716715999999998,
+  "tool_wall_seconds": 31.46266479138285,
+  "budget_exhausted": true,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "2cbc9b9dd1c38bf1a9d54d0938390de7ed802f4b4b46c154955f5e1a35a7e572",
+    "search.py": "a00e6463d9a124d5d9254c21884accab98eea5f57dd172858eb79fdd2873a8b4",
+    "rationale.md": "bab50ea1a9367aa41825cf424889938394a3e9a51f42b47e37546bc0174df999"
+  },
+  "wall_seconds": 133.58338437508792,
+  "score": {
+    "mean_tir": 90.66550925925927,
+    "max_trajectory_tbr70": 0.0,
+    "max_trajectory_tbr54": 0.0,
+    "minimum_glucose": 71.58683715623155,
+    "trajectories": 18,
+    "feasible": true,
+    "safe_tir": 90.66550925925927,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": null,
+    "native_traces_sha256": "12f6652ac1706dea4b8eb51830642efb7ac33c4da0f7e34f95e2ba26b4590697"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-06.json": "d679e3f6484663a5b511d086b269d61eee0ed10cf18b04f6ae24793e43bf396d",
+    "tool-08.txt": "4f66ab272b23733ac9fa39e26f124da3922bb9d48f913475c5aff7bd53aa92ca",
+    "instance.json": "c4f0201ddd07268aa43221317f6ad4285c6f66ac8bf383765e6f70eefdcf59cc",
+    "score.json": "bfadc2395f99096a6e73c4f9aa2967b3086e8774712949ca8146697b69b8f7f5",
+    "response-00.json": "b96dd0827a94eceea9b0424115fc99aa51594358569bf62e2fdda32a91d0125a",
+    "metadata.json": "5d0b787c004e918d9684038b0ee305c247a5a23a21ab19124d7477afab42b5b0",
+    "rationale.md": "bab50ea1a9367aa41825cf424889938394a3e9a51f42b47e37546bc0174df999",
+    "response-01.json": "ee3ff1dacb49b8124df382a276a58a7939122f0df5c87e6af110ed4875ee98b2",
+    "native-traces.npz": "12f6652ac1706dea4b8eb51830642efb7ac33c4da0f7e34f95e2ba26b4590697",
+    "response-02.json": "d24e18c3e19c06f5ea1d15537492a8c78013c255367e20e3d089c2da38ff8edb",
+    "transcript.json": "dccf96e96a0ec9203f1a1eae40877be69a64b3424d79c38b701dd6fa1fc1d4c9",
+    "response-03.json": "661a511c44b411d762b2fb9c516c3bdbb7b7898648e2d472e9e0e84ab7d998ec",
+    "search.py": "a00e6463d9a124d5d9254c21884accab98eea5f57dd172858eb79fdd2873a8b4",
+    "response-04.json": "f34adc855cdb3d2aa54419d4f139bd1b0ffcd378eab963ec5f3aed789d7d7ad1",
+    "tool-05.txt": "3177ead6bf9dffdba8911c8313074498b69bac545ab60708f8051517faf83188",
+    "tool-04.txt": "2bfa538d1fb0e20912a3d6d7a9dcf54e24feabe0fa16e41f3cb975b3f706b221",
+    "tool-06.txt": "d06c8508d2d79aee12bd6214118f05b77206b1cc3eec49d0397547dcbc36dcae",
+    "tool-07.txt": "97144356a4ac6e39919ab3b149cec10b4cec7ffa986ba0327b96c1b87486bdeb",
+    "tool-03.txt": "d5cd5e281daeec32f8b721b2184bbc173b776761147227e8e50ba6e9892a67de",
+    "design.json": "2cbc9b9dd1c38bf1a9d54d0938390de7ed802f4b4b46c154955f5e1a35a7e572",
+    "tool-02.txt": "917ae88e00ef0136fa8aa3cade25c65283c9f1003dc8548cddabc4d641b47d5d",
+    "tool-00.txt": "47827504c67df718ed7959ef911c21bcda86b8933f63074f2714106ec39c7b57",
+    "tool-01.txt": "5db11894b13e44d63b2ce88f8d2a50aa8a39a88c7571c659646c8fc51c4a3519",
+    "response-05.json": "3857f1aa16da37bade97a763e964db10de9678aebd2c11d88994464d84edcea3"
+  }
+}

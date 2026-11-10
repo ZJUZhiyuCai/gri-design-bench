@@ -1,0 +1,151 @@
+{
+  "rows": [
+    {
+      "model": "codex/gpt-6.1-sol",
+      "split": "development",
+      "trials": 6,
+      "statuses": {
+        "verified": 6
+      },
+      "safety_failure_types_nonexclusive": {},
+      "feasible": 6,
+      "missing_artifact_trials": 0,
+      "tool_budget_exhausted": 0,
+      "mean_cpu_seconds": 24.127222166666666,
+      "mean_model_calls": 10.833333333333334,
+      "reported_prompt_tokens": 1039874,
+      "reported_completion_tokens": 38244,
+      "reported_reasoning_tokens": 11260,
+      "requests_with_reasoning_usage": 65,
+      "requests_with_usage": 65,
+      "api_error_status_counts": {},
+      "api_error_requests": 0
+    },
+    {
+      "model": "codex/gpt-6.1-sol",
+      "split": "sealed",
+      "trials": 6,
+      "statuses": {
+        "verified": 6
+      },
+      "safety_failure_types_nonexclusive": {},
+      "feasible": 6,
+      "missing_artifact_trials": 0,
+      "tool_budget_exhausted": 0,
+      "mean_cpu_seconds": 26.812936666666666,
+      "mean_model_calls": 11.166666666666666,
+      "reported_prompt_tokens": 1058671,
+      "reported_completion_tokens": 39191,
+      "reported_reasoning_tokens": 11737,
+      "requests_with_reasoning_usage": 67,
+      "requests_with_usage": 67,
+      "api_error_status_counts": {},
+      "api_error_requests": 0
+    },
+    {
+      "model": "tokendance/glm-5.3",
+      "split": "development",
+      "trials": 6,
+      "statuses": {
+        "verified": 6
+      },
+      "safety_failure_types_nonexclusive": {
+        "TBR70": 1,
+        "TBR54": 1,
+        "minimum_glucose": 1
+      },
+      "feasible": 5,
+      "missing_artifact_trials": 0,
+      "tool_budget_exhausted": 0,
+      "mean_cpu_seconds": 8.587840499999999,
+      "mean_model_calls": 7.166666666666667,
+      "reported_prompt_tokens": 366748,
+      "reported_completion_tokens": 96863,
+      "reported_reasoning_tokens": 77821,
+      "requests_with_reasoning_usage": 33,
+      "requests_with_usage": 34,
+      "api_error_status_counts": {
+        "502": 9
+      },
+      "api_error_requests": 9
+    },
+    {
+      "model": "tokendance/glm-5.3",
+      "split": "sealed",
+      "trials": 6,
+      "statuses": {
+        "verified": 6
+      },
+      "safety_failure_types_nonexclusive": {
+        "TBR70": 1,
+        "TBR54": 1,
+        "minimum_glucose": 1
+      },
+      "feasible": 5,
+      "missing_artifact_trials": 0,
+      "tool_budget_exhausted": 0,
+      "mean_cpu_seconds": 9.575742333333332,
+      "mean_model_calls": 8,
+      "reported_prompt_tokens": 546400,
+      "reported_completion_tokens": 99056,
+      "reported_reasoning_tokens": 74529,
+      "requests_with_reasoning_usage": 42,
+      "requests_with_usage": 43,
+      "api_error_status_counts": {
+        "502": 5
+      },
+      "api_error_requests": 5
+    },
+    {
+      "model": "wanjie/deepseek-v4.1-flash-1017",
+      "split": "development",
+      "trials": 6,
+      "statuses": {
+        "verified": 6
+      },
+      "safety_failure_types_nonexclusive": {
+        "TBR70": 1
+      },
+      "feasible": 5,
+      "missing_artifact_trials": 0,
+      "tool_budget_exhausted": 1,
+      "mean_cpu_seconds": 27.302813166666667,
+      "mean_model_calls": 10.333333333333334,
+      "reported_prompt_tokens": 774919,
+      "reported_completion_tokens": 85945,
+      "reported_reasoning_tokens": 0,
+      "requests_with_reasoning_usage": 62,
+      "requests_with_usage": 62,
+      "api_error_status_counts": {},
+      "api_error_requests": 0
+    },
+    {
+      "model": "wanjie/deepseek-v4.1-flash-1017",
+      "split": "sealed",
+      "trials": 6,
+      "statuses": {
+        "verified": 6
+      },
+      "safety_failure_types_nonexclusive": {},
+      "feasible": 6,
+      "missing_artifact_trials": 0,
+      "tool_budget_exhausted": 1,
+      "mean_cpu_seconds": 28.728435166666667,
+      "mean_model_calls": 10.166666666666666,
+      "reported_prompt_tokens": 856751,
+      "reported_completion_tokens": 94679,
+      "reported_reasoning_tokens": 0,
+      "requests_with_reasoning_usage": 61,
+      "requests_with_usage": 61,
+      "api_error_status_counts": {},
+      "api_error_requests": 0
+    }
+  ],
+  "caveats": [
+    "Post-run descriptive analysis, not a new ranking criterion.",
+    "Reasoning tokens are provider-reported; missing usage is not zero inference.",
+    "Failed API requests consume calls and wall time, but their unreported inference tokens cannot be included in the nominal 18000-token allowance.",
+    "seed20261111 identifies the trial/baseline seed; no LLM sampling seed was requested.",
+    "Costs are unknown. Local CPU is equal-capped; upstream inference hardware is not equalized."
+  ]
+}

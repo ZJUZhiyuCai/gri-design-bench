@@ -1,0 +1,226 @@
+{
+  "trial_id": "sealed-05__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+  "instance_id": "sealed-05",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "wanjie/deepseek-v4.1-flash-1017",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T17:59:20Z",
+  "source_commit": "31b6b0c3b0d2d893d4d72c054752935fb90a1396",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 155,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1539,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 1694
+    },
+    {
+      "completion_tokens": 102,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 2485,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1536
+      },
+      "total_tokens": 2587
+    },
+    {
+      "completion_tokens": 2158,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 7048,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 2432
+      },
+      "total_tokens": 9206
+    },
+    {
+      "completion_tokens": 1557,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 9638,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 7040
+      },
+      "total_tokens": 11195
+    },
+    {
+      "completion_tokens": 2458,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 11576,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 9600
+      },
+      "total_tokens": 14034
+    },
+    {
+      "completion_tokens": 1708,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 14890,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11520
+      },
+      "total_tokens": 16598
+    },
+    {
+      "completion_tokens": 2777,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 17163,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 14848
+      },
+      "total_tokens": 19940
+    },
+    {
+      "completion_tokens": 1438,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 20363,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 17152
+      },
+      "total_tokens": 21801
+    },
+    {
+      "completion_tokens": 1421,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 22327,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 20352
+      },
+      "total_tokens": 23748
+    },
+    {
+      "completion_tokens": 3149,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 24082,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 22272
+      },
+      "total_tokens": 27231
+    },
+    {
+      "completion_tokens": 454,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 27523,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 24064
+      },
+      "total_tokens": 27977
+    }
+  ],
+  "returned_models": [
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017"
+  ],
+  "api_errors": [],
+  "model_calls": 11,
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 28.533132000000002,
+  "tool_wall_seconds": 31.304327081888914,
+  "budget_exhausted": false,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "4e5caffe924671db9f600edca809b7c98c1d3096e21c0ebcc1cf7bc0f184f6b6",
+    "search.py": "9fac84c6a97b721cda1f24605c88b42f2d8dac23a44b695f67ffe6b6b4580e36",
+    "rationale.md": "425b1fe8c39bd9377569f831972d9c3ea7cffb9d40885f044af5b6a2157881eb"
+  },
+  "wall_seconds": 192.1743537504226,
+  "score": {
+    "mean_tir": 77.99189814814817,
+    "max_trajectory_tbr70": 0.0,
+    "max_trajectory_tbr54": 0.0,
+    "minimum_glucose": 85.58753604201426,
+    "trajectories": 18,
+    "feasible": true,
+    "safe_tir": 77.99189814814817,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": null,
+    "native_traces_sha256": "1526d66c922e31af677dafffeaa1d1b8a80f101297fad691c5c9a26389834257"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-10.json": "cc0c9d050f8e7b4534fc923836aca357c27be343b0d66a34d36e6e284a50e7b7",
+    "response-06.json": "db4dc1a184f7f463dc16f43d802329bf895ae7c252d75ecdc65e5bee44bb9f36",
+    "response-07.json": "5bbdd7d0522234461276bcfd8f48ff417eb62a86a6b43363e12caa2abfc3943a",
+    "tool-09.txt": "1b14f9e5ce82b324eb6ba7c2f482b586fe1c47c23f10d9a77c0846cf919bf476",
+    "tool-08.txt": "5414547e126d82b10cab5cf3f46c37f265213bca33ab97913c0a53d2c6abcbea",
+    "instance.json": "ac9857e1fe66bf779d5baad97f30fa2225747786b9142a3078bf2a546142e890",
+    "score.json": "01e9b8f2b026bc0654375e1e1c78270801c629fb983aeea9dab125688e0a6f78",
+    "response-00.json": "acaa488d548173a6fd3ed5746ae39bdd14753c524c3643b65dd411f5e09f2888",
+    "metadata.json": "61d63c8238835ade7284235e2d34fe17cef3602caeedf0089384c82cc8cf4507",
+    "rationale.md": "425b1fe8c39bd9377569f831972d9c3ea7cffb9d40885f044af5b6a2157881eb",
+    "response-01.json": "55b857ccc8f1cb215f077858cc208606bbeda495979dcc6fc0bc8f7a963b11e9",
+    "native-traces.npz": "1526d66c922e31af677dafffeaa1d1b8a80f101297fad691c5c9a26389834257",
+    "response-02.json": "5a7a58f117fdc0e470c5e34a87856e6e9aac9f9e0acef9e6b254620c702201d1",
+    "transcript.json": "1e2cf6f25b77f057173429b9ff95a05d0376a786972e1cd54c03d59d610f7e15",
+    "response-03.json": "c6665e87826456e59e473ebb724a0526ba45f23ba86d85f5b8ee262284dd787a",
+    "search.py": "9fac84c6a97b721cda1f24605c88b42f2d8dac23a44b695f67ffe6b6b4580e36",
+    "response-04.json": "a1b959a54d53cd8fe8224be63385e42c3bb8f6d8621a4b23d050a0532fa0a54a",
+    "tool-11.txt": "6175eedf4b4047fb5f5061efbc42f543b98ec12a9c149e6bfc570231bcb67ed2",
+    "tool-05.txt": "31bc1f770bd514ca58a7da9a2db1c5d930e8c31b46f1f11f38e58ab2a13491de",
+    "tool-04.txt": "324062fe3da65e6c8bd721b7f2b91fbab9759261ba1cef497f28fb45e6f66dbc",
+    "tool-10.txt": "a75495a2ad05a8fbfde9d7e4f86d24e9bd50d8362b5d085e4f459f3e147cb976",
+    "response-08.json": "8b43e8dbfaef2b9857b543e71c5b94ff64095d1e5390cc03e1a7b22242351feb",
+    "tool-06.txt": "254403766a2293ea59d2fca92c99279e65d9236d9a615f463062af323f1dddde",
+    "tool-07.txt": "8e44b46aacb41ed9401616ccd49febe5d7b040214fda08dd382140f66a9d01fd",
+    "tool-03.txt": "35673a847781cae3617e3a93f3faa30165148b2bde4c12e5224094eedaef8336",
+    "design.json": "4e5caffe924671db9f600edca809b7c98c1d3096e21c0ebcc1cf7bc0f184f6b6",
+    "tool-02.txt": "400417c9e9f437703319c6d8cc576c68544c29a45670dba744c56be064be8fd4",
+    "response-09.json": "974b3cd591ed58117c0544b40355fe539317fcd2973ee8c886ec7e8eaba6f788",
+    "tool-00.txt": "5dfbaff4ea774c79d3133108f02237f1ecaf6660334b7fbdf32f6a5c501fd4d7",
+    "tool-01.txt": "9204cc43007f906cdb5c0fdee03b1946a232bf7e911ec2cd286074cf1985cfbc",
+    "response-05.json": "de965e70f006520866d74d5dc776524a86bd0dd0690ddf91ac71ec31b4c4af42"
+  }
+}

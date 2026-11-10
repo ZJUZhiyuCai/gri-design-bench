@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gri-design-bench"
+version = "0.1.0"
+description = "A small, independently verified static glucose-responsive formulation design benchmark"
+requires-python = ">=3.12"
+dependencies = ["simglucose==0.2.11", "numba==0.68.1", "numpy==2.5.4", "scipy==1.18.1", "pandas==3.1.1", "setuptools==80.10.2", "requests==2.34.2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

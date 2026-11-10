@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "isolation": {
+    "exit_code": 0,
+    "output": "nonroot, network isolation, secret isolation, Docker socket isolation, source write protection passed\n",
+    "cpu_seconds": 0.15754,
+    "cpu_remaining": 29.84246,
+    "tool_wall_seconds": 0.312287375330925,
+    "budget_exhausted": false,
+    "stop_reason": null
+  },
+  "symlink_rejected": {
+    "design.json": "invalid",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_budget": {
+    "exit_code": 0,
+    "output": "",
+    "cpu_seconds": 29.919532999999998,
+    "cpu_remaining": 0.08046700000000229,
+    "tool_wall_seconds": 29.838209042325616,
+    "budget_exhausted": true,
+    "stop_reason": "cpu_budget"
+  },
+  "note": "Polling reserves 0.3 CPU seconds; observed cgroup CPU is recorded, not estimated from simulation calls."
+}

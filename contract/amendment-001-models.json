@@ -1,0 +1,19 @@
+{
+  "id": "001",
+  "utc": "2026-11-10T16:35:35.102039+00:00",
+  "reason": "Explicit user instruction: no Opus, use newer models and add open models.",
+  "timing": "Before any benchmark baseline search or model score trial; Opus had connectivity smoke only.",
+  "overrides": {
+    "contract.agent_pilot.models": 3,
+    "contract.agent_pilot.interpretation": "36 agent trials, one run per model/instance: engineering pilot only, no stable ranking claim."
+  },
+  "removed": [
+    "opus/claude-opus-4-6"
+  ],
+  "models": [
+    "codex/gpt-6.1-sol",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "tokendance/glm-5.3"
+  ],
+  "unchanged": "All 12 instances, search budgets, safety thresholds and scoring definitions."
+}

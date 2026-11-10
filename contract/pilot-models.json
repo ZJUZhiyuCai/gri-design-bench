@@ -1,16 +1,32 @@
 {
   "models": [
     "codex/gpt-6.1-sol",
-    "opus/claude-opus-4-6"
+    "wanjie/deepseek-v4.1-flash-1017",
+    "tokendance/glm-5.3"
   ],
   "repeats": 1,
   "seed": 20261111,
   "temperature": 0,
-  "smoke_check": "Both returned echo tool calls in actual API requests, before benchmark trials",
-  "identity_caveat": "Magpie reports routed aliases in response.model; upstream model identity not independently authenticated",
+  "smoke_check": "All selected routes must return actual echo tool calls before scored runs.",
+  "identity_caveat": "Response.model is a Magpie alias, not independent authentication of upstream weights/version. No Opus benchmark trials.",
   "contract_commit": "677446f37bb30e3cc90c6c2b6023162b27b3f804",
   "smoke_responses_sha256": {
-    "opus_claude-opus-4-6.json": "3df7dc6e087ecd456dd8b662ca6a53607a2dc51d5eb4c6c2b0b4e0edc4e7fdd3",
-    "codex_gpt-6.1-sol.json": "91d46f422b5c3f2b66babef2e01fc6fb7029492b2c7ff7e710f4b5469988b130"
-  }
+    "codex_gpt-6.1-sol.json": "91d46f422b5c3f2b66babef2e01fc6fb7029492b2c7ff7e710f4b5469988b130",
+    "tokendance_glm-5.3.json": "3134f9f67b771ccadb409591e739216eaa80010ac71872f51d0396dc08ebc777",
+    "wanjie_deepseek-v4.1-flash-1017.json": "633fdb15db96a5c61a5d3aa42476a057a53e99b005b35428373ffb7b22c96c6c"
+  },
+  "reasoning_effort": "Provider default; no inference-effort parameter sent.",
+  "agent_trials": 36,
+  "amendment": "amendment-001-models.json",
+  "public_model_sources": {
+    "wanjie/deepseek-v4.1-flash-1017": [
+      "https://api-docs.deepseek.com/updates/",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+    ],
+    "tokendance/glm-5.3": [
+      "https://huggingface.co/zai-org/GLM-5.3",
+      "https://github.com/zai-org/GLM-5"
+    ]
+  },
+  "license_note": "DeepSeek model card lists MIT; GLM 5.3 lists a custom GLM-5.3 license. Both publish weights; this does not authenticate routed weights."
 }

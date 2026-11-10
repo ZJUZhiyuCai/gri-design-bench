@@ -1,0 +1,59 @@
+{
+  "trial_id": "dev-04__differential_evolution__seed20261111",
+  "instance_id": "dev-04",
+  "split": "development",
+  "method": "differential_evolution",
+  "requested_model": null,
+  "seed": 20261111,
+  "started_utc": "2026-11-10T16:46:03Z",
+  "source_commit": "603095cbdbb619df5b13c3168ee4ca26680d7d44",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1",
+  "image_id": "sha256:6eb142ce9619858ed2a19b7f527215654bb8770065ac33576faad2344e3c16ee",
+  "usage": [],
+  "returned_models": [],
+  "api_errors": [],
+  "model_calls": 0,
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 29.780579,
+  "tool_wall_seconds": 33.08775083441287,
+  "budget_exhausted": true,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "fe03a48853d8ebbf069f9c3b0fd4b89f99bdb18eff9e66c3d0afd3abb4faf25f",
+    "search.py": "310c0b5462f2067039549bcadef703016febc2c34e9bfa01a65fe7701f014385",
+    "rationale.md": "3704abccc1980f566e724d1263be7fc3f904fcc82e63952e48fdb56cb0999660"
+  },
+  "wall_seconds": 37.029681040905416,
+  "score": {
+    "mean_tir": 24.635416666666668,
+    "max_trajectory_tbr70": 0.0,
+    "max_trajectory_tbr54": 0.0,
+    "minimum_glucose": 89.49453900788708,
+    "trajectories": 18,
+    "feasible": true,
+    "safe_tir": 24.635416666666668,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": null,
+    "native_traces_sha256": "16b3eced80b6069fdd2899698745e354eace7ec5259239868ba614b296347170"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "baseline-tool.json": "bc375c37bbc047a271dcc407c37d372b947df7a3cb6962996cb8bd4b2f109f45",
+    "instance.json": "1f7a01514712e3a9bb6f09cca6d6bb70d1c73de90aea4d5db2bbf29fb1fd16fb",
+    "score.json": "0764f3b15d121f2ca253a6ad9bc100d69097003a81ce147646c72b54a45e7b01",
+    "metadata.json": "c5828c036247db66ffdb2f614257cb2839b31934862f2e4a2fcf00909406a44f",
+    "rationale.md": "3704abccc1980f566e724d1263be7fc3f904fcc82e63952e48fdb56cb0999660",
+    "native-traces.npz": "16b3eced80b6069fdd2899698745e354eace7ec5259239868ba614b296347170",
+    "search.py": "310c0b5462f2067039549bcadef703016febc2c34e9bfa01a65fe7701f014385",
+    "design.json": "fe03a48853d8ebbf069f9c3b0fd4b89f99bdb18eff9e66c3d0afd3abb4faf25f",
+    "tool-00.txt": "cdff332fb6eac8dc02940492a8a9ef512dc6e98f8437e5ece239c05ebe30af93"
+  }
+}

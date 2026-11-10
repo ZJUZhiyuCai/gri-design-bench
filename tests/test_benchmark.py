@@ -68,11 +68,20 @@ def test_native_equivalence_and_no_controller_state_carryover(case,design):
 
 
 def test_compiled_rhs_matches_upstream_native(design,case):
-    p,x=patient_parameters('child#001');meals=meal_schedule(71001)[:180]*p.BW/86.0704
+    p,x=patient_parameters('child#001');meals=meal_schedule(71001)[:720]*p.BW/86.0704
     d=individual_design(design,20.)
     a,_=native_trace('child#001',meals,d)
     b,_=native_trace('child#001',meals,d,original_rhs=True)
     np.testing.assert_allclose(a,b,rtol=1e-7,atol=1e-5)
+
+
+def test_native_constant_reservoir_depletion():
+    p,x=patient_parameters('adult#001');meals=np.zeros(60)
+    d=np.array([.2,-1.,150.,4.,10.,.7])
+    fast=fast_trace(p,x,meals,d);native,minute=native_trace('adult#001',meals,d)
+    assert native[-1,3]==0
+    assert np.sum(native[:,2]*3)<=.7+1e-12
+    np.testing.assert_allclose(fast[:,:4],native[:,:4],rtol=1e-6,atol=1e-4)
 
 
 def test_six_plus_six_and_committed_bound_envelopes():

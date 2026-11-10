@@ -1,0 +1,1 @@
+Frozen constant_grid baseline, seed 20261111. Reproduce: python search.py --method constant_grid --seed 20261111 --seconds 28.0. Robust training targets: TBR70<=3%, TBR54<=0.5%, minimum>=45 mg/dL. Select feasible best TIR; fixed tie order. Native heldout verification determines the actual score.

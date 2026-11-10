@@ -1,0 +1,57 @@
+{
+  "id": "dev-01",
+  "split": "development",
+  "patients": [
+    "adult#001",
+    "adult#002",
+    "adult#003"
+  ],
+  "tdi": {
+    "adult#001": 50.416652,
+    "adult#002": 57.86877688,
+    "adult#003": 56.4297186222
+  },
+  "bounds": {
+    "theta_a": [
+      0.0,
+      0.007
+    ],
+    "relative_leak": [
+      0.5124966150526034,
+      5.518918645844859
+    ],
+    "ec50_mg_dl": [
+      59.26305046791457,
+      816.1143093473472
+    ],
+    "hill_n": [
+      0.5880395112623367,
+      24.0
+    ],
+    "tau_min": [
+      0.05,
+      20.0
+    ],
+    "theta_L": [
+      0.4,
+      4.0
+    ]
+  },
+  "constant_theta_c_bounds": [
+    0.0,
+    0.007
+  ],
+  "training_seeds": [
+    6111001
+  ],
+  "variants": [
+    "ordinary",
+    "missed_lunch",
+    "large_dinner"
+  ],
+  "days": 3,
+  "warmup_minutes": 1440,
+  "reference_weight_kg": 86.0704,
+  "patient_seed": 2026111101,
+  "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+}

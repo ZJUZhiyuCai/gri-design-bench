@@ -1,0 +1,127 @@
+{
+  "trial_id": "dev-02__tokendance__glm-5.3__seed20261111",
+  "instance_id": "dev-02",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "tokendance/glm-5.3",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T16:57:14Z",
+  "source_commit": "9a9b697998174fed8d12926b86ff7977034ab0b8",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1",
+  "image_id": "sha256:6eb142ce9619858ed2a19b7f527215654bb8770065ac33576faad2344e3c16ee",
+  "usage": [
+    {
+      "prompt_tokens": 1359,
+      "completion_tokens": 471,
+      "total_tokens": 1830,
+      "completion_tokens_details": {
+        "reasoning_tokens": 375
+      }
+    },
+    {
+      "prompt_tokens": 2543,
+      "completion_tokens": 57,
+      "total_tokens": 2600,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 19
+      }
+    },
+    {
+      "prompt_tokens": 3970,
+      "completion_tokens": 91,
+      "total_tokens": 4061,
+      "prompt_tokens_details": {
+        "cached_tokens": 2496
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 57
+      }
+    },
+    {
+      "prompt_tokens": 7004,
+      "completion_tokens": 4164,
+      "total_tokens": 11168,
+      "prompt_tokens_details": {
+        "cached_tokens": 3968
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3704
+      }
+    },
+    {
+      "prompt_tokens": 11942,
+      "completion_tokens": 5658,
+      "total_tokens": 17600,
+      "prompt_tokens_details": {
+        "cached_tokens": 6976
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5509
+      }
+    },
+    {
+      "prompt_tokens": 17691,
+      "completion_tokens": 31,
+      "total_tokens": 17722,
+      "prompt_tokens_details": {
+        "cached_tokens": 11904
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3"
+  ],
+  "api_errors": [],
+  "model_calls": 6,
+  "files": {
+    "design.json": "ok",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 3.2519060000000004,
+  "tool_wall_seconds": 5.08243000227958,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {
+    "design.json": "faf698e467b49f9a6d4355d9e60336dbbcee6bf7d8492c73c73ad13c7e2eef99"
+  },
+  "wall_seconds": 124.7770006256178,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "76e9292d28546f012b74e0a8b0f8246a6a994470c989db9e3da19b91c557295f",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "730c694376d457eefdda0691dcd970b5ea3a5653c929fc5667f80bbe0fa92430",
+    "metadata.json": "76af44020030b77fb0a2fd33a16d5d4a5549917c21601a692a38b2e569a2bdd9",
+    "response-01.json": "6b9a5bb5a51d0272f00650e6a5ad21d1d3202d12fa499978a2be921470f0dcb0",
+    "response-02.json": "11f8c4b4512f9592ce7375f2ce1d3f3bf78101164de4d0adbb76bee025f3686a",
+    "transcript.json": "56115f0688525143bf055efee0b7d7a86d03e3c4a1385e705942411beeef2d5b",
+    "response-03.json": "62621d329486f4cbba3967b00395d621444e278ec27acbb8a2dbd05f302e7aec",
+    "response-04.json": "f0b079c5e8d05b6ae702831866bb2759fc31e96c21060b46e19defe02071edd2",
+    "tool-05.txt": "ce761a80ff3933623aa0d88f1257b6b20bf2ef795f11c6e5b22d793c5d75d67f",
+    "tool-04.txt": "4b56a8aa0e507be78e4d94f4aa368209fabcd6cc014fd2d36c719e9b7b7fc79c",
+    "tool-06.txt": "a298e4aeebb60140c41f7a4a3813cb49e1dd480f153b679b3c3ea819e93e7182",
+    "tool-03.txt": "eea34fdcde43893271a91da6bee575f4318b0822f913d800251d18904a59133b",
+    "design.json": "faf698e467b49f9a6d4355d9e60336dbbcee6bf7d8492c73c73ad13c7e2eef99",
+    "tool-02.txt": "a09dce05cc6721f32ec620ff8d4f963f24f8f6246229764c2ed8c3107b77d9f8",
+    "tool-00.txt": "cb6c4c1a98d58c02d9e6437fa24526c17285bd5be814d8fbaefa2c3a00e4b12c",
+    "tool-01.txt": "5db11894b13e44d63b2ce88f8d2a50aa8a39a88c7571c659646c8fc51c4a3519",
+    "response-05.json": "5ffdfbe0e0246751dd059f029b51286e052e4e38016b5fc6fc4ed1be153130f0"
+  }
+}

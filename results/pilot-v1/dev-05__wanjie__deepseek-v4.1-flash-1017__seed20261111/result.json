@@ -1,0 +1,36 @@
+{
+  "trial_id": "dev-05__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+  "instance_id": "dev-05",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "wanjie/deepseek-v4.1-flash-1017",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T17:05:27Z",
+  "source_commit": "9a9b697998174fed8d12926b86ff7977034ab0b8",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1",
+  "image_id": "sha256:6eb142ce9619858ed2a19b7f527215654bb8770065ac33576faad2344e3c16ee",
+  "usage": [],
+  "returned_models": [],
+  "api_errors": [],
+  "model_calls": 0,
+  "status": "calibration_interrupted",
+  "interruption_utc": "2026-11-10T17:05:32.898045+00:00",
+  "interruption_reason": "Pre-sealed harness revision after development-only interaction-budget failures; not a completed scored trial.",
+  "score": {
+    "status": "calibration_interrupted",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": null,
+    "reason": "Interrupted by harness revision before completion; not a scored failure."
+  },
+  "inflight_api_usage_may_be_unreported": true,
+  "private_evidence_sha256": {
+    "instance.json": "c4f0201ddd07268aa43221317f6ad4285c6f66ac8bf383765e6f70eefdcf59cc",
+    "response-00.json": "3a9100fd7a76027b9a3fa5e8fdf3c65257e8c6ecf401faa03ef746d34f9273c9",
+    "metadata.json": "eac2e736497cb5da317f3ff66bfe1c70dc3c444415f5434420c846408d4733f6",
+    "transcript.json": "8bd964bb82c370518a35df95444ada01747e86b8781aaf6771ec4fbef73057a0",
+    "tool-00.txt": "100a80fb36bade98fa4124f9d5838fa2b5222f76402f3bf58be685bf4416360f",
+    "tool-01.txt": "2586e3eb678b673f7935aa3333a5bc27fe4ee78799bc0322868b8a292d41ee69"
+  }
+}

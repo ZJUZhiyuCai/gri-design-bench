@@ -1,0 +1,104 @@
+{
+  "trial_id": "dev-03__tokendance__glm-5.3__seed20261111",
+  "instance_id": "dev-03",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "tokendance/glm-5.3",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T16:59:19Z",
+  "source_commit": "9a9b697998174fed8d12926b86ff7977034ab0b8",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1",
+  "image_id": "sha256:6eb142ce9619858ed2a19b7f527215654bb8770065ac33576faad2344e3c16ee",
+  "usage": [
+    {
+      "prompt_tokens": 1348,
+      "completion_tokens": 2219,
+      "total_tokens": 3567,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2098
+      }
+    },
+    {
+      "prompt_tokens": 3785,
+      "completion_tokens": 145,
+      "total_tokens": 3930,
+      "prompt_tokens_details": {
+        "cached_tokens": 1344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 40
+      }
+    },
+    {
+      "prompt_tokens": 6816,
+      "completion_tokens": 115,
+      "total_tokens": 6931,
+      "prompt_tokens_details": {
+        "cached_tokens": 3776
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 39
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3"
+  ],
+  "api_errors": [
+    {
+      "call": 3,
+      "type": "HTTPError",
+      "http_status": 502
+    },
+    {
+      "call": 4,
+      "type": "HTTPError",
+      "http_status": 502
+    }
+  ],
+  "model_calls": 5,
+  "files": {
+    "design.json": "ok",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 1.7741019999999998,
+  "tool_wall_seconds": 3.3805382875725627,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {
+    "design.json": "3fd5c6773de3fcdf6d9a8af6c133c817b565c88278cf0e6afaa2cf2387b98462"
+  },
+  "wall_seconds": 158.01493358239532,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "e58e575867c744968435a91ed4b3cb8c4641b68e1f88f031a2931ffc713e8c1d",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "027ca10c8f62c7f5ae3e4cc22aeeb20487b0c6aa90a681469bb52cb9dd938ee4",
+    "metadata.json": "531fcd7e67cf9daa991160d926df2dbabd6f06e617347be0a3df0bef1f13c805",
+    "response-01.json": "d8cca42391cacb1b890c8cad4e48958bae0a55238d375e1f9fe9be127e991be2",
+    "response-02.json": "e1e340c056f2cb262157b4023adf0fb0abd9ec267f4606f40813973779a3a8e7",
+    "transcript.json": "ab5639d3c84521fc1857df2ad2baa7fc0f9642bcfeccb7de1dab7fc9cf6d06ef",
+    "tool-05.txt": "b25e2aa90989e73b8efaa0b8db88389c861ec3e8634dc0ede5003c9fdc4a742c",
+    "tool-04.txt": "33d0069a86fcd35efe48635f7ae5fb4ef1a57a5dab1af2b11dcea76988ce9eb1",
+    "tool-03.txt": "586db1041a6777146c412bd5079dda2ee0b5d3c047c0f1c51e8870d86e1eae50",
+    "design.json": "3fd5c6773de3fcdf6d9a8af6c133c817b565c88278cf0e6afaa2cf2387b98462",
+    "tool-02.txt": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "tool-00.txt": "44512180f0608a1b5c3ddec91db16dcca5cdd28db28a6dc600146b51346bc1c1",
+    "tool-01.txt": "3fd5c6773de3fcdf6d9a8af6c133c817b565c88278cf0e6afaa2cf2387b98462"
+  }
+}

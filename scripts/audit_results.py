@@ -8,10 +8,13 @@ from gri_bench.runner import ROOT, dump, verify_runtime_lock
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--tag',default='pilot-v1')
+    p=argparse.ArgumentParser();p.add_argument('--tag',default='pilot-v2');p.add_argument('--baseline-tag')
     p.add_argument('--expected',type=int,default=72);args=p.parse_args()
     verify_runtime_lock()
     trials=sorted((ROOT/'private/runs'/args.tag).glob('*/metadata.json'))
+    if args.baseline_tag:
+        trials += [p for p in sorted((ROOT/'private/runs'/args.baseline_tag).glob('*/metadata.json'))
+                   if json.loads(p.read_text())['method']!='agent']
     if len(trials)!=args.expected:raise AssertionError(f'Expected {args.expected} attempts, found {len(trials)}')
     checked=0;failed=0;max_error=0.;max_cpu=0.;keys=set();errors=[]
     for mpath in trials:
@@ -46,10 +49,11 @@ def main():
         assert feasible==score['feasible']
         assert abs(score['mean_tir']-tir)<1e-9
         assert abs(score['safe_tir']-(tir if feasible else 0.))<1e-9
-        public=json.loads((ROOT/'results'/args.tag/folder.name/'result.json').read_text())
+        source_tag=folder.parent.name
+        public=json.loads((ROOT/'results'/source_tag/folder.name/'result.json').read_text())
         assert public['score']=={k:v for k,v in score.items() if k!='rows'}
         if meta['split']=='sealed':
-            assert sorted(p.name for p in (ROOT/'results'/args.tag/folder.name).iterdir())==['result.json']
+            assert sorted(p.name for p in (ROOT/'results'/source_tag/folder.name).iterdir())==['result.json']
         checked+=1
     report={'passed':True,'attempts':len(trials),'verified_designs':checked,'failed_attempts_retained':failed,
             'native_trajectories_recomputed':checked*18,'maximum_metric_error':max_error,'maximum_measured_cpu_seconds':max_cpu,

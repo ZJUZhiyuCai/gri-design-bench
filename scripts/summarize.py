@@ -8,9 +8,12 @@ from gri_bench.runner import ROOT, dump
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--tag',default='pilot-v1');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--tag',default='pilot-v2');p.add_argument('--baseline-tag');args=p.parse_args()
     folder=ROOT/'results'/args.tag
     records=[json.loads(p.read_text()) for p in sorted(folder.glob('*/result.json'))]
+    if args.baseline_tag:
+        records += [r for p in sorted((ROOT/'results'/args.baseline_tag).glob('*/result.json'))
+                    if (r:=json.loads(p.read_text()))['method']!='agent']
     if not records:raise RuntimeError('No verified trial records')
     groups={}
     for record in records:
@@ -32,7 +35,7 @@ def main():
                      'api_error_count':sum(len(r['api_errors']) for r in group),
                      'infrastructure_errors':sum(r['status']=='infrastructure_error' for r in group)})
     rows.sort(key=lambda r:(r['split'],-r['feasible_rate'],-r['mean_safe_tir'],r['method']))
-    dump(folder/'leaderboard.json',{'label':'Engineering pilot, one run per case/model; no statistical rank claim',
+    dump(folder/'leaderboard.json',{'label':'Engineering pilot, one run per case/model; no statistical rank claim','agent_profile':args.tag,'reused_baseline_profile':args.baseline_tag,
                                   'failure_denominator':'All attempted cases; infrastructure failures contribute zero to workflow aggregates and are counted separately.',
                                   'rows':rows})
     with (folder/'leaderboard.csv').open('w',newline='') as f:

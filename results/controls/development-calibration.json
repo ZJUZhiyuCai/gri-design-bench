@@ -1,0 +1,59 @@
+{
+  "phase": "original 6-call harness calibration",
+  "sealed_model_trials_started": 0,
+  "trials": [
+    {
+      "trial_id": "dev-05__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+      "status": "calibration_interrupted"
+    },
+    {
+      "trial_id": "dev-01__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+      "status": "submission_failure"
+    },
+    {
+      "trial_id": "dev-01__tokendance__glm-5.3__seed20261111",
+      "status": "submission_failure"
+    },
+    {
+      "trial_id": "dev-04__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+      "status": "submission_failure"
+    },
+    {
+      "trial_id": "dev-02__codex__gpt-6.1-sol__seed20261111",
+      "status": "submitted"
+    },
+    {
+      "trial_id": "dev-01__codex__gpt-6.1-sol__seed20261111",
+      "status": "submission_failure"
+    },
+    {
+      "trial_id": "dev-03__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+      "status": "submission_failure"
+    },
+    {
+      "trial_id": "dev-02__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+      "status": "submission_failure"
+    },
+    {
+      "trial_id": "dev-03__codex__gpt-6.1-sol__seed20261111",
+      "status": "submitted"
+    },
+    {
+      "trial_id": "dev-03__tokendance__glm-5.3__seed20261111",
+      "status": "submission_failure"
+    },
+    {
+      "trial_id": "dev-04__codex__gpt-6.1-sol__seed20261111",
+      "status": "submitted"
+    },
+    {
+      "trial_id": "dev-02__tokendance__glm-5.3__seed20261111",
+      "status": "submission_failure"
+    },
+    {
+      "trial_id": "dev-04__tokendance__glm-5.3__seed20261111",
+      "status": "calibration_interrupted"
+    }
+  ],
+  "next": "Separate 12-call profile, with all scientific inputs/thresholds, CPU, wall, and completion-token ceilings unchanged. Original records are retained."
+}

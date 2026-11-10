@@ -6,8 +6,10 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from gri_bench.runner import ROOT
 
-folder=ROOT/'results/pilot-v1'
+folder=ROOT/'results/pilot-v2'
 records=[json.loads(p.read_text()) for p in folder.glob('*/result.json')]
+records += [r for p in (ROOT/'results/pilot-v1').glob('*/result.json')
+            if (r:=json.loads(p.read_text()))['method']!='agent']
 methods=['constant_grid','sobol','differential_evolution']+json.loads((ROOT/'contract/pilot-models.json').read_text())['models']
 labels=['Constant grid','Sobol search','Differential evolution','GPT-6.1 Sol route','DeepSeek V4.1-1017 route','GLM-5.3 route']
 cases=[f'{split}-{i:02d}' for split in ['dev','sealed'] for i in range(1,7)]

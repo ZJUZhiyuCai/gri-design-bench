@@ -17,7 +17,7 @@ def grade(path, tag):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('phase',choices=['baselines','agents'])
-    p.add_argument('--tag',default='pilot-v1');p.add_argument('--expected',type=int,default=36)
+    p.add_argument('--tag',default='pilot-v2');p.add_argument('--expected',type=int,default=36)
     args=p.parse_args();seen=set();futures={};finished=0
     with ProcessPoolExecutor(max_workers=2) as pool:
         while finished<args.expected:

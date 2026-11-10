@@ -1,0 +1,139 @@
+{
+  "trial_id": "dev-04__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+  "instance_id": "dev-04",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "wanjie/deepseek-v4.1-flash-1017",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T17:03:16Z",
+  "source_commit": "9a9b697998174fed8d12926b86ff7977034ab0b8",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1",
+  "image_id": "sha256:6eb142ce9619858ed2a19b7f527215654bb8770065ac33576faad2344e3c16ee",
+  "usage": [
+    {
+      "completion_tokens": 105,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1478,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 1583
+    },
+    {
+      "completion_tokens": 81,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 2209,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1408
+      },
+      "total_tokens": 2290
+    },
+    {
+      "completion_tokens": 90,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 3736,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 2176
+      },
+      "total_tokens": 3826
+    },
+    {
+      "completion_tokens": 1085,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 7870,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 3712
+      },
+      "total_tokens": 8955
+    },
+    {
+      "completion_tokens": 5388,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 9153,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 7808
+      },
+      "total_tokens": 14541
+    },
+    {
+      "completion_tokens": 6000,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 14906,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 9088
+      },
+      "total_tokens": 20906
+    }
+  ],
+  "returned_models": [
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017"
+  ],
+  "api_errors": [],
+  "model_calls": 6,
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 18.736971,
+  "tool_wall_seconds": 20.22439383342862,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {
+    "design.json": "d26aaa34ebe5e9e2e4446e5d390c9305a43588f2bed9444477e34a037a87319c",
+    "search.py": "a96a8de69016ecda004529ca6dd44729f437b0b9141d151e97aef494d0450eb1"
+  },
+  "wall_seconds": 130.03829129226506,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "1f7a01514712e3a9bb6f09cca6d6bb70d1c73de90aea4d5db2bbf29fb1fd16fb",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "b7f6a4d5c5ca2920b0b36f51760f131c25ca52f9a43cfcecc279c9e8f3799c24",
+    "metadata.json": "91003e7ca0bb99274fb337f76766dad8bc9453c96e4192452c7d02f63c79a4c8",
+    "response-01.json": "2f6b683c685be3fdc22645437b9b0df92e6633dc02f15424fbf926b52f8bfc12",
+    "response-02.json": "66a48ffc78b5642e248bf72c548632a8d8bd2065b26bb4ea7c9866263c2be04d",
+    "transcript.json": "bed82d5ad67b2fb5a5354b4ffcfca4a72a447d78101dc56485718da8142d7a86",
+    "response-03.json": "c4c6b2afe46718aa25b93486882bb9362e78914ddcce7b4c9f8dba7a8abadc6f",
+    "search.py": "a96a8de69016ecda004529ca6dd44729f437b0b9141d151e97aef494d0450eb1",
+    "response-04.json": "204c9a643de915ba44f4833220eac1c81bbcda64be3009eb7b1e968d624004d8",
+    "tool-04.txt": "61c02396a9e896f53ab26cade5381f6ae62fd98b64bcbfd88c4bc2b632bd128d",
+    "tool-03.txt": "aee3b6f9632d74854ee11641206cfa8d904d00ce965853b86c73bb9755e32ea1",
+    "design.json": "d26aaa34ebe5e9e2e4446e5d390c9305a43588f2bed9444477e34a037a87319c",
+    "tool-02.txt": "f5921175ea0242d80b4f7a9ae1cc00fb79a73881763568e5d9b61359df8f0f45",
+    "tool-00.txt": "9ff1379caa2606f6afe025599ddb5defe067898d1ce9ff33f8a1299757bfa9d3",
+    "tool-01.txt": "6c1141e40d507ff8cef8ba3dc5cded5ad2eef1fdfbbd30ba215f30d6affe4b70",
+    "response-05.json": "2acf1a04a3b66780b379335ee2355355353ae12f4d2039772db4c3af2ee9b32e"
+  }
+}

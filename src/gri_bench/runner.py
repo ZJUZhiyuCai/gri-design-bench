@@ -53,7 +53,7 @@ class Sandbox:
     def __init__(self, output, instance, context, image):
         self.output = Path(output); self.context = context; self.name = 'gri-'+uuid.uuid4().hex[:12]
         self.paused = False; self.exhausted = False; self.tool_wall = 0.; self.last_cpu = 0.
-        self.dc('run','-d','--name',self.name,'--network','none','--cpus','1','--memory','2048m','--memory-swap','2048m',
+        self.dc('run','-d','--name',self.name,'--label','gri.trial='+self.output.name,'--network','none','--cpus','1','--memory','2048m','--memory-swap','2048m',
                 '--pids-limit','64','--cap-drop','ALL','--security-opt','no-new-privileges','--read-only',
                 '--tmpfs','/work:rw,exec,size=268435456,uid=1000,gid=1000',
                 '--tmpfs','/tmp:rw,exec,size=134217728,mode=1777',image)
@@ -168,7 +168,7 @@ print(json.dumps(result))
     def close(self): self.dc('rm','-f',self.name,check=False)
 
 
-def run_trial(case_id, method, model=None, context='colima-etbench', image='gri-bench:0.1', tag='pilot-v1'):
+def run_trial(case_id, method, model=None, context='colima-etbench', image='gri-bench:0.1.1', tag='pilot-v2'):
     lock = verify_runtime_lock()
     label = model.replace('/','__') if model else method
     trial_id = f'{case_id}__{label}__seed20261111'
@@ -181,7 +181,7 @@ def run_trial(case_id, method, model=None, context='colima-etbench', image='gri-
                 'contract_sha256':digest(ROOT/'contract/contract.json'), 'image':image,
                 'image_id':subprocess.check_output(['docker','--context',context,'image','inspect',image,'--format','{{.Id}}'],text=True).strip(),
                 'usage':[], 'returned_models':[], 'api_errors':[], 'model_calls':0}
-    if tag == 'pilot-v1' and metadata['image_id'] != lock['pilot_image_id']:
+    if tag == 'pilot-v2' and metadata['image_id'] != lock['pilot_image_id']:
         raise ValueError('Pilot image changed after runtime freeze')
     dump(output/'metadata.json',metadata)
     start = time.monotonic(); sandbox = None
@@ -193,10 +193,10 @@ def run_trial(case_id, method, model=None, context='colima-etbench', image='gri-
             dump(output/'baseline-tool.json',tool)
         else:
             task = (ROOT/'docs/AGENT_TASK.md').read_text()
-            messages = [{'role':'system','content':'You are a scientific design agent. Work autonomously using the shell tool. Submit the three files required by the task. Shell runs in an isolated container. Your final prose is not the submission. API/model waiting does not consume container CPU. Do not assume training safety guarantees heldout safety.'},
+            messages = [{'role':'system','content':'You are a scientific design agent. Work autonomously using the shell tool. You have at most 12 model calls. Save initial versions of all three required files within the first two calls, then improve the design and code. Tool results report remaining budgets. Your final prose is not the submission. Shell runs in an isolated container. API/model waiting does not consume container CPU. Do not assume training safety guarantees heldout safety.'},
                         {'role':'user','content':task+'\n\nYOUR INSTANCE:\n'+json.dumps(instance)}]
             completed_tokens = 0
-            for call_index in range(6):
+            for call_index in range(12):
                 remaining = 360-(time.monotonic()-start)
                 if remaining <= 1 or completed_tokens >= 18000 or sandbox.exhausted: break
                 base_url = os.environ.get('GRI_MODEL_BASE_URL','http://127.0.0.1:3425/v1').rstrip('/')
@@ -233,6 +233,11 @@ def run_trial(case_id, method, model=None, context='colima-etbench', image='gri-
                         result = sandbox.command(command,min(float(args.get('timeout_seconds',85)),remaining))
                     except (ValueError,KeyError,TypeError) as error:
                         result = {'error':type(error).__name__}
+                    result['model_calls_remaining'] = 12-metadata['model_calls']
+                    result['completion_tokens_remaining'] = max(0,18000-completed_tokens)
+                    result['agent_wall_seconds_remaining'] = max(0.,360-(time.monotonic()-start))
+                    if result['model_calls_remaining'] <= 2:
+                        result['finalization_reminder'] = 'Finalize design.json, search.py and rationale.md now. No extra calls are granted after the limit.'
                     messages.append({'role':'tool','tool_call_id':tool_call['id'],'content':json.dumps(result)})
                 dump(output/'transcript.json',messages)
         metadata['files'] = sandbox.collect()
@@ -258,7 +263,7 @@ def main():
     parser.add_argument('--case',required=True)
     parser.add_argument('--method',default='agent',choices=['agent','constant_grid','sobol','differential_evolution'])
     parser.add_argument('--model'); parser.add_argument('--context',default='colima-etbench')
-    parser.add_argument('--image',default='gri-bench:0.1'); parser.add_argument('--tag',default='pilot-v1')
+    parser.add_argument('--image',default='gri-bench:0.1.1'); parser.add_argument('--tag',default='pilot-v2')
     args = parser.parse_args()
     if args.method == 'agent' and not args.model: parser.error('--model required for agent')
     run_trial(args.case,args.method,args.model,args.context,args.image,args.tag)

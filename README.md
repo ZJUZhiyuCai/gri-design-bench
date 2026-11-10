@@ -1,30 +1,32 @@
 # GRI Design Bench
 
-A small benchmark of **who can design a better static glucose-responsive insulin formulation** under a fixed simulation and compute budget. Version 0.1 contains **6 development and 6 sealed instances**, one task family, three known virtual patients per instance. It measures design and optimization in a public simulator, with fresh meal scenarios at evaluation.
+A small benchmark of **who can design a better static glucose-responsive insulin formulation** under a fixed simulation and compute budget. Version 0.1.1 contains **6 development and 6 sealed instances**, one task family, three known virtual patients per instance. It measures design and optimization in a public simulator, with fresh meal scenarios at evaluation.
 
 This is an engineering pilot. It does not establish clinical efficacy, safety in real patients, generalization to unseen patients, or a stable ranking of foundation models. The 30 simglucose profiles were public and used in preceding studies. Material subranges are synthetic benchmark constraints, not newly measured formulations.
 
 ## Frozen boundary
 
-The [JSON contract](contract/contract.json) is normative. [Amendment 001](contract/amendment-001-models.json), requested before scored runs, replaces the initial Opus selection with newer routed models and increases the pilot from 2 to 3 models. It changes no case, compute budget, safety limit, or score.
+The [original JSON contract](contract/contract.json) and two explicit amendments define the effective protocol. [Amendment 001](contract/amendment-001-models.json), requested before scored runs, replaces Opus with newer routed models and increases the pilot from 2 to 3 models. [Amendment 002](contract/amendment-002-interaction-budget.json) changes the interaction profile after development-only calibration, before any sealed model trial: 6 → 12 model calls, remaining-budget feedback, and an early-artifact reminder. CPU, wall time, total completion-token budget, cases, and scientific scores stay unchanged. Original failures remain archived separately.
 
 - **Input:** known cohort, native TDI values, fixed material/finite-reservoir bounds, public physiology, and one training meal seed with ordinary/missed-lunch/large-dinner variants.
 - **Output:** one shared static responsive parameter vector or constant rate, plus `search.py` and `rationale.md`. Dose amplitude and reservoir scale by each patient's TDI. No custom real-time controller or physiology edits.
-- **Budget:** 1 CPU, 2 GiB memory, 30 cumulative container CPU seconds after JIT warmup; 90 tool wall seconds; 360 seconds including API waits; at most 6 model calls and 18,000 completion tokens. The runner reserves 0.3 CPU seconds for monitoring/pause latency and reports observed CPU.
+- **Budget:** 1 CPU, 2 GiB memory, 30 cumulative container CPU seconds after JIT warmup; 90 tool wall seconds; 360 seconds including API waits; at most 12 model calls and 18,000 completion tokens. The runner reserves 0.3 CPU seconds for monitoring/pause latency and reports observed CPU.
 - **Independent evaluation:** native simglucose dopri5 resimulation over 3 days, 2 new seeds × 3 variants × 3 patients. First-day warmup is omitted from TIR/TBR but included in the minimum glucose check.
 - **Safety gate:** EVERY patient/scenario must have TBR70 ≤ 4%, TBR54 ≤ 1%; EVERY minute including warmup must have glucose ≥ 40 mg/dL. Missing/invalid output and failed simulation score zero. Infrastructure errors remain visible separately.
 - **Scores:** rank by feasible-case rate, then mean `safe_tir`. `safe_tir` is mean TIR [70,180] for a feasible design and zero otherwise. Raw TIR and worst-case safety are also reported. No explanation-based LLM judging.
 
 ## Run locally
 
-Python 3.12, Docker, and a shell are required. The first image build downloads scientific dependencies. No network is available inside trial containers.
+Python 3.12, Docker with cgroup v2, and a shell are required. The first image build downloads scientific dependencies. No network is available inside trial containers. The pilot uses Linux/arm64 on an Apple M5 host; CPU-time-limited comparisons depend on hardware speed and should use a common environment.
 
 ```bash
 python3.12 -m venv .venv
-.venv/bin/python -m pip install -r requirements-lock.txt
-.venv/bin/python -m pip install --no-deps -e . pytest
+.venv/bin/python -m pip install setuptools==80.10.2 wheel
+.venv/bin/python -m pip install --no-build-isolation -r requirements-lock.txt
+.venv/bin/python -m pip install --no-deps -e .
+.venv/bin/python -m pip install pytest==9.2.0
 .venv/bin/python -m pytest -q
-docker --context default build -t gri-bench:0.1 .
+docker --context default build -t gri-bench:0.1.1 .
 
 # One strong baseline on an open development instance.
 .venv/bin/python -m gri_bench.runner --case dev-01 \
@@ -46,7 +48,7 @@ Commands in the original pilot use the local `colima-etbench` Docker context. Pa
 
 ## Baselines and model evidence
 
-Three frozen algorithms receive the same CPU cap: constant-rate log grid, scrambled Sobol search, and logarithmic differential evolution. Their training target uses a predeclared safety margin (3% / 0.5% / 45 mg/dL). Candidate counts are diagnostic only: a white-box simulator permits custom evaluations and approximations.
+Three frozen algorithms receive the same CPU cap: constant-rate log grid, scrambled Sobol search, and logarithmic differential evolution. Their training target uses a predeclared safety margin (3% / 0.5% / 45 mg/dL). Their 36 verified runs are reused from `pilot-v1`: they do not call an LLM and are unaffected by the interaction-profile change. Candidate counts are diagnostic only: a white-box simulator permits custom evaluations and approximations.
 
 The model matrix is recorded in [pilot-models.json](contract/pilot-models.json): `codex/gpt-6.1-sol`, `wanjie/deepseek-v4.1-flash-1017`, and `tokendance/glm-5.3`; one trial per instance/model. Magpie aliases and API-returned model strings are recorded. They do **not** independently authenticate the upstream checkpoint or provider configuration. Inference effort is the provider default, temperature is requested as zero, and actual returned token usage is retained. Billing cost is unknown, not zero.
 
@@ -56,7 +58,7 @@ The model matrix is recorded in [pilot-models.json](contract/pilot-models.json):
 
 The Docker image has an explicit source allowlist. It contains no instance files, sealed seeds, account configuration, API key, Docker socket, or host repository mount. Each task receives only its own training instance. Containers run as a non-root user with networking disabled, a read-only root filesystem, no added capabilities, bounded writable tmpfs, and process/memory/CPU limits. They are paused while the host waits for a model response.
 
-The verifier runs trusted code outside the agent container. It parses bounded regular-file JSON and never imports submitted Python. Search code and rationale are archived as evidence; their presence and Python syntax are checked, but full search-code replay is not a scored requirement. Native trajectories and per-scenario metrics are retained. Public exports include development designs/transcripts/traces, aggregate sealed-case results, and SHA-256 hashes of private evidence. Sealed inputs, seeds, traces, and transcripts remain private.
+The verifier runs trusted code outside the agent container. It parses bounded regular-file JSON and never imports submitted Python. Search code and rationale are archived as evidence; their presence and Python syntax are checked, but full search-code replay is not a scored requirement. Archived model code is untrusted: reproduce it inside the task sandbox. Native trajectories and per-scenario metrics are retained. Public exports include development designs/transcripts/traces, aggregate sealed-case results, and SHA-256 hashes of private evidence. Sealed inputs, seeds, traces, and transcripts remain private.
 
 The [sealed manifest](contract/sealed-manifest.json) commits all six private cases using SHA-256 with a random 256-bit salt in each case. The history records contract freeze before search. Prompt, baseline, runner, and image are frozen before the scored matrix; technical repairs must retain earlier attempts and disclose why they were necessary.
 

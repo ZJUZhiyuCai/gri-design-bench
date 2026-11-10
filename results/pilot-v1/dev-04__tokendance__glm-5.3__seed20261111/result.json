@@ -1,0 +1,42 @@
+{
+  "trial_id": "dev-04__tokendance__glm-5.3__seed20261111",
+  "instance_id": "dev-04",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "tokendance/glm-5.3",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T17:04:33Z",
+  "source_commit": "9a9b697998174fed8d12926b86ff7977034ab0b8",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1",
+  "image_id": "sha256:6eb142ce9619858ed2a19b7f527215654bb8770065ac33576faad2344e3c16ee",
+  "usage": [],
+  "returned_models": [],
+  "api_errors": [],
+  "model_calls": 0,
+  "status": "calibration_interrupted",
+  "interruption_utc": "2026-11-10T17:05:32.904243+00:00",
+  "interruption_reason": "Pre-sealed harness revision after development-only interaction-budget failures; not a completed scored trial.",
+  "score": {
+    "status": "calibration_interrupted",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": null,
+    "reason": "Interrupted by harness revision before completion; not a scored failure."
+  },
+  "inflight_api_usage_may_be_unreported": true,
+  "private_evidence_sha256": {
+    "instance.json": "1f7a01514712e3a9bb6f09cca6d6bb70d1c73de90aea4d5db2bbf29fb1fd16fb",
+    "response-00.json": "aa5780bf4c5e4f5630701719948be1e4c9d9c8215cd0ae28085fd5159538c274",
+    "metadata.json": "1d5e4abf2f413ac1e182afcd171b7347f395f64667b42943959ac7164716e499",
+    "response-01.json": "815d9c54f70142d3ca7cec5cb2c1423e7a91d42b570f4bf9d4175f68b7287f24",
+    "response-02.json": "492e8fd7aa1991939ad59c15ba38fec5c41563d8babeaeb48b6051418198b8cb",
+    "transcript.json": "d99d9c938f600d592f71ad5533d804f8f64f4a293bd8b80f370b5cc682526b86",
+    "tool-05.txt": "32907add2a9042330e4d60560aeec394b256f03b7dcb8e7651f229be0d76702d",
+    "tool-04.txt": "164b5f9893fcd136448e4a40460f867f183cda1c41987e2e3f55b93b2afc18ad",
+    "tool-03.txt": "44a8ca93eddc394def0134f4f190c23f8f0ed419a3ef62f29ee25e750e54d31e",
+    "tool-02.txt": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "tool-00.txt": "6ba38c49beff811e8c53121f6302834d8991c2a5e7f4c1faf0072ea94f9399ea",
+    "tool-01.txt": "5db11894b13e44d63b2ce88f8d2a50aa8a39a88c7571c659646c8fc51c4a3519"
+  }
+}

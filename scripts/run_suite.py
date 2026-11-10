@@ -11,7 +11,7 @@ from gri_bench.evaluate import score_trial, export_trial
 def main():
     p=argparse.ArgumentParser()
     p.add_argument('phase',choices=['baselines','agents','grade'])
-    p.add_argument('--tag',default='pilot-v1'); p.add_argument('--workers',type=int,default=2)
+    p.add_argument('--tag',default='pilot-v2'); p.add_argument('--workers',type=int,default=2)
     args=p.parse_args()
     if args.phase=='grade':
         paths=sorted((ROOT/'private/runs'/args.tag).glob('*'))

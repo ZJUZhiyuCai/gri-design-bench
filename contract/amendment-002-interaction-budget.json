@@ -1,0 +1,38 @@
+{
+  "id": "002",
+  "registered_utc": "2026-11-10T17:08:33.386694+00:00",
+  "reason": "Development-only calibration found interaction-cap and artifact-completion failures before local CPU budgets were consumed. This is a harness-profile revision, not a scientific scoring change.",
+  "evidence": {
+    "completed_development_trials": 11,
+    "interrupted_development_trials": 2,
+    "sealed_agent_trials_started": 0,
+    "prior_baseline_sealed_results_were_already_known": true
+  },
+  "new_profile": "pilot-v2",
+  "software_version": "0.1.1",
+  "overrides": {
+    "budget.max_llm_calls": 12,
+    "agent_pilot.models": 3,
+    "agent_pilot.interpretation": "36 fresh route/case runs under this profile; development used for harness calibration, sealed agent trials not run before this amendment."
+  },
+  "prompt_changes": [
+    "Explicitly ask for initial versions of all three artifacts within first two calls.",
+    "Return remaining model-call, completion-token and wall budgets with tool results.",
+    "Remind agent to finalize in the final two calls."
+  ],
+  "unchanged": [
+    "All 12 instances and sealed seed commitments",
+    "Native physiology and release equations",
+    "Design space and scoring/safety gates",
+    "30 CPU seconds, 90 tool wall seconds, 360 total wall seconds",
+    "6000 completion tokens per call and 18000 total",
+    "Model routes, temperature and provider-default reasoning settings",
+    "Three baseline algorithms and their 36 completed native-verified scores"
+  ],
+  "baseline_reuse": {
+    "source_tag": "pilot-v1",
+    "reason": "Baseline algorithms do not call an LLM. Their scientific inputs, evaluator, CPU limit, hardware and image numerical dependencies are identical. Only the agent prompt/interaction profile changes.",
+    "baseline_audit_sha256": "0e3d63c90e3b7763e6c5ee25236d223f08e1a8ac1290247a0b6998e8b340f71f"
+  },
+  "integrity": "Original failed and interrupted calibration attempts retained separately. No original primary score is replaced; v2 is a new preregistered run profile. Do not claim fresh unseen-patient evaluation or upstream model authentication."
+}

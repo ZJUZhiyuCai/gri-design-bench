@@ -1,0 +1,7 @@
+{
+  "host_processor": "Apple M5",
+  "host_architecture": "arm64",
+  "vm": "Colima etbench, linux/arm64, 2 CPUs, 4 GiB RAM",
+  "trial_limit": "1 CPU, 2 GiB RAM, max 2 concurrent trials",
+  "reproducibility_note": "CPU-time-limited optimization scores depend on hardware speed; compare methods on a common environment. LLM inference hardware/effort is controlled by the routed provider and is not equalized."
+}

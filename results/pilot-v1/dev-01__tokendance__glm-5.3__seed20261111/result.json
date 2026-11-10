@@ -1,0 +1,118 @@
+{
+  "trial_id": "dev-01__tokendance__glm-5.3__seed20261111",
+  "instance_id": "dev-01",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "tokendance/glm-5.3",
+  "seed": 20261111,
+  "started_utc": "2026-11-10T16:56:27Z",
+  "source_commit": "9a9b697998174fed8d12926b86ff7977034ab0b8",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1",
+  "image_id": "sha256:6eb142ce9619858ed2a19b7f527215654bb8770065ac33576faad2344e3c16ee",
+  "usage": [
+    {
+      "prompt_tokens": 1344,
+      "completion_tokens": 87,
+      "total_tokens": 1431
+    },
+    {
+      "prompt_tokens": 2306,
+      "completion_tokens": 74,
+      "total_tokens": 2380,
+      "prompt_tokens_details": {
+        "cached_tokens": 1344
+      }
+    },
+    {
+      "prompt_tokens": 7730,
+      "completion_tokens": 5513,
+      "total_tokens": 13243,
+      "prompt_tokens_details": {
+        "cached_tokens": 7680
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5427
+      }
+    },
+    {
+      "prompt_tokens": 14020,
+      "completion_tokens": 540,
+      "total_tokens": 14560,
+      "prompt_tokens_details": {
+        "cached_tokens": 7680
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 282
+      }
+    },
+    {
+      "prompt_tokens": 14819,
+      "completion_tokens": 876,
+      "total_tokens": 15695,
+      "prompt_tokens_details": {
+        "cached_tokens": 14016
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 391
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3"
+  ],
+  "api_errors": [
+    {
+      "call": 2,
+      "type": "HTTPError",
+      "http_status": 502
+    }
+  ],
+  "model_calls": 6,
+  "files": {
+    "design.json": "ok",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 7.642911000000001,
+  "tool_wall_seconds": 9.506076000630856,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {
+    "design.json": "34846a87edf08d57a6e799089a4707f1b41d1f0724b902c0092ccd7a7ae328e3"
+  },
+  "wall_seconds": 149.27296666707844,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "25a230add714c1bbf55c1e502efcadcb9c08c1dd661897a0129ebc0f663c7e71",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "ff78577803d88aea39f08c5624d0ba6758b9f51f03fe387ca0ab669486e44c13",
+    "metadata.json": "9ae3b586a69a20ec16eda3412bb71e868c6078896737dc5a8b4e95b64577b1fd",
+    "response-01.json": "854870197d0c32d46ee01f10bfe128d8e3de444e01bad2b45538d0a8e72368df",
+    "transcript.json": "7791882226c57fdc6e12e86874785fc41c379d544e114f85d49ed66f301e375b",
+    "response-03.json": "db7668d19eeb6027151a75535e3c855d3d5ddd081de9b0dbc9eb311a58d558a7",
+    "response-04.json": "d2cd3f3a8e88bf4fbd93838a994a6ce2298f2407fdf31fc08525cf54794a6d4f",
+    "tool-05.txt": "96da21c2a429d1b1f43acaa05f4bda5d9428ef4f989a48f301ce01718d2902e9",
+    "tool-04.txt": "3f27858001bd833a6356eb75eaaa37a3ee58cc28402e074863ab5475ec5b60e2",
+    "tool-06.txt": "d38a68c4b35026ebc31affd6fc6dc8271ebec1d434c19e58f8914792fb50fa5b",
+    "tool-07.txt": "bf38b5a64b48a1e38a99d438e96b39643eba9edaa6b5dee595bf7a4575ef3b91",
+    "tool-03.txt": "e5e73070dd3c5695e7c2628d2fd71c779e66a9108f322cd770aee65b65d13701",
+    "design.json": "34846a87edf08d57a6e799089a4707f1b41d1f0724b902c0092ccd7a7ae328e3",
+    "tool-02.txt": "dda6f7aa0aa5e87b00b9b4ab33708ca4aa11dc8f377b3ed2df7ee593e0f6fc0a",
+    "tool-00.txt": "5c8eb79a970ff0bf01a717f5b7bf3714744872767179135b444b1a42722bd3f6",
+    "tool-01.txt": "f74c4c8b369af84cffd5559dc07830282a066ecf569027474aa2a21e05b97684",
+    "response-05.json": "227a4170c6e2bd5d62859476440c79e7188395c8b0dba84424e24dcaad0a701d"
+  }
+}

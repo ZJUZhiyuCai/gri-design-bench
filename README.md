@@ -4,11 +4,33 @@ A small benchmark of **who can design a better static glucose-responsive insulin
 
 This is an engineering pilot. It does not establish clinical efficacy, safety in real patients, generalization to unseen patients, or a stable ranking of foundation models. The 30 simglucose profiles were public and used in preceding studies. Material subranges are synthetic benchmark constraints inside an intentionally expanded prescreen design envelope; they are not newly measured formulations or a demonstrated manufacturing-feasibility region. See [bound provenance](docs/BOUND_PROVENANCE.md).
 
-## Six additional open-weight routes
+## Nine-route comparison: 216 new attempts complete
 
-A [preregistered expansion](docs/MODEL_EXPANSION_2026_11_11.md) adds Qwen3.8-27B, MiniMax-M3.1-Flash, Kimi-K3.1-Pro, MiMo-V2.6-Pro, Step-5-Preview, and Intern-S2 through explicit Magpie routes. **216 new attempts are planned**, with three repetitions on each of the same twelve cases and unchanged per-trial budgets. All selected routes passed a non-benchmark mock tool roundtrip. Claude-family routes are excluded. The [model registry](experiments/expansion-2026-11-11/models.json) links official public weights and records the distinction between reference checkpoints and unverified API-served identities.
+Added six open-weight model families: **Qwen3.8-27B, MiniMax-M3.1-Flash, Kimi-K3.1-Pro, MiMo-V2.6-Pro, Step-5-Preview, and Intern-S2**. All Claude-family routes are excluded. The [preregistered expansion](docs/MODEL_EXPANSION_2026_11_11.md) used the same twelve cases, three repetitions per case, frozen prompts, native scoring and configured per-trial budgets. The [registry](experiments/expansion-2026-11-11/models.json) records official public weights and their licenses; it does not authenticate the checkpoint served by Magpie.
 
-The existing results below remain unchanged. The eventual nine-route summary will label the earlier and later chronological batches rather than implying a newly interleaved nine-model experiment.
+The aggregate below combines **216 new attempts with the earlier 108 attempts: 324 trials under strict token accounting**. Each route has 18 sealed attempts. These are two chronological batches; the earlier three routes were not rerun as part of this expansion. Rank by feasible rate, then mean safety-gated TIR. All failures remain in the denominator.
+
+| Rank | Requested model family | Batch | Feasible /18 | Mean safe TIR (%) ± SD |
+|---:|---|---|---:|---:|
+| 1 | GPT-6.1 Sol | Earlier three | 18/18 | 75.06 ± 0.63 |
+| 2 | DeepSeek V4.1 Flash 1017 | Earlier three | 17/18 | 62.97 ± 7.40 |
+| 3 | Kimi-K3.1-Pro | New six | 15/18 | 54.31 ± 14.86 |
+| 4 | Qwen3.8-27B | New six | 10/18 | 24.17 ± 9.07 |
+| 5 | GLM-5.3 | Earlier three | 9/18 | 23.40 ± 18.22 |
+| 6 | MiniMax-M3.1-Flash | New six | 3/18 | 10.17 ± 9.09 |
+| 7 | Step-5-Preview | New six | 3/18 | 8.40 ± 7.29 |
+| 8 | MiMo-V2.6-Pro | New six | 2/18 | 3.99 ± 5.18 |
+| 9 | Intern-S2 | New six | 1/18 | 4.25 ± 7.36 |
+
+**SD is across three round means, not a confidence interval.** Among the six new routes, Kimi ranked first and Qwen second in every sealed round. Kimi’s round means ranged from 42.57 to 71.02; Qwen’s from 14.20 to 31.94. Their stable top positions do not imply stable solution quality. The remaining four routes changed rank across rounds.
+
+![Nine-route quality and feasibility on the fixed sealed cases](results/expansion-2026-11-11/comparison.png)
+
+The expansion retained **104 invalid submissions and 36 additional safety failures**; 76/216 attempts were feasible. It recorded 128 API-error requests, which are separate from failed attempts. The [independent audit](results/expansion-2026-11-11/audit.json) recomputed 2,016 native trajectories from 112 valid designs, checked all 1,608 request reservations, and verified that all **799 earlier result files** remain byte-identical.
+
+Thirteen new attempts recorded a resource-limit excess: one CPU overrun and twelve small wall-time overruns. The [preregistered strict-resource view](results/expansion-2026-11-11/README.md#resource-limit-sensitivity) zeroes every over-limit attempt while retaining its denominator. It changes development ordering and the new cohort’s first sealed-round ordering, but leaves the combined sealed aggregate ordering unchanged. Intern-S2’s sole feasible sealed attempt is over the wall limit and becomes zero in that view. Primary native scores are preserved.
+
+The [complete report](results/expansion-2026-11-11/README.md) includes exact routes, all three round means and ranks, case variability, failures, request accounting, resource sensitivity, and CSV/JSON exports. These fixed cases were already known to the maintainer. The results describe this bounded routed-agent workflow, including submission and route failures; they do not establish new unseen-case generalization or a population-level model ranking.
 
 ## Supplemental repetitions and budget correction
 
@@ -101,7 +123,7 @@ The agent command uses the repaired token-accounting entry point. The original `
 
 Three frozen algorithms receive the same CPU cap: constant-rate log grid, scrambled Sobol search, and logarithmic differential evolution. Their training target uses a predeclared safety margin (3% / 0.5% / 45 mg/dL). Their 36 verified runs are reused from `pilot-v1`: they do not call an LLM and are unaffected by the interaction-profile change. Candidate counts are diagnostic only: a white-box simulator permits custom evaluations and approximations.
 
-The model matrix is recorded in [pilot-models.json](contract/pilot-models.json): `codex/gpt-6.1-sol`, `wanjie/deepseek-v4.1-flash-1017`, and `tokendance/glm-5.3`; one original trial per instance/model plus three supplemental repetitions. Magpie aliases and API-returned model strings are recorded. They do **not** independently authenticate the upstream checkpoint or provider configuration. Inference effort is the provider default, temperature is requested as zero, and actual returned token usage is retained. Billing cost is unknown, not zero.
+The original three-route model matrix is recorded in [pilot-models.json](contract/pilot-models.json): `codex/gpt-6.1-sol`, `wanjie/deepseek-v4.1-flash-1017`, and `tokendance/glm-5.3`; one original trial per instance/model plus three supplemental repetitions. Magpie aliases and API-returned model strings are recorded. They do **not** independently authenticate the upstream checkpoint or provider configuration. Inference effort is the provider default, temperature is requested as zero, and actual returned token usage is retained. Billing cost is unknown, not zero.
 
 The identifier `seed20261111` is the baseline RNG seed and trial label. No LLM sampling seed is sent to the routed API; agent-written searches choose their own seeds. Temperature zero does not establish deterministic replay across providers.
 
@@ -113,7 +135,7 @@ The Docker image has an explicit source allowlist. It contains no instance files
 
 The verifier runs trusted code outside the agent container. It parses bounded regular-file JSON and never imports submitted Python. Search code and rationale are archived as evidence; their presence and Python syntax are checked, but full search-code replay is not a scored requirement. Archived model code is untrusted: reproduce it inside the task sandbox. Native trajectories and per-scenario metrics are retained. Public exports include development designs/transcripts/traces, aggregate sealed-case results, and SHA-256 hashes of private evidence. Complete sealed inputs, their evaluation seeds, traces, and transcripts remain private.
 
-Supplemental publication suppresses private sealed bounds embedded in verifier error text. One diagnostic was redacted; its original export and private score are archived with [hash evidence](results/repetitions-2026-11-11/publication-redactions.json). No numeric score or submission was changed. The frozen evaluator remains unchanged, and the publication-only filter is separately tested and audited.
+Supplemental publication suppresses private sealed bounds embedded in verifier error text. The earlier three-route repetitions redacted [one diagnostic](results/repetitions-2026-11-11/publication-redactions.json); the six-route expansion redacted [one additional diagnostic](results/expansion-2026-11-11/publication-redactions.json). Original exports and private scores are archived with hash evidence. No numeric score or submission was changed. The frozen evaluator remains unchanged, and the publication-only filter is separately tested and audited.
 
 Some development agents generated extra training seeds whose numeric values coincide with sealed-case **training** seeds. These original development records are retained. Private evaluation seeds are distinct and were not found in the public export; training-seed overlap is disclosed in the publication audit.
 

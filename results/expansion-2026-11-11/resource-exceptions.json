@@ -1,0 +1,170 @@
+[
+  {
+    "cohort": "earlier_strict_batch",
+    "tag": "repeat-20261111-r2",
+    "case": "dev-01",
+    "model": "codex/gpt-6.1-sol",
+    "split": "development",
+    "excess": {
+      "cpu_seconds": 0.31104099999999946
+    },
+    "original_feasible": true,
+    "original_safe_tir": 80.86805555555556
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r1",
+    "case": "dev-04",
+    "model": "atria/intern-s2",
+    "split": "development",
+    "excess": {
+      "wall_seconds": 0.33077908400446177
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r1",
+    "case": "dev-03",
+    "model": "minimax-code/MiniMax-M3.1-Flash",
+    "split": "development",
+    "excess": {
+      "wall_seconds": 0.36126820743083954
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r1",
+    "case": "sealed-05",
+    "model": "atria/intern-s2",
+    "split": "sealed",
+    "excess": {
+      "wall_seconds": 0.3640019167214632
+    },
+    "original_feasible": true,
+    "original_safe_tir": 76.50462962962962
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r1",
+    "case": "dev-02",
+    "model": "tokendance/mimo-v2.6-pro",
+    "split": "development",
+    "excess": {
+      "wall_seconds": 0.3855283744633198
+    },
+    "original_feasible": true,
+    "original_safe_tir": 72.5636574074074
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r1",
+    "case": "dev-05",
+    "model": "atria/intern-s2",
+    "split": "development",
+    "excess": {
+      "wall_seconds": 0.4908691253513098
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r2",
+    "case": "dev-04",
+    "model": "atria/intern-s2",
+    "split": "development",
+    "excess": {
+      "wall_seconds": 0.3864392498508096
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r2",
+    "case": "dev-02",
+    "model": "workbuddy/step-5-preview",
+    "split": "development",
+    "excess": {
+      "cpu_seconds": 0.22562599999999833
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r2",
+    "case": "sealed-02",
+    "model": "tokendance/mimo-v2.6-pro",
+    "split": "sealed",
+    "excess": {
+      "wall_seconds": 0.27219962514936924
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r2",
+    "case": "dev-02",
+    "model": "atria/intern-s2",
+    "split": "development",
+    "excess": {
+      "wall_seconds": 0.371177832596004
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r3",
+    "case": "dev-04",
+    "model": "atria/intern-s2",
+    "split": "development",
+    "excess": {
+      "wall_seconds": 0.30573074985295534
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r3",
+    "case": "dev-03",
+    "model": "tokendance/mimo-v2.6-pro",
+    "split": "development",
+    "excess": {
+      "wall_seconds": 0.3475970411673188
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r3",
+    "case": "dev-06",
+    "model": "atria/intern-s2",
+    "split": "development",
+    "excess": {
+      "wall_seconds": 0.3493015840649605
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  },
+  {
+    "cohort": "six_route_expansion",
+    "tag": "repeat-20261111-expand-r3",
+    "case": "dev-05",
+    "model": "atria/intern-s2",
+    "split": "development",
+    "excess": {
+      "wall_seconds": 0.3125841664150357
+    },
+    "original_feasible": false,
+    "original_safe_tir": 0.0
+  }
+]

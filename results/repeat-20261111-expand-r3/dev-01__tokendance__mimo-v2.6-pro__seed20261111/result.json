@@ -1,0 +1,117 @@
+{
+  "trial_id": "dev-01__tokendance__mimo-v2.6-pro__seed20261111",
+  "instance_id": "dev-01",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "tokendance/mimo-v2.6-pro",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T15:05:49Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 132,
+      "prompt_tokens": 1427,
+      "total_tokens": 1559,
+      "completion_tokens_details": {
+        "reasoning_tokens": 42
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      }
+    },
+    {
+      "completion_tokens": 6000,
+      "prompt_tokens": 2371,
+      "total_tokens": 8371,
+      "completion_tokens_details": {
+        "reasoning_tokens": 5731
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/mimo-v2.6-pro",
+    "tokendance/mimo-v2.6-pro"
+  ],
+  "api_errors": [
+    {
+      "call": 0,
+      "type": "ReadTimeout",
+      "http_status": null,
+      "charged_completion_tokens": 6000
+    }
+  ],
+  "model_calls": 3,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r3",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 0.04113699999999998,
+  "tool_wall_seconds": 0.5320159578695893,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {},
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": null,
+      "remaining_after": 12000
+    },
+    {
+      "call": 1,
+      "remaining_before": 12000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 132,
+      "reported_completion_tokens": 132,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 11868
+    },
+    {
+      "call": 2,
+      "remaining_before": 11868,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": 6000,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 5868
+    }
+  ],
+  "charged_completion_tokens": 12132,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 239.0807454586029,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "25a230add714c1bbf55c1e502efcadcb9c08c1dd661897a0129ebc0f663c7e71",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "metadata.json": "f3e6e82dceb54682e99584b40533b9d77bec1ff212132968d15e9474dc684acb",
+    "response-01.json": "1ecf0b27268596a2a86151dcf88d0bcade68ac31f3effa9f42daf9de34b053ec",
+    "response-02.json": "26891c679d59803d33584ccdef37cf3d12f33b5ce61d55bfedd3105ac766e03d",
+    "transcript.json": "96388abcb5892552e142cca2cc9c3028fb785e742a9477fce4e777b6431fb98e",
+    "tool-00.txt": "09d448939b9177acdabed8eb75237734fd44466701330e7f3123d76639f197b5",
+    "tool-01.txt": "5db11894b13e44d63b2ce88f8d2a50aa8a39a88c7571c659646c8fc51c4a3519"
+  }
+}

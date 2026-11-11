@@ -1,0 +1,135 @@
+{
+  "trial_id": "dev-03__tokendance__mimo-v2.6-pro__seed20261111",
+  "instance_id": "dev-03",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "tokendance/mimo-v2.6-pro",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T16:10:29Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 193,
+      "prompt_tokens": 1433,
+      "total_tokens": 1626,
+      "completion_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      }
+    },
+    {
+      "completion_tokens": 113,
+      "prompt_tokens": 2028,
+      "total_tokens": 2141,
+      "completion_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/mimo-v2.6-pro",
+    "tokendance/mimo-v2.6-pro"
+  ],
+  "api_errors": [
+    {
+      "call": 2,
+      "type": "ReadTimeout",
+      "http_status": null,
+      "charged_completion_tokens": 6000
+    },
+    {
+      "call": 3,
+      "type": "ReadTimeout",
+      "http_status": null,
+      "charged_completion_tokens": 6000
+    }
+  ],
+  "model_calls": 4,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r3",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 0.1046330000000002,
+  "tool_wall_seconds": 1.1404524175450206,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {},
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 193,
+      "reported_completion_tokens": 193,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17807
+    },
+    {
+      "call": 1,
+      "remaining_before": 17807,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 113,
+      "reported_completion_tokens": 113,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17694
+    },
+    {
+      "call": 2,
+      "remaining_before": 17694,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": null,
+      "remaining_after": 11694
+    },
+    {
+      "call": 3,
+      "remaining_before": 11694,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": null,
+      "remaining_after": 5694
+    }
+  ],
+  "charged_completion_tokens": 12306,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 360.3475970411673,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "e58e575867c744968435a91ed4b3cb8c4641b68e1f88f031a2931ffc713e8c1d",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "a4737be1068887f644c0827f1e5e5e91b57a3ca1bd70bd5a8d636d0e993d7893",
+    "metadata.json": "b74b81d355f4766b17066d7b5963e3de6ce1f209d62c8cd6f64cff21b69e0834",
+    "response-01.json": "75f7e0b0af0091d39af992fc85ecd053a65fa2ca87b4be855c112f72b6d5d15f",
+    "transcript.json": "8b04cfdaa1d1abedcef99331e4c06546540561546cfaa9cb5e1fe53e9a9d806e",
+    "tool-03.txt": "92daf42720558da21df17f6027cc799f96068e596e3378af607d08c877612bfa",
+    "tool-02.txt": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "tool-00.txt": "be8308abc4b39fa0d12aa2217e1ac822d583d27f68bd2dad36ccc6d447686b7c",
+    "tool-01.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

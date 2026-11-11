@@ -1,0 +1,254 @@
+{
+  "trial_id": "sealed-04__workbuddy__step-5-preview__seed20261111",
+  "instance_id": "sealed-04",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "workbuddy/step-5-preview",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T19:05:20Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 575,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1455,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 384
+      },
+      "total_tokens": 2030
+    },
+    {
+      "completion_tokens": 151,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 2725,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2876
+    },
+    {
+      "completion_tokens": 5498,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 7771,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6720
+      },
+      "total_tokens": 13269
+    },
+    {
+      "completion_tokens": 2007,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 10767,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6144
+      },
+      "total_tokens": 12774
+    },
+    {
+      "completion_tokens": 3050,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 13085,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 10688
+      },
+      "total_tokens": 16135
+    },
+    {
+      "completion_tokens": 513,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 13913,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 12864
+      },
+      "total_tokens": 14426
+    },
+    {
+      "completion_tokens": 206,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 15079,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 13824
+      },
+      "total_tokens": 15285
+    }
+  ],
+  "returned_models": [
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview"
+  ],
+  "api_errors": [
+    {
+      "call": 2,
+      "type": "HTTPError",
+      "http_status": 502,
+      "charged_completion_tokens": 6000,
+      "response_sha256": "ebee3ed81ae02944fec944eecc7fae3ec98f181c7acd87df5deaa05e93255ac6",
+      "classification": "reasoning_only_at_output_limit"
+    }
+  ],
+  "model_calls": 8,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r2",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "ok",
+    "search.py": "missing",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 4.570802,
+  "tool_wall_seconds": 6.916838749311864,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {
+    "design.json": "4f7f3875cc037eb5b91519064e71c7c39504cde996238c87e7b74300d85ad037",
+    "rationale.md": "2ea4757ffddbf383ae1c544e9da7d21787ce61c172f8082b8c58ccb12a0afabc"
+  },
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 575,
+      "reported_completion_tokens": 575,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17425
+    },
+    {
+      "call": 1,
+      "remaining_before": 17425,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 151,
+      "reported_completion_tokens": 151,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17274
+    },
+    {
+      "call": 2,
+      "remaining_before": 17274,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": 502,
+      "remaining_after": 11274
+    },
+    {
+      "call": 3,
+      "remaining_before": 11274,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 5498,
+      "reported_completion_tokens": 5498,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 5776
+    },
+    {
+      "call": 4,
+      "remaining_before": 5776,
+      "requested_max_tokens": 5776,
+      "charged_completion_tokens": 2007,
+      "reported_completion_tokens": 2007,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 3769
+    },
+    {
+      "call": 5,
+      "remaining_before": 3769,
+      "requested_max_tokens": 3769,
+      "charged_completion_tokens": 3050,
+      "reported_completion_tokens": 3050,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 719
+    },
+    {
+      "call": 6,
+      "remaining_before": 719,
+      "requested_max_tokens": 719,
+      "charged_completion_tokens": 513,
+      "reported_completion_tokens": 513,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 206
+    },
+    {
+      "call": 7,
+      "remaining_before": 206,
+      "requested_max_tokens": 206,
+      "charged_completion_tokens": 206,
+      "reported_completion_tokens": 206,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 0
+    }
+  ],
+  "charged_completion_tokens": 18000,
+  "completion_token_budget_exhausted": true,
+  "wall_seconds": 152.20184074994177,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-06.json": "11524e575dd2887e7af03fe482d80e4eadb0bf646b589d7fb44af3f4fa0155e4",
+    "response-07.json": "1f0180b37161a072f20ca58bec91e435be06ce17fbb12d5099a20fe25c424cca",
+    "error-response-02.bin": "ebee3ed81ae02944fec944eecc7fae3ec98f181c7acd87df5deaa05e93255ac6",
+    "tool-08.txt": "640bbbf884767b18b59cc4da4a4cc1dd261ebc2ea18ac2c504fd6c084a657cbb",
+    "instance.json": "669daaa145d9cf923d16549d5c7d6bc9a8b667b0afe6adda88b945d30acc57e9",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "60a23c23af9363d72846c29514952cdd6283cac09a73a5438590c4d0781ab7ca",
+    "metadata.json": "721446e1a2218caf2394e0e6df879d23c7cc6e171e37544a6f401f91b7323d4f",
+    "rationale.md": "2ea4757ffddbf383ae1c544e9da7d21787ce61c172f8082b8c58ccb12a0afabc",
+    "response-01.json": "33c909a163e087479600d63269ed2ac94c94303c7e4630969247695818cf1aa6",
+    "transcript.json": "74acd6925098ff7be590eb1a2d79d99a4a1d26363be88801871c1976cd6d231c",
+    "response-03.json": "72fa3fa7b8981aa2db11bd9e70a31175bedd2b3e8be3428c479b6d5488519929",
+    "response-04.json": "6abed68a243216d49072244f850cb7fe4b9c2488fd5b103318628dfd1fe91318",
+    "tool-05.txt": "d1111c2818722cf4454a8b6981dc1b5b724390df58abe032c6f74b9782488cc2",
+    "tool-04.txt": "cfb6bbb77a3d2f9db59a49494df34740972146b8401c47edde59b938ddd99ce1",
+    "tool-06.txt": "20938c23180b3377b2fc299b8086ff0f3baf81f87e4f27681b3b53a8fbd4e4f7",
+    "tool-07.txt": "c1b911bb11250da99529397cd58ba15d1731a36cea10d5791f18a573cd9a1a7c",
+    "tool-03.txt": "ca76a6a77bf5c007317431c20d3f7517174ff4b05b2f9589db2419eb2526291a",
+    "design.json": "4f7f3875cc037eb5b91519064e71c7c39504cde996238c87e7b74300d85ad037",
+    "tool-02.txt": "cb30fa3272fd9af6273e26b53f4dbc5bcc9b449539985754b85d2bfb5ba76f48",
+    "tool-00.txt": "acf3eb493256f5d44bdb06f6d6c2cb0a84cc928d53cca7b93a8a69eebe235945",
+    "tool-01.txt": "59ceeb34d8e18c9d81cdd4c4ef57df4f261368bd6938156499ec835ff03d87d1",
+    "response-05.json": "b2dc198b785c6b64f4ad5f52209792ae471e4f74d3725de27be0b9146b284a8f"
+  }
+}

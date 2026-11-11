@@ -1,0 +1,247 @@
+{
+  "trial_id": "sealed-02__atria__intern-s2__seed20261111",
+  "instance_id": "sealed-02",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "atria/intern-s2",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T18:13:42Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "prompt_tokens": 1589,
+      "total_tokens": 1731,
+      "completion_tokens": 142,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 49,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 2513,
+      "total_tokens": 2590,
+      "completion_tokens": 77,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 5065,
+      "total_tokens": 5147,
+      "completion_tokens": 82,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 11,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 7708,
+      "total_tokens": 9146,
+      "completion_tokens": 1438,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1191,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 8265,
+      "total_tokens": 9023,
+      "completion_tokens": 758,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 388,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 11015,
+      "total_tokens": 14156,
+      "completion_tokens": 3141,
+      "prompt_tokens_details": {
+        "cached_tokens": 8192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2517,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 14377,
+      "total_tokens": 19698,
+      "completion_tokens": 5321,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2537,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    }
+  ],
+  "returned_models": [
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2"
+  ],
+  "api_errors": [],
+  "model_calls": 7,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r1",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "ok",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 29.708002,
+  "tool_wall_seconds": 32.432275081053376,
+  "budget_exhausted": true,
+  "status": "submission_failure",
+  "artifact_sha256": {
+    "search.py": "f53894164118945d4cf2df65eb52d9e6854d150fd19487deb396368c814ee769"
+  },
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 142,
+      "reported_completion_tokens": 142,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17858
+    },
+    {
+      "call": 1,
+      "remaining_before": 17858,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 77,
+      "reported_completion_tokens": 77,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17781
+    },
+    {
+      "call": 2,
+      "remaining_before": 17781,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 82,
+      "reported_completion_tokens": 82,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17699
+    },
+    {
+      "call": 3,
+      "remaining_before": 17699,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1438,
+      "reported_completion_tokens": 1438,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 16261
+    },
+    {
+      "call": 4,
+      "remaining_before": 16261,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 758,
+      "reported_completion_tokens": 758,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 15503
+    },
+    {
+      "call": 5,
+      "remaining_before": 15503,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 3141,
+      "reported_completion_tokens": 3141,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 12362
+    },
+    {
+      "call": 6,
+      "remaining_before": 12362,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 5321,
+      "reported_completion_tokens": 5321,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 7041
+    }
+  ],
+  "charged_completion_tokens": 10959,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 282.25850350037217,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-06.json": "12677ede385b9137b396c5dae1ab1275f1ec32ddb42e05cbde744dfb6c9d142b",
+    "tool-09.txt": "d9ed84a15ec3aa6e344981cb5b92da385361d08a8b6e579c73ce716e55cdecab",
+    "tool-08.txt": "a29ac3c16a37ea3da38fd6a4763a2a8c2366bc7f8c38d596684e9ac05f374f60",
+    "instance.json": "58f5a8d87fd5ea06c4f45ed6cbc5ea7272c37ea2b539d77627c71ab432ac6f4f",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "fc36e9caa58dd8567a71604c673eb5ad8e6cfec75ff30ada8e5dad01f64d6992",
+    "metadata.json": "2b61b3719e2fba9e2161807d7e2c27d96f5528125ab744b2924d4ebd6fd663dc",
+    "response-01.json": "9c0fc0c127bdebec31d0cc50422652863bedb5946278b842edd7107cd2b47ab9",
+    "response-02.json": "fe491d0979debb32d25a6986235607700b2294584924b7f20ba6a0abe518b1b9",
+    "transcript.json": "1bbec32c4c200c7c6c24d3f4b4ba4da2c6de39fa6675db8663c8048058b7b594",
+    "response-03.json": "4219650088f6f965cfe3560a786b33735e33274f44faa8000ad97263bc97bcf4",
+    "search.py": "f53894164118945d4cf2df65eb52d9e6854d150fd19487deb396368c814ee769",
+    "response-04.json": "d71a2ca8406994bbb404c164699bb02a6d2d6a6e05db683633fdaa17ffccb314",
+    "tool-05.txt": "571aa5f5b2cf829bf20082a9dfc3ef26e3e8f329b4f6d44e948669732435269d",
+    "tool-04.txt": "a391604da8aed369e7dee2d1a7c081c88ffc824aad4afd620038d82bcaef06c2",
+    "tool-06.txt": "5b5318f01dcbad02265a696dbdc54f487bbaeddd1b545bf681ef72e075de73d9",
+    "tool-07.txt": "8d538807534d8b4094629ad2814e15ae93a45a5968229af1182688e25c8efd30",
+    "tool-03.txt": "bc748cb2560fcbc7a7852811d271fe9d025644735cc2b79737d6c000e9553aae",
+    "tool-02.txt": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "tool-00.txt": "58f5a8d87fd5ea06c4f45ed6cbc5ea7272c37ea2b539d77627c71ab432ac6f4f",
+    "tool-01.txt": "f4fdf7249add64c6133a0c6b7ab073aca35ad82044ebff8b7759c1e6cd94eeb8",
+    "response-05.json": "19c24dd6df0e9f520fb2e6969f91a86be6979ad87a18afbb77c99bb33e1ab651"
+  }
+}

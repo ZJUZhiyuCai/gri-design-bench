@@ -1,0 +1,247 @@
+{
+  "trial_id": "dev-05__workbuddy__step-5-preview__seed20261111",
+  "instance_id": "dev-05",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "workbuddy/step-5-preview",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T17:04:08Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 536,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1459,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 1995
+    },
+    {
+      "completion_tokens": 156,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 3986,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4142
+    },
+    {
+      "completion_tokens": 4706,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 8156,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 2048
+      },
+      "total_tokens": 12862
+    },
+    {
+      "completion_tokens": 304,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 9088,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 8064
+      },
+      "total_tokens": 9392
+    },
+    {
+      "completion_tokens": 864,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 9371,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 8320
+      },
+      "total_tokens": 10235
+    },
+    {
+      "completion_tokens": 3243,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 11310,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 9280
+      },
+      "total_tokens": 14553
+    }
+  ],
+  "returned_models": [
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview",
+    "workbuddy/step-5-preview"
+  ],
+  "api_errors": [
+    {
+      "call": 6,
+      "type": "HTTPError",
+      "http_status": 502,
+      "charged_completion_tokens": 6000,
+      "response_sha256": "ebee3ed81ae02944fec944eecc7fae3ec98f181c7acd87df5deaa05e93255ac6",
+      "classification": "reasoning_only_at_output_limit"
+    },
+    {
+      "call": 7,
+      "type": "HTTPError",
+      "http_status": 502,
+      "charged_completion_tokens": 2191,
+      "response_sha256": "ebee3ed81ae02944fec944eecc7fae3ec98f181c7acd87df5deaa05e93255ac6",
+      "classification": "reasoning_only_at_output_limit"
+    }
+  ],
+  "model_calls": 8,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r2",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "ok",
+    "search.py": "missing",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 4.123745,
+  "tool_wall_seconds": 5.888013579882681,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {
+    "design.json": "97ff2168557bba65cf7facf8a66eb33b6962877600a4e7a988af64ad6cf4bedc",
+    "rationale.md": "607325e518956841e911c72fcbc574295b5f474bc5bfdf43841dc726a3778ef0"
+  },
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 536,
+      "reported_completion_tokens": 536,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17464
+    },
+    {
+      "call": 1,
+      "remaining_before": 17464,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 156,
+      "reported_completion_tokens": 156,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17308
+    },
+    {
+      "call": 2,
+      "remaining_before": 17308,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 4706,
+      "reported_completion_tokens": 4706,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 12602
+    },
+    {
+      "call": 3,
+      "remaining_before": 12602,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 304,
+      "reported_completion_tokens": 304,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 12298
+    },
+    {
+      "call": 4,
+      "remaining_before": 12298,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 864,
+      "reported_completion_tokens": 864,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 11434
+    },
+    {
+      "call": 5,
+      "remaining_before": 11434,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 3243,
+      "reported_completion_tokens": 3243,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 8191
+    },
+    {
+      "call": 6,
+      "remaining_before": 8191,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": 502,
+      "remaining_after": 2191
+    },
+    {
+      "call": 7,
+      "remaining_before": 2191,
+      "requested_max_tokens": 2191,
+      "charged_completion_tokens": 2191,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": 502,
+      "remaining_after": 0
+    }
+  ],
+  "charged_completion_tokens": 18000,
+  "completion_token_budget_exhausted": true,
+  "wall_seconds": 151.23596654180437,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "error-response-07.bin": "ebee3ed81ae02944fec944eecc7fae3ec98f181c7acd87df5deaa05e93255ac6",
+    "error-response-06.bin": "ebee3ed81ae02944fec944eecc7fae3ec98f181c7acd87df5deaa05e93255ac6",
+    "instance.json": "c4f0201ddd07268aa43221317f6ad4285c6f66ac8bf383765e6f70eefdcf59cc",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "32cfe5b5597d03102c07c6b4a3e47ffb5670f83fd691c742865e41e8adbff50f",
+    "metadata.json": "5ac1b91af6c034b60144ebb2b3c46567c8ca683aba810a5ae2bc0d5b4511a473",
+    "rationale.md": "607325e518956841e911c72fcbc574295b5f474bc5bfdf43841dc726a3778ef0",
+    "response-01.json": "c8cff696baf58c8dea5a5b0b428f05ba432237c8967d35bdc2aaa15c371e976e",
+    "response-02.json": "f6be5015cd81acdc95ae3c6e74a18635ab1506691d4e070e31fafbae05778cfa",
+    "transcript.json": "fd03ebd4e87f5d640ab98c650bb465fcd079b2b29413de774ca3b74b521a488d",
+    "response-03.json": "47b3c0a74ffdb1567fd22bccba6d203fbeb581e299722605226c5e47508f0130",
+    "response-04.json": "3fe6f56cf2bc8be0fb5595696139e7e21380fdf2e7d6f4803d4418a71a1fee54",
+    "tool-05.txt": "82ceefa7559e8c7086a51d642f4a5cfe583a4fc60e48f81da78995558927e859",
+    "tool-04.txt": "62957dfe19a7e51722a398637b09adb928aadb20e4256e41254c0d2c31a9c958",
+    "tool-06.txt": "d50db9f4a0c60599c5695b5816b9d44fb9e558f2f2695a9735c12497cde6fa0b",
+    "tool-03.txt": "3af448f4c438052ba3b285d5375f5b335227d0086a0389343ff90e4b6d878230",
+    "design.json": "97ff2168557bba65cf7facf8a66eb33b6962877600a4e7a988af64ad6cf4bedc",
+    "tool-02.txt": "ce1ad8e73899e631576d3c1388d87d2cdd94b2a80cce375ab1ee7e085f6640f7",
+    "tool-00.txt": "8fca519236e4ca67638b755e2fbffc94808579736ea2c25fcc83013769722ce6",
+    "tool-01.txt": "75ca1dfe53a1375e0509b2889b1ad4e05c5acaa6a9b3b4d6e7b1cb26f2f43f88",
+    "response-05.json": "ed0e29bdc9e144c5687819ea14d27903d3b5a32fce764d2060a79690edc02b5b"
+  }
+}

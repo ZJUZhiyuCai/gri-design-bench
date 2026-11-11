@@ -1,0 +1,127 @@
+{
+  "trial_id": "sealed-04__minimax-code__MiniMax-M3.1-Flash__seed20261111",
+  "instance_id": "sealed-04",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "minimax-code/MiniMax-M3.1-Flash",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T19:17:30Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 166,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1620,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1619
+      },
+      "total_tokens": 1786
+    },
+    {
+      "completion_tokens": 76,
+      "completion_tokens_details": {
+        "reasoning_tokens": 12
+      },
+      "prompt_tokens": 6222,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1624
+      },
+      "total_tokens": 6298
+    },
+    {
+      "completion_tokens": 6000,
+      "completion_tokens_details": {
+        "reasoning_tokens": 5999
+      },
+      "prompt_tokens": 8160,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6222
+      },
+      "total_tokens": 14160
+    }
+  ],
+  "returned_models": [
+    "minimax-code/MiniMax-M3.1-Flash",
+    "minimax-code/MiniMax-M3.1-Flash",
+    "minimax-code/MiniMax-M3.1-Flash"
+  ],
+  "api_errors": [],
+  "model_calls": 3,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r3",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 0.11503900000000011,
+  "tool_wall_seconds": 0.8763981238007545,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {},
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 166,
+      "reported_completion_tokens": 166,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17834
+    },
+    {
+      "call": 1,
+      "remaining_before": 17834,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 76,
+      "reported_completion_tokens": 76,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17758
+    },
+    {
+      "call": 2,
+      "remaining_before": 17758,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": 6000,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 11758
+    }
+  ],
+  "charged_completion_tokens": 6242,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 61.788735083304346,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "669daaa145d9cf923d16549d5c7d6bc9a8b667b0afe6adda88b945d30acc57e9",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "806dd0ff2e69f5e1ae33523a246f477ae9c48911932b28b4333bc6e235620ddd",
+    "metadata.json": "1737fdd3e3a9fc36a73a7df65b90c2d7e0f4776f6b5fa7396b0b8ab0b9077662",
+    "response-01.json": "89c5222199c1f3b9e95f9b744eaaffd4eddaf9e421c633a1c032334d27677b57",
+    "response-02.json": "cf54812f034fb9e8ebfef23028054c2c747ba6aabf886b1a0a78d693009e2b40",
+    "transcript.json": "c92578c05d1a61456f2c1104edc41890e7a6d7fb8d30f75d4ce540c4bc4f1ba5",
+    "tool-02.txt": "3c428da62fbb96bb5de57c1f1428044c64c60a5403122a36869105134efdd11c",
+    "tool-00.txt": "c5be01714d06c9117cc6fde227b34d15efa1c87590b208a53393fa39883d2b12",
+    "tool-01.txt": "4fdec98a94fd3d1379bdef71fed39024feba1230b1898ff20039dc8f30b1d13e"
+  }
+}

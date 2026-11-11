@@ -63,3 +63,35 @@ python -I scripts/plot_repetitions.py
 ```
 
 The last two commands regenerate the descriptive report and figure from the public results. The full sealed trajectory audit requires the private evidence. The new [publication audit](../results/repetitions-2026-11-11/publication-audit.json) checks credentials, private evaluation seeds/salts, original research preservation and public Git contents; the original publication-audit file is retained byte-for-byte.
+
+## Six additional routes, preregistered 2026-11-11
+
+The [six-route expansion protocol](MODEL_EXPANSION_2026_11_11.md), model registry, connectivity evidence, 216-job schedule, preservation manifest and 15-file execution lock were published at **`354c2b33e219d08ad71b3904855bd820f9ed7a7f`**, tagged **`expansion-2026-11-11-plan`**, before scored trials. The plan-tag CI passed before execution; branch CI also passed. All six selected explicit routes passed the same non-benchmark mock tool roundtrip. The two failed Nemotron connectivity attempts were retained, and Intern-S2 replaced it before scoring. No Claude-family route was selected.
+
+Both the 216-trial runner and grader exited with status zero. Every new trial records the plan commit, the original image and `strict-token-accounting-v1`. The scientific contract, prompts, cases, seeds, evaluator, model settings, configured budgets and two-error stopping rule were unchanged. The new wrapper schedules and safely exports results through the frozen runner and scorer; postprocessing code does not participate in agent execution.
+
+The [expansion audit](../results/expansion-2026-11-11/audit.json) verifies:
+
+- Exact coverage of six routes × twelve cases × three contexts: 36 attempts per route and 72 per repetition tag, with no omitted, replacement or best-of-three attempts.
+- All 799 previous result files, 32 original runtime files, 11 earlier repetition files and 15 new execution-lock files unchanged.
+- 215 saved initial prompts, 1,480 saved response model/usage records, 4,538 private evidence hashes and all 216 publication receipts. One MiMo development attempt ended after two API errors before any successful reply, so no transcript was saved; its failed attempt and ledger remain included.
+- All 1,608 request reservations, with at most 18,000 charged completion tokens per attempt, no reported successful usage beyond a requested cap and no unexpected infrastructure reservation. The 128 API-error requests are retained separately from trial outcomes.
+- 112 valid designs and 2,016 saved native trajectories, with maximum independent metric discrepancy **1.42e-14**. There are 104 submission failures, 36 additional safety failures and 76 feasible attempts. No native solver or infrastructure failure occurred.
+
+Thirteen new attempts have recorded resource-limit excesses: one development CPU value of **30.225626 seconds**, and twelve total-wall values above 360 seconds, with a maximum of **360.490869 seconds**. Maximum cumulative tool wall time is **33.351685 seconds**. Eleven exceptions are development attempts and two are sealed attempts. The polling monitor and limits were not changed. The preregistered secondary analysis assigns zero/infeasible to every over-limit attempt without dropping it or changing a saved primary score. It changes the development aggregate ordering and the new cohort’s first-round ordering on both splits; the combined sealed aggregate ordering remains unchanged. Intern-S2’s only feasible sealed attempt becomes zero under this rule. The earlier cohort’s one development CPU exception remains separately labeled as previously disclosed.
+
+The publication filter redacted exactly one new sealed diagnostic. Original export bytes and private scores remain intact; only `score.reason` differs publicly, and every numeric value is unchanged. The [new redaction manifest](../results/expansion-2026-11-11/publication-redactions.json) verifies all 216 receipts and preserves before/after hashes. Sealed public trial directories contain only aggregate result JSON. Development evidence is copied byte-for-byte from the staged export, including the filtered transcript format used by the frozen exporter.
+
+The final local suite passed **39 tests in 11.04 seconds**, with five existing dependency warnings. New synthetic complete-matrix tests cover ties, fixed denominators, omitted/duplicate attempts, unchanged inputs and the effect of resource zeroing on per-round and aggregate ranks. A separate synthetic report/CSV/figure roundtrip passed; fixture data were not published. Actual native arrays were independently recomputed, and the final comparison figure was visually inspected.
+
+The [nine-route report](../results/expansion-2026-11-11/README.md) combines the new 216 attempts with the earlier 108 strict-accounting attempts, retaining the chronological batch labels. It cross-checks every reused earlier model summary against the protected earlier report. Kimi and Qwen rank first and second among the new six in every sealed round, but their round means vary substantially; the remaining ordering changes. The fixed sealed cases have already been used, so this is repeatability on known benchmark instances, not new holdout validation. Original pilot model scores and single-run baseline references remain separate.
+
+After collecting the complete matrix, reproduce the expansion analysis with:
+
+```bash
+python -I scripts/audit_expansion.py
+python -I scripts/analyze_expansion.py
+python -I scripts/plot_expansion.py
+```
+
+The audit requires original private evidence. Analysis and plotting use the complete public results and preserve every earlier result file. The new [publication audit](../results/expansion-2026-11-11/publication-audit.json) checks public files and Git history against local credentials and private evaluation seeds/salts, verifies sealed commitments and rechecks all 490 protected original research files.

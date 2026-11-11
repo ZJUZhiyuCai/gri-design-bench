@@ -1,0 +1,230 @@
+{
+  "trial_id": "dev-04__tokendance__mimo-v2.6-pro__seed20261111",
+  "instance_id": "dev-04",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "tokendance/mimo-v2.6-pro",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T16:33:58Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 990,
+      "prompt_tokens": 1431,
+      "total_tokens": 2421,
+      "completion_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      }
+    },
+    {
+      "completion_tokens": 149,
+      "prompt_tokens": 2932,
+      "total_tokens": 3081,
+      "completion_tokens_details": {
+        "reasoning_tokens": 32
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      }
+    },
+    {
+      "completion_tokens": 613,
+      "prompt_tokens": 6243,
+      "total_tokens": 6856,
+      "completion_tokens_details": {
+        "reasoning_tokens": 350
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 2816
+      }
+    },
+    {
+      "completion_tokens": 3094,
+      "prompt_tokens": 8755,
+      "total_tokens": 11849,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2830
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 6144
+      }
+    },
+    {
+      "completion_tokens": 5442,
+      "prompt_tokens": 14071,
+      "total_tokens": 19513,
+      "completion_tokens_details": {
+        "reasoning_tokens": 4959
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 13952
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/mimo-v2.6-pro",
+    "tokendance/mimo-v2.6-pro",
+    "tokendance/mimo-v2.6-pro",
+    "tokendance/mimo-v2.6-pro",
+    "tokendance/mimo-v2.6-pro"
+  ],
+  "api_errors": [
+    {
+      "call": 4,
+      "type": "HTTPError",
+      "http_status": 502,
+      "charged_completion_tokens": 6000,
+      "response_sha256": "d6a12c4f7b0bea07546b47aaad108544f483108eadac630f1050c0202db0798c",
+      "classification": "reasoning_only_at_output_limit"
+    },
+    {
+      "call": 6,
+      "type": "HTTPError",
+      "http_status": 502,
+      "charged_completion_tokens": 1712,
+      "response_sha256": "d6a12c4f7b0bea07546b47aaad108544f483108eadac630f1050c0202db0798c",
+      "classification": "reasoning_only_at_output_limit"
+    }
+  ],
+  "model_calls": 7,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r2",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 4.462624,
+  "tool_wall_seconds": 6.500648334622383,
+  "budget_exhausted": false,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "0679ef20ade91e5ab8edd079b17ea441f9860b58bd8400057e6f7a5afeb11572",
+    "search.py": "9475a1a7cf73c983aeac5e08106297f092816b397bcc21b57648c73806301545",
+    "rationale.md": "0bd0b1af642b336b8f0d1d3cb90cbdb5df00e5f14b25de856ab39c90a4efa2a0"
+  },
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 990,
+      "reported_completion_tokens": 990,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17010
+    },
+    {
+      "call": 1,
+      "remaining_before": 17010,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 149,
+      "reported_completion_tokens": 149,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 16861
+    },
+    {
+      "call": 2,
+      "remaining_before": 16861,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 613,
+      "reported_completion_tokens": 613,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 16248
+    },
+    {
+      "call": 3,
+      "remaining_before": 16248,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 3094,
+      "reported_completion_tokens": 3094,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 13154
+    },
+    {
+      "call": 4,
+      "remaining_before": 13154,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": 502,
+      "remaining_after": 7154
+    },
+    {
+      "call": 5,
+      "remaining_before": 7154,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 5442,
+      "reported_completion_tokens": 5442,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 1712
+    },
+    {
+      "call": 6,
+      "remaining_before": 1712,
+      "requested_max_tokens": 1712,
+      "charged_completion_tokens": 1712,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": 502,
+      "remaining_after": 0
+    }
+  ],
+  "charged_completion_tokens": 18000,
+  "completion_token_budget_exhausted": true,
+  "wall_seconds": 207.00469183269888,
+  "score": {
+    "mean_tir": 0.0,
+    "max_trajectory_tbr70": 100.0,
+    "max_trajectory_tbr54": 100.0,
+    "minimum_glucose": -2.5220187905595765e-10,
+    "trajectories": 18,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": "safety_constraint_failed",
+    "native_traces_sha256": "9d60667e22b9c4a14d7f97f665d7cae96c5a243f7aad77e24fd268bfa5458f7a"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "error-response-06.bin": "d6a12c4f7b0bea07546b47aaad108544f483108eadac630f1050c0202db0798c",
+    "error-response-04.bin": "d6a12c4f7b0bea07546b47aaad108544f483108eadac630f1050c0202db0798c",
+    "tool-08.txt": "aac2d126c4422b37395a971e9804b0e7be2e91ab7795c6c4dd5bb42e61e5a47a",
+    "instance.json": "1f7a01514712e3a9bb6f09cca6d6bb70d1c73de90aea4d5db2bbf29fb1fd16fb",
+    "score.json": "fc274f88d7b8b65b95ce7c4ffeee246cb06f460e6251323b076c933ea041a64a",
+    "response-00.json": "a2a6a240c46e9f9a1ddd814ff9f94cd5ee5b13afacc59964ff93bbca917e4a27",
+    "metadata.json": "9f5155c3e6149d13bf21021f7ca6737eab32184773c4f0aab46f413f498773e8",
+    "rationale.md": "0bd0b1af642b336b8f0d1d3cb90cbdb5df00e5f14b25de856ab39c90a4efa2a0",
+    "response-01.json": "5c2fd0dffd8981044ec9a5e8a01c05ef8399047630e47a5d0a379170d54f9886",
+    "native-traces.npz": "9d60667e22b9c4a14d7f97f665d7cae96c5a243f7aad77e24fd268bfa5458f7a",
+    "response-02.json": "15bbebc942acd246aa41815885510a8b6bfd00f2a63631f806b10b91eefae3fb",
+    "transcript.json": "8fc21a8ac9d86cb10b4deeda24b0274c03cbd49e9db6d129d6e1c1eba9628e5f",
+    "response-03.json": "ecf39d6d98cf327a663af459a19aca5f22f5729e400468e7e4dc477cdce010d7",
+    "search.py": "9475a1a7cf73c983aeac5e08106297f092816b397bcc21b57648c73806301545",
+    "tool-05.txt": "8f9ef4cad46b28d2189f3b2c4fe9547ab6ea2cd1a27e11c22670e9940650131e",
+    "tool-04.txt": "051b0b931936d6cc61e2ddf116f48b5dd82d1b9821fdc59ac1f7d46b98338265",
+    "tool-06.txt": "8cc5ba8121cf8c8d55cb5eae679e1cbbab73a1b0374087ce4629fca6361b594c",
+    "tool-07.txt": "455efbe6385c73230b9ca918d84b0a8f126a942b700f576eb5bdb124eaf9d2a5",
+    "tool-03.txt": "70fa38351aca1d67d7b23885b481d2121da3893fb6815cb770fd6cb4ed0f95f8",
+    "design.json": "0679ef20ade91e5ab8edd079b17ea441f9860b58bd8400057e6f7a5afeb11572",
+    "tool-02.txt": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "tool-00.txt": "d5ac9c84b321bc661d979760aed0033579aaacbb8468c36e0df3e0207a81da9f",
+    "tool-01.txt": "c42d2dac187fb8fe1777ea9d14bc3e0d4eab49ac8e8835abca46f29675e55560",
+    "response-05.json": "fefc35e52026ecc52988a197e29c2d52cb08282986afda7d23fcb6658a5ddba3"
+  }
+}

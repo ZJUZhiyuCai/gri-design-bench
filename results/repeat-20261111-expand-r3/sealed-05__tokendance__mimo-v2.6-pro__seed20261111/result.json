@@ -1,0 +1,135 @@
+{
+  "trial_id": "sealed-05__tokendance__mimo-v2.6-pro__seed20261111",
+  "instance_id": "sealed-05",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "tokendance/mimo-v2.6-pro",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T19:43:27Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 257,
+      "prompt_tokens": 1444,
+      "total_tokens": 1701,
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      }
+    },
+    {
+      "completion_tokens": 110,
+      "prompt_tokens": 2577,
+      "total_tokens": 2687,
+      "completion_tokens_details": {
+        "reasoning_tokens": 16
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/mimo-v2.6-pro",
+    "tokendance/mimo-v2.6-pro"
+  ],
+  "api_errors": [
+    {
+      "call": 2,
+      "type": "ReadTimeout",
+      "http_status": null,
+      "charged_completion_tokens": 6000
+    },
+    {
+      "call": 3,
+      "type": "ReadTimeout",
+      "http_status": null,
+      "charged_completion_tokens": 6000
+    }
+  ],
+  "model_calls": 4,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r3",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 1.057577,
+  "tool_wall_seconds": 2.1295655416324735,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {},
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 257,
+      "reported_completion_tokens": 257,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17743
+    },
+    {
+      "call": 1,
+      "remaining_before": 17743,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 110,
+      "reported_completion_tokens": 110,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17633
+    },
+    {
+      "call": 2,
+      "remaining_before": 17633,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": null,
+      "remaining_after": 11633
+    },
+    {
+      "call": 3,
+      "remaining_before": 11633,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": null,
+      "remaining_after": 5633
+    }
+  ],
+  "charged_completion_tokens": 12367,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 250.0005967495963,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "ac9857e1fe66bf779d5baad97f30fa2225747786b9142a3078bf2a546142e890",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "5ae1fd70a571e27da0377b6ff4ba01c2b5fca95d037db7e4e2e0924438848b37",
+    "metadata.json": "b631cc411cb79158879e5d9a3da993a69f7fbc933e34f66d8a0575493a48b422",
+    "response-01.json": "845dc244ecf410e38a5182996aed7d2a7220b506e82148ea331c8a28af0f0aa3",
+    "transcript.json": "b4897645269590f3ba136dcd400e8cb3755f8bd8001b8ec2d32233cab1d05ac8",
+    "tool-03.txt": "915291db5a184637aa7a2bd2257a393a8782aa67437050164d1774bdb249f9b6",
+    "tool-02.txt": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "tool-00.txt": "f782c143a2a25b3a1195332ca594e3ec12ddbcc75a4e4286ec90dc0eefb8bd1d",
+    "tool-01.txt": "f90ccf9a81745bee91823fb33b48dccbe143bf47272bfd0019bf580324752b05"
+  }
+}

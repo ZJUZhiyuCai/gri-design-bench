@@ -1,0 +1,218 @@
+{
+  "trial_id": "dev-02__atria__intern-s2__seed20261111",
+  "instance_id": "dev-02",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "atria/intern-s2",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T15:19:44Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "prompt_tokens": 1631,
+      "total_tokens": 1800,
+      "completion_tokens": 169,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 51,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 3099,
+      "total_tokens": 3248,
+      "completion_tokens": 149,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 8223,
+      "total_tokens": 8377,
+      "completion_tokens": 154,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 16,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 9463,
+      "total_tokens": 10097,
+      "completion_tokens": 634,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 441,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 10791,
+      "total_tokens": 12017,
+      "completion_tokens": 1226,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1034,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 11221,
+      "total_tokens": 12330,
+      "completion_tokens": 1109,
+      "prompt_tokens_details": {
+        "cached_tokens": 8192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 680,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    }
+  ],
+  "returned_models": [
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2"
+  ],
+  "api_errors": [],
+  "model_calls": 6,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r1",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 29.737479999999998,
+  "tool_wall_seconds": 32.6024109153077,
+  "budget_exhausted": true,
+  "status": "submission_failure",
+  "artifact_sha256": {},
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 169,
+      "reported_completion_tokens": 169,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17831
+    },
+    {
+      "call": 1,
+      "remaining_before": 17831,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 149,
+      "reported_completion_tokens": 149,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17682
+    },
+    {
+      "call": 2,
+      "remaining_before": 17682,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 154,
+      "reported_completion_tokens": 154,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17528
+    },
+    {
+      "call": 3,
+      "remaining_before": 17528,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 634,
+      "reported_completion_tokens": 634,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 16894
+    },
+    {
+      "call": 4,
+      "remaining_before": 16894,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1226,
+      "reported_completion_tokens": 1226,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 15668
+    },
+    {
+      "call": 5,
+      "remaining_before": 15668,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1109,
+      "reported_completion_tokens": 1109,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 14559
+    }
+  ],
+  "charged_completion_tokens": 3441,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 161.88925512507558,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "tool-09.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tool-08.txt": "2acf61970e12095c681fffd4a65cbeae0919e7330dfe9908dcc827ce31b4f61d",
+    "instance.json": "76e9292d28546f012b74e0a8b0f8246a6a994470c989db9e3da19b91c557295f",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "bb9504d1faa570c8c6a8497ac7c9e975292c78a5f5073188c9d5e62bda939d95",
+    "metadata.json": "6214ceafbadfc69585515323b75f3b63041efb7ad9562c25739fbab1ad74056d",
+    "response-01.json": "e9565c7691e5187f77e0296719cc72ccaeb48e0d894541eae315930eef82992b",
+    "response-02.json": "4b8a482ce9bc2090489d1bb6e989e2c9d7eb10a8fdf023e89e9031a454d2648a",
+    "transcript.json": "4fe7fca276127d3fac37a150ef7f9d231c5cfc92b5e12f60df8aa064b3d85b4e",
+    "response-03.json": "b4b3b968b45ccafe3465554c6c88245597a00b3cb851f4fa0a1c30d58b7f0a57",
+    "response-04.json": "8315883ab17edb25ca4a78a91654d7f26fdb7151b141f6b992f60bef1a8c90aa",
+    "tool-05.txt": "9c449f34cfc9639ced9313765ba282e3d8c901a956e6f6a2e4ac1ab2320feb83",
+    "tool-04.txt": "2a0c29e8fef857248934281ef99b4b0f63695be196b65d0e194d58d3743572e7",
+    "tool-06.txt": "867fb3e6097d9ef426424e74cedc3efde064d973b9a4b70bf07e7769512101d6",
+    "tool-07.txt": "6142629f9aca3fafdd2b8b6654054780bcd01f1dce49c095b926f2461d878b2e",
+    "tool-03.txt": "427864edb7295a1c8d833e047a3dd0761fd133c41e4fd3c1e089955fc001222c",
+    "tool-02.txt": "4755fd4bc030c6de92764fd8a76de5b4b13e04b9f655fd02b5a7584d696487ea",
+    "tool-00.txt": "264217ae54cc9a11470a9dbe4e6ca9b8d7e9e3011a34f6d4412860328f1cbd41",
+    "tool-01.txt": "5db11894b13e44d63b2ce88f8d2a50aa8a39a88c7571c659646c8fc51c4a3519",
+    "response-05.json": "f672e50116e18303f9cd62b35a135adf87a782713ebf41abb3f2d6034557631a"
+  }
+}

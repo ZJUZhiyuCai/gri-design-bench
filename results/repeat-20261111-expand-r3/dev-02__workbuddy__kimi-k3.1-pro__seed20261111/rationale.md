@@ -1,0 +1,2 @@
+# GRI formulation rationale
+A shared responsive Hill formulation with a finite reservoir is used. The search maximizes post-warmup time in range subject to zero-tolerance cohort/scenario safety constraints; candidate selection also checks minimum glucose and the two meal challenges. Initial values are deliberately conservative and will be refined using the supplied simulator and held-out meal seeds.

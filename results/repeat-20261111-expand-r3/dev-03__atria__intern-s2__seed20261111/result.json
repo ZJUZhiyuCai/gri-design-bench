@@ -1,0 +1,231 @@
+{
+  "trial_id": "dev-03__atria__intern-s2__seed20261111",
+  "instance_id": "dev-03",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "atria/intern-s2",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T16:03:55Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "prompt_tokens": 1620,
+      "total_tokens": 1773,
+      "completion_tokens": 153,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 52,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 2805,
+      "total_tokens": 2910,
+      "completion_tokens": 105,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 7698,
+      "total_tokens": 10162,
+      "completion_tokens": 2464,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 592,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 9871,
+      "total_tokens": 10207,
+      "completion_tokens": 336,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 58,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 10497,
+      "total_tokens": 11498,
+      "completion_tokens": 1001,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 425,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 11950,
+      "total_tokens": 12720,
+      "completion_tokens": 770,
+      "prompt_tokens_details": {
+        "cached_tokens": 8192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 156,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    }
+  ],
+  "returned_models": [
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2"
+  ],
+  "api_errors": [],
+  "model_calls": 6,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r3",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 29.839081999999998,
+  "tool_wall_seconds": 31.80553783290088,
+  "budget_exhausted": true,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "e54edbdfc6908ad4ce3a1fd547daa84910b21adbe08e4c7b93dfabc61b0e1a52",
+    "search.py": "beda3c824723a702a7f77e238a5375fac60f8e28080f8babc49871ae3c299950",
+    "rationale.md": "3ba793170902cf2a97e8761d4f2e373e87d727aa9a6910fd5926c628fb81f308"
+  },
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 153,
+      "reported_completion_tokens": 153,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17847
+    },
+    {
+      "call": 1,
+      "remaining_before": 17847,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 105,
+      "reported_completion_tokens": 105,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17742
+    },
+    {
+      "call": 2,
+      "remaining_before": 17742,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 2464,
+      "reported_completion_tokens": 2464,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 15278
+    },
+    {
+      "call": 3,
+      "remaining_before": 15278,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 336,
+      "reported_completion_tokens": 336,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 14942
+    },
+    {
+      "call": 4,
+      "remaining_before": 14942,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1001,
+      "reported_completion_tokens": 1001,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 13941
+    },
+    {
+      "call": 5,
+      "remaining_before": 13941,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 770,
+      "reported_completion_tokens": 770,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 13171
+    }
+  ],
+  "charged_completion_tokens": 4829,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 184.8971718326211,
+  "score": {
+    "mean_tir": 0.0,
+    "max_trajectory_tbr70": 100.0,
+    "max_trajectory_tbr54": 100.0,
+    "minimum_glucose": -7.708659152255532e-11,
+    "trajectories": 18,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": "safety_constraint_failed",
+    "native_traces_sha256": "ba090815fb7937e1b4007887b388126131bba1446f701694c857172ef9625981"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "e58e575867c744968435a91ed4b3cb8c4641b68e1f88f031a2931ffc713e8c1d",
+    "score.json": "d2661c03a6711eda72cfc9d8aae59a68147fcf7bb508336b4025c83fcff52ec2",
+    "response-00.json": "780bbabfcf18542cef240433460d228c83cbb0b87beac3d75748c782598d6042",
+    "metadata.json": "622891cb2900339d4827456fbd08dbbd4f59f83d0862937583f0051327737e60",
+    "rationale.md": "3ba793170902cf2a97e8761d4f2e373e87d727aa9a6910fd5926c628fb81f308",
+    "response-01.json": "58cd3714238937bb6c6dc1cb3464c8fbd2d65d6fd8ba880dafb8c93a375ba852",
+    "native-traces.npz": "ba090815fb7937e1b4007887b388126131bba1446f701694c857172ef9625981",
+    "response-02.json": "909c5dbc35c8bbf6ac3f42c6d8307be66fdc9ae0eba920fdc7404d7c67878a10",
+    "transcript.json": "013f9a4bcaf79254490a882b0ce7b68685f40bc670d6fc7c1a6c18d944643c0e",
+    "response-03.json": "e37fcf8707295e57756a2822d4c2839187a041a1cc5f95e191dae9e1540130d5",
+    "search.py": "beda3c824723a702a7f77e238a5375fac60f8e28080f8babc49871ae3c299950",
+    "response-04.json": "e105ab7241a5558f259d21296913a2d0fef2a15c57b32f591f3da09ac599c662",
+    "tool-05.txt": "8a1932a389486c429802cf758e5c5e6eb21c33e6ffa32bce8f9adb133ed80e7e",
+    "tool-04.txt": "caeccee0e4345d58ec59e1432c272b82bb73b2e0279a3b25932feb14e4bdaa4d",
+    "tool-06.txt": "4ffacbaa7b36e22eec47ca9a6e48fa8fd539a1049028cd6c3e1e9232c9c030c3",
+    "tool-07.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tool-03.txt": "aed6fa2ebeddf65fc170d13efec189235912fefe47eebf02146ce882e4250ae6",
+    "design.json": "e54edbdfc6908ad4ce3a1fd547daa84910b21adbe08e4c7b93dfabc61b0e1a52",
+    "tool-02.txt": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "tool-00.txt": "e58e575867c744968435a91ed4b3cb8c4641b68e1f88f031a2931ffc713e8c1d",
+    "tool-01.txt": "775e1e7c43f760f22afc606d0e54b1ef854e74a5641054aba139764084748f6e",
+    "response-05.json": "74c7b64d0c821cc86e64724d68e2901277ca0148282f134f2749d13f4c6736d1"
+  }
+}

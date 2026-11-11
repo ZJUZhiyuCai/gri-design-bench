@@ -1,0 +1,42 @@
+[
+  {
+    "role": "system",
+    "content": "You are a scientific design agent. Work autonomously using the shell tool. You have at most 12 model calls. Save initial versions of all three required files within the first two calls, then improve the design and code. Tool results report remaining budgets. Your final prose is not the submission. Shell runs in an isolated container. API/model waiting does not consume container CPU. Do not assume training safety guarantees heldout safety."
+  },
+  {
+    "role": "user",
+    "content": "# GRI static formulation design\n\nDesign a formulation for the known cohort in `/task/instance.json`. Maximize the mean percentage of post-warmup plasma glucose in [70,180] mg/dL on NEW meal scenarios. The final design receives zero if ANY patient/scenario has TBR70 > 4%, TBR54 > 1%, or ANY full-horizon minute has glucose < 40 mg/dL. Three days, first day omitted from TIR/TBR but included in minimum glucose. This is a simulation benchmark, not a clinical recommendation.\n\nSubmit `/work/output/design.json`, `/work/output/search.py` (your reproducible search code), and `/work/output/rationale.md` before budget expiry. Only design.json determines the simulated design; your code is retained for audit and never executed by the trusted verifier. Save initial versions of all THREE files within your first TWO model calls, then improve them and checkpoint designs atomically. Required files must be nonempty regular files. Tool results report remaining call, token, and wall-time budgets.\n\nExample output (check instance bounds):\n```json\n{\"mode\":\"responsive\",\"parameters\":{\"theta_a\":0.0002,\"relative_leak\":1.5,\"ec50_mg_dl\":200.0,\"hill_n\":2.0,\"tau_min\":10.0,\"theta_L\":1.0}}\n```\nAlternatively `{\"mode\":\"constant\",\"parameters\":{\"theta_c\":0.0002,\"theta_L\":1.0}}`. Every coefficient is shared across the cohort. Rate amplitude = theta_a \u00d7 native TDI (U/min), load = theta_L \u00d7 TDI (U); constant rate uses theta_c \u00d7 TDI and the same finite reservoir. No individual fitted coefficients, custom online controller, external insulin or meal boluses. Shape bounds and synthetic material/load constraints are in the instance.\n\nThe public physiology is simglucose 0.2.11. Responsive rate is amplitude \u00d7 [relative_leak + Hill(filtered interstitial glucose)], with exact first-order glucose filtering, midpoint flux every 3 minutes, and reservoir cap. Reference code: `/opt/gri_bench`. Meals are native RandomScenario, scaled by BW/86.0704; challenges are day-2 missed lunch and 50% larger dinner. All 30 simulator patient profiles are public. Patients in YOUR instance are known; evaluation uses fresh meal seeds.\n\nPython API:\n```python\nfrom gri_bench.api import load_instance, Experiment, save_design\ninstance = load_instance()\nexperiment = Experiment(instance)  # cached 3 patients \u00d7 3 training variants\nmetrics = experiment.evaluate(design)  # fast RK4; final verifier uses native dopri5\nprint(metrics)  # mean_tir, safety metrics and per-trajectory rows\nsave_design(design)\n```\n`Experiment(instance, seeds=[...], variants=[...])` permits custom scenario validation within your compute budget. Every evaluation starts from the same native initial state; no carryover. Use `gri_bench.api.PARAMETERS` for responsive parameter ordering. NumPy, SciPy, pandas, Numba are installed. No network or package installation is available in the container.\n\nBudget: 1 CPU, 2 GiB RAM, 30 CPU seconds for ALL container activity after warmup; up to 90 cumulative tool wall seconds; up to 360 seconds including model calls; at most 12 model calls, 6000 completion tokens per call and 18000 total. The container is paused during model requests. Tool output is truncated at 12000 characters. Imported libraries and scenario preparation after trial start count toward the CPU budget, so leave room for setup and saving. Simulator evaluation counts are diagnostic, not an enforceable cap. You may inspect source and implement your own search. Final metrics are independently recomputed; changing simulator code in your container cannot change the verifier.\n\n\nYOUR INSTANCE:\n{\"id\": \"dev-01\", \"split\": \"development\", \"patients\": [\"adult#001\", \"adult#002\", \"adult#003\"], \"tdi\": {\"adult#001\": 50.416652, \"adult#002\": 57.86877688, \"adult#003\": 56.4297186222}, \"bounds\": {\"theta_a\": [0.0, 0.007], \"relative_leak\": [0.5124966150526034, 5.518918645844859], \"ec50_mg_dl\": [59.26305046791457, 816.1143093473472], \"hill_n\": [0.5880395112623367, 24.0], \"tau_min\": [0.05, 20.0], \"theta_L\": [0.4, 4.0]}, \"constant_theta_c_bounds\": [0.0, 0.007], \"training_seeds\": [6111001], \"variants\": [\"ordinary\", \"missed_lunch\", \"large_dinner\"], \"days\": 3, \"warmup_minutes\": 1440, \"reference_weight_kg\": 86.0704, \"patient_seed\": 2026111101, \"material_constraint_provenance\": \"Synthetic subrange of prior fitted shape envelope; not a measured new material.\"}"
+  },
+  {
+    "content": "",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "id": "call_e84df990aa474b7a9d476f86",
+        "function": {
+          "arguments": "{\"command\": \"ls /task /opt/gri_bench 2>/dev/null; ls /work/output 2>/dev/null; cat /task/instance.json 2>/dev/null | head -50\"}",
+          "name": "shell"
+        },
+        "type": "function"
+      },
+      {
+        "id": "call_65c6da79aca6421b944879ab",
+        "function": {
+          "arguments": "{\"command\": \"find /opt/gri_bench -type f | head -50\"}",
+          "name": "shell"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_e84df990aa474b7a9d476f86",
+    "content": "{\"exit_code\": 0, \"output\": \"/opt/gri_bench:\\n__init__.py\\napi.py\\nnative.py\\nphysiology.py\\nrelease.py\\n\\n/task:\\nREADME.md\\ninstance.json\\n{\\n  \\\"id\\\": \\\"dev-01\\\",\\n  \\\"split\\\": \\\"development\\\",\\n  \\\"patients\\\": [\\n    \\\"adult#001\\\",\\n    \\\"adult#002\\\",\\n    \\\"adult#003\\\"\\n  ],\\n  \\\"tdi\\\": {\\n    \\\"adult#001\\\": 50.416652,\\n    \\\"adult#002\\\": 57.86877688,\\n    \\\"adult#003\\\": 56.4297186222\\n  },\\n  \\\"bounds\\\": {\\n    \\\"theta_a\\\": [\\n      0.0,\\n      0.007\\n    ],\\n    \\\"relative_leak\\\": [\\n      0.5124966150526034,\\n      5.518918645844859\\n    ],\\n    \\\"ec50_mg_dl\\\": [\\n      59.26305046791457,\\n      816.1143093473472\\n    ],\\n    \\\"hill_n\\\": [\\n      0.5880395112623367,\\n      24.0\\n    ],\\n    \\\"tau_min\\\": [\\n      0.05,\\n      20.0\\n    ],\\n    \\\"theta_L\\\": [\\n      0.4,\\n      4.0\\n    ]\\n  },\\n  \\\"constant_theta_c_bounds\\\": [\\n    0.0,\\n    0.007\\n  ],\\n  \\\"training_seeds\\\": [\\n    6111001\\n  ],\\n  \\\"variants\\\": [\\n    \\\"ordinary\\\",\\n    \\\"missed_lunch\\\",\\n    \\\"large_dinner\\\"\\n\", \"cpu_seconds\": 0.01667200000000002, \"cpu_remaining\": 29.983328, \"tool_wall_seconds\": 0.24637766648083925, \"budget_exhausted\": false, \"stop_reason\": null, \"model_calls_remaining\": 10, \"completion_tokens_remaining\": 11868, \"agent_wall_seconds_remaining\": 235.1799582503736}"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_65c6da79aca6421b944879ab",
+    "content": "{\"exit_code\": 0, \"output\": \"/opt/gri_bench/api.py\\n/opt/gri_bench/physiology.py\\n/opt/gri_bench/release.py\\n/opt/gri_bench/native.py\\n/opt/gri_bench/__init__.py\\n\", \"cpu_seconds\": 0.04113699999999998, \"cpu_remaining\": 29.958863, \"tool_wall_seconds\": 0.5320159578695893, \"budget_exhausted\": false, \"stop_reason\": null, \"model_calls_remaining\": 10, \"completion_tokens_remaining\": 11868, \"agent_wall_seconds_remaining\": 234.87774041574448}"
+  }
+]

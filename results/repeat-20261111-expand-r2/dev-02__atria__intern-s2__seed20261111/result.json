@@ -1,0 +1,250 @@
+{
+  "trial_id": "dev-02__atria__intern-s2__seed20261111",
+  "instance_id": "dev-02",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "atria/intern-s2",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T15:27:03Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "prompt_tokens": 1631,
+      "total_tokens": 1762,
+      "completion_tokens": 131,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 45,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 2588,
+      "total_tokens": 2667,
+      "completion_tokens": 79,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 6196,
+      "total_tokens": 8043,
+      "completion_tokens": 1847,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1599,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 8111,
+      "total_tokens": 9797,
+      "completion_tokens": 1686,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1348,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 9105,
+      "total_tokens": 9927,
+      "completion_tokens": 822,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 485,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 10508,
+      "total_tokens": 10960,
+      "completion_tokens": 452,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 132,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    }
+  ],
+  "returned_models": [
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2"
+  ],
+  "api_errors": [
+    {
+      "call": 4,
+      "type": "ReadTimeout",
+      "http_status": null,
+      "charged_completion_tokens": 6000
+    },
+    {
+      "call": 7,
+      "type": "ReadTimeout",
+      "http_status": null,
+      "charged_completion_tokens": 6000
+    }
+  ],
+  "model_calls": 8,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r2",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 8.808081,
+  "tool_wall_seconds": 11.43251870572567,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {},
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 131,
+      "reported_completion_tokens": 131,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17869
+    },
+    {
+      "call": 1,
+      "remaining_before": 17869,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 79,
+      "reported_completion_tokens": 79,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17790
+    },
+    {
+      "call": 2,
+      "remaining_before": 17790,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1847,
+      "reported_completion_tokens": 1847,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 15943
+    },
+    {
+      "call": 3,
+      "remaining_before": 15943,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1686,
+      "reported_completion_tokens": 1686,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 14257
+    },
+    {
+      "call": 4,
+      "remaining_before": 14257,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": null,
+      "remaining_after": 8257
+    },
+    {
+      "call": 5,
+      "remaining_before": 8257,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 822,
+      "reported_completion_tokens": 822,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 7435
+    },
+    {
+      "call": 6,
+      "remaining_before": 7435,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 452,
+      "reported_completion_tokens": 452,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 6983
+    },
+    {
+      "call": 7,
+      "remaining_before": 6983,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": null,
+      "remaining_after": 983
+    }
+  ],
+  "charged_completion_tokens": 17017,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 360.371177832596,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-06.json": "a38404f1b74e8880d48f834abc084054c9769a0ecd85840fb7240f23987be467",
+    "tool-08.txt": "f1be3d2488719710e6218ed3a183ba4d9bc308fb76d196a29714c353a83506e4",
+    "instance.json": "76e9292d28546f012b74e0a8b0f8246a6a994470c989db9e3da19b91c557295f",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "d14683eb21bbc93c1539dcbdb2e924b4c97826753c694280d1201934d9f591ea",
+    "metadata.json": "4f2ee7821159038cf23c4989fcc0152adce1cd29c30d4d09188affeeeea8027d",
+    "response-01.json": "16a79c2db3c070b742cb7a1f586c0385db6771ed99a19498ab00900fb7337721",
+    "response-02.json": "8b1dec048051fcc051c23130df58f636ea218d7437cdc206494712a8757eac3e",
+    "transcript.json": "708cd25ba55c85b4419285a4f4305eb3c2d41000bc0432d96630ce7f065d699e",
+    "response-03.json": "56179aa63348bde05ae407d0bf54ccf0434b1c74a17a02007ac62f2389c03b8c",
+    "tool-05.txt": "2b424bb62ddf485ed6ad0bad7fc7c7ae6178b1926435712f588caa66f0e78178",
+    "tool-04.txt": "4336afe0ccbce7c053c4a7b0bd569beb4f6d4f27a4b77c25b9153653fdfd3c04",
+    "tool-06.txt": "2b42ee5b25fd45756430a255e720a137502a71f43a5bab226c86c0c055309f9f",
+    "tool-07.txt": "fec9fcbc793c6628ecaa584a17cb58656c1ca2ab828aebaa684bae45892a5e0e",
+    "tool-03.txt": "a391604da8aed369e7dee2d1a7c081c88ffc824aad4afd620038d82bcaef06c2",
+    "tool-02.txt": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "tool-00.txt": "76e9292d28546f012b74e0a8b0f8246a6a994470c989db9e3da19b91c557295f",
+    "tool-01.txt": "f4fdf7249add64c6133a0c6b7ab073aca35ad82044ebff8b7759c1e6cd94eeb8",
+    "response-05.json": "2c0def3f2a3ddc998faa71a0ec90bfd83c7251d1371d072b5d210b4cc4746ff1"
+  }
+}

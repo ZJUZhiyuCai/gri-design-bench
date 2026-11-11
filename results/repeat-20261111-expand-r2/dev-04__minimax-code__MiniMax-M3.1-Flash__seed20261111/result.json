@@ -1,0 +1,128 @@
+{
+  "trial_id": "dev-04__minimax-code__MiniMax-M3.1-Flash__seed20261111",
+  "instance_id": "dev-04",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "minimax-code/MiniMax-M3.1-Flash",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T16:30:51Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 129,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1625,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1624
+      },
+      "total_tokens": 1754
+    },
+    {
+      "completion_tokens": 139,
+      "completion_tokens_details": {
+        "reasoning_tokens": 12
+      },
+      "prompt_tokens": 2537,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1631
+      },
+      "total_tokens": 2676
+    },
+    {
+      "completion_tokens": 6000,
+      "completion_tokens_details": {
+        "reasoning_tokens": 5999
+      },
+      "prompt_tokens": 7430,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 2537
+      },
+      "total_tokens": 13430
+    }
+  ],
+  "returned_models": [
+    "minimax-code/MiniMax-M3.1-Flash",
+    "minimax-code/MiniMax-M3.1-Flash",
+    "minimax-code/MiniMax-M3.1-Flash"
+  ],
+  "api_errors": [],
+  "model_calls": 3,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r2",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 0.42341800000000007,
+  "tool_wall_seconds": 1.293256040662527,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {},
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 129,
+      "reported_completion_tokens": 129,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17871
+    },
+    {
+      "call": 1,
+      "remaining_before": 17871,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 139,
+      "reported_completion_tokens": 139,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17732
+    },
+    {
+      "call": 2,
+      "remaining_before": 17732,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": 6000,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 11732
+    }
+  ],
+  "charged_completion_tokens": 6268,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 84.393484916538,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "1f7a01514712e3a9bb6f09cca6d6bb70d1c73de90aea4d5db2bbf29fb1fd16fb",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "d32393f1d733565f406709496a58d037540074fe18185cbdb15af98b37a98d2e",
+    "metadata.json": "13c13198ea83a6654db7aebdc2e76d2860c4638abe4da00842a6e3cdc4193db7",
+    "response-01.json": "855a92e4e80d6f24654e70e88aefa39b8132645744ff5693c72c30ad8b187cac",
+    "response-02.json": "a86e3b48fb5428deeca23cf9a6ea27ec97a1c11b3e0793fcf32b2e1050f3737c",
+    "transcript.json": "771f3e1f1b91295de0562e66396c6d3da762e80b651c68ab2e7ddf96a219f409",
+    "tool-03.txt": "f9a6a2a44bd15f9f7fdeaf6e8a643da5b138aa8197b2481730b2932470700ecc",
+    "tool-02.txt": "89a3dcc8d95fab188198fc85b5af84b35700027f0732b7fb3bd79c68b0df9e1c",
+    "tool-00.txt": "945a2d3e567c9622f5e3be6a4ee2c8a031323b689dd6dba9991571d13700e1c4",
+    "tool-01.txt": "99687a5c557504aa03f89a083b3c83a52bc8ab405cec85453dd7e802e060b823"
+  }
+}

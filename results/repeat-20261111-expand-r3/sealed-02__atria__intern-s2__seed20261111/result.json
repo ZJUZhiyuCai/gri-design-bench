@@ -1,0 +1,219 @@
+{
+  "trial_id": "sealed-02__atria__intern-s2__seed20261111",
+  "instance_id": "sealed-02",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "atria/intern-s2",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T18:28:38Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "prompt_tokens": 1589,
+      "total_tokens": 1776,
+      "completion_tokens": 187,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 49,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 2888,
+      "total_tokens": 3021,
+      "completion_tokens": 133,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 7801,
+      "total_tokens": 9100,
+      "completion_tokens": 1299,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1048,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 8288,
+      "total_tokens": 10903,
+      "completion_tokens": 2615,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 596,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 10622,
+      "total_tokens": 10710,
+      "completion_tokens": 88,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 9,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 10905,
+      "total_tokens": 12881,
+      "completion_tokens": 1976,
+      "prompt_tokens_details": {
+        "cached_tokens": 8192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 9,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    }
+  ],
+  "returned_models": [
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2"
+  ],
+  "api_errors": [],
+  "model_calls": 6,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r3",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "ok",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 29.835103,
+  "tool_wall_seconds": 32.02915112487972,
+  "budget_exhausted": true,
+  "status": "submission_failure",
+  "artifact_sha256": {
+    "search.py": "d5b5bc1747f25846f7ca50beaf5c1fb12c37e81121b32c21e4e4ded4435a668b"
+  },
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 187,
+      "reported_completion_tokens": 187,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17813
+    },
+    {
+      "call": 1,
+      "remaining_before": 17813,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 133,
+      "reported_completion_tokens": 133,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17680
+    },
+    {
+      "call": 2,
+      "remaining_before": 17680,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1299,
+      "reported_completion_tokens": 1299,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 16381
+    },
+    {
+      "call": 3,
+      "remaining_before": 16381,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 2615,
+      "reported_completion_tokens": 2615,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 13766
+    },
+    {
+      "call": 4,
+      "remaining_before": 13766,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 88,
+      "reported_completion_tokens": 88,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 13678
+    },
+    {
+      "call": 5,
+      "remaining_before": 13678,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1976,
+      "reported_completion_tokens": 1976,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 11702
+    }
+  ],
+  "charged_completion_tokens": 6298,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 172.95440154056996,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "instance.json": "58f5a8d87fd5ea06c4f45ed6cbc5ea7272c37ea2b539d77627c71ab432ac6f4f",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "ca736bdf703cd04b0a1f5285901c383b800d25642646b2355cd7f390b8fadf80",
+    "metadata.json": "973e0cfa22b2953eb408d78527a8f8424868d6a7f2516e611a20575c13eb5f0f",
+    "response-01.json": "ea65cd4f9c9e2c24a84902b45af347be8c9367ab864fa8f93bc439d1ffc94df1",
+    "response-02.json": "c11b18fae63d1791dc8bf2a94d68fb0e44120bc072b0fff1b08840a8600512f3",
+    "transcript.json": "94a1e68c05f18322b4d03e0b9840fd3df3ba343ff30fa4263f20caa7cd837e76",
+    "response-03.json": "1749ad7347850ad507d0f74d288b67f6d20afe90e2cc7269e5cc747d18c9aa84",
+    "search.py": "d5b5bc1747f25846f7ca50beaf5c1fb12c37e81121b32c21e4e4ded4435a668b",
+    "response-04.json": "b757243f09aaaea81c146fb4add2d48ba8b49e7ed6be1c5ffaf907010adb15f7",
+    "tool-05.txt": "887edf12dc476f1bde3c696ad763bcbafeb8cbc5121011a6cfba64188c3e8381",
+    "tool-04.txt": "39463e4a4f7980b2f01570a2695ae672f6c34d731e2dbb8f5f6848f293aa005d",
+    "tool-06.txt": "885ce9b8c4414aa9da386f022b2bf5888806e031f5d379471e3a3a4f944a1dcc",
+    "tool-07.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tool-03.txt": "aed6fa2ebeddf65fc170d13efec189235912fefe47eebf02146ce882e4250ae6",
+    "tool-02.txt": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "tool-00.txt": "51068c0e0ed71ce5dea405bea3e9949e39654837483ec06337b142398d57862a",
+    "tool-01.txt": "5006b8ebd7d20674a4628526963fe40798b5d4bed580d0a0317d3dd68b44106e",
+    "response-05.json": "0ed42a7e96b18f566194635568c273ab1995fee5b1c691f8e21d88a0e05c26cf"
+  }
+}

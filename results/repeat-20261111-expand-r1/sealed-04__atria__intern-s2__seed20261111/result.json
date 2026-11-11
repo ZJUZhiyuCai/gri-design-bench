@@ -1,0 +1,243 @@
+{
+  "trial_id": "sealed-04__atria__intern-s2__seed20261111",
+  "instance_id": "sealed-04",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "atria/intern-s2",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T19:01:24Z",
+  "source_commit": "354c2b33e219d08ad71b3904855bd820f9ed7a7f",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "prompt_tokens": 1598,
+      "total_tokens": 1735,
+      "completion_tokens": 137,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 56,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 2892,
+      "total_tokens": 2997,
+      "completion_tokens": 105,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 7776,
+      "total_tokens": 9325,
+      "completion_tokens": 1549,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1398,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 8822,
+      "total_tokens": 10462,
+      "completion_tokens": 1640,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1248,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 9758,
+      "total_tokens": 11130,
+      "completion_tokens": 1372,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1196,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 11218,
+      "total_tokens": 12869,
+      "completion_tokens": 1651,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1347,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    },
+    {
+      "prompt_tokens": 11896,
+      "total_tokens": 13335,
+      "completion_tokens": 1439,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1061,
+        "accepted_prediction_tokens": null,
+        "rejected_prediction_tokens": null,
+        "audio_tokens": null
+      }
+    }
+  ],
+  "returned_models": [
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2",
+    "atria/intern-s2"
+  ],
+  "api_errors": [],
+  "model_calls": 7,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-expand-r1",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 29.732387,
+  "tool_wall_seconds": 31.98878195695579,
+  "budget_exhausted": true,
+  "status": "submission_failure",
+  "artifact_sha256": {},
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 137,
+      "reported_completion_tokens": 137,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17863
+    },
+    {
+      "call": 1,
+      "remaining_before": 17863,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 105,
+      "reported_completion_tokens": 105,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17758
+    },
+    {
+      "call": 2,
+      "remaining_before": 17758,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1549,
+      "reported_completion_tokens": 1549,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 16209
+    },
+    {
+      "call": 3,
+      "remaining_before": 16209,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1640,
+      "reported_completion_tokens": 1640,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 14569
+    },
+    {
+      "call": 4,
+      "remaining_before": 14569,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1372,
+      "reported_completion_tokens": 1372,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 13197
+    },
+    {
+      "call": 5,
+      "remaining_before": 13197,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1651,
+      "reported_completion_tokens": 1651,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 11546
+    },
+    {
+      "call": 6,
+      "remaining_before": 11546,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1439,
+      "reported_completion_tokens": 1439,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 10107
+    }
+  ],
+  "charged_completion_tokens": 7893,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 235.90707054082304,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-06.json": "94ed942193f9d054fa1197dd2c12842dd32252ff47463f3ce28a083aa8d8b873",
+    "tool-08.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "instance.json": "669daaa145d9cf923d16549d5c7d6bc9a8b667b0afe6adda88b945d30acc57e9",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "f889406f70177083d514c4c94ba934ed2777fc896c4284f5b4c84f7e4b8d1acd",
+    "metadata.json": "0139157bbbf2845e6a55a28fdb6c9d3c4fd9eb9fe2e5f29528935eaf3cea8a30",
+    "response-01.json": "0356d31d72e0faac9b5c33fa2cbc6372849c93e5ad3aac83b0b714b36f3fbce9",
+    "response-02.json": "197850047de8d89a9bae20a126dbcab61f20bc61ac619263eee6cf3cbfc1c23a",
+    "transcript.json": "ba2dda64de006b7f8feb57ff5535b06325c426c9c10e0051a1001166d83bed5c",
+    "response-03.json": "926c9cd98465a9e08b944d010fec926497c9626878a51d79e68376af79710137",
+    "response-04.json": "d5f334d6c66c79aec10392041ad240d7a455165e18fde39911da7fad32ecbc09",
+    "tool-05.txt": "715d12045733aad5d24f0ebf7ff921971009c4e85626419c47459fb417bba231",
+    "tool-04.txt": "e38ff5686a788ccad75a41594f308d8f9241c83f9761c72ada9cf05964e86ca5",
+    "tool-06.txt": "51843784764427fb751eaf712c8bad60d61ead87dab296d5f164b15a63b124a5",
+    "tool-07.txt": "2d7bc787f4344629c41933db1c9d3d4329d1f1cf4608e9241f2bbcb3521f93e0",
+    "tool-03.txt": "aed6fa2ebeddf65fc170d13efec189235912fefe47eebf02146ce882e4250ae6",
+    "tool-02.txt": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "tool-00.txt": "b75c928f479d6a08ec6bcff54b3317d502400357e34e38dd90b495e83a6de3bd",
+    "tool-01.txt": "669daaa145d9cf923d16549d5c7d6bc9a8b667b0afe6adda88b945d30acc57e9",
+    "response-05.json": "6e16ab511f4597f74d9710c9d826b330d24e918c33162b8891592a8ec0a343f7"
+  }
+}

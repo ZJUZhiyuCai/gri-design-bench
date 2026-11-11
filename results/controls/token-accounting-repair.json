@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "external_model_calls": 0,
+  "mock_calls": 4,
+  "requested_max_tokens": [
+    6000,
+    6000,
+    6000,
+    3000
+  ],
+  "tool_reported_remaining_tokens": [
+    14000,
+    3000
+  ],
+  "charged_completion_tokens": 18000,
+  "submission_files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 0.04222099999999962,
+  "source": "real isolated Docker task with synthetic API errors; excluded from model scores"
+}

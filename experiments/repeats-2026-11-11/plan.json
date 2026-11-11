@@ -1,0 +1,613 @@
+{
+  "study": "Three additional repetitions of the frozen GRI Design Bench task",
+  "registered_date_asia_shanghai": "2026-11-11",
+  "registered_utc": "2026-11-11T01:00:30.178894+00:00",
+  "original_release": "v0.1.1",
+  "original_agent_profile": "pilot-v2",
+  "baseline_reference_profile": "pilot-v1",
+  "execution_profile": "strict-token-accounting-v1",
+  "new_agent_trials": 108,
+  "repetitions_per_model_case": 3,
+  "models": [
+    "codex/gpt-6.1-sol",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "tokendance/glm-5.3"
+  ],
+  "tags": [
+    "repeat-20261111-r1",
+    "repeat-20261111-r2",
+    "repeat-20261111-r3"
+  ],
+  "cases": [
+    "dev-01",
+    "dev-02",
+    "dev-03",
+    "dev-04",
+    "dev-05",
+    "dev-06",
+    "sealed-01",
+    "sealed-02",
+    "sealed-03",
+    "sealed-04",
+    "sealed-05",
+    "sealed-06"
+  ],
+  "jobs": [
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-01",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-01",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-01",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-01",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-01",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-01",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-01",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-01",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-01",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-02",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-02",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-02",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-02",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-02",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-02",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-02",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-02",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-02",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-03",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-03",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-03",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-03",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-03",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-03",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-03",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-03",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-03",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-04",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-04",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-04",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-04",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-04",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-04",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-04",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-04",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-04",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-05",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-05",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-05",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-05",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-05",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-05",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-05",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-05",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-05",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-06",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-06",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "dev-06",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-06",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-06",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "dev-06",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-06",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-06",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "dev-06",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-01",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-01",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-01",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-01",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-01",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-01",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-01",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-01",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-01",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-02",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-02",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-02",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-02",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-02",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-02",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-02",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-02",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-02",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-03",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-03",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-03",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-03",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-03",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-03",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-03",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-03",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-03",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-04",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-04",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-04",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-04",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-04",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-04",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-04",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-04",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-04",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-05",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-05",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-05",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-05",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-05",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-05",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-05",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-05",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-05",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-06",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-06",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r1",
+      "case": "sealed-06",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-06",
+      "model": "codex/gpt-6.1-sol"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-06",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r2",
+      "case": "sealed-06",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-06",
+      "model": "wanjie/deepseek-v4.1-flash-1017"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-06",
+      "model": "tokendance/glm-5.3"
+    },
+    {
+      "tag": "repeat-20261111-r3",
+      "case": "sealed-06",
+      "model": "codex/gpt-6.1-sol"
+    }
+  ],
+  "max_concurrent_trials": 2,
+  "case_and_budget_changes": null,
+  "unchanged": [
+    "All 12 case inputs, training/evaluation seeds and sealed commitments",
+    "Design bounds, physiology, safety gates and scoring",
+    "Frozen Linux/arm64 image, 1 CPU and 2 GiB per container",
+    "30 search CPU seconds, 90 tool wall seconds, 360 total wall seconds",
+    "12 API calls, 6000 completion tokens per call, 18000 total allowance",
+    "Exact system/task prompts, tools, temperature zero and provider-default reasoning parameters",
+    "Existing two-API-error stopping policy and all prior results"
+  ],
+  "implementation_repair": {
+    "reason": "Prior runner omitted tokens consumed by failed API requests; all 14 GLM 502s corresponded to reasoning-only length exhaustion.",
+    "rule": "Reserve the requested cap before every API attempt; release unused tokens only on a valid successful usage report. Failed/missing-usage requests consume the entire reservation. No extra retry or budget extension.",
+    "original_runner_retained": true,
+    "all_original_32_runtime_files_unchanged": true,
+    "magpie_configuration_changed": false
+  },
+  "scheduling": "Case-major, then repetition; rotate model order by case index plus repetition index. Two trial workers total. Two trusted native grading workers.",
+  "randomness": "Fresh model contexts per trial; no API sampling seed; seed20261111 remains only the trial label. No prompt, reasoning-effort or search-seed intervention.",
+  "analysis": {
+    "primary_split": "sealed",
+    "primary_denominator": "All 18 sealed attempts per model, including workflow/submission/safety failures.",
+    "ranking": "Feasible-case rate, then mean safe_tir; retain exact ties.",
+    "stability": [
+      "Per-round feasible counts and safe_tir means",
+      "Across three round means: mean, sample standard deviation and min/max",
+      "Each model rank per round and whether the three round orderings agree",
+      "Per-case safe_tir variation and feasibility across repetitions",
+      "Paired case/repetition wins and ties, descriptive only",
+      "API-error classifications and charged versus provider-reported tokens"
+    ],
+    "baseline_handling": "Reuse unchanged 36 baseline reference scores; do not pretend a single baseline trial estimates baseline variance.",
+    "historical_comparison": "Display original pilot separately. The GLM original is not a strictly budget-compliant replicate; 10 of 12 original trials exceed the completion cap when failed-request usage is recovered. Do not pool original and repaired rounds into a homogeneous four-repeat ranking.",
+    "inference_limits": "Existing six sealed cases were already scored by the maintainer; this is within-benchmark repeated-run variability, not new unseen-case generalization. No significance or population-level ranking claim from three repetitions."
+  }
+}

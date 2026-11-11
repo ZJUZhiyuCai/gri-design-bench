@@ -4,7 +4,13 @@ A small benchmark of **who can design a better static glucose-responsive insulin
 
 This is an engineering pilot. It does not establish clinical efficacy, safety in real patients, generalization to unseen patients, or a stable ranking of foundation models. The 30 simglucose profiles were public and used in preceding studies. Material subranges are synthetic benchmark constraints inside an intentionally expanded prescreen design envelope; they are not newly measured formulations or a demonstrated manufacturing-feasibility region. See [bound provenance](docs/BOUND_PROVENANCE.md).
 
-## First pilot results
+## Supplemental repetitions and budget correction
+
+Three additional trials per model/case (**108 total**) are registered in the [supplemental plan](experiments/repeats-2026-11-11/plan.json). They keep the existing cases, scientific contract, prompts, model settings and numeric budgets. Their execution uses a conservative repair to failed-request token accounting; results will be reported separately from the original pilot.
+
+The [GLM diagnosis](docs/GLM_502_DIAGNOSIS.md) matched all 14 original HTTP 502 errors to reasoning-only output-limit exhaustion recorded by Magpie. Those failed calls reported 62,029 completion tokens that the original runner did not count. **10/12 original GLM trials therefore exceeded the nominal completion allowance.** Original scores and the `v0.1.1` tag remain unchanged as historical evidence; they must not be interpreted as strictly budget-compliant GLM results. The correction does not increase a limit or alter reasoning settings.
+
+## Original pilot results (retained)
 
 **36 formal agent trials + 36 baseline trials, all independently resimulated.** The six sealed cases give the following descriptive results, sorted by feasible-case rate and then mean safe TIR. A safety-gate failure contributes zero to the mean.
 
@@ -17,7 +23,7 @@ This is an engineering pilot. It does not establish clinical efficacy, safety in
 | `tokendance/glm-5.3` | 5/6 | 44.99 |
 | Sobol search | 5/6 | 44.93 |
 
-Both GPT and DeepSeek routes produced feasible designs on all six sealed cases in this run. Six cases with one attempt each do not establish a stable ordering between models. The GLM route recorded 14 HTTP 502 requests across the full 12-case matrix (5 on sealed cases), so its scores also reflect route reliability and the frozen retry policy. All 36 formal submissions were complete; no native solver failure occurred. Seven of the 72 agent/baseline designs failed a safety gate and retain their zero scores.
+Both GPT and DeepSeek routes produced feasible designs on all six sealed cases in this run. Six cases with one attempt each do not establish a stable ordering between models. The GLM route recorded 14 HTTP 502 requests across the full 12-case matrix (5 on sealed cases), subsequently traced to output-limit exhaustion. Its historical scores reflect that truncation, the frozen retry policy and the accounting defect described above. All 36 formal submissions were complete; no native solver failure occurred. Seven of the 72 agent/baseline designs failed a safety gate and retain their zero scores.
 
 The [full leaderboard](results/pilot-v2/README.md), [machine-readable scores](results/pilot-v2/leaderboard.json), [failure/resource accounting](results/pilot-v2/FAILURES.md), and [independent audit](results/pilot-v2/audit.json) are included. The audit recomputed 1,296 native trajectories with maximum metric discrepancy 1.42 × 10⁻¹⁴. See [validation](docs/VALIDATION.md) and the separately retained [original development calibration](results/pilot-v1/CALIBRATION.md).
 
@@ -29,7 +35,7 @@ The [original JSON contract](contract/contract.json) and two explicit amendments
 
 - **Input:** known cohort, native TDI values, fixed material/finite-reservoir bounds, public physiology, and one provided training meal seed with ordinary/missed-lunch/large-dinner variants. Agents may generate additional training scenarios inside the same CPU budget; the simulator is public.
 - **Output:** one shared static responsive parameter vector or constant rate, plus `search.py` and `rationale.md`. Dose amplitude and reservoir scale by each patient's TDI. No custom real-time controller or physiology edits.
-- **Budget:** 1 CPU, 2 GiB memory, 30 cumulative container CPU seconds after JIT warmup; 90 tool wall seconds; 360 seconds including API waits; at most 12 model calls and a nominal 18,000 completion-token allowance. The runner reserves 0.3 CPU seconds for monitoring/pause latency and reports observed CPU. Token accounting uses successful-response usage (or a conservative 6,000-token fallback when absent). Failed requests still consume calls and wall time, but their token consumption is unavailable; the allowance is not a verified cap on all upstream inference or billing.
+- **Budget:** 1 CPU, 2 GiB memory, 30 cumulative container CPU seconds after JIT warmup; 90 tool wall seconds; 360 seconds including API waits; at most 12 model calls, 6,000 completion tokens per call and 18,000 per trial. The runner reserves 0.3 CPU seconds for monitoring/pause latency and reports observed CPU. Supplemental trials reserve each requested output cap, including failed requests, and release unused tokens only from valid successful usage reports. Original pilot accounting omitted failed usage and has the documented GLM violations above. All enforcement relies on the provider honoring the requested per-call cap; actual billing remains unavailable.
 - **Independent evaluation:** native simglucose dopri5 resimulation over 3 days, 2 new seeds × 3 variants × 3 patients. First-day warmup is omitted from TIR/TBR but included in the minimum glucose check.
 - **Safety gate:** EVERY patient/scenario must have TBR70 ≤ 4%, TBR54 ≤ 1%; EVERY minute including warmup must have glucose ≥ 40 mg/dL. Missing/invalid output and failed simulation score zero. Infrastructure errors remain visible separately.
 - **Scores:** rank by feasible-case rate, then mean `safe_tir`. `safe_tir` is mean TIR [70,180] for a feasible design and zero otherwise. Raw TIR and worst-case safety are also reported. No explanation-based LLM judging.
@@ -59,11 +65,13 @@ docker --context default build -t gri-bench:0.1.1 .
 # OpenAI-compatible routed agent; credentials remain only on the host.
 export GRI_MODEL_BASE_URL=http://127.0.0.1:3425/v1
 # If the endpoint requires it: export GRI_MODEL_API_KEY=...
-.venv/bin/python -m gri_bench.runner --case dev-01 --method agent \
+.venv/bin/python -m gri_bench.repeat_runner --case dev-01 \
   --model YOUR_ROUTE --context default --tag my-agent
 ```
 
 Commands in the original pilot use the local `colima-etbench` Docker context. Pass your own context for standalone trials. The suite script is the maintainer entry point for all 12 cases; it requires the private sealed inputs. Public users can reproduce the six development cases without them. The original private suite is never regenerated from public hashes.
+
+The agent command uses the repaired token-accounting entry point. The original `gri_bench.runner --method agent` remains available solely to reproduce the archived pilot behavior. Official supplemental tags require the original image ID; standalone tags record their rebuilt image ID instead.
 
 ## Baselines and model evidence
 

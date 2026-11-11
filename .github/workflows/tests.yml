@@ -31,5 +31,6 @@ jobs:
         run: |
           test ! -d private/sealed
           python -c 'from gri_bench.runner import verify_runtime_lock; verify_runtime_lock()'
+          python -c 'from gri_bench.repeat_runner import verify_repeat_lock; verify_repeat_lock("repeat-20261111-r1")'
       - name: Verify physiology, scoring and submission boundary
         run: python -m pytest -q

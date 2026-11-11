@@ -1,0 +1,180 @@
+{
+  "diagnosed_date_asia_shanghai": "2026-11-11",
+  "magpie_version": "0.1.3620",
+  "route": "tokendance/glm-5.3",
+  "matched_formal_errors": 14,
+  "all_failed_outputs_reached_requested_cap": true,
+  "requested_caps_range": [
+    1743,
+    6000
+  ],
+  "failed_completion_tokens": 62029,
+  "failed_reasoning_tokens": 61992,
+  "original_trials_exceeding_completion_cap": 10,
+  "diagnosis": "Magpie recorded all 14 errors as empty replies cut at the output limit, with nearly all output spent on reasoning. Its HTTP 502 concealed usage from the original benchmark runner.",
+  "replay": [
+    {
+      "kind": "magpie",
+      "http_status": 200,
+      "elapsed_seconds": 15.340574708767235,
+      "requested_max_tokens": 2012,
+      "finish_reason": "length",
+      "visible_content_characters": 0,
+      "tool_calls": 1,
+      "reasoning_characters": 393,
+      "usage": {
+        "prompt_tokens": 24347,
+        "completion_tokens": 2012,
+        "total_tokens": 26359,
+        "completion_tokens_details": {
+          "reasoning_tokens": 102
+        }
+      },
+      "error_type": null,
+      "error_code": null,
+      "response_sha256": "a6c8ed1f5fe9862576b6d40c07c10787fd048beb9a066cd7d16e19e912c32c0d",
+      "tool_argument_json_valid": [
+        false
+      ]
+    },
+    {
+      "kind": "direct_upstream",
+      "http_status": 200,
+      "elapsed_seconds": 14.757852165959775,
+      "requested_max_tokens": 2012,
+      "finish_reason": "tool_calls",
+      "visible_content_characters": 0,
+      "tool_calls": 1,
+      "reasoning_characters": 669,
+      "usage": {
+        "prompt_tokens": 24347,
+        "completion_tokens": 1608,
+        "total_tokens": 25955,
+        "completion_tokens_details": {
+          "reasoning_tokens": 163
+        }
+      },
+      "error_type": null,
+      "error_code": null,
+      "response_sha256": "3071d9dc5239e5b737da43c103f09c45140eb3a96df62ceba7bb6a000019e053",
+      "tool_argument_json_valid": [
+        true
+      ]
+    }
+  ],
+  "replay_interpretation": "One matched development request replay per endpoint. Both HTTP 200; the Magpie replay ended at length with malformed tool arguments, while the direct replay produced valid tool arguments. This is not proof that truncation is eliminated, nor a controlled comparison of upstream identity.",
+  "router_records_sha256": "4a72015e1691fff17f721a25124e283233e4e5d4be1088ed17ddfe783fd9f836",
+  "trials": [
+    {
+      "trial_id": "dev-01__tokendance__glm-5.3__seed20261111",
+      "split": "development",
+      "successful_response_completion_tokens": 18000,
+      "recovered_failed_request_completion_tokens": 2012,
+      "recovered_total_completion_tokens": 20012,
+      "exceeds_18000": true,
+      "api_errors": 1
+    },
+    {
+      "trial_id": "dev-02__tokendance__glm-5.3__seed20261111",
+      "split": "development",
+      "successful_response_completion_tokens": 13708,
+      "recovered_failed_request_completion_tokens": 8584,
+      "recovered_total_completion_tokens": 22292,
+      "exceeds_18000": true,
+      "api_errors": 2
+    },
+    {
+      "trial_id": "dev-03__tokendance__glm-5.3__seed20261111",
+      "split": "development",
+      "successful_response_completion_tokens": 18000,
+      "recovered_failed_request_completion_tokens": 6000,
+      "recovered_total_completion_tokens": 24000,
+      "exceeds_18000": true,
+      "api_errors": 1
+    },
+    {
+      "trial_id": "dev-04__tokendance__glm-5.3__seed20261111",
+      "split": "development",
+      "successful_response_completion_tokens": 18000,
+      "recovered_failed_request_completion_tokens": 6000,
+      "recovered_total_completion_tokens": 24000,
+      "exceeds_18000": true,
+      "api_errors": 1
+    },
+    {
+      "trial_id": "dev-05__tokendance__glm-5.3__seed20261111",
+      "split": "development",
+      "successful_response_completion_tokens": 15297,
+      "recovered_failed_request_completion_tokens": 5406,
+      "recovered_total_completion_tokens": 20703,
+      "exceeds_18000": true,
+      "api_errors": 2
+    },
+    {
+      "trial_id": "dev-06__tokendance__glm-5.3__seed20261111",
+      "split": "development",
+      "successful_response_completion_tokens": 13858,
+      "recovered_failed_request_completion_tokens": 8284,
+      "recovered_total_completion_tokens": 22142,
+      "exceeds_18000": true,
+      "api_errors": 2
+    },
+    {
+      "trial_id": "sealed-01__tokendance__glm-5.3__seed20261111",
+      "split": "sealed",
+      "successful_response_completion_tokens": 9056,
+      "recovered_failed_request_completion_tokens": 12000,
+      "recovered_total_completion_tokens": 21056,
+      "exceeds_18000": true,
+      "api_errors": 2
+    },
+    {
+      "trial_id": "sealed-02__tokendance__glm-5.3__seed20261111",
+      "split": "sealed",
+      "successful_response_completion_tokens": 18000,
+      "recovered_failed_request_completion_tokens": 0,
+      "recovered_total_completion_tokens": 18000,
+      "exceeds_18000": false,
+      "api_errors": 0
+    },
+    {
+      "trial_id": "sealed-03__tokendance__glm-5.3__seed20261111",
+      "split": "sealed",
+      "successful_response_completion_tokens": 18000,
+      "recovered_failed_request_completion_tokens": 1743,
+      "recovered_total_completion_tokens": 19743,
+      "exceeds_18000": true,
+      "api_errors": 1
+    },
+    {
+      "trial_id": "sealed-04__tokendance__glm-5.3__seed20261111",
+      "split": "sealed",
+      "successful_response_completion_tokens": 18000,
+      "recovered_failed_request_completion_tokens": 6000,
+      "recovered_total_completion_tokens": 24000,
+      "exceeds_18000": true,
+      "api_errors": 1
+    },
+    {
+      "trial_id": "sealed-05__tokendance__glm-5.3__seed20261111",
+      "split": "sealed",
+      "successful_response_completion_tokens": 18000,
+      "recovered_failed_request_completion_tokens": 0,
+      "recovered_total_completion_tokens": 18000,
+      "exceeds_18000": false,
+      "api_errors": 0
+    },
+    {
+      "trial_id": "sealed-06__tokendance__glm-5.3__seed20261111",
+      "split": "sealed",
+      "successful_response_completion_tokens": 18000,
+      "recovered_failed_request_completion_tokens": 6000,
+      "recovered_total_completion_tokens": 24000,
+      "exceeds_18000": true,
+      "api_errors": 1
+    }
+  ],
+  "model_or_router_settings_changed": false,
+  "original_primary_scores_changed": false,
+  "source_limits": "Recovered usage is from local Magpie routing records, not independently audited billing or authenticated upstream-model telemetry."
+}

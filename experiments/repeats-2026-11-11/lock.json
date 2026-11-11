@@ -1,0 +1,20 @@
+{
+  "profile": "strict-token-accounting-v1",
+  "original_runtime_lock": "contract/runtime-lock.json",
+  "original_runtime_files_verified_unchanged": 32,
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "pilot_image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "files": {
+    "src/gri_bench/token_accounting.py": "fb91c926ca9deee049769a65d2d435438ba33f59d97023e314e65f9ecd6bee21",
+    "src/gri_bench/repeat_runner.py": "e34077302ee205624c151ef6f249b97ae9c9fcb2c25f0666137e26658d3523b0",
+    "scripts/run_repetitions.py": "ffea6a841a4e3b35c5e30b1bffea8d57a3f2f51c678b686a195c384a9a34a6a2",
+    "scripts/grade_repetitions.py": "54f9df1f1b302ddee21e6a426a795fc539c3984785d21d68d6379f0948628625",
+    "scripts/check_repeat_budget.py": "4dceecfe715f54867444edc042eec123e87f24a4c85d25f1d1845a8bf65ee275",
+    "tests/test_token_accounting.py": "533aeccffd9e601de45c1fbb22eb2b73340583c4396b54fcaddc2692b1d97a4e",
+    "experiments/repeats-2026-11-11/plan.json": "d12894d072e4474ceceb3b7baca24e2200fc8e054284e897585f2e1b408152e6",
+    "experiments/repeats-2026-11-11/original-result-hashes.json": "ca696f22c0610537f4076e153b19920f951a2530d60aefe0a3ae13dc13d58ceb",
+    "results/controls/glm-502-diagnosis.json": "ec0a4c2a0ab272fbcb933c28567cac00d6e23b478b61fa8176991c74a22bcd49",
+    "results/controls/token-accounting-repair.json": "72002eadfe616f374be080c88eb36f6e92f55d1136cac28e4ab5c2cce110d1c6",
+    "contract/runtime-lock.json": "6068d2cd000a642f7683b3484150f1ec34680647e888ed7166641ce94e3be0ea"
+  }
+}

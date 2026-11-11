@@ -1,0 +1,292 @@
+{
+  "trial_id": "dev-06__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+  "instance_id": "dev-06",
+  "split": "development",
+  "method": "agent",
+  "requested_model": "wanjie/deepseek-v4.1-flash-1017",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T02:15:02Z",
+  "source_commit": "e225372ed7e5f318888dc3f2024dffbf519d2689",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 190,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1525,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 1715
+    },
+    {
+      "completion_tokens": 318,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 2495,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1408
+      },
+      "total_tokens": 2813
+    },
+    {
+      "completion_tokens": 173,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 4325,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 2432
+      },
+      "total_tokens": 4498
+    },
+    {
+      "completion_tokens": 2767,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 7931,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 4224
+      },
+      "total_tokens": 10698
+    },
+    {
+      "completion_tokens": 3347,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 11555,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 7808
+      },
+      "total_tokens": 14902
+    },
+    {
+      "completion_tokens": 2037,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 16295,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11520
+      },
+      "total_tokens": 18332
+    },
+    {
+      "completion_tokens": 1531,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 21049,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 16256
+      },
+      "total_tokens": 22580
+    },
+    {
+      "completion_tokens": 3310,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 24310,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 20992
+      },
+      "total_tokens": 27620
+    },
+    {
+      "completion_tokens": 4327,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 28398,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 24192
+      },
+      "total_tokens": 32725
+    }
+  ],
+  "returned_models": [
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017"
+  ],
+  "api_errors": [],
+  "model_calls": 9,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-r1",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 12.025737,
+  "tool_wall_seconds": 14.070566209033132,
+  "budget_exhausted": false,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "04329c56e9ab69d792c38da33e23bc8c480771f1268599b35373dade60e437b4",
+    "search.py": "7d91720eb180aadea96f8917b3d3b5b987d67757a56af06ec29cedb9da0103c2",
+    "rationale.md": "9d9f2cc91d124e1c4a995d0c99dfa67fda7fa98b6b9ab972c18e6c36dd3de7d2"
+  },
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 190,
+      "reported_completion_tokens": 190,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17810
+    },
+    {
+      "call": 1,
+      "remaining_before": 17810,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 318,
+      "reported_completion_tokens": 318,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17492
+    },
+    {
+      "call": 2,
+      "remaining_before": 17492,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 173,
+      "reported_completion_tokens": 173,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17319
+    },
+    {
+      "call": 3,
+      "remaining_before": 17319,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 2767,
+      "reported_completion_tokens": 2767,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 14552
+    },
+    {
+      "call": 4,
+      "remaining_before": 14552,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 3347,
+      "reported_completion_tokens": 3347,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 11205
+    },
+    {
+      "call": 5,
+      "remaining_before": 11205,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 2037,
+      "reported_completion_tokens": 2037,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 9168
+    },
+    {
+      "call": 6,
+      "remaining_before": 9168,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1531,
+      "reported_completion_tokens": 1531,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 7637
+    },
+    {
+      "call": 7,
+      "remaining_before": 7637,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 3310,
+      "reported_completion_tokens": 3310,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 4327
+    },
+    {
+      "call": 8,
+      "remaining_before": 4327,
+      "requested_max_tokens": 4327,
+      "charged_completion_tokens": 4327,
+      "reported_completion_tokens": 4327,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 0
+    }
+  ],
+  "charged_completion_tokens": 18000,
+  "completion_token_budget_exhausted": true,
+  "wall_seconds": 175.92919083312154,
+  "score": {
+    "mean_tir": 0.0,
+    "max_trajectory_tbr70": 100.0,
+    "max_trajectory_tbr54": 100.0,
+    "minimum_glucose": -6.786508319305003e-11,
+    "trajectories": 18,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": "safety_constraint_failed",
+    "native_traces_sha256": "ddcc336147a0ed3daa57874b2afd1d1ba476224d49ad940cd4ed59a4b0ed583d"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-06.json": "7a456670a407e2f7009ce16fa97b16eee73334e6655b7b7d609c1c30873509ac",
+    "response-07.json": "f755625a97d36d0a426c944ac3b9a36ec59fa9003a4e946ea9b44b9223a75c5a",
+    "tool-08.txt": "ad23fafd076b58c97c9dadf3c1e13a92b0f5ede60780d19449e4bc62f3586af3",
+    "instance.json": "cc7fc5f4faf85835317120f0eb50bf3a72e5a8b6ad3a1777da18daa52955003e",
+    "score.json": "e556b0d9eb7c5e6cc66536e7131d04512025f84bbcff91f50ce763bcbc6d6d10",
+    "response-00.json": "a551b42cb7a76f580ce51a230da973538e68ff99f4d75556cb62c3ccceab41bd",
+    "metadata.json": "e1362ba6d35a334545465aab70587b3ef3d5c08399b49e12629e6d61ececeb41",
+    "rationale.md": "9d9f2cc91d124e1c4a995d0c99dfa67fda7fa98b6b9ab972c18e6c36dd3de7d2",
+    "response-01.json": "107df8d256b56565dd6f9c2dac81e701a2b81f6be7ad23fd669fed66bc740111",
+    "native-traces.npz": "ddcc336147a0ed3daa57874b2afd1d1ba476224d49ad940cd4ed59a4b0ed583d",
+    "response-02.json": "c7f5708ef39e65cfe5935fdf0b1f1111c5affade081c4af3e3495ee7cfc4132c",
+    "transcript.json": "517cdc4699eab80d4f3c0536c3b249ee35249e8ff9f84b695a206ad7e5dc872d",
+    "response-03.json": "66cdee895dd730fab5cc9c71bfbde2691c27f9c352c11202b16c51e5c1ef3e07",
+    "search.py": "7d91720eb180aadea96f8917b3d3b5b987d67757a56af06ec29cedb9da0103c2",
+    "response-04.json": "ffd8ebdc7ff693d130ee0a6cba619558c9722f291708a1e45f7a4828cb0d8465",
+    "tool-05.txt": "24b7c82f3ee3618efc0117c71e0eb18063f0bb4f201e28c221464c507e4e99ce",
+    "tool-04.txt": "2b6883f7a736c25f09d5f58792f3e6815b1eb2c10a90789800e0bdb169918e4f",
+    "response-08.json": "5e726df759d2a6b8c0c84fd7bcbb01142488a97056e60e9d879a4bc0875639c9",
+    "tool-06.txt": "310286516aeb3477752bc7ae68efed38305274d30274b677d7f5f61640b29039",
+    "tool-07.txt": "3c452d51460ecb12c14791d1d63c5de717a616bc19240f03f6569ad56bdeb6e8",
+    "tool-03.txt": "8e27628190c09c4c489eb6195c0a3a7583cd128a81453099b89be1d1f26ff025",
+    "design.json": "04329c56e9ab69d792c38da33e23bc8c480771f1268599b35373dade60e437b4",
+    "tool-02.txt": "08ec17ff3d9bfc7d3ac7283aa8717a5f202511d659a31c3f8c6a6a131394a1c1",
+    "tool-00.txt": "ab0d59f6d49805848bd37478a2c8d6a49dd13c8203f768f460d3aae3cebb53ad",
+    "tool-01.txt": "5db11894b13e44d63b2ce88f8d2a50aa8a39a88c7571c659646c8fc51c4a3519",
+    "response-05.json": "e891e7482a4e26e020874700104019bf39902934da8dd9d89ef09c313f3dfe2f"
+  }
+}

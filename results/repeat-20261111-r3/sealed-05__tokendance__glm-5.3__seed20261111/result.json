@@ -1,0 +1,231 @@
+{
+  "trial_id": "sealed-05__tokendance__glm-5.3__seed20261111",
+  "instance_id": "sealed-05",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "tokendance/glm-5.3",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T03:38:17Z",
+  "source_commit": "e225372ed7e5f318888dc3f2024dffbf519d2689",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "prompt_tokens": 1410,
+      "completion_tokens": 1264,
+      "total_tokens": 2674,
+      "completion_tokens_details": {
+        "reasoning_tokens": 752
+      }
+    },
+    {
+      "prompt_tokens": 3435,
+      "completion_tokens": 80,
+      "total_tokens": 3515,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 16
+      }
+    },
+    {
+      "prompt_tokens": 6968,
+      "completion_tokens": 4948,
+      "total_tokens": 11916,
+      "prompt_tokens_details": {
+        "cached_tokens": 3392
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4398
+      }
+    },
+    {
+      "prompt_tokens": 14651,
+      "completion_tokens": 5251,
+      "total_tokens": 19902,
+      "prompt_tokens_details": {
+        "cached_tokens": 6912
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4589
+      }
+    },
+    {
+      "prompt_tokens": 20395,
+      "completion_tokens": 640,
+      "total_tokens": 21035,
+      "prompt_tokens_details": {
+        "cached_tokens": 14592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 44
+      }
+    },
+    {
+      "prompt_tokens": 21439,
+      "completion_tokens": 3467,
+      "total_tokens": 24906,
+      "prompt_tokens_details": {
+        "cached_tokens": 20352
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2773
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3"
+  ],
+  "api_errors": [
+    {
+      "call": 6,
+      "type": "HTTPError",
+      "http_status": 502,
+      "charged_completion_tokens": 2350,
+      "response_sha256": "d6a12c4f7b0bea07546b47aaad108544f483108eadac630f1050c0202db0798c",
+      "classification": "reasoning_only_at_output_limit"
+    }
+  ],
+  "model_calls": 7,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-r3",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 6.233344000000001,
+  "tool_wall_seconds": 8.42629237473011,
+  "budget_exhausted": false,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "a94ded3763f8cc3dc547338edaf21c1d874e60cbe40198ab64664dadaf9fccb5",
+    "search.py": "083e23bf2aa7ee97b8a9b0abc10cc894728022f445e8e0c6b9b429a955b0721e",
+    "rationale.md": "0635a1d2f8e0f71ff51041cae4e215a51356560663da578b8eeccb9e6a0edab9"
+  },
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1264,
+      "reported_completion_tokens": 1264,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 16736
+    },
+    {
+      "call": 1,
+      "remaining_before": 16736,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 80,
+      "reported_completion_tokens": 80,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 16656
+    },
+    {
+      "call": 2,
+      "remaining_before": 16656,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 4948,
+      "reported_completion_tokens": 4948,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 11708
+    },
+    {
+      "call": 3,
+      "remaining_before": 11708,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 5251,
+      "reported_completion_tokens": 5251,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 6457
+    },
+    {
+      "call": 4,
+      "remaining_before": 6457,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 640,
+      "reported_completion_tokens": 640,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 5817
+    },
+    {
+      "call": 5,
+      "remaining_before": 5817,
+      "requested_max_tokens": 5817,
+      "charged_completion_tokens": 3467,
+      "reported_completion_tokens": 3467,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 2350
+    },
+    {
+      "call": 6,
+      "remaining_before": 2350,
+      "requested_max_tokens": 2350,
+      "charged_completion_tokens": 2350,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": 502,
+      "remaining_after": 0
+    }
+  ],
+  "charged_completion_tokens": 18000,
+  "completion_token_budget_exhausted": true,
+  "wall_seconds": 192.1295690415427,
+  "score": {
+    "mean_tir": 12.34375,
+    "max_trajectory_tbr70": 8.645833333333334,
+    "max_trajectory_tbr54": 0.0,
+    "minimum_glucose": 56.45007752794662,
+    "trajectories": 18,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": "safety_constraint_failed",
+    "native_traces_sha256": "90acc7e19a7afa273a7121518984719c50f3a7e10a06ee466bf78ce55c87f59f"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "error-response-06.bin": "d6a12c4f7b0bea07546b47aaad108544f483108eadac630f1050c0202db0798c",
+    "tool-08.txt": "b71cef881966b03f44dadc77979c23f046e27f2799a22c2cfb9e02958ab885db",
+    "instance.json": "ac9857e1fe66bf779d5baad97f30fa2225747786b9142a3078bf2a546142e890",
+    "score.json": "b2b45988b9c84e986fce9c17b8ddb1bc23953a7750c461cf4ea3f5f009a8c466",
+    "response-00.json": "eee4da336c8e08c261266a83c34b070898a52b55ec8b05332a1cd0c05e12c43f",
+    "metadata.json": "b4918d4bfa39c75c5964692f5b0e82784f9d0fdeaa7290bf30a074f59e6d8056",
+    "rationale.md": "0635a1d2f8e0f71ff51041cae4e215a51356560663da578b8eeccb9e6a0edab9",
+    "response-01.json": "88b2eb10587998915c6b5220c0d59d8d83baf7a1499acd590f3d7142d46eba4e",
+    "native-traces.npz": "90acc7e19a7afa273a7121518984719c50f3a7e10a06ee466bf78ce55c87f59f",
+    "response-02.json": "6431be59b45f37c6a9c79acb99af79b584d909031ced973ed32c2d1a5d573d6f",
+    "transcript.json": "b16570fd9706400bd42d24509f648256f7da0c74cd9a2c0e9a0e2dcd014bfc27",
+    "response-03.json": "63d2a81a0f3baea38de42a2611732a0947c964fa7ad8b0368961ec77ab2ea6b8",
+    "search.py": "083e23bf2aa7ee97b8a9b0abc10cc894728022f445e8e0c6b9b429a955b0721e",
+    "response-04.json": "4fbc8fd5bafa2bc07239da7f38c28d41f975df5ae934c7738c4fd68544dcda02",
+    "tool-05.txt": "e0c99add539d351d1a371e8adae96c642166e232c6b97b5dced567dfe2850707",
+    "tool-04.txt": "8565b66dbfaa23aaf264fc622eee13bb853702a6fea25448767c56455bceb945",
+    "tool-06.txt": "35bfdfb63c568e59b6753b04cbf7d296b0bd52848b84aac7592fd503a6ad318d",
+    "tool-07.txt": "efe6fccd83e4d0038faf0b4574c624d5132ab24192571b2d28af7dd429c27ef1",
+    "tool-03.txt": "334e2a30ec067472fb38167dca1db11cee9c0fc44966054792da47b39624b811",
+    "design.json": "a94ded3763f8cc3dc547338edaf21c1d874e60cbe40198ab64664dadaf9fccb5",
+    "tool-02.txt": "a391604da8aed369e7dee2d1a7c081c88ffc824aad4afd620038d82bcaef06c2",
+    "tool-00.txt": "6e3442f7f67dfb9b2471a569dff8d882049bfccf95d0f5c6f4e95b8813f2317a",
+    "tool-01.txt": "a09dce05cc6721f32ec620ff8d4f963f24f8f6246229764c2ed8c3107b77d9f8",
+    "response-05.json": "2719a5cd7a67dc27f2fc2745c09318ca76b5169f2c4b7ee9901e62c19d3b0119"
+  }
+}

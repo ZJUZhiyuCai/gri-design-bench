@@ -1,0 +1,295 @@
+{
+  "trial_id": "sealed-04__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+  "instance_id": "sealed-04",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "wanjie/deepseek-v4.1-flash-1017",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T03:15:10Z",
+  "source_commit": "e225372ed7e5f318888dc3f2024dffbf519d2689",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "completion_tokens": 202,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 1524,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1408
+      },
+      "total_tokens": 1726
+    },
+    {
+      "completion_tokens": 148,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 2483,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1408
+      },
+      "total_tokens": 2631
+    },
+    {
+      "completion_tokens": 1912,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 6219,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 2432
+      },
+      "total_tokens": 8131
+    },
+    {
+      "completion_tokens": 1071,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 8695,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6144
+      },
+      "total_tokens": 9766
+    },
+    {
+      "completion_tokens": 1801,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 10487,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 8576
+      },
+      "total_tokens": 12288
+    },
+    {
+      "completion_tokens": 1278,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 13893,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 10368
+      },
+      "total_tokens": 15171
+    },
+    {
+      "completion_tokens": 2418,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 17399,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 13824
+      },
+      "total_tokens": 19817
+    },
+    {
+      "completion_tokens": 2915,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 23213,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 17280
+      },
+      "total_tokens": 26128
+    },
+    {
+      "completion_tokens": 622,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 26403,
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 23168
+      },
+      "total_tokens": 27025
+    }
+  ],
+  "returned_models": [
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "wanjie/deepseek-v4.1-flash-1017"
+  ],
+  "api_errors": [],
+  "model_calls": 9,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-r2",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "ok",
+    "search.py": "ok",
+    "rationale.md": "ok"
+  },
+  "cpu_seconds": 28.048361,
+  "tool_wall_seconds": 30.99433304555714,
+  "budget_exhausted": false,
+  "status": "submitted",
+  "artifact_sha256": {
+    "design.json": "a81faadb7270656c46fe2f7fdbf1face289bb824ff1620ec77d6f8410348c728",
+    "search.py": "6c1d1365c097eea2ff857575075443c7b493c976eec11bd34a0fdbb0e2b8aa40",
+    "rationale.md": "6782f1acc6cd0d6ccd82782430497daf1621f412a3f7c2e2605b85ef5dd33b48"
+  },
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 202,
+      "reported_completion_tokens": 202,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17798
+    },
+    {
+      "call": 1,
+      "remaining_before": 17798,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 148,
+      "reported_completion_tokens": 148,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17650
+    },
+    {
+      "call": 2,
+      "remaining_before": 17650,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1912,
+      "reported_completion_tokens": 1912,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 15738
+    },
+    {
+      "call": 3,
+      "remaining_before": 15738,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1071,
+      "reported_completion_tokens": 1071,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 14667
+    },
+    {
+      "call": 4,
+      "remaining_before": 14667,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1801,
+      "reported_completion_tokens": 1801,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 12866
+    },
+    {
+      "call": 5,
+      "remaining_before": 12866,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 1278,
+      "reported_completion_tokens": 1278,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 11588
+    },
+    {
+      "call": 6,
+      "remaining_before": 11588,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 2418,
+      "reported_completion_tokens": 2418,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 9170
+    },
+    {
+      "call": 7,
+      "remaining_before": 9170,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 2915,
+      "reported_completion_tokens": 2915,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 6255
+    },
+    {
+      "call": 8,
+      "remaining_before": 6255,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 622,
+      "reported_completion_tokens": 622,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 5633
+    }
+  ],
+  "charged_completion_tokens": 12367,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 126.09015120752156,
+  "score": {
+    "mean_tir": 56.938657407407405,
+    "max_trajectory_tbr70": 0.0,
+    "max_trajectory_tbr54": 0.0,
+    "minimum_glucose": 71.18697258296233,
+    "trajectories": 18,
+    "feasible": true,
+    "safe_tir": 56.938657407407405,
+    "format_valid": true,
+    "native_integrator": "simglucose-dopri5",
+    "status": "verified",
+    "reason": null,
+    "native_traces_sha256": "b6c36dabe7ba81c90efc1c667074036d23f01281b6882dc8aeb81e30a97c0066"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "response-06.json": "f416209e8fc0b25ee0cc23636b021155df7b584f4685e025ee17954cca193b90",
+    "response-07.json": "7e8f0c210611acd4199475cfe6a96b67371d8e0916240c95af0b46bc58cbb3e9",
+    "tool-09.txt": "81d0b901c397dff69e9345de8cf2d650ced888fb49745ac7fa64d8dde1e192c7",
+    "tool-08.txt": "b25e2aa90989e73b8efaa0b8db88389c861ec3e8634dc0ede5003c9fdc4a742c",
+    "instance.json": "669daaa145d9cf923d16549d5c7d6bc9a8b667b0afe6adda88b945d30acc57e9",
+    "score.json": "e72445f181bc2d24a3b8efc7d72193a8790d69e9bba1f50aba09e1d1396846bb",
+    "response-00.json": "fdf9338c533427e1fef06c71913f0bf2550a90008c8ac91c58d56c7b54d5c9ae",
+    "metadata.json": "1a3fab7c84e2e1621a64d647efb88f743115fb214eadd0ac9719924cc784c81a",
+    "rationale.md": "6782f1acc6cd0d6ccd82782430497daf1621f412a3f7c2e2605b85ef5dd33b48",
+    "response-01.json": "e93ca3355982f82b52212fce96323b84ab553c507ab11cfe6f84b083166bc726",
+    "native-traces.npz": "b6c36dabe7ba81c90efc1c667074036d23f01281b6882dc8aeb81e30a97c0066",
+    "response-02.json": "12345a4dc638cde44bf4ff9578ea1e5b4a6780995005ae126bb35e48f0c57257",
+    "transcript.json": "5735c409b9a87f7df5f1371777c9e6a598e3fcf7bf3cfb354714fd14ce87616c",
+    "response-03.json": "af09d9a2cefc01e14df18a0a6e21cdf3eaf81b1d123da6cecd3400cd7766b9f3",
+    "search.py": "6c1d1365c097eea2ff857575075443c7b493c976eec11bd34a0fdbb0e2b8aa40",
+    "response-04.json": "ac6c447bb46df21a37027424ec42b1977fec68db49d66c5bd344b6621ec7e2b7",
+    "tool-11.txt": "897f020f7fc10364e477d6b1ba37fcc4e8f50bd606eafb8b77566730af952b04",
+    "tool-05.txt": "3e0589660e6b21589ca98622bc00592dbed882627056d2ac7cc0c3d615de300c",
+    "tool-04.txt": "1ce111ec7b48e3e80d9db3e7ced4b4fe10c7077cae1cf30a428f0f284f55b52e",
+    "tool-10.txt": "bff988ab3edce6bb08741c91902fe9795183b70a5f00608827f6443ad682cc17",
+    "response-08.json": "f223d2ff425dced3e8b28800bf1e5110ae2ce64c61cab801ce013a996e6260e3",
+    "tool-06.txt": "f7aa80260e576e784638df7b7ce2280ea7d76c901fc45f0de558f8c33fa07dad",
+    "tool-07.txt": "6e0c27b42819adc59ecf3c1d2060b75af860ea6e3c2958aa92fa65cac9b19644",
+    "tool-03.txt": "a391604da8aed369e7dee2d1a7c081c88ffc824aad4afd620038d82bcaef06c2",
+    "design.json": "a81faadb7270656c46fe2f7fdbf1face289bb824ff1620ec77d6f8410348c728",
+    "tool-02.txt": "400417c9e9f437703319c6d8cc576c68544c29a45670dba744c56be064be8fd4",
+    "tool-00.txt": "137980b7a3c538349407638948cda73b3577a2b10a34005640937ab04b3245f6",
+    "tool-01.txt": "b5c581a9b24e0c1420c4aa3f9ddc167dd5fd0816252b2788483aa782ce18759a",
+    "response-05.json": "20d600a1a90b1f0b5ed5f212bbf6ba18852694b2c2581245198d67d735756765"
+  }
+}

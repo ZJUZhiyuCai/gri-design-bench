@@ -1,0 +1,162 @@
+{
+  "trial_id": "sealed-06__tokendance__glm-5.3__seed20261111",
+  "instance_id": "sealed-06",
+  "split": "sealed",
+  "method": "agent",
+  "requested_model": "tokendance/glm-5.3",
+  "seed": 20261111,
+  "started_utc": "2026-11-11T03:50:51Z",
+  "source_commit": "e225372ed7e5f318888dc3f2024dffbf519d2689",
+  "contract_sha256": "0f70cdddbd123cea7d983d682d83eb98ed2e9b7a7c87f244359e2e1afda4e387",
+  "image": "gri-bench:0.1.1",
+  "image_id": "sha256:cb37f61786883487444eb69f5e40970164701bb9a13a63b4cd0b3a3fb29760a8",
+  "usage": [
+    {
+      "prompt_tokens": 1383,
+      "completion_tokens": 220,
+      "total_tokens": 1603,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    {
+      "prompt_tokens": 2358,
+      "completion_tokens": 95,
+      "total_tokens": 2453,
+      "prompt_tokens_details": {
+        "cached_tokens": 1344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 28
+      }
+    },
+    {
+      "prompt_tokens": 5904,
+      "completion_tokens": 398,
+      "total_tokens": 6302,
+      "prompt_tokens_details": {
+        "cached_tokens": 5888
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 357
+      }
+    }
+  ],
+  "returned_models": [
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3",
+    "tokendance/glm-5.3"
+  ],
+  "api_errors": [
+    {
+      "call": 2,
+      "type": "HTTPError",
+      "http_status": 502,
+      "charged_completion_tokens": 6000,
+      "response_sha256": "d6a12c4f7b0bea07546b47aaad108544f483108eadac630f1050c0202db0798c",
+      "classification": "reasoning_only_at_output_limit"
+    },
+    {
+      "call": 4,
+      "type": "HTTPError",
+      "http_status": 502,
+      "charged_completion_tokens": 6000,
+      "response_sha256": "d6a12c4f7b0bea07546b47aaad108544f483108eadac630f1050c0202db0798c",
+      "classification": "reasoning_only_at_output_limit"
+    }
+  ],
+  "model_calls": 5,
+  "execution_profile": "strict-token-accounting-v1",
+  "repetition_tag": "repeat-20261111-r3",
+  "system_prompt_sha256": "85a45ef762b8814cbd114417b6de28ab980c1f320f29b657b771a8f11c9428cd",
+  "files": {
+    "design.json": "missing",
+    "search.py": "missing",
+    "rationale.md": "missing"
+  },
+  "cpu_seconds": 0.1814309999999999,
+  "tool_wall_seconds": 1.4420775827020407,
+  "budget_exhausted": false,
+  "status": "submission_failure",
+  "artifact_sha256": {},
+  "completion_token_accounting": [
+    {
+      "call": 0,
+      "remaining_before": 18000,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 220,
+      "reported_completion_tokens": 220,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17780
+    },
+    {
+      "call": 1,
+      "remaining_before": 17780,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 95,
+      "reported_completion_tokens": 95,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 17685
+    },
+    {
+      "call": 2,
+      "remaining_before": 17685,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": 502,
+      "remaining_after": 11685
+    },
+    {
+      "call": 3,
+      "remaining_before": 11685,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 398,
+      "reported_completion_tokens": 398,
+      "basis": "provider_usage",
+      "http_status": 200,
+      "remaining_after": 11287
+    },
+    {
+      "call": 4,
+      "remaining_before": 11287,
+      "requested_max_tokens": 6000,
+      "charged_completion_tokens": 6000,
+      "reported_completion_tokens": null,
+      "basis": "failed_request_reserved_max",
+      "http_status": 502,
+      "remaining_after": 5287
+    }
+  ],
+  "charged_completion_tokens": 12713,
+  "completion_token_budget_exhausted": false,
+  "wall_seconds": 143.2697267504409,
+  "score": {
+    "status": "submission_failure",
+    "format_valid": false,
+    "feasible": false,
+    "safe_tir": 0.0,
+    "reason": "Required submission file missing or invalid"
+  },
+  "billing_cost": null,
+  "billing_note": "Actual provider billing was not available; token usage is API-reported.",
+  "private_evidence_sha256": {
+    "error-response-04.bin": "d6a12c4f7b0bea07546b47aaad108544f483108eadac630f1050c0202db0798c",
+    "error-response-02.bin": "d6a12c4f7b0bea07546b47aaad108544f483108eadac630f1050c0202db0798c",
+    "instance.json": "9265b836e4705f02b8ff6b1f152ca21235cb97af38ac0678971cb37d754f2fd4",
+    "score.json": "f806045a4db29192e54405e0db62505666c5ed57f701ccb47234a521ac3f7f30",
+    "response-00.json": "af75bbc330bcc64cbfff6f013033a7dd94563afdb9ff517845abc16d8c97b7c8",
+    "metadata.json": "cef5757053d8427cf9a588552ef492ba414ac39f9e91df23a6af2209be29778e",
+    "response-01.json": "126cf8a89e9efa4d47e993d22abb1128411763da39ce5b0721ce14653736d0f3",
+    "transcript.json": "32b159a31a7ca87ecfe52e44c140afee371d2d1d454cbd4e7dc6453aabc26bd2",
+    "response-03.json": "b977040739a3b51597678daa71f89893554c95b766cb71733834771fd54ac3ff",
+    "tool-04.txt": "4f31ac39527e8541b4d46f5f8749f6de64973641f7f51bdde3108c150ae8ba69",
+    "tool-03.txt": "a391604da8aed369e7dee2d1a7c081c88ffc824aad4afd620038d82bcaef06c2",
+    "tool-02.txt": "e2ccc7aa33e44a93ca6698e95a200a771c2b30f32007973135c1a8f3611892ed",
+    "tool-00.txt": "57b33eabe87ade657ee44a450eaff09d380c9e28b7bae76e9e1106d400f6e2b5",
+    "tool-01.txt": "5db11894b13e44d63b2ce88f8d2a50aa8a39a88c7571c659646c8fc51c4a3519"
+  }
+}

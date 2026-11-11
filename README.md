@@ -6,9 +6,27 @@ This is an engineering pilot. It does not establish clinical efficacy, safety in
 
 ## Supplemental repetitions and budget correction
 
-Three additional trials per model/case (**108 total**) are registered in the [supplemental plan](experiments/repeats-2026-11-11/plan.json). They keep the existing cases, scientific contract, prompts, model settings and numeric budgets. Their execution uses a conservative repair to failed-request token accounting; results will be reported separately from the original pilot.
+**All 108 additional trials are complete:** three routes × twelve fixed cases × three new contexts, following the [pre-run plan](experiments/repeats-2026-11-11/plan.json) published at `e225372` before execution. Cases, scientific contract, prompts, model settings and numeric budgets remain unchanged. Failed requests now consume their reserved completion allowance. The original pilot is retained separately.
+
+On the six fixed sealed cases, the ordering was **GPT > DeepSeek > GLM in all three rounds**. Quality variability differs substantially:
+
+| Requested route | Feasible /18 | R1 / R2 / R3 mean safe TIR (%) | Mean ± sample SD | Ranks |
+|---|---:|---|---:|---|
+| `codex/gpt-6.1-sol` | 18/18 | 75.22 / 75.59 / 74.37 | 75.06 ± 0.63 | 1 / 1 / 1 |
+| `wanjie/deepseek-v4.1-flash-1017` | 17/18 | 55.56 / 62.99 / 70.35 | 62.97 ± 7.40 | 2 / 2 / 2 |
+| `tokendance/glm-5.3` | 9/18 | 41.57 / 5.13 / 23.49 | 23.40 ± 18.22 | 3 / 3 / 3 |
+
+SD is across three round means, not a confidence interval. All failures remain in the denominator. GPT passed the safety gates on every repetition of every sealed case, with a largest within-case score range of 3.87 percentage points. DeepSeek had one out-of-bounds submission; its remaining sealed designs passed the safety gates. GLM had three sealed submission failures and six safety failures, alongside 24 sealed API errors. Error requests and failed designs are separate counts; these observations do not isolate a causal effect of the route.
+
+The [supplemental report](results/repetitions-2026-11-11/README.md) includes per-round ranks, within-case variability, failure categories, paired comparisons, CSV/JSON data, and an [independent audit](results/repetitions-2026-11-11/audit.json). The audit covers 964 API requests and 1,782 native trajectories from 99 valid designs; nine invalid submissions retain zero scores. All 367 original result files are byte-identical. One development trial recorded 30.311041 CPU seconds under the unchanged polling monitor; no sealed trial exceeded a recorded resource limit. A separately labelled, non-preregistered sensitivity analysis assigns zero to any over-limit attempt and leaves every round's ordering unchanged in both splits.
+
+![Three-round quality and feasibility on the fixed sealed cases](results/repetitions-2026-11-11/stability.png)
+
+This is repeatability evidence on six already-used sealed cases, not a population-level model ranking or new unseen-case validation. The three-round ordering is consistent; DeepSeek and GLM show substantial score variation.
 
 The [GLM diagnosis](docs/GLM_502_DIAGNOSIS.md) matched all 14 original HTTP 502 errors to reasoning-only output-limit exhaustion recorded by Magpie. Those failed calls reported 62,029 completion tokens that the original runner did not count. **10/12 original GLM trials therefore exceeded the nominal completion allowance.** Original scores and the `v0.1.1` tag remain unchanged as historical evidence; they must not be interpreted as strictly budget-compliant GLM results. The correction does not increase a limit or alter reasoning settings.
+
+Output truncation remains present under the frozen settings: the supplemental study recorded 46 GLM HTTP 502 requests across development and sealed cases, all classified as reasoning-only output-limit exhaustion. Their full requested allowances were charged. No new trial exceeded the 18,000-token accounting limit, and no successful usage report exceeded its requested cap. This accounting repair does not claim to eliminate the underlying truncation.
 
 ## Original pilot results (retained)
 
@@ -77,7 +95,7 @@ The agent command uses the repaired token-accounting entry point. The original `
 
 Three frozen algorithms receive the same CPU cap: constant-rate log grid, scrambled Sobol search, and logarithmic differential evolution. Their training target uses a predeclared safety margin (3% / 0.5% / 45 mg/dL). Their 36 verified runs are reused from `pilot-v1`: they do not call an LLM and are unaffected by the interaction-profile change. Candidate counts are diagnostic only: a white-box simulator permits custom evaluations and approximations.
 
-The model matrix is recorded in [pilot-models.json](contract/pilot-models.json): `codex/gpt-6.1-sol`, `wanjie/deepseek-v4.1-flash-1017`, and `tokendance/glm-5.3`; one trial per instance/model. Magpie aliases and API-returned model strings are recorded. They do **not** independently authenticate the upstream checkpoint or provider configuration. Inference effort is the provider default, temperature is requested as zero, and actual returned token usage is retained. Billing cost is unknown, not zero.
+The model matrix is recorded in [pilot-models.json](contract/pilot-models.json): `codex/gpt-6.1-sol`, `wanjie/deepseek-v4.1-flash-1017`, and `tokendance/glm-5.3`; one original trial per instance/model plus three supplemental repetitions. Magpie aliases and API-returned model strings are recorded. They do **not** independently authenticate the upstream checkpoint or provider configuration. Inference effort is the provider default, temperature is requested as zero, and actual returned token usage is retained. Billing cost is unknown, not zero.
 
 The identifier `seed20261111` is the baseline RNG seed and trial label. No LLM sampling seed is sent to the routed API; agent-written searches choose their own seeds. Temperature zero does not establish deterministic replay across providers.
 
@@ -88,6 +106,8 @@ The identifier `seed20261111` is the baseline RNG seed and trial label. No LLM s
 The Docker image has an explicit source allowlist. It contains no instance files, sealed seeds, account configuration, API key, Docker socket, or host repository mount. Each task receives only its own training instance. Containers run as a non-root user with networking disabled, a read-only root filesystem, no added capabilities, bounded writable tmpfs, and process/memory/CPU limits. They are paused while the host waits for a model response.
 
 The verifier runs trusted code outside the agent container. It parses bounded regular-file JSON and never imports submitted Python. Search code and rationale are archived as evidence; their presence and Python syntax are checked, but full search-code replay is not a scored requirement. Archived model code is untrusted: reproduce it inside the task sandbox. Native trajectories and per-scenario metrics are retained. Public exports include development designs/transcripts/traces, aggregate sealed-case results, and SHA-256 hashes of private evidence. Complete sealed inputs, their evaluation seeds, traces, and transcripts remain private.
+
+Supplemental publication suppresses private sealed bounds embedded in verifier error text. One diagnostic was redacted; its original export and private score are archived with [hash evidence](results/repetitions-2026-11-11/publication-redactions.json). No numeric score or submission was changed. The frozen evaluator remains unchanged, and the publication-only filter is separately tested and audited.
 
 Some development agents generated extra training seeds whose numeric values coincide with sealed-case **training** seeds. These original development records are retained. Private evaluation seeds are distinct and were not found in the public export; training-seed overlap is disclosed in the publication audit.
 

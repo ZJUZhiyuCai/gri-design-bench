@@ -1,0 +1,15 @@
+# Static responsive GRI formulation
+
+The submitted formulation is shared across adult#001, adult#002 and adult#003. It uses theta_a = 0.00044, relative_leak = 0.6092591382374652, EC50 = 80 mg/dL, Hill exponent = 24, filter time constant = 0.05 min, and load = 4 native TDI. All parameters satisfy the instance bounds.
+
+The steep response reduces insulin release at low interstitial glucose. A short filter avoids additional release lag; physiological insulin absorption delays remain in the simulator. The low EC50 allows substantial insulin delivery through most of the target range. The nonzero leak is part of the allowed formulation and prevents complete shutoff. Maximum normalized release is about 0.000708074 TDI/min and baseline release about 0.000268074 TDI/min. Even continuous maximum release consumes at most 3.05888 TDI over 4320 minutes, so the 4-TDI reservoir cannot deplete during the horizon.
+
+The deterministic search first evaluated an amplitude/EC50 grid, then a seeded differential-evolution refinement of amplitude, EC50, Hill exponent and leak. It screened leading candidates on six fresh meal seeds, all three challenge variants and all three patients. Additional dose sweeps probed the safety boundary. Larger doses produced prolonged low glucose in some trajectories and were rejected. Final selection required no glucose below 70.5 mg/dL and at most 0.5% TBR70 in the selection scenarios.
+
+On the six selection seeds (54 trajectories), the final formulation achieved mean TIR 78.7114%, maximum TBR70 0%, maximum TBR54 0%, and full-horizon minimum plasma glucose 70.8567 mg/dL. First-day glucose contributes to the minimum; TIR and TBR omit the first day. A further 12 fresh seeds (108 trajectories) achieved mean TIR 78.8860%, maximum TBR70 0%, maximum TBR54 0%, and full-horizon minimum 70.8706 mg/dL. Training TIR was 88.9352%, with zero TBR70/TBR54 and a minimum of 70.8981 mg/dL. Across all 18 fresh seeds, all 162 trajectories passed the benchmark safety thresholds. The 12 final audit seeds were not used to select coefficients. Full per-trajectory results are saved in final_metrics.json and the search record files.
+
+The search uses the public unmodified RK4 integrator. A native dopri5 spot check of the final audit trajectory with the lowest minimum (adult#001, seed 910223, ordinary) produced TIR 64.4792%, TBR70/TBR54 0%, and minimum 70.8705781525 mg/dL, agreeing with the fast integrator minimum to numerical precision. This is one native trajectory, not complete native validation of the cohort. The trusted verifier independently resimulates the design.
+
+These results establish empirical safety only for simulated scenarios checked. They do not guarantee safety on heldout meal scenarios, and the minimum is close to 70 mg/dL. This is a simulation benchmark, not a clinical recommendation.
+
+Reproduction: run `OPENBLAS_NUM_THREADS=1 python /work/output/search.py` with the supplied package and instance. Search stages checkpoint the design through atomic save_design calls; no patient-specific coefficients, meal boluses or external controllers are used. The retained JSON records document all evaluated designs and metrics.

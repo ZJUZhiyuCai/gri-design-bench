@@ -1,0 +1,19 @@
+{
+  "scope": "Supplemental public exports only; all original release result bytes unchanged.",
+  "reason": "Frozen verifier exception messages can contain private sealed bounds. Publication redacts diagnostic text only; raw scores and original exports remain private with hashes.",
+  "modified_score_values": 0,
+  "redacted_exports": 1,
+  "records": [
+    {
+      "tag": "repeat-20261111-r1",
+      "trial_id": "sealed-03__wanjie__deepseek-v4.1-flash-1017__seed20261111",
+      "changed_fields": [
+        "score.reason"
+      ],
+      "original_export_sha256": "c29e1c3fc55b59c9bab7cf755b3aba51da2f4951f7cac7ed1c6b311ebd544978",
+      "private_score_sha256": "1eb8877925a0ae1ec0bab2c7654d2a2e7e7c41e37a1897a64708f2d52673b1e5",
+      "published_result_sha256": "695f32cff3203d7d5bbd11646424b3667018e4c977cd062ed9f8e0a17bd0d4e4",
+      "published_reason": "relative_leak outside allowed bounds (private bounds withheld)"
+    }
+  ]
+}

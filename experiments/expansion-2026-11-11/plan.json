@@ -1,0 +1,1172 @@
+{
+  "study": "Six additional open-weight model routes on the frozen GRI Design Bench task",
+  "registered_date_asia_shanghai": "2026-11-11",
+  "registered_utc": "2026-11-11T14:39:13.847439+00:00",
+  "previous_release": "repeats-2026-11-11",
+  "plan_tag": "expansion-2026-11-11-plan",
+  "execution_profile": "strict-token-accounting-v1",
+  "new_agent_trials": 216,
+  "repetitions_per_model_case": 3,
+  "models": [
+    "atria/qwen3.8-27b",
+    "minimax-code/MiniMax-M3.1-Flash",
+    "workbuddy/kimi-k3.1-pro",
+    "tokendance/mimo-v2.6-pro",
+    "workbuddy/step-5-preview",
+    "atria/intern-s2"
+  ],
+  "tags": [
+    "repeat-20261111-expand-r1",
+    "repeat-20261111-expand-r2",
+    "repeat-20261111-expand-r3"
+  ],
+  "cases": [
+    "dev-01",
+    "dev-02",
+    "dev-03",
+    "dev-04",
+    "dev-05",
+    "dev-06",
+    "sealed-01",
+    "sealed-02",
+    "sealed-03",
+    "sealed-04",
+    "sealed-05",
+    "sealed-06"
+  ],
+  "jobs": [
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-01",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-01",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-01",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-01",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-01",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-01",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-01",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-01",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-01",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-01",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-01",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-01",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-01",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-01",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-01",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-01",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-01",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-01",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-02",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-02",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-02",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-02",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-02",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-02",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-02",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-02",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-02",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-02",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-02",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-02",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-02",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-02",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-02",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-02",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-02",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-02",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-03",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-03",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-03",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-03",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-03",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-03",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-03",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-03",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-03",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-03",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-03",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-03",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-03",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-03",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-03",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-03",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-03",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-03",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-04",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-04",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-04",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-04",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-04",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-04",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-04",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-04",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-04",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-04",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-04",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-04",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-04",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-04",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-04",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-04",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-04",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-04",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-05",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-05",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-05",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-05",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-05",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-05",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-05",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-05",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-05",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-05",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-05",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-05",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-05",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-05",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-05",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-05",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-05",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-05",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-06",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-06",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-06",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-06",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-06",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "dev-06",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-06",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-06",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-06",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-06",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-06",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "dev-06",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-06",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-06",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-06",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-06",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-06",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "dev-06",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-01",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-01",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-01",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-01",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-01",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-01",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-01",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-01",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-01",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-01",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-01",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-01",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-01",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-01",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-01",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-01",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-01",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-01",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-02",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-02",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-02",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-02",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-02",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-02",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-02",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-02",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-02",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-02",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-02",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-02",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-02",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-02",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-02",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-02",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-02",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-02",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-03",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-03",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-03",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-03",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-03",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-03",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-03",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-03",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-03",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-03",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-03",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-03",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-03",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-03",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-03",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-03",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-03",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-03",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-04",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-04",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-04",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-04",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-04",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-04",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-04",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-04",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-04",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-04",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-04",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-04",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-04",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-04",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-04",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-04",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-04",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-04",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-05",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-05",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-05",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-05",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-05",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-05",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-05",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-05",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-05",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-05",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-05",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-05",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-05",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-05",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-05",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-05",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-05",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-05",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-06",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-06",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-06",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-06",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-06",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r1",
+      "case": "sealed-06",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-06",
+      "model": "atria/qwen3.8-27b"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-06",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-06",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-06",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-06",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r2",
+      "case": "sealed-06",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-06",
+      "model": "minimax-code/MiniMax-M3.1-Flash"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-06",
+      "model": "workbuddy/kimi-k3.1-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-06",
+      "model": "tokendance/mimo-v2.6-pro"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-06",
+      "model": "workbuddy/step-5-preview"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-06",
+      "model": "atria/intern-s2"
+    },
+    {
+      "tag": "repeat-20261111-expand-r3",
+      "case": "sealed-06",
+      "model": "atria/qwen3.8-27b"
+    }
+  ],
+  "max_concurrent_trials": 2,
+  "max_concurrent_graders": 2,
+  "case_and_budget_changes": null,
+  "unchanged": [
+    "All 12 case inputs, training/evaluation seeds and sealed commitments",
+    "Design bounds, physiology, safety gates and scoring",
+    "Frozen Linux/arm64 image, 1 CPU and 2 GiB per container",
+    "30 search CPU seconds, 90 tool wall seconds, 360 total wall seconds",
+    "12 API calls, 6000 completion tokens per call, 18000 total allowance",
+    "Exact system/task prompts, tools, temperature zero and provider-default reasoning parameters",
+    "Existing two-API-error stopping policy and all prior results"
+  ],
+  "scheduling": "Case-major, then repetition; rotate model order by case index plus repetition index. Two trial workers total. Two trusted native grading workers.",
+  "randomness": "Fresh model contexts per trial; no API sampling seed; seed20261111 remains only the trial label. No prompt, reasoning-effort or search-seed intervention.",
+  "analysis": {
+    "primary_split": "sealed",
+    "primary_denominator": "All 18 sealed attempts per model, including workflow/submission/safety failures.",
+    "ranking": "Feasible-case rate, then mean safe_tir; retain exact ties.",
+    "stability": [
+      "Per-round feasible counts and safe_tir means",
+      "Across three round means: mean, sample standard deviation and min/max",
+      "Each model rank per round and whether the three round orderings agree",
+      "Per-case safe_tir variation and feasibility across repetitions",
+      "Paired case/repetition wins and ties, descriptive only",
+      "API-error classifications and charged versus provider-reported tokens"
+    ],
+    "baseline_handling": "Reuse unchanged 36 baseline reference scores; do not pretend a single baseline trial estimates baseline variance.",
+    "historical_comparison": "Display original pilot separately. The GLM original is not a strictly budget-compliant replicate; 10 of 12 original trials exceed the completion cap when failed-request usage is recovered. Do not pool original and repaired rounds into a homogeneous four-repeat ranking.",
+    "inference_limits": "Existing six sealed cases were already scored by the maintainer; this is within-benchmark repeated-run variability, not new unseen-case generalization. No significance or population-level ranking claim from three repetitions."
+  },
+  "prior_comparable_round_tags": [
+    "repeat-20261111-r1",
+    "repeat-20261111-r2",
+    "repeat-20261111-r3"
+  ],
+  "prior_comparable_models": [
+    "codex/gpt-6.1-sol",
+    "wanjie/deepseek-v4.1-flash-1017",
+    "tokendance/glm-5.3"
+  ],
+  "combined_comparison": {
+    "strict_profile_attempts_after_completion": 324,
+    "models": 9,
+    "prior_108_rerun": false,
+    "timing": "The previous three routes and six new routes are different chronological batches. Report batch provenance; do not imply contemporaneous randomization.",
+    "ranking": "Use all 18 sealed attempts per model, feasible rate then mean safe_tir. Preserve ties. New-six-model per-round ranks are reported separately from the combined nine-model descriptive aggregate.",
+    "cross_batch_paired_tests": false
+  },
+  "resource_sensitivity": {
+    "preregistered_for_new_cohort": true,
+    "rule": "Secondary analysis sets any attempt exceeding a recorded CPU, wall, tool-wall, model-call or charged-token limit to infeasible/zero. No tolerance, reruns or dropped rows; original native scores remain unchanged."
+  },
+  "publication": "Export through the frozen evaluator into private staging, apply the existing publication-only sealed-diagnostic filter, archive original bytes and hashes, then atomically copy sanitized exports to public results. No numeric scoring changes."
+}

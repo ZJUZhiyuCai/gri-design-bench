@@ -4,6 +4,12 @@ A small benchmark of **who can design a better static glucose-responsive insulin
 
 This is an engineering pilot. It does not establish clinical efficacy, safety in real patients, generalization to unseen patients, or a stable ranking of foundation models. The 30 simglucose profiles were public and used in preceding studies. Material subranges are synthetic benchmark constraints inside an intentionally expanded prescreen design envelope; they are not newly measured formulations or a demonstrated manufacturing-feasibility region. See [bound provenance](docs/BOUND_PROVENANCE.md).
 
+## Six additional open-weight routes
+
+A [preregistered expansion](docs/MODEL_EXPANSION_2026_11_11.md) adds Qwen3.8-27B, MiniMax-M3.1-Flash, Kimi-K3.1-Pro, MiMo-V2.6-Pro, Step-5-Preview, and Intern-S2 through explicit Magpie routes. **216 new attempts are planned**, with three repetitions on each of the same twelve cases and unchanged per-trial budgets. All selected routes passed a non-benchmark mock tool roundtrip. Claude-family routes are excluded. The [model registry](experiments/expansion-2026-11-11/models.json) links official public weights and records the distinction between reference checkpoints and unverified API-served identities.
+
+The existing results below remain unchanged. The eventual nine-route summary will label the earlier and later chronological batches rather than implying a newly interleaved nine-model experiment.
+
 ## Supplemental repetitions and budget correction
 
 **All 108 additional trials are complete:** three routes × twelve fixed cases × three new contexts, following the [pre-run plan](experiments/repeats-2026-11-11/plan.json) published at `e225372` before execution. Cases, scientific contract, prompts, model settings and numeric budgets remain unchanged. Failed requests now consume their reserved completion allowance. The original pilot is retained separately.

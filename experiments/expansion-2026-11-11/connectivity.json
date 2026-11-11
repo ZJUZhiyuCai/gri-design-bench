@@ -1,0 +1,412 @@
+{
+  "benchmark_inputs_used": false,
+  "model_code_executed": false,
+  "selection_timing": "Before any new benchmark trial",
+  "attempted_requests": 14,
+  "reported_success_completion_tokens": 606,
+  "selection_decision": "Five initial routes passed. Nemotron 3.5 Super VL timed out twice at the unchanged 120-second request limit; retain both failures and select Intern-S2, which passed the same mock tool roundtrip. No benchmark-score-based selection.",
+  "probes": [
+    {
+      "requested_model": "atria/qwen3.8-27b",
+      "started_utc": "2026-11-11T14:28:50.985709+00:00",
+      "benchmark_inputs_used": false,
+      "model_code_executed": false,
+      "temperature": 0,
+      "max_completion_tokens_per_call": 6000,
+      "max_calls": 2,
+      "calls": [
+        {
+          "call": 0,
+          "http_status": 200,
+          "response_sha256": "6569223abfcb98b46468383e804f9564109c4ba17cef4b4fa6fa2a1845619f2b",
+          "returned_model": "atria/qwen3.8-27b",
+          "usage": {
+            "prompt_tokens": 405,
+            "total_tokens": 488,
+            "completion_tokens": 83,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": {
+              "reasoning_tokens": 38
+            }
+          },
+          "finish_reason": "tool_calls",
+          "tool_calls": 1
+        },
+        {
+          "call": 1,
+          "http_status": 200,
+          "response_sha256": "51fe0c44563d396a4e82baa9fe5d3a0c30ad14dbfb8609511440f9c0d9f8ef95",
+          "returned_model": "atria/qwen3.8-27b",
+          "usage": {
+            "prompt_tokens": 524,
+            "total_tokens": 554,
+            "completion_tokens": 30,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": {
+              "reasoning_tokens": 23
+            }
+          },
+          "finish_reason": "stop",
+          "tool_calls": 0
+        }
+      ],
+      "passed": true,
+      "wall_seconds": 1.2216317085549235,
+      "probe_tag": "initial",
+      "attempted_requests": 2,
+      "completed_http_responses": 2,
+      "raw_report_sha256": "3fe887641eec0448d37343f27516e1d0052fd0426f0eeb8ed9286307b7352298",
+      "request_sha256": {
+        "request-0.json": "0b46af98a18af989de3a78a4c60ab41160fd536e54014dd4a5c4418ee0306417",
+        "request-1.json": "bdafd8bf1bf495aec9e8de3d16dcd219d48860afdfdfd7601905a1b7a65dad75"
+      }
+    },
+    {
+      "requested_model": "minimax-code/MiniMax-M3.1-Flash",
+      "started_utc": "2026-11-11T14:28:50.986219+00:00",
+      "benchmark_inputs_used": false,
+      "model_code_executed": false,
+      "temperature": 0,
+      "max_completion_tokens_per_call": 6000,
+      "max_calls": 2,
+      "calls": [
+        {
+          "call": 0,
+          "http_status": 200,
+          "response_sha256": "4648d589e6d02391c6d08dcb39765c084c612918780580deb5c9b7473705a16a",
+          "returned_model": "minimax-code/MiniMax-M3.1-Flash",
+          "usage": {
+            "completion_tokens": 43,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_tokens": 522,
+            "prompt_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 128
+            },
+            "total_tokens": 565
+          },
+          "finish_reason": "tool_calls",
+          "tool_calls": 1
+        },
+        {
+          "call": 1,
+          "http_status": 200,
+          "response_sha256": "ed5ef988e5ff91a9417a1b133fba71d0367d8df3a68aad0bab98614e60adf1f1",
+          "returned_model": "minimax-code/MiniMax-M3.1-Flash",
+          "usage": {
+            "completion_tokens": 7,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_tokens": 601,
+            "prompt_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 512
+            },
+            "total_tokens": 608
+          },
+          "finish_reason": "stop",
+          "tool_calls": 0
+        }
+      ],
+      "passed": true,
+      "wall_seconds": 11.578955582343042,
+      "probe_tag": "initial",
+      "attempted_requests": 2,
+      "completed_http_responses": 2,
+      "raw_report_sha256": "93f4c4846b644b0506366e787d2dc8fe1a8e5067ef6b639b8092a3083edaa044",
+      "request_sha256": {
+        "request-0.json": "e5974b8c95a8c540615528c54ae5a02f1c83e9d4dd135862783d4f0eb7d566ac",
+        "request-1.json": "37cb98bbc921ac0e25a9f5122a436283817462ef8c3ea7781793950dcd00154f"
+      }
+    },
+    {
+      "requested_model": "remote-magpie/zinal-supervl/nemotron-3.5-super-vl",
+      "started_utc": "2026-11-11T14:29:03.907128+00:00",
+      "benchmark_inputs_used": false,
+      "model_code_executed": false,
+      "temperature": 0,
+      "max_completion_tokens_per_call": 6000,
+      "max_calls": 2,
+      "calls": [],
+      "passed": false,
+      "error_type": "ReadTimeout",
+      "wall_seconds": 120.00679083354771,
+      "probe_tag": "initial",
+      "attempted_requests": 1,
+      "completed_http_responses": 0,
+      "raw_report_sha256": "7aa3598d4fcd3538f5160f2c816e5560dd5ed5a25ddc7faa4998a0264362d3ba",
+      "request_sha256": {
+        "request-0.json": "799f6b4c9ded0c21d248868a46619078f897e356e86d78a319e1f9ced906e894"
+      }
+    },
+    {
+      "requested_model": "tokendance/mimo-v2.6-pro",
+      "started_utc": "2026-11-11T14:29:00.998010+00:00",
+      "benchmark_inputs_used": false,
+      "model_code_executed": false,
+      "temperature": 0,
+      "max_completion_tokens_per_call": 6000,
+      "max_calls": 2,
+      "calls": [
+        {
+          "call": 0,
+          "http_status": 200,
+          "response_sha256": "90a43a32d7a42f9581ebfce5356dcf95dd0c05a1edb0d597055cd46fa159ed3a",
+          "returned_model": "tokendance/mimo-v2.6-pro",
+          "usage": {
+            "completion_tokens": 75,
+            "prompt_tokens": 182,
+            "total_tokens": 257,
+            "completion_tokens_details": {
+              "reasoning_tokens": 43
+            },
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls",
+          "tool_calls": 1
+        },
+        {
+          "call": 1,
+          "http_status": 200,
+          "response_sha256": "7ba17d8d2276e2a9a5ab0f3890e68c3e0244efb15f4079cdf0a4c7a2ca07c8c2",
+          "returned_model": "tokendance/mimo-v2.6-pro",
+          "usage": {
+            "completion_tokens": 21,
+            "prompt_tokens": 285,
+            "total_tokens": 306,
+            "completion_tokens_details": {
+              "reasoning_tokens": 15
+            },
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "finish_reason": "stop",
+          "tool_calls": 0
+        }
+      ],
+      "passed": true,
+      "wall_seconds": 2.904696250334382,
+      "probe_tag": "initial",
+      "attempted_requests": 2,
+      "completed_http_responses": 2,
+      "raw_report_sha256": "b63af9e318052b5dd28e7d3bb5f76d60cf9ce970a3f356b158ba1e79a3f1f931",
+      "request_sha256": {
+        "request-0.json": "988dba85fb8bd7226529993387bcd25d0e62b761ded74b7c9e905d7b028f9cfc",
+        "request-1.json": "fb283a5086124513866167d848e4dcaf2e46813e45f95c39ba95c8549eca422f"
+      }
+    },
+    {
+      "requested_model": "workbuddy/kimi-k3.1-pro",
+      "started_utc": "2026-11-11T14:28:52.208035+00:00",
+      "benchmark_inputs_used": false,
+      "model_code_executed": false,
+      "temperature": 0,
+      "max_completion_tokens_per_call": 6000,
+      "max_calls": 2,
+      "calls": [
+        {
+          "call": 0,
+          "http_status": 200,
+          "response_sha256": "77c87fbb92e706ab3ff998d400551a4dd57dee69a11ed9f97bd425862c9759a9",
+          "returned_model": "workbuddy/kimi-k3.1-pro",
+          "usage": {
+            "completion_tokens": 87,
+            "completion_tokens_details": {
+              "reasoning_tokens": 19
+            },
+            "prompt_tokens": 269,
+            "prompt_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 356
+          },
+          "finish_reason": "tool_calls",
+          "tool_calls": 1
+        },
+        {
+          "call": 1,
+          "http_status": 200,
+          "response_sha256": "bbd38604f6a9b8f478964f5a71b403396cf18416ff1fa63cbc7c2d301174f3e7",
+          "returned_model": "workbuddy/kimi-k3.1-pro",
+          "usage": {
+            "completion_tokens": 32,
+            "completion_tokens_details": {
+              "reasoning_tokens": 15
+            },
+            "prompt_tokens": 387,
+            "prompt_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 256
+            },
+            "total_tokens": 419
+          },
+          "finish_reason": "stop",
+          "tool_calls": 0
+        }
+      ],
+      "passed": true,
+      "wall_seconds": 8.788927832618356,
+      "probe_tag": "initial",
+      "attempted_requests": 2,
+      "completed_http_responses": 2,
+      "raw_report_sha256": "59d771f3f03a2ce7fc7bf7b51ae6b17d59160d1369b0b500bdf3def4b5fc895c",
+      "request_sha256": {
+        "request-0.json": "ff209865f9633e57966dd24723c5041fbd6614d6c25bc6320433f355c4e07cc1",
+        "request-1.json": "9cc7043f5bae3632ff82938143212aaa8b416e8a0f63769a8022b3045c40a2b1"
+      }
+    },
+    {
+      "requested_model": "workbuddy/step-5-preview",
+      "started_utc": "2026-11-11T14:29:02.565972+00:00",
+      "benchmark_inputs_used": false,
+      "model_code_executed": false,
+      "temperature": 0,
+      "max_completion_tokens_per_call": 6000,
+      "max_calls": 2,
+      "calls": [
+        {
+          "call": 0,
+          "http_status": 200,
+          "response_sha256": "93fec8fedae514682abe0b36318756c78f837b242918ad6ef86a862156d5e8e2",
+          "returned_model": "workbuddy/step-5-preview",
+          "usage": {
+            "completion_tokens": 78,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_tokens": 324,
+            "prompt_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 402
+          },
+          "finish_reason": "tool_calls",
+          "tool_calls": 1
+        },
+        {
+          "call": 1,
+          "http_status": 200,
+          "response_sha256": "a69cfe65fc644edaf0c872a7582bb1f7df0a9a01ff8c474cbd49552145525b4b",
+          "returned_model": "workbuddy/step-5-preview",
+          "usage": {
+            "completion_tokens": 7,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_tokens": 402,
+            "prompt_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 409
+          },
+          "finish_reason": "stop",
+          "tool_calls": 0
+        }
+      ],
+      "passed": true,
+      "wall_seconds": 4.204321041703224,
+      "probe_tag": "initial",
+      "attempted_requests": 2,
+      "completed_http_responses": 2,
+      "raw_report_sha256": "80df862ee1c92b480c2fb4479f7aa74498d2c7c140765bfe8726f7a794f57148",
+      "request_sha256": {
+        "request-0.json": "660a646d03cfcdefc95208de76957314436c809968d610097667fb50fea19fcb",
+        "request-1.json": "db791eef5a2a11aa58aadd914e8c97e91b811389377079182f4a0c7f0658a605"
+      }
+    },
+    {
+      "requested_model": "atria/intern-s2",
+      "started_utc": "2026-11-11T14:34:38.334672+00:00",
+      "benchmark_inputs_used": false,
+      "model_code_executed": false,
+      "temperature": 0,
+      "max_completion_tokens_per_call": 6000,
+      "max_calls": 2,
+      "calls": [
+        {
+          "call": 0,
+          "http_status": 200,
+          "response_sha256": "2ccea220ee90a5f46e6e755088686c4fed5e54dde8a08cd59317ca1588db9846",
+          "returned_model": "atria/intern-s2",
+          "usage": {
+            "prompt_tokens": 357,
+            "total_tokens": 454,
+            "completion_tokens": 97,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 53,
+              "accepted_prediction_tokens": null,
+              "rejected_prediction_tokens": null,
+              "audio_tokens": null
+            }
+          },
+          "finish_reason": "tool_calls",
+          "tool_calls": 1
+        },
+        {
+          "call": 1,
+          "http_status": 200,
+          "response_sha256": "ac933f003c0f2692d182fde38a2fa6429876d54bf550a26b2edc8e8f3b56e954",
+          "returned_model": "atria/intern-s2",
+          "usage": {
+            "prompt_tokens": 438,
+            "total_tokens": 484,
+            "completion_tokens": 46,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 40,
+              "accepted_prediction_tokens": null,
+              "rejected_prediction_tokens": null,
+              "audio_tokens": null
+            }
+          },
+          "finish_reason": "stop",
+          "tool_calls": 0
+        }
+      ],
+      "passed": true,
+      "wall_seconds": 18.010740582831204,
+      "probe_tag": "connectivity-followup",
+      "attempted_requests": 2,
+      "completed_http_responses": 2,
+      "raw_report_sha256": "9300019d41d225e6fd8bdea90956520d7acc9af255f58db26fe4dddc293e8826",
+      "request_sha256": {
+        "request-0.json": "2d0201dd00afb3907856d37d54216c64b1e9bda5f5aa39add23b8370c8ede3ac",
+        "request-1.json": "267c1cdeec9b47b6e166cf58095c5480a00f5fc031bf3a1d05fc505b2c0c2e96"
+      }
+    },
+    {
+      "requested_model": "remote-magpie/zinal-supervl/nemotron-3.5-super-vl",
+      "started_utc": "2026-11-11T14:34:38.334211+00:00",
+      "benchmark_inputs_used": false,
+      "model_code_executed": false,
+      "temperature": 0,
+      "max_completion_tokens_per_call": 6000,
+      "max_calls": 2,
+      "calls": [],
+      "passed": false,
+      "error_type": "ReadTimeout",
+      "wall_seconds": 120.01150145754218,
+      "probe_tag": "connectivity-followup",
+      "attempted_requests": 1,
+      "completed_http_responses": 0,
+      "raw_report_sha256": "39e1a226b0d4bc913ec671e701072d62530af82cfd047f8a4bca87c39a901d76",
+      "request_sha256": {
+        "request-0.json": "799f6b4c9ded0c21d248868a46619078f897e356e86d78a319e1f9ced906e894"
+      }
+    }
+  ]
+}

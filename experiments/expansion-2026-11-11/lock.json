@@ -1,0 +1,24 @@
+{
+  "profile": "strict-token-accounting-v1",
+  "base_release": "repeats-2026-11-11",
+  "scientific_runtime_changed": false,
+  "original_runtime_files_preserved": 32,
+  "earlier_repetition_files_preserved": 11,
+  "files": {
+    "src/gri_bench/expansion.py": "95fb81b491dfa14b8735b6f239a7074d2d2bc5d19801cfd5a41021046046ce5b",
+    "scripts/run_expansion.py": "9792b2038917551e2a7aeb80cd796b43a19c2e63103b3cbe87ca076ada07ef42",
+    "scripts/check_expansion_routes.py": "112681b84d433cc3ef629611d6da1c22757100e8cc975965ecc38abd27115a89",
+    "tests/test_expansion.py": "6096b311d1b29a2f8ed4145141fd85e11e9d20d5ccdeb8444b8271dfc7dff420",
+    "src/gri_bench/publication.py": "019d5889d927703e349934b23e3b5b2702765fd89e4a98d34e60fcbaf2c34480",
+    "scripts/audit_repetitions.py": "04cebeaced4d916c9ebf426ffd4a58ceb7634d3c79e5b6e993c91ffe1ccaf88a",
+    "scripts/analyze_repetitions.py": "efa04f51f3d63cfc0ae4a9277c731d29462d4646eeb71fef0bce904f7edb354c",
+    ".github/workflows/tests.yml": "9f57458810891dea6ead62a2afbd0150c7086f5f5083a1fa021f8c6b118c7f08",
+    "docs/MODEL_EXPANSION_2026_11_11.md": "9d174aac41e09d9c473869de5e494e25eca0a5efd37a92c0d0c6219f55851499",
+    "experiments/expansion-2026-11-11/plan.json": "91ccd53a30dbbe044921c3912b6bb81c2170d8cd3564f98e9a4fdd3c9b3ae574",
+    "experiments/expansion-2026-11-11/models.json": "41c01dcd8524308c566581cd41212626c530fe773cf08038f83da3efdab153c5",
+    "experiments/expansion-2026-11-11/connectivity.json": "3034ec73f9d1a30a8b2bc908f8c0a4597ef1bade344e39794067d7f46eb41ad5",
+    "experiments/expansion-2026-11-11/prior-result-hashes.json": "15540045e3ddce9ee14a20fdc0a1fd166c84a7800a5e67466034e425b9529004",
+    "contract/runtime-lock.json": "6068d2cd000a642f7683b3484150f1ec34680647e888ed7166641ce94e3be0ea",
+    "experiments/repeats-2026-11-11/lock.json": "abdbf1815f4404f96af109cdca332498fe2bbc8b02f1c6ed4329e22959fea2be"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "checked_utc": "2026-11-11T14:39:13.843305+00:00",
+  "selected": [
+    {
+      "requested_route": "atria/qwen3.8-27b",
+      "display_name": "Qwen3.8-27B",
+      "weights_publicly_available": true,
+      "license_label": "Apache-2.0",
+      "reference_checkpoint": {
+        "repository": "Qwen/Qwen3.8-27B",
+        "model_card_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "revision": "37561816e66b5b9153b1b64c10968c18c1e6f4a0",
+        "last_modified": "2026-11-07T04:42:17.000Z",
+        "license": "apache-2.0",
+        "weight_files": 18,
+        "parameters": 27781427952
+      },
+      "served_checkpoint_independently_verified": false
+    },
+    {
+      "requested_route": "minimax-code/MiniMax-M3.1-Flash",
+      "display_name": "MiniMax-M3.1-Flash",
+      "weights_publicly_available": true,
+      "license_label": "MiniMax Community License",
+      "reference_checkpoint": {
+        "repository": "MiniMaxAI/MiniMax-M3.1-Flash",
+        "model_card_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+        "revision": "ce7f4df87d2e05262f5775f373dac4772f134041",
+        "last_modified": "2026-11-05T00:55:30.000Z",
+        "license": "other",
+        "weight_files": 49,
+        "parameters": 220490854016
+      },
+      "served_checkpoint_independently_verified": false
+    },
+    {
+      "requested_route": "workbuddy/kimi-k3.1-pro",
+      "display_name": "Kimi-K3.1-Pro",
+      "weights_publicly_available": true,
+      "license_label": "Kimi K3.1 Pro License",
+      "reference_checkpoint": {
+        "repository": "moonshotai/Kimi-K3.1-Pro",
+        "model_card_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "revision": "d9e99b0792a5e93b78ea9bea62a68167e36ddd9e",
+        "last_modified": "2026-11-05T07:11:43.000Z",
+        "license": "other",
+        "weight_files": 96,
+        "parameters": 2780110363392
+      },
+      "served_checkpoint_independently_verified": false
+    },
+    {
+      "requested_route": "tokendance/mimo-v2.6-pro",
+      "display_name": "MiMo-V2.6-Pro",
+      "weights_publicly_available": true,
+      "license_label": "MIT",
+      "reference_checkpoint": {
+        "repository": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+        "model_card_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+        "revision": "a066ba0057192126bd5d255f37138265fc1a435e",
+        "last_modified": "2026-10-28T14:16:57.000Z",
+        "license": "mit",
+        "weight_files": 132,
+        "parameters": 1024216603392
+      },
+      "served_checkpoint_independently_verified": false
+    },
+    {
+      "requested_route": "workbuddy/step-5-preview",
+      "display_name": "Step-5-Preview",
+      "weights_publicly_available": true,
+      "license_label": "StepFun Model License 1.0",
+      "reference_checkpoint": {
+        "repository": "stepfun-ai/Step-5-Preview",
+        "model_card_url": "https://huggingface.co/stepfun-ai/Step-5-Preview",
+        "revision": "364b3b03fed2477aa0953fe855a2c4c8c48ee3cc",
+        "last_modified": "2026-10-15T01:28:10.000Z",
+        "license": "other",
+        "weight_files": 28,
+        "parameters": 604339504832
+      },
+      "served_checkpoint_independently_verified": false
+    },
+    {
+      "requested_route": "atria/intern-s2",
+      "display_name": "Intern-S2",
+      "weights_publicly_available": true,
+      "license_label": "Apache-2.0",
+      "reference_checkpoint": {
+        "repository": "internlm/Intern-S2-397B",
+        "model_card_url": "https://huggingface.co/internlm/Intern-S2-397B",
+        "revision": "85c1f58844e68836ec02245183cfa671de20977a",
+        "last_modified": "2026-09-24T07:00:15.000Z",
+        "license": "apache-2.0",
+        "license_name": null,
+        "weight_files": 188,
+        "parameters": 403423094768
+      },
+      "served_checkpoint_independently_verified": false
+    }
+  ],
+  "identity_limit": "Official weight repositories establish availability and licenses, not the checkpoint or quantization actually served by an API route. Requested and returned model labels are recorded for every trial.",
+  "excluded_families": [
+    "Claude",
+    "Opus"
+  ],
+  "selection_only_uses": "Version recency, family diversity, public weights and non-benchmark tool-call connectivity; no scored design results."
+}

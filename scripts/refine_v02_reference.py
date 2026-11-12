@@ -39,7 +39,10 @@ def refine(task):
         if values in tested:
             return
         tested.add(values)
-        metrics = experiment.evaluate(design)
+        try:
+            metrics = experiment.evaluate(design)
+        except (ValueError, FloatingPointError):
+            return
         loss = robust_loss(metrics)
         if best is None or loss < best["loss"]:
             best = {"design": design, "loss": loss,

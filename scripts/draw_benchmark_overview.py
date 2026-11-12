@@ -109,6 +109,33 @@ COPY = {
 }
 
 
+V02_COPY = {
+    'en': {
+        'title': 'How GRI Design Bench v0.2 works',
+        'submit_body': 'Validate and save\nsubmit_design',
+        's3': 'Independent evaluation on new meals',
+        'evaluation_body': '3 patients × 16 seeds\n× 3 meal variants\n= 144 three-day traces',
+        'rank': 'Model ranking uses mean score across all attempts.',
+        'desc': 'A fixed formulation responds to tissue glucose, with leakage, delay and '
+                'a finite reservoir. The agent searches on training meals and saves its '
+                'latest legal design with submit_design. Independent evaluation uses 144 '
+                'three-day traces. All trajectories must pass the safety thresholds to '
+                'earn mean time in range. Failed attempts score zero and enter the ranking mean.',
+    },
+    'zh-CN': {
+        'title': 'GRI Design Bench v0.2 从配方到得分',
+        'submit_body': '校验并保存方案\nsubmit_design',
+        's3': '用新的进餐情景独立评分',
+        'evaluation_body': '3 名患者 × 16 个种子\n× 3 种进餐变体\n= 144 条三天血糖轨迹',
+        'rank': '模型按全部尝试的平均分排名。',
+        'desc': '固定配方根据组织液葡萄糖释放有限的胰岛素，受基础泄漏和响应延迟影响。'
+                'Agent 在训练情景中搜索，用 submit_design 保存最近一次合法方案。'
+                '独立评分生成 144 条三天轨迹，全部通过安全检查时得分等于平均达标时间比例。'
+                '失败计零，所有尝试都纳入模型均分。',
+    },
+}
+
+
 def chinese_font(path=None):
     if path:
         fm.fontManager.addfont(str(path))
@@ -121,8 +148,8 @@ def chinese_font(path=None):
     raise RuntimeError('Install a Chinese font or pass --chinese-font FONT_FILE.')
 
 
-def draw(language, output, zh_font):
-    c = COPY[language]
+def draw(language, output, zh_font, version='0.1.1'):
+    c = COPY[language] if version == '0.1.1' else COPY[language] | V02_COPY[language]
     family = zh_font if language == 'zh-CN' else 'DejaVu Sans'
     plt.rcParams.update({'font.family': family, 'svg.fonttype': 'path',
                          'svg.hashsalt': 'gri-benchmark-overview-v1',
@@ -241,7 +268,8 @@ def draw(language, output, zh_font):
         raise ValueError(language + ': ' + '; '.join(errors))
 
     output.mkdir(parents=True, exist_ok=True)
-    stem = output / f'benchmark-overview-{language}'
+    suffix = language if version == '0.1.1' else f'v02-{language}'
+    stem = output / f'benchmark-overview-{suffix}'
     fig.savefig(stem.with_suffix('.svg'), facecolor='white',
                 metadata={'Date': None, 'Creator': 'GRI Design Bench'})
     fig.savefig(stem.with_suffix('.png'), dpi=180, facecolor='white',
@@ -271,7 +299,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=ROOT/'docs'/'assets')
     parser.add_argument('--chinese-font', type=Path)
+    parser.add_argument('--version', choices=('0.1.1', '0.2.0'), default='0.1.1')
     args = parser.parse_args()
     font = chinese_font(args.chinese_font)
     for language in ('en', 'zh-CN'):
-        draw(language, args.output, font)
+        draw(language, args.output, font, args.version)

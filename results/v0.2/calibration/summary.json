@@ -1,0 +1,314 @@
+{
+  "legacy_failures": {
+    "source_commit": "31b8731f927691ccb4ed46064d3974dd5bf55373",
+    "attempts": 324,
+    "round_tags": [
+      "repeat-20261111-r1",
+      "repeat-20261111-r2",
+      "repeat-20261111-r3",
+      "repeat-20261111-expand-r1",
+      "repeat-20261111-expand-r2",
+      "repeat-20261111-expand-r3"
+    ],
+    "note": "The file categories are mutually exclusive. Budget and API flags can overlap. The legacy wall time includes cleanup and does not identify the exact cutoff cause.",
+    "groups": [
+      {
+        "split": "development",
+        "model": "atria/intern-s2",
+        "attempts": 18,
+        "submission_or_infrastructure_failure": 15,
+        "design_missing_or_invalid": 15,
+        "reached_two_api_errors": 1,
+        "charged_full_completion_budget": 1,
+        "runner_shell_exhausted": 9,
+        "recorded_elapsed_at_least_360": 6,
+        "valid_designs": 3,
+        "safety_failed": 3
+      },
+      {
+        "split": "development",
+        "model": "atria/qwen3.8-27b",
+        "attempts": 18,
+        "valid_designs": 16,
+        "safety_failed": 3,
+        "submission_or_infrastructure_failure": 2,
+        "design_missing_or_invalid": 2,
+        "reached_two_api_errors": 1,
+        "charged_full_completion_budget": 1,
+        "runner_shell_exhausted": 0,
+        "recorded_elapsed_at_least_360": 0
+      },
+      {
+        "split": "development",
+        "model": "codex/gpt-6.1-sol",
+        "attempts": 18,
+        "valid_designs": 18,
+        "safety_failed": 0
+      },
+      {
+        "split": "development",
+        "model": "minimax-code/MiniMax-M3.1-Flash",
+        "attempts": 18,
+        "valid_designs": 6,
+        "safety_failed": 3,
+        "submission_or_infrastructure_failure": 12,
+        "design_missing_or_invalid": 12,
+        "reached_two_api_errors": 2,
+        "charged_full_completion_budget": 0,
+        "runner_shell_exhausted": 0,
+        "recorded_elapsed_at_least_360": 0
+      },
+      {
+        "split": "development",
+        "model": "tokendance/glm-5.3",
+        "attempts": 18,
+        "valid_designs": 13,
+        "safety_failed": 3,
+        "submission_or_infrastructure_failure": 5,
+        "design_missing_or_invalid": 4,
+        "reached_two_api_errors": 4,
+        "charged_full_completion_budget": 1,
+        "runner_shell_exhausted": 0,
+        "recorded_elapsed_at_least_360": 0,
+        "design_present_auxiliary_missing_or_invalid": 1
+      },
+      {
+        "split": "development",
+        "model": "tokendance/mimo-v2.6-pro",
+        "attempts": 18,
+        "submission_or_infrastructure_failure": 11,
+        "design_missing_or_invalid": 11,
+        "reached_two_api_errors": 9,
+        "charged_full_completion_budget": 1,
+        "runner_shell_exhausted": 0,
+        "recorded_elapsed_at_least_360": 1,
+        "valid_designs": 7,
+        "safety_failed": 4
+      },
+      {
+        "split": "development",
+        "model": "wanjie/deepseek-v4.1-flash-1017",
+        "attempts": 18,
+        "valid_designs": 18,
+        "safety_failed": 2
+      },
+      {
+        "split": "development",
+        "model": "workbuddy/kimi-k3.1-pro",
+        "attempts": 18,
+        "valid_designs": 18,
+        "safety_failed": 2
+      },
+      {
+        "split": "development",
+        "model": "workbuddy/step-5-preview",
+        "attempts": 18,
+        "valid_designs": 10,
+        "safety_failed": 3,
+        "submission_or_infrastructure_failure": 8,
+        "design_missing_or_invalid": 5,
+        "reached_two_api_errors": 2,
+        "charged_full_completion_budget": 5,
+        "runner_shell_exhausted": 1,
+        "recorded_elapsed_at_least_360": 0,
+        "design_present_auxiliary_missing_or_invalid": 3
+      },
+      {
+        "split": "sealed",
+        "model": "atria/intern-s2",
+        "attempts": 18,
+        "submission_or_infrastructure_failure": 17,
+        "design_missing_or_invalid": 15,
+        "reached_two_api_errors": 0,
+        "charged_full_completion_budget": 0,
+        "runner_shell_exhausted": 17,
+        "recorded_elapsed_at_least_360": 0,
+        "valid_designs": 1,
+        "safety_failed": 0,
+        "design_present_auxiliary_missing_or_invalid": 2
+      },
+      {
+        "split": "sealed",
+        "model": "atria/qwen3.8-27b",
+        "attempts": 18,
+        "valid_designs": 17,
+        "safety_failed": 7,
+        "submission_or_infrastructure_failure": 1,
+        "design_missing_or_invalid": 1,
+        "reached_two_api_errors": 1,
+        "charged_full_completion_budget": 0,
+        "runner_shell_exhausted": 0,
+        "recorded_elapsed_at_least_360": 0
+      },
+      {
+        "split": "sealed",
+        "model": "codex/gpt-6.1-sol",
+        "attempts": 18,
+        "valid_designs": 18,
+        "safety_failed": 0
+      },
+      {
+        "split": "sealed",
+        "model": "minimax-code/MiniMax-M3.1-Flash",
+        "attempts": 18,
+        "submission_or_infrastructure_failure": 14,
+        "design_present_auxiliary_missing_or_invalid": 1,
+        "reached_two_api_errors": 0,
+        "charged_full_completion_budget": 1,
+        "runner_shell_exhausted": 0,
+        "recorded_elapsed_at_least_360": 0,
+        "valid_designs": 4,
+        "safety_failed": 1,
+        "design_missing_or_invalid": 13
+      },
+      {
+        "split": "sealed",
+        "model": "tokendance/glm-5.3",
+        "attempts": 18,
+        "valid_designs": 15,
+        "safety_failed": 6,
+        "submission_or_infrastructure_failure": 3,
+        "design_missing_or_invalid": 3,
+        "reached_two_api_errors": 3,
+        "charged_full_completion_budget": 0,
+        "runner_shell_exhausted": 0,
+        "recorded_elapsed_at_least_360": 0
+      },
+      {
+        "split": "sealed",
+        "model": "tokendance/mimo-v2.6-pro",
+        "attempts": 18,
+        "submission_or_infrastructure_failure": 15,
+        "design_missing_or_invalid": 14,
+        "reached_two_api_errors": 14,
+        "charged_full_completion_budget": 0,
+        "runner_shell_exhausted": 0,
+        "recorded_elapsed_at_least_360": 0,
+        "complete_files_other_failure": 1,
+        "valid_designs": 3,
+        "safety_failed": 1
+      },
+      {
+        "split": "sealed",
+        "model": "wanjie/deepseek-v4.1-flash-1017",
+        "attempts": 18,
+        "valid_designs": 17,
+        "safety_failed": 0,
+        "submission_or_infrastructure_failure": 1,
+        "complete_files_other_failure": 1,
+        "reached_two_api_errors": 0,
+        "charged_full_completion_budget": 0,
+        "runner_shell_exhausted": 0,
+        "recorded_elapsed_at_least_360": 0
+      },
+      {
+        "split": "sealed",
+        "model": "workbuddy/kimi-k3.1-pro",
+        "attempts": 18,
+        "valid_designs": 18,
+        "safety_failed": 3
+      },
+      {
+        "split": "sealed",
+        "model": "workbuddy/step-5-preview",
+        "attempts": 18,
+        "valid_designs": 9,
+        "safety_failed": 6,
+        "submission_or_infrastructure_failure": 9,
+        "design_missing_or_invalid": 6,
+        "reached_two_api_errors": 4,
+        "charged_full_completion_budget": 3,
+        "runner_shell_exhausted": 1,
+        "recorded_elapsed_at_least_360": 0,
+        "design_present_auxiliary_missing_or_invalid": 3
+      }
+    ]
+  },
+  "scenario_designs": 48,
+  "fast_scenarios_evaluated": 27648,
+  "native_check_trajectories": 981,
+  "fast_native_safety_differences": 0,
+  "max_absolute_metric_difference": {
+    "tir": 0.0,
+    "tbr70": 0.0,
+    "tbr54": 0.0,
+    "minimum": 0.0006046945396036563
+  },
+  "native_control_trajectories": 5184,
+  "native_control_means": {
+    "constant_30": {
+      "mean_safe_tir": 48.46317997685185,
+      "safety_passes": 6
+    },
+    "old_prompt_example": {
+      "mean_safe_tir": 14.417679398148149,
+      "safety_passes": 5
+    },
+    "responsive_30": {
+      "mean_safe_tir": 45.9349681712963,
+      "safety_passes": 5
+    },
+    "responsive_300": {
+      "mean_safe_tir": 19.633367091049383,
+      "safety_passes": 2
+    },
+    "responsive_3000": {
+      "mean_safe_tir": 19.650245949074073,
+      "safety_passes": 2
+    },
+    "zero": {
+      "mean_safe_tir": 0.0,
+      "safety_passes": 6
+    }
+  },
+  "private_source_sha256": {
+    "cpu/dev-01-constant-30.json": "097b48e5e6da09bc51771a644d600517c31194c89796b2470f682f8d760dee47",
+    "cpu/dev-01-responsive-30.json": "b64a3d84790e1dbc95656fcf64c2124f62590d8a43fbb9fff43ef119300544d4",
+    "cpu/dev-01-responsive-300.json": "adbf85686c4937fae79cfdaa61ba88777d8cdeaf8c215c60a37a49097c2739ab",
+    "cpu/dev-01-responsive-3000.json": "fcd5c64c73349b203dd897a79701aa90fb1b124547cbcf5e59dc9e9076899747",
+    "cpu/dev-02-constant-30.json": "86ea1b2a57ff599e877688b8ab2da78f10f9e4061690aa26ad6fc9e2da2f2695",
+    "cpu/dev-02-responsive-30.json": "ecda7ff9994a815edf74669ecf331ca1f83735ac9ac03b079ed2c4784202f020",
+    "cpu/dev-02-responsive-300.json": "2c56ba5ab19c79a091eafd5bf7cc9bf437d7541b7828a688abfa65c3ab61ec24",
+    "cpu/dev-02-responsive-3000.json": "861a1ed474618277f2e004358ae90eb258cbf23bb9b6daf483463442d5850438",
+    "cpu/dev-03-constant-30.json": "9e168f274c45026e04f60acc93f22dfc3357ec413425013bdfb9981b6d4eb3d4",
+    "cpu/dev-03-responsive-30.json": "b2147b63f63e3364e2d2efd2714bfd79b53695f34c41f5c320747911492072d2",
+    "cpu/dev-03-responsive-300.json": "c51fb597fb6144a07b6d8e1e227f827084a5f66e5bcacf1296e6dd9fa2cccc44",
+    "cpu/dev-03-responsive-3000.json": "253b8e2c9cbda37cf5ae0bafb4e038d12fe79eaa89a6236fc4edc2af29cc8561",
+    "cpu/dev-04-constant-30.json": "82266b0975f0d8acc1f0de56d8d970e63c16313af27f7077b44c3e97ac8fd62e",
+    "cpu/dev-04-responsive-30.json": "d4b1b7da41adc0ea8f8fc39a6fa737b398c3cf9c3b0cf42fabe52d3d31f650c2",
+    "cpu/dev-04-responsive-300.json": "c8d3f1f69bb46f4287a3a6e7cfa0a6c37ad7c810a1eb1c156b36e348561f1d5e",
+    "cpu/dev-04-responsive-3000.json": "e235963e537eb626e536fe81eee39e5bd7a6cef7add37bf595a21e63da8bd525",
+    "cpu/dev-05-constant-30.json": "4ac64adb5fd3c21d6d2ab0db823acf63c49a7c825c4981a90acdfa2544bf3681",
+    "cpu/dev-05-responsive-30.json": "4aa17f78c77cc16b34d646e55667a5c9597d301814fffc7346ad29be464f2fe9",
+    "cpu/dev-05-responsive-300.json": "e5608973839ad1f1cc61d99ec5ce49c812062254669d4dd83890c6b126f1dd8c",
+    "cpu/dev-05-responsive-3000.json": "19406c0d5f9e25bfa7bbd84d9553a91d1ea8a8b2f99997d01568d726bd0ad078",
+    "cpu/dev-06-constant-30.json": "32809e038e5bab5457aec2fdd0f48c9cc538d1b5df06bce7454a91dc2d7e712c",
+    "cpu/dev-06-responsive-30.json": "5066d14a140b35b2ffbb7c2e290af3ee28db67daa085b241273c2cc9451e0ea9",
+    "cpu/dev-06-responsive-300.json": "5bcc9a9030a6200efbe70c523e4ffd3f14b8750934dc2eaa076886f988242c30",
+    "cpu/dev-06-responsive-3000.json": "376fd0ab69fe2662ebc31db0bbd695de4fa26856d3011915863f2fd591c0a0d0",
+    "scenarios-initial/dev-01.json": "2e1fe3e858770b610201f34e165ebbbbceea22857875dcdc2f63bbd0779efe90",
+    "scenarios-initial/dev-02.json": "735ebf941ea28c50f48127b54f4a4636a8b8596e1dadc62fe0b35e7f1a511f3e",
+    "scenarios-initial/dev-03.json": "5000930c1fad2186ce76bfc3487bc76c46c68dec130480d51d02465d44b7fe7d",
+    "scenarios-initial/dev-04.json": "abc5678b0ea6cb86957bc4bd3b45d8fc1491acd190d57ee380ecebc781619032",
+    "scenarios-initial/dev-05.json": "62d5c7fdf074ca80a4eb3abe2ac1de2958ed64756e9574a59120d8663585bf7b",
+    "scenarios-initial/dev-06.json": "57f096346d3326c2266eab7adf8a9d6acb6ca0e6963155f2435858f572059025",
+    "scenarios-long/dev-01.json": "f483113366833b781d66546d342aa6e4e3d0d413d12c10de24ec25359ff0020f",
+    "scenarios-long/dev-02.json": "6f5cfb50450d3cba30e9b8fcbb365127b30d2ce4998361231de23a0903312236",
+    "scenarios-long/dev-03.json": "8bd5372fc3245365154a672dfce79b2bd900bcacd7b62d9b5f3e25563d041f1a",
+    "scenarios-long/dev-04.json": "95b9f6fddfe32fb82246c0b0c2592afd3cda14af649581bbd610c52d03c70e77",
+    "scenarios-long/dev-05.json": "d5d96af7448a948f8bc6d31d0afba1f721ad7aca613388cbc120e4d0b518330c",
+    "scenarios-long/dev-06.json": "e2ed3d61fadeada24fdc37554c1c8d79c94f53fc527f01a76443e197f5d6ce35",
+    "native-initial/dev-01.json": "c985f626be4172eaf89e81b4b40ba85cb869bfcc0d5fe5967b072f1d86a101df",
+    "native-initial/dev-02.json": "4e47d78e60d506e461dfe97cd02b3cb3e223814712704fe892ac290df9854ba2",
+    "native-initial/dev-03.json": "83d572eb967c14239d099e8837e7d29da47cdc180cc64b5192353b6060e35299",
+    "native-initial/dev-04.json": "f7ccc0c9c609c2e040cc2714c9f85d1d239ad0210fb88b72df7d25bb09f06e8f",
+    "native-initial/dev-05.json": "c7d6681cb00887d46ecf5ecbf66796bc1f49018b75102356cc1cdeb0fcabfe30",
+    "native-initial/dev-06.json": "7a0c92a5a235e1a28a0ce02cda30cbf5ebb3200a0547ae903a41d74820b57cc0",
+    "native-long/dev-01.json": "ba853def3a65edd55ad351443f7e4f08714d0ad782305ebf8ea44030d12d3c35",
+    "native-long/dev-02.json": "9a98ce505f9ebb974639413e33c16fd4da9c496c0cb7d3bcbd7d23091c599622",
+    "native-long/dev-03.json": "324bb76fae161216ee2a4c8c969e352623992559bd6463f0bcf24319b83f8eab",
+    "native-long/dev-04.json": "e5d47398429d68604a3b117b5ea49d7cc3517d31bb312d0ac03f2c35e069c0ef",
+    "native-long/dev-05.json": "b5f866a73f3fbe6e7e389dbaa5aa882639184aa897af76b4c6b0fac390f0416a",
+    "native-long/dev-06.json": "9e24a011b56a544a34c0b41abdfd2d8a034dec5f275943a5b226a8654f08c62e"
+  }
+}

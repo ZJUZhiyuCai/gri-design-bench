@@ -1,0 +1,94 @@
+{
+  "version": "gri-design-bench-0.2.0",
+  "split": "sealed",
+  "registered_utc": "2026-11-12T18:01:39.089357+00:00",
+  "cases": [
+    "v02-sealed-01",
+    "v02-sealed-02",
+    "v02-sealed-03",
+    "v02-sealed-04",
+    "v02-sealed-05",
+    "v02-sealed-06"
+  ],
+  "repetitions": 3,
+  "evaluation_seeds_per_case": 16,
+  "models": [
+    {
+      "id": "gpt",
+      "display": "GPT-6.1 Sol",
+      "route": "codex/gpt-6.1-sol",
+      "selection": "strong v0.1.1 route",
+      "reference_checkpoint": null,
+      "served_checkpoint": null,
+      "engine": null,
+      "quantization": null
+    },
+    {
+      "id": "kimi",
+      "display": "Kimi-K3.1-Pro",
+      "route": "workbuddy/kimi-k3.1-pro",
+      "selection": "open-weight family with 18/18 valid v0.1.1 sealed submissions",
+      "reference_checkpoint": {
+        "repository": "moonshotai/Kimi-K3.1-Pro",
+        "model_card_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "revision": "d9e99b0792a5e93b78ea9bea62a68167e36ddd9e",
+        "last_modified": "2026-11-05T07:11:43.000Z",
+        "license": "other",
+        "weight_files": 96,
+        "parameters": 2780110363392
+      },
+      "served_checkpoint": null,
+      "engine": null,
+      "quantization": null
+    },
+    {
+      "id": "minimax",
+      "display": "MiniMax-M3.1-Flash",
+      "route": "minimax-code/MiniMax-M3.1-Flash",
+      "selection": "open-weight family with frequent v0.1.1 submission failures",
+      "reference_checkpoint": {
+        "repository": "MiniMaxAI/MiniMax-M3.1-Flash",
+        "model_card_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+        "revision": "ce7f4df87d2e05262f5775f373dac4772f134041",
+        "last_modified": "2026-11-05T00:55:30.000Z",
+        "license": "other",
+        "weight_files": 49,
+        "parameters": 220490854016
+      },
+      "served_checkpoint": null,
+      "engine": null,
+      "quantization": null
+    }
+  ],
+  "agent_attempts": 54,
+  "baseline_attempts": 12,
+  "schedule": "Rounds, cases, then cyclic rotation of models. Both fixed baselines follow.",
+  "sealed_planning": {
+    "paired_comparison": "gpt versus equal-budget constant",
+    "target_half_width_tir_points": 10,
+    "case_count_min": 6,
+    "case_count_max": 12,
+    "stratification_multiple": 6
+  },
+  "sizing": {
+    "pilot_case_differences_tir_points": {
+      "dev-01": -8.462094907407405,
+      "dev-02": -13.156828703703702,
+      "dev-03": 4.731143904320994,
+      "dev-04": -8.510561342592592,
+      "dev-05": 5.8687789351851904,
+      "dev-06": 13.082320601851851
+    },
+    "pilot_paired_case_sd_tir_points": 10.374819774530598,
+    "normal_approximation_case_count": 5,
+    "chosen_case_count": 6,
+    "estimated_half_width_tir_points": 8.301584776172684,
+    "paired_comparison": "gpt versus equal-budget constant",
+    "target_half_width_tir_points": 10,
+    "case_count_min": 6,
+    "case_count_max": 12,
+    "stratification_multiple": 6
+  },
+  "development_evidence_sha256": "9b8bccee753908026cf39d7ffba8ecb58cd1b16891ba22c0ef7f8aebc9f10efa",
+  "case_construction": "New stratified triplets from the 30 public virtual patients, with the six development envelopes in rotation."
+}

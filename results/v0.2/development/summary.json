@@ -1,0 +1,109 @@
+{
+  "split": "development",
+  "created_utc": "2026-11-12T18:00:19.502431+00:00",
+  "cases": 6,
+  "seed_count": 16,
+  "leaderboard": [
+    {
+      "method": "Constant baseline",
+      "route_or_baseline": "constant",
+      "attempts": 6,
+      "valid": 6,
+      "safety_passes": 6,
+      "mean_safe_tir": 46.97374131944444,
+      "mean_feasible_tir": 46.97374131944444,
+      "scored_trajectories": 864,
+      "delta_vs_constant": 0.0,
+      "round_mean_sd": null,
+      "round_min_mean": null,
+      "round_max_mean": null
+    },
+    {
+      "method": "GPT-6.1 Sol",
+      "route_or_baseline": "codex/gpt-6.1-sol",
+      "attempts": 18,
+      "valid": 18,
+      "safety_passes": 12,
+      "mean_safe_tir": 45.899201067386834,
+      "mean_feasible_tir": 68.84880160108025,
+      "scored_trajectories": 2592,
+      "delta_vs_constant": -1.0745402520576104,
+      "round_mean_sd": 19.78586117741838,
+      "round_min_mean": 31.78927951388889,
+      "round_max_mean": 68.51574556327161
+    },
+    {
+      "method": "Responsive baseline",
+      "route_or_baseline": "responsive",
+      "attempts": 6,
+      "valid": 6,
+      "safety_passes": 5,
+      "mean_safe_tir": 41.44350405092593,
+      "mean_feasible_tir": 49.732204861111114,
+      "scored_trajectories": 864,
+      "delta_vs_constant": -5.5302372685185155,
+      "round_mean_sd": null,
+      "round_min_mean": null,
+      "round_max_mean": null
+    },
+    {
+      "method": "Kimi-K3.1-Pro",
+      "route_or_baseline": "workbuddy/kimi-k3.1-pro",
+      "attempts": 18,
+      "valid": 18,
+      "safety_passes": 14,
+      "mean_safe_tir": 41.14097061471193,
+      "mean_feasible_tir": 52.89553364748677,
+      "scored_trajectories": 2592,
+      "delta_vs_constant": -5.832770704732511,
+      "round_mean_sd": 10.36887437884218,
+      "round_min_mean": 30.486352237654323,
+      "round_max_mean": 51.19827835648148
+    },
+    {
+      "method": "MiniMax-M3.1-Flash",
+      "route_or_baseline": "minimax-code/MiniMax-M3.1-Flash",
+      "attempts": 18,
+      "valid": 15,
+      "safety_passes": 7,
+      "mean_safe_tir": 22.462062757201647,
+      "mean_feasible_tir": 57.75958994708995,
+      "scored_trajectories": 2160,
+      "delta_vs_constant": -24.5116785622428,
+      "round_mean_sd": 12.806886300056785,
+      "round_min_mean": 8.008897569444445,
+      "round_max_mean": 32.39896797839506
+    }
+  ],
+  "status_counts": {
+    "safety_failure": 19,
+    "verified": 44,
+    "submission_failure": 3
+  },
+  "agent_attempts": 54,
+  "baseline_attempts": 12,
+  "audited_api_reservations": 579,
+  "reverified_designs": [
+    {
+      "trial_id": "dev-01__gpt__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "dev-01__kimi__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "dev-01__minimax__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "dev-01__baseline-constant",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "dev-01__baseline-responsive",
+      "trajectories": 144
+    }
+  ],
+  "uncertainty": "Percentile bootstrap of paired case means. The 20,000 resamples retain every repetition of each sampled case."
+}

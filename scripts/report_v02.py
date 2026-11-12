@@ -123,7 +123,7 @@ def audit_attempt(path, case, method, model, plan, instance, seeds):
 
 def csv_export(path, rows):
     with path.open("w", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 

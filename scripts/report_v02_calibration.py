@@ -102,7 +102,7 @@ def main():
     }
     args.output.mkdir(parents=True, exist_ok=True)
     with (args.output / "cpu-curve.csv").open("w", newline="") as stream:
-        w = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        w = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
     atomic_json(args.output / "checkpoints.json", {"protocol": strict_json(base / "cpu/protocol.json"), "checkpoints": checks})

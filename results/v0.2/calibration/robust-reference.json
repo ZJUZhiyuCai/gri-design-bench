@@ -1,0 +1,335 @@
+{
+  "scope": "Post-search refinement on 16 independent training seeds. Native evaluation follows selection.",
+  "cases": [
+    {
+      "case": "dev-01",
+      "training_seeds": [
+        735002707,
+        735001878,
+        735002064,
+        735004254,
+        735007739,
+        735004874,
+        735006658,
+        735002426,
+        735008267,
+        735002891,
+        735006644,
+        735000655,
+        735005410,
+        735002051,
+        735007406,
+        735001029
+      ],
+      "refinement_cpu_seconds": 106.565218,
+      "candidates": 61,
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.0002355872763411028,
+          "relative_leak": 1.9512442380544404,
+          "ec50_mg_dl": 73.81496849159744,
+          "hill_n": 11.280885132968004,
+          "tau_min": 0.12185480599428894,
+          "theta_L": 3.6707992604287245
+        }
+      },
+      "loss": -81.87861689814815,
+      "training": {
+        "mean_tir": 81.87861689814815,
+        "max_trajectory_tbr70": 1.25,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.91587502097524,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 81.87861689814815
+      },
+      "score": {
+        "mean_tir": 82.03776041666667,
+        "max_trajectory_tbr70": 1.875,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.83021415582746,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 82.03776041666667,
+        "format_valid": true,
+        "native_integrator": "simglucose-dopri5"
+      }
+    },
+    {
+      "case": "dev-02",
+      "training_seeds": [
+        735003637,
+        735001357,
+        735004546,
+        735002263,
+        735002162,
+        735004883,
+        735001224,
+        735003481,
+        735009581,
+        735008734,
+        735002591,
+        735003153,
+        735007028,
+        735003898,
+        735002737,
+        735009817
+      ],
+      "refinement_cpu_seconds": 102.926583,
+      "candidates": 61,
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.00018338454809701797,
+          "relative_leak": 2.0668529084793934,
+          "ec50_mg_dl": 117.62046612289997,
+          "hill_n": 13.649926562615729,
+          "tau_min": 0.20668230202790225,
+          "theta_L": 2.67588448189869
+        }
+      },
+      "loss": -75.63223379629629,
+      "training": {
+        "mean_tir": 75.63223379629629,
+        "max_trajectory_tbr70": 0.0,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 70.26990233645526,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 75.63223379629629
+      },
+      "score": {
+        "mean_tir": 76.5089699074074,
+        "max_trajectory_tbr70": 0.0,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 70.30115902733368,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 76.5089699074074,
+        "format_valid": true,
+        "native_integrator": "simglucose-dopri5"
+      }
+    },
+    {
+      "case": "dev-03",
+      "training_seeds": [
+        735004215,
+        735001234,
+        735009334,
+        735005537,
+        735008487,
+        735002247,
+        735007515,
+        735005238,
+        735007104,
+        735005936,
+        735006161,
+        735000648,
+        735004155,
+        735002902,
+        735008973,
+        735001470
+      ],
+      "refinement_cpu_seconds": 102.757755,
+      "candidates": 61,
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.00018609216949757622,
+          "relative_leak": 1.6350161716892593,
+          "ec50_mg_dl": 87.00331172725568,
+          "hill_n": 13.139465262042586,
+          "tau_min": 0.1194262942412134,
+          "theta_L": 2.2569355773765745
+        }
+      },
+      "loss": -83.14525462962962,
+      "training": {
+        "mean_tir": 83.14525462962962,
+        "max_trajectory_tbr70": 1.25,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.84515873211852,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 83.14525462962962
+      },
+      "score": {
+        "mean_tir": 82.83998842592594,
+        "max_trajectory_tbr70": 0.9375,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.91122543047372,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 82.83998842592594,
+        "format_valid": true,
+        "native_integrator": "simglucose-dopri5"
+      }
+    },
+    {
+      "case": "dev-04",
+      "training_seeds": [
+        735000800,
+        735009297,
+        735003758,
+        735007739,
+        735002936,
+        735009360,
+        735006353,
+        735003559,
+        735007676,
+        735004684,
+        735004541,
+        735000891,
+        735002064,
+        735007009,
+        735000370,
+        735004560
+      ],
+      "refinement_cpu_seconds": 95.74086299999999,
+      "candidates": 60,
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.0002734577189374841,
+          "relative_leak": 1.4561663149972979,
+          "ec50_mg_dl": 61.982755478717415,
+          "hill_n": 0.6628447764298869,
+          "tau_min": 19.75138766669191,
+          "theta_L": 1.25
+        }
+      },
+      "loss": -28.75289351851852,
+      "training": {
+        "mean_tir": 28.75289351851852,
+        "max_trajectory_tbr70": 0.0,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 83.22609410575429,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 28.75289351851852
+      },
+      "score": {
+        "mean_tir": 27.59837962962963,
+        "max_trajectory_tbr70": 0.0,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 81.70972783216766,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 27.59837962962963,
+        "format_valid": true,
+        "native_integrator": "simglucose-dopri5"
+      }
+    },
+    {
+      "case": "dev-05",
+      "training_seeds": [
+        735006235,
+        735006183,
+        735001050,
+        735009194,
+        735006552,
+        735000241,
+        735008029,
+        735000879,
+        735004646,
+        735002162,
+        735002772,
+        735008717,
+        735005745,
+        735003792,
+        735003666,
+        735004037
+      ],
+      "refinement_cpu_seconds": 95.55702199999999,
+      "candidates": 60,
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 9.828500250688706e-05,
+          "relative_leak": 5.491910565888406,
+          "ec50_mg_dl": 87.97611146357146,
+          "hill_n": 7.91910207490708,
+          "tau_min": 0.05161774780883581,
+          "theta_L": 2.76518341105175
+        }
+      },
+      "loss": -89.83000578703704,
+      "training": {
+        "mean_tir": 89.83000578703704,
+        "max_trajectory_tbr70": 0.5208333333333333,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.97323173648968,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 89.83000578703704
+      },
+      "score": {
+        "mean_tir": 90.26692708333333,
+        "max_trajectory_tbr70": 1.1458333333333333,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.94035286854614,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 90.26692708333333,
+        "format_valid": true,
+        "native_integrator": "simglucose-dopri5"
+      }
+    },
+    {
+      "case": "dev-06",
+      "training_seeds": [
+        735000750,
+        735005413,
+        735007484,
+        735001253,
+        735009870,
+        735005922,
+        735002838,
+        735002093,
+        735008699,
+        735001628,
+        735009648,
+        735003862,
+        735000883,
+        735009844,
+        735006979,
+        735006533
+      ],
+      "refinement_cpu_seconds": 99.83399400000002,
+      "candidates": 60,
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.0003304538449805153,
+          "relative_leak": 0.5167791347085505,
+          "ec50_mg_dl": 137.59767181311128,
+          "hill_n": 3.999971791401783,
+          "tau_min": 2.0,
+          "theta_L": 3.5672591841554357
+        }
+      },
+      "loss": -57.63237847222222,
+      "training": {
+        "mean_tir": 57.63237847222222,
+        "max_trajectory_tbr70": 2.9166666666666665,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 67.85682616628075,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 57.63237847222222
+      },
+      "score": {
+        "mean_tir": 59.330873842592595,
+        "max_trajectory_tbr70": 2.7083333333333335,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 68.11732022634172,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 59.330873842592595,
+        "format_valid": true,
+        "native_integrator": "simglucose-dopri5"
+      }
+    }
+  ]
+}

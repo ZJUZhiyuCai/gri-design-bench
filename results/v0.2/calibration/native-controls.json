@@ -1,0 +1,890 @@
+[
+  {
+    "case": "dev-01",
+    "control": "zero",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.0,
+        "theta_L": 4.0
+      }
+    },
+    "score": {
+      "mean_tir": 0.0,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 136.45000000000002,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-01",
+    "control": "old_prompt_example",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.0002,
+        "relative_leak": 1.5,
+        "ec50_mg_dl": 200.0,
+        "hill_n": 2.0,
+        "tau_min": 10.0,
+        "theta_L": 1.0
+      }
+    },
+    "score": {
+      "mean_tir": 13.653067129629628,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 136.45000000000002,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 13.653067129629628,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-01",
+    "control": "constant_30",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.000589845329389376,
+        "theta_L": 3.551736772602227
+      }
+    },
+    "score": {
+      "mean_tir": 66.70789930555556,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 83.50039429782787,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 66.70789930555556,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-01",
+    "control": "responsive_30",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00022436883461057406,
+        "relative_leak": 1.9512442380544404,
+        "ec50_mg_dl": 73.81496849159744,
+        "hill_n": 9.907521224616263,
+        "tau_min": 0.12185480599428894,
+        "theta_L": 3.6707992604287245
+      }
+    },
+    "score": {
+      "mean_tir": 77.46600115740742,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 74.54522751590348,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 77.46600115740742,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-01",
+    "control": "responsive_300",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00014596517251270897,
+        "relative_leak": 3.722851535173764,
+        "ec50_mg_dl": 68.66265268738044,
+        "hill_n": 5.408707115130465,
+        "tau_min": 0.4818588683804948,
+        "theta_L": 3.072169820954411
+      }
+    },
+    "score": {
+      "mean_tir": 81.39322916666667,
+      "max_trajectory_tbr70": 5.104166666666667,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 69.53777280961602,
+      "trajectories": 144,
+      "feasible": false,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-02",
+    "control": "zero",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.0,
+        "theta_L": 4.0
+      }
+    },
+    "score": {
+      "mean_tir": 0.0,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 145.9,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-02",
+    "control": "old_prompt_example",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.0002,
+        "relative_leak": 1.5,
+        "ec50_mg_dl": 200.0,
+        "hill_n": 2.0,
+        "tau_min": 10.0,
+        "theta_L": 1.0
+      }
+    },
+    "score": {
+      "mean_tir": 19.388744212962965,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 103.02053599403827,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 19.388744212962965,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-02",
+    "control": "constant_30",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.00039332373876084883,
+        "theta_L": 4.0
+      }
+    },
+    "score": {
+      "mean_tir": 37.344473379629626,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 98.59670645577164,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 37.344473379629626,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-02",
+    "control": "responsive_30",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.0001290934323590614,
+        "relative_leak": 3.627995402952173,
+        "ec50_mg_dl": 410.74438287056216,
+        "hill_n": 1.350410020283862,
+        "tau_min": 2.9154685039345973,
+        "theta_L": 3.6606497808161746
+      }
+    },
+    "score": {
+      "mean_tir": 69.72005208333333,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 71.50179759785077,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 69.72005208333333,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-02",
+    "control": "responsive_300",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00019000650229036625,
+        "relative_leak": 2.0280016067388376,
+        "ec50_mg_dl": 117.4323442259087,
+        "hill_n": 7.971764268464967,
+        "tau_min": 0.5300351635063099,
+        "theta_L": 2.6141535539722485
+      }
+    },
+    "score": {
+      "mean_tir": 76.54296875,
+      "max_trajectory_tbr70": 7.395833333333333,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 67.84989424608861,
+      "trajectories": 144,
+      "feasible": false,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-03",
+    "control": "zero",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.0,
+        "theta_L": 4.0
+      }
+    },
+    "score": {
+      "mean_tir": 0.0,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 133.83107309994364,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-03",
+    "control": "old_prompt_example",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.0002,
+        "relative_leak": 1.5,
+        "ec50_mg_dl": 200.0,
+        "hill_n": 2.0,
+        "tau_min": 10.0,
+        "theta_L": 1.0
+      }
+    },
+    "score": {
+      "mean_tir": 23.509114583333332,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 95.28585251143791,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 23.509114583333332,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-03",
+    "control": "constant_30",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.00039332373876084883,
+        "theta_L": 4.0
+      }
+    },
+    "score": {
+      "mean_tir": 46.87210648148148,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 83.45591394035193,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 46.87210648148148,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-03",
+    "control": "responsive_30",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00011207924851925983,
+        "relative_leak": 3.753632402556453,
+        "ec50_mg_dl": 281.23197542990255,
+        "hill_n": 6.750114961800862,
+        "tau_min": 4.060926585946459,
+        "theta_L": 2.495259185172857
+      }
+    },
+    "score": {
+      "mean_tir": 69.20066550925925,
+      "max_trajectory_tbr70": 4.791666666666667,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 68.36269303749543,
+      "trajectories": 144,
+      "feasible": false,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-03",
+    "control": "responsive_300",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00018797188838139012,
+        "relative_leak": 1.6350161716892593,
+        "ec50_mg_dl": 87.00331172725568,
+        "hill_n": 13.139465262042586,
+        "tau_min": 0.1194262942412134,
+        "theta_L": 2.2569355773765745
+      }
+    },
+    "score": {
+      "mean_tir": 83.18142361111111,
+      "max_trajectory_tbr70": 5.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 68.93687113083699,
+      "trajectories": 144,
+      "feasible": false,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-04",
+    "control": "zero",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.0,
+        "theta_L": 1.25
+      }
+    },
+    "score": {
+      "mean_tir": 0.0,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 135.64,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-04",
+    "control": "old_prompt_example",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.0002,
+        "relative_leak": 1.5,
+        "ec50_mg_dl": 200.0,
+        "hill_n": 2.0,
+        "tau_min": 10.0,
+        "theta_L": 1.0
+      }
+    },
+    "score": {
+      "mean_tir": 7.0326967592592595,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 121.53484319233051,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 7.0326967592592595,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-04",
+    "control": "constant_30",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.000563694300734999,
+        "theta_L": 1.25
+      }
+    },
+    "score": {
+      "mean_tir": 26.942997685185187,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 80.34829130627037,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 26.942997685185187,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-04",
+    "control": "responsive_30",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00045805988843738543,
+        "relative_leak": 0.8194941049332134,
+        "ec50_mg_dl": 191.51249803435738,
+        "hill_n": 18.095304584772588,
+        "tau_min": 0.05758511060903027,
+        "theta_L": 1.09774392060208
+      }
+    },
+    "score": {
+      "mean_tir": 19.82132523148148,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 83.0759698161066,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 19.82132523148148,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-04",
+    "control": "responsive_300",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.0003078788567250852,
+        "relative_leak": 1.2473579693929358,
+        "ec50_mg_dl": 62.03496126636038,
+        "hill_n": 0.6597176739793332,
+        "tau_min": 16.505915513358506,
+        "theta_L": 1.2496254407878333
+      }
+    },
+    "score": {
+      "mean_tir": 27.65769675925926,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 79.75486634651487,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 27.65769675925926,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-05",
+    "control": "zero",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.0,
+        "theta_L": 4.0
+      }
+    },
+    "score": {
+      "mean_tir": 0.0,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 134.67,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-05",
+    "control": "old_prompt_example",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.0002,
+        "relative_leak": 1.5,
+        "ec50_mg_dl": 200.0,
+        "hill_n": 2.0,
+        "tau_min": 10.0,
+        "theta_L": 1.0
+      }
+    },
+    "score": {
+      "mean_tir": 22.922453703703702,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 119.32235318943258,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 22.922453703703702,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-05",
+    "control": "constant_30",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.000589845329389376,
+        "theta_L": 3.551736772602227
+      }
+    },
+    "score": {
+      "mean_tir": 87.45081018518518,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 74.28540922201823,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 87.45081018518518,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-05",
+    "control": "responsive_30",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00011207924851925983,
+        "relative_leak": 4.467815917394447,
+        "ec50_mg_dl": 184.1537161132922,
+        "hill_n": 6.750114961800862,
+        "tau_min": 4.060926585946459,
+        "theta_L": 2.495259185172857
+      }
+    },
+    "score": {
+      "mean_tir": 78.4888599537037,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 89.33824653199918,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 78.4888599537037,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-05",
+    "control": "responsive_300",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 9.983167713216863e-05,
+        "relative_leak": 5.426072828877345,
+        "ec50_mg_dl": 91.91797927637656,
+        "hill_n": 5.798925997238474,
+        "tau_min": 0.27429778143319916,
+        "theta_L": 2.8300656500211403
+      }
+    },
+    "score": {
+      "mean_tir": 90.14250578703704,
+      "max_trajectory_tbr70": 0.625,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 69.98367544193219,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 90.14250578703704,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-06",
+    "control": "zero",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.0,
+        "theta_L": 4.0
+      }
+    },
+    "score": {
+      "mean_tir": 0.0,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 133.7160873999379,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-06",
+    "control": "old_prompt_example",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.0002,
+        "relative_leak": 1.5,
+        "ec50_mg_dl": 200.0,
+        "hill_n": 2.0,
+        "tau_min": 10.0,
+        "theta_L": 1.0
+      }
+    },
+    "score": {
+      "mean_tir": 20.33420138888889,
+      "max_trajectory_tbr70": 44.895833333333336,
+      "max_trajectory_tbr54": 15.729166666666666,
+      "minimum_glucose": 51.803305290468664,
+      "trajectories": 144,
+      "feasible": false,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-06",
+    "control": "constant_30",
+    "design": {
+      "mode": "constant",
+      "parameters": {
+        "theta_c": 0.0002817588499765743,
+        "theta_L": 2.966321753525421
+      }
+    },
+    "score": {
+      "mean_tir": 25.460792824074073,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 70.43514626980165,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 25.460792824074073,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-06",
+    "control": "responsive_30",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00022770315469894712,
+        "relative_leak": 0.8671918300750617,
+        "ec50_mg_dl": 216.64325461740327,
+        "hill_n": 1.9948826834797133,
+        "tau_min": 8.419725501134371,
+        "theta_L": 1.2412180840888085
+      }
+    },
+    "score": {
+      "mean_tir": 30.113570601851848,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 86.06210700798768,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 30.113570601851848,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-06",
+    "control": "responsive_300",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00034091441454469707,
+        "relative_leak": 0.5552042612800137,
+        "ec50_mg_dl": 140.2150418740899,
+        "hill_n": 3.9977541411875017,
+        "tau_min": 2.6266109353316867,
+        "theta_L": 2.6137712200424543
+      }
+    },
+    "score": {
+      "mean_tir": 64.79383680555556,
+      "max_trajectory_tbr70": 7.916666666666666,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 64.10479094944768,
+      "trajectories": 144,
+      "feasible": false,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-01",
+    "control": "responsive_3000",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00015011801459124724,
+        "relative_leak": 3.58956053038478,
+        "ec50_mg_dl": 68.11861068075766,
+        "hill_n": 5.528401424020362,
+        "tau_min": 0.21663763918414947,
+        "theta_L": 3.0931079899189693
+      }
+    },
+    "score": {
+      "mean_tir": 81.38961226851853,
+      "max_trajectory_tbr70": 5.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 69.54871712256396,
+      "trajectories": 144,
+      "feasible": false,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-02",
+    "control": "responsive_3000",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.0001871270898949163,
+        "relative_leak": 2.0668529084793934,
+        "ec50_mg_dl": 117.62046612289997,
+        "hill_n": 9.246892692775997,
+        "tau_min": 0.3143746287002723,
+        "theta_L": 2.67588448189869
+      }
+    },
+    "score": {
+      "mean_tir": 76.72092013888889,
+      "max_trajectory_tbr70": 6.979166666666667,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 67.99412576621197,
+      "trajectories": 144,
+      "feasible": false,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-03",
+    "control": "responsive_3000",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00020595565456924623,
+        "relative_leak": 1.4013103880201787,
+        "ec50_mg_dl": 84.63186028846407,
+        "hill_n": 11.26517848968474,
+        "tau_min": 0.172290251765023,
+        "theta_L": 2.400835430997862
+      }
+    },
+    "score": {
+      "mean_tir": 83.15755208333333,
+      "max_trajectory_tbr70": 4.583333333333333,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 68.96831468055959,
+      "trajectories": 144,
+      "feasible": false,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-04",
+    "control": "responsive_3000",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.00027621991811867074,
+        "relative_leak": 1.4561663149972979,
+        "ec50_mg_dl": 61.982755478717415,
+        "hill_n": 0.6628447764298869,
+        "tau_min": 19.75138766669191,
+        "theta_L": 1.2497732692892563
+      }
+    },
+    "score": {
+      "mean_tir": 27.65625,
+      "max_trajectory_tbr70": 0.0,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 79.61190672749052,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 27.65625,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-05",
+    "control": "responsive_3000",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 9.828500250688706e-05,
+        "relative_leak": 5.491910565888406,
+        "ec50_mg_dl": 87.97611146357146,
+        "hill_n": 6.9550102640219045,
+        "tau_min": 0.05161774780883581,
+        "theta_L": 2.76518341105175
+      }
+    },
+    "score": {
+      "mean_tir": 90.24522569444444,
+      "max_trajectory_tbr70": 0.20833333333333334,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 69.99877358799134,
+      "trajectories": 144,
+      "feasible": true,
+      "safe_tir": 90.24522569444444,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  },
+  {
+    "case": "dev-06",
+    "control": "responsive_3000",
+    "design": {
+      "mode": "responsive",
+      "parameters": {
+        "theta_a": 0.0003515466435962927,
+        "relative_leak": 0.5167791347085505,
+        "ec50_mg_dl": 137.59767181311128,
+        "hill_n": 3.999971791401783,
+        "tau_min": 2.1002775802559266,
+        "theta_L": 3.5672591841554357
+      }
+    },
+    "score": {
+      "mean_tir": 65.74508101851852,
+      "max_trajectory_tbr70": 7.604166666666666,
+      "max_trajectory_tbr54": 0.0,
+      "minimum_glucose": 64.07949509945924,
+      "trajectories": 144,
+      "feasible": false,
+      "safe_tir": 0.0,
+      "format_valid": true,
+      "native_integrator": "simglucose-dopri5"
+    }
+  }
+]

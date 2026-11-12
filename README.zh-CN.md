@@ -6,6 +6,8 @@ GRI Design Bench 衡量 AI Agent 在固定计算预算内设计葡萄糖响应�
 
 v0.1.1 包含 **6 个开发实例和 6 个封存实例**，使用公开的虚拟患者生理模型和人工设定的材料约束。开发实例的输入公开，封存实例的完整输入由维护者保存。
 
+[![固定配方响应组织液葡萄糖；Agent 在训练情景中搜索参数；独立评测检查每条轨迹的安全性，通过后按平均 TIR 计分，否则计零。](docs/assets/benchmark-overview-zh-CN.png)](docs/assets/benchmark-overview-zh-CN.svg)
+
 ## 这个问题为什么值得研究
 
 胰岛素帮助血液中的葡萄糖进入细胞。1 型糖尿病患者自身产生的胰岛素很少或没有，需要补充胰岛素；补充不足会使血糖偏高，补充过量又可能使血糖降得过低。进餐量和胰岛素需求会变化，这使药物释放方案的设计面临两方面的约束。[NIDDK 的介绍说明了这一生理背景](https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes)。

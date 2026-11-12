@@ -6,6 +6,8 @@ GRI Design Bench evaluates how well AI agents design glucose-responsive insulin 
 
 Version 0.1.1 contains **6 development cases and 6 sealed cases**, built from public virtual-patient physiology and synthetic material constraints. Development inputs are public; complete sealed inputs are held by the maintainer.
 
+[![A fixed formulation responds to tissue glucose; the agent searches on training meals; independent evaluation checks every trajectory for safety before assigning mean TIR or zero.](docs/assets/benchmark-overview-en.png)](docs/assets/benchmark-overview-en.svg)
+
 ## The scientific problem
 
 Insulin helps move glucose from the blood into cells. In type 1 diabetes, the body produces little or no insulin: too little replacement insulin leaves glucose high, while too much can drive it dangerously low. This creates a design problem when meals and insulin needs vary. [NIDDK explains the underlying biology](https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes).

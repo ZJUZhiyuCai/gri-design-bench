@@ -4,13 +4,34 @@ English · [简体中文](README.zh-CN.md)
 
 GRI Design Bench evaluates how well AI agents design glucose-responsive insulin (GRI) formulations under a fixed compute budget. Each task asks an agent to choose one static formulation for three virtual patients, search with a public simulator, and submit a design for independent evaluation on fresh meal scenarios.
 
-Version 0.1.1 contains **6 development cases and 6 sealed cases**, built from public virtual-patient physiology and synthetic material constraints.
+Version 0.1.1 contains **6 development cases and 6 sealed cases**, built from public virtual-patient physiology and synthetic material constraints. Development inputs are public; complete sealed inputs are held by the maintainer.
+
+## The scientific problem
+
+Insulin helps move glucose from the blood into cells. In type 1 diabetes, the body produces little or no insulin: too little replacement insulin leaves glucose high, while too much can drive it dangerously low. This creates a design problem when meals and insulin needs vary. [NIDDK explains the underlying biology](https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes).
+
+Here, a glucose-responsive formulation is a finite insulin reservoir with a release mechanism that responds to the surrounding glucose concentration. Think of a valve whose opening depends on glucose: it releases more as glucose rises and less as glucose falls, subject to leakage, delay and the remaining supply. **The formulation parameters stay fixed; the release rate changes over time.** The agent chooses those parameters before evaluation.
+
+For a responsive design, six parameters define the [release model](src/gri_bench/release.py):
+
+| Design choice | What it controls |
+|---|---|
+| Release scale (`theta_a`) | The overall amount released per unit time |
+| Basal leakage (`relative_leak`) | Release that persists even when the glucose-dependent response is small |
+| Response midpoint (`ec50_mg_dl`) | The glucose concentration at which the responsive component reaches half its maximum |
+| Response steepness (`hill_n`) | How sharply release switches from a weak to a strong response |
+| Response delay (`tau_min`) | How quickly the formulation's internal glucose signal follows changes in surrounding glucose |
+| Reservoir size (`theta_L`) | The total available insulin; release stops when it runs out |
+
+A large dinner challenges the formulation to supply enough insulin; a missed lunch tests whether it releases too much when demand falls. Increasing release can improve early glucose control while raising low-glucose risk or exhausting the reservoir sooner. One shared design must work across three patients with different physiology. The task is therefore a constrained search for a useful balance across patients, meals and time.
+
+The historical release-curve fit used data from [Xu et al.'s membrane-coated insulin crystals](https://www.nature.com/articles/s41565-025-01860-0). This benchmark abstracts that background into a glucose-only release model and an expanded parameter search space; [bound provenance](docs/BOUND_PROVENANCE.md) explains the construction. Agents optimize a simulated release behavior, with material synthesis left to subsequent experimental work.
 
 ## Results
 
 The current comparison contains **9 model routes and 324 trials**: 12 cases × 3 repetitions per model. The first batch tested GPT, DeepSeek and GLM; the expansion added six open-weight model families under the same task, prompts and configured budgets. The table combines these two batches on the same six sealed cases, giving 18 attempts per model.
 
-Ranks prioritize feasible attempts, then mean safety-gated time in range (`safe_tir`). Invalid submissions and safety failures score zero and remain in the average. **SD is the sample standard deviation of the three round means.**
+Time in range (TIR) is the percentage of evaluated time with glucose at 70–180 mg/dL. A design's `safe_tir` equals its mean TIR if every safety check passes, and zero otherwise. Ranks prioritize feasible attempts, then mean `safe_tir`; all attempts remain in the average. **SD is the sample standard deviation of the three round means.**
 
 | Rank | Model | Batch | Feasible /18 | Mean safe TIR (%) ± SD |
 |---:|---|---|---:|---:|
@@ -26,6 +47,8 @@ Ranks prioritize feasible attempts, then mean safety-gated time in range (`safe_
 
 GPT produced feasible designs in all 18 sealed attempts. Among the six added models, Kimi ranked first and Qwen second in every round, while their round means ranged from 42.57–71.02 and 14.20–31.94 respectively. The other four models changed rank across rounds.
 
+Failure categories reveal different bottlenecks. Kimi submitted 18 valid designs, of which 3 failed the safety checks; Qwen had 1 submission failure and 7 safety failures. MiniMax had 14 submission failures out of 18 attempts. For Kimi and Qwen, the results expose difficulty satisfying the physiological constraints; much of MiniMax's measured loss occurs before a design reaches simulation. The mean score therefore combines design quality with reliable execution of the task.
+
 ![Quality and feasibility across nine model routes](results/expansion-2026-11-11/comparison.png)
 
 Thirteen of the 216 expansion attempts exceeded a recorded resource limit. The [strict-resource analysis](results/expansion-2026-11-11/README.md#resource-limit-sensitivity) assigns zero to each: the aggregate sealed ranking stays the same, while Intern's feasible count falls to 0/18. The table above retains the original native scores.
@@ -38,7 +61,7 @@ Agents receive a three-patient cohort, native total daily insulin doses (TDI), m
 
 The submission contains `design.json`, `search.py` and `rationale.md`. A design specifies a fixed glucose-responsive parameter vector or a constant release rate, shared across patients with dose amplitude and reservoir scaled by each patient's TDI. The permitted design space is static; real-time controllers, meal boluses and physiology edits fall outside it.
 
-The verifier evaluates `design.json` using native simglucose/dopri5 over **18 three-day trajectories**: 3 patients × 2 evaluation seeds × 3 meal variants. Search code and rationale provide audit evidence; scores come from the simulated trajectories.
+During a trial, the agent can read simulator code, write a search program, test candidates and inspect their glucose outcomes. It must allocate its compute budget between exploration, validation and saving the final design. The verifier then evaluates `design.json` over **18 three-day trajectories**: 3 patients × 2 evaluation seeds × 3 meal variants. Each trajectory is one patient's glucose history under one meal scenario. Fresh evaluation seeds test how well the chosen design handles meals beyond its training examples. Search code and rationale provide audit evidence; scores come from the independently simulated trajectories.
 
 A design is feasible when every trajectory meets all three safety criteria:
 
@@ -46,7 +69,7 @@ A design is feasible when every trajectory meets all three safety criteria:
 - Time below 54 mg/dL is at most 1%.
 - Glucose stays at or above 40 mg/dL throughout the simulation, including the first-day warmup.
 
-TIR and time-below-range metrics exclude the warmup day. For a feasible design, `safe_tir` is the mean percentage of time at 70–180 mg/dL across patients and scenarios; otherwise it is zero. The [task contract](contract/contract.json), [model amendment](contract/amendment-001-models.json) and [interaction amendment](contract/amendment-002-interaction-budget.json) define the protocol.
+TIR and time-below-range metrics exclude the warmup day, leaving 48 scored hours per trajectory. A raw TIR of 75% corresponds to 36 of those hours in range. Consider two hypothetical designs: one has an average TIR of 85% but lets one patient's glucose fall to 35 mg/dL, so its `safe_tir` is zero; another averages 75% and passes every safety check, so it scores 75. Requiring every trajectory to pass prevents a good cohort average from concealing a severe failure for one patient. The [task contract](contract/contract.json), [model amendment](contract/amendment-001-models.json) and [interaction amendment](contract/amendment-002-interaction-budget.json) define the protocol.
 
 Each attempt has the following budget:
 
@@ -58,7 +81,7 @@ Each attempt has the following budget:
 
 Token accounting reserves each request's output allowance, including failed requests, and releases unused tokens only after a valid successful usage report. Trials use temperature zero and provider-default reasoning settings. CPU-limited comparisons require a common machine; the published runs used Linux/arm64 on an Apple M5 host.
 
-Three fixed baselines use the same CPU cap: a constant-rate grid, Sobol search and differential evolution. Their [single-run sealed scores](results/expansion-2026-11-11/README.md#fixed-baseline-reference) are 58.26, 44.93 and 54.39 respectively, each with 5/6 feasible cases.
+Three fixed baselines show what conventional search achieves under the same CPU cap. The constant-rate grid tests a simple release schedule; Sobol search spreads candidates across the six-dimensional responsive design space; differential evolution uses previous candidates to guide further search. Their [single-run sealed scores](results/expansion-2026-11-11/README.md#fixed-baseline-reference) are 58.26, 44.93 and 54.39 respectively, each with 5/6 feasible cases.
 
 ## Run a development case
 

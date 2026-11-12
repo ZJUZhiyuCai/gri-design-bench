@@ -1,0 +1,27 @@
+{
+  "registered_utc": "2026-11-12T16:42:22.873454+00:00",
+  "image_id": "sha256:48a66cf17685d8cff00e5696627d0d5be77c30651e73dd1a026f19aa39f7b79a",
+  "hardware": "Apple M5, Linux/arm64 Colima VM 2 CPUs and 4 GiB",
+  "legacy_runtime_lock_sha256": "6068d2cd000a642f7683b3484150f1ec34680647e888ed7166641ce94e3be0ea",
+  "files": {
+    "Dockerfile.v02": "c7c8720a05374c94951e8536999547b328aa1fe4dcde297efb3af6e2cbb076b4",
+    "Dockerfile.v02.dockerignore": "c14e779804e0d144911e0498772dbe4dd158c21803ebb0861497698756d8dee1",
+    "contract/v0.2/development-plan.json": "378762fffeb73e459747f730484d64697598dcd8a26499a283af0ca3c5e482ab",
+    "contract/v0.2/policy.json": "70623c4694b62ae32c0474d8db95845c88381f0b22860a8f5b2876d51eb22aad",
+    "contract/v0.2/route-probes.json": "2468656622c91ac32e64c75b0c40d65341a5cdb0a70f78c71b7440548560b46c",
+    "contract/v0.2/seed-calibration.json": "360cc9ef7f8fc98a6e849f881fd230d86fa788ea65e6097a0d8cfe1309e69d3e",
+    "docs/v02/AGENT_TASK.md": "c3071438e54d9a4622d529fc312194b1e64aca5f5d3fa9f668a6ddf0bf1137e5",
+    "instances/v0.2/development-evaluation.json": "2668ae561293e07332f1105098399446fca6a9d5ae1914bcc3cad1e4ea3c7a25",
+    "scripts/calibrate_v02.py": "cdbaf657cc783b8fd118abf965c4c264ad21c9f730cd024d93fbd7505e579b4c",
+    "scripts/check_v02_scenarios.py": "891a57d7bf13b012161c612f95d764e89b1a3092bbc85f785693299f13f06534",
+    "scripts/probe_v02_routes.py": "395c2f656977040f64b516649ba3befef748e4bf0e6491287c78c997db7a1278",
+    "src/gri_bench/v02/__init__.py": "44cbc4f1abf1b226baf3b548f400c9ed141479e32894db0aa3266d6966ed4193",
+    "src/gri_bench/v02/baseline_worker.py": "1c58386dcee594227e201eea5c7864ac4239138af9d952a43f092293ebc081df",
+    "src/gri_bench/v02/matrix.py": "11159f2bf6d0f21bdb9be1e3624edacf69960e0a0541976697f2d078e94b03fc",
+    "src/gri_bench/v02/protocol.py": "91886864c3ddee4d8387c1ebbc03d768e46fb0b7ee46b69e58538ddfb4b7b3d3",
+    "src/gri_bench/v02/sandbox.py": "42bafa661a40b49208593781706409fada773bab5735b104768f1b9ce0df7362",
+    "src/gri_bench/v02/search.py": "9ce3acbcce1f998f706ff99c23e450067e31f5bbf50b410abb82b5e89d9d2dbc",
+    "src/gri_bench/v02/transport.py": "bba938a86f86dbc44313a699805fb9eaefab2508043e07c9de77fbd98c93d3ca",
+    "src/gri_bench/v02/trial.py": "44ca8756239f9794838aa2b7e5801ba4554046d2e4c071c674264f5ca6b46193"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": "gri-design-bench-0.2.0",
+  "budget": {
+    "cpu_seconds": 30,
+    "tool_wall_seconds": 90,
+    "agent_wall_seconds": 360,
+    "max_calls": 12,
+    "completion_per_call": 6000,
+    "completion_total": 18000,
+    "api_errors": 2
+  },
+  "model_request": {"temperature": 0, "reasoning_effort": "low", "parallel_tool_calls": false},
+  "primary": "mean safe_tir across all registered attempts, including zeros",
+  "safety": {"tbr70_max_pct": 4, "tbr54_max_pct": 1, "all_minutes_minimum_mg_dl": 40},
+  "report": ["valid_submissions", "safety_passes", "mean_safe_tir", "paired_delta_vs_constant", "case_resampled_intervals"],
+  "api_policy": "Each call reserves its output allowance. Failed or unknown-usage calls keep that allowance. At most two API/protocol errors. One corrective turn after a no-tool or truncated response without an accepted design.",
+  "submission": "Host accepts the latest exact-schema, in-bounds submit_design receipt before the deadline. Auxiliary search and rationale are optional. Exceeding a measured resource limit or receiving an excluded model is a zero.",
+  "execution": {"concurrent_trials": 3, "concurrent_active_sandboxes": 2, "concurrent_native_graders": 3}
+}

@@ -1,0 +1,41 @@
+{
+  "panel": "36 fixed designs across 6 public cases, 64 diagnostic meal seeds per case",
+  "mixed_designs": [
+    {
+      "case": "dev-02",
+      "control": "prior_near_safety_boundary",
+      "passing_seeds": 60
+    },
+    {
+      "case": "dev-03",
+      "control": "responsive_30",
+      "passing_seeds": 63
+    },
+    {
+      "case": "dev-03",
+      "control": "prior_gpt_round_1",
+      "passing_seeds": 63
+    },
+    {
+      "case": "dev-04",
+      "control": "prior_near_safety_boundary",
+      "passing_seeds": 57
+    },
+    {
+      "case": "dev-06",
+      "control": "prior_near_safety_boundary",
+      "passing_seeds": 26
+    }
+  ],
+  "mean_finite_panel_false_acceptance_among_mixed_designs": {
+    "2": 0.7536706349206349,
+    "4": 0.6575397874644305,
+    "8": 0.5403496252289144,
+    "16": 0.38495358873992325,
+    "32": 0.21240291615395812
+  },
+  "native_trajectory_checks": 693,
+  "fast_native_classification_disagreements": 0,
+  "evaluation_seed_count": 16,
+  "rationale": "16 is the smallest tested panel that brings this diagnostic false-acceptance rate below 0.4, with 144 native trajectories per graded design."
+}

@@ -1,0 +1,3 @@
+ARG BASE_IMAGE=gri-bench:0.1.1
+FROM ${BASE_IMAGE}
+COPY docs/v02/AGENT_TASK.md /task/README.md

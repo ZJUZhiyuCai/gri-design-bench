@@ -18,9 +18,13 @@ The highest model score was 45.90% from GPT-6.1 Sol. Its matched difference from
 | Kimi-K3.1-Pro | +26.72 | -28.62 |
 | MiniMax-M3.1-Flash | +8.04 | -47.30 |
 
+Among safe designs, GPT averaged 68.85% TIR across 12 attempts and Kimi averaged 52.90% across 14. The higher conditional TIR gave GPT the higher overall score.
+
 MiniMax produced 15/18 legal submissions, compared with 6/18 on the same development cases under v0.1.1. The v0.2 runner retained a design in 2 attempts that later received a truncated response. The new submission interface and reasoning request both changed for this pilot.
 
 The audit checked 579 token reservations and aggregated 9,072 native trajectories. It reran 5 selected designs with 720 trajectories and matched the saved scores.
+
+The labels identify the Magpie routes. The development plan records public checkpoint revisions for Kimi and MiniMax. The served checkpoint, engine and quantization are unknown.
 
 [Per-attempt JSON](attempts.json) · [Per-case CSV](cases.csv) · [Paired differences](paired.csv) · [Summary and audit](summary.json)
 

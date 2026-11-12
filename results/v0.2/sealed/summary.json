@@ -1,0 +1,113 @@
+{
+  "split": "sealed",
+  "created_utc": "2026-11-12T18:49:15.064805+00:00",
+  "cases": 6,
+  "seed_count": 16,
+  "leaderboard": [
+    {
+      "method": "GPT-6.1 Sol",
+      "route_or_baseline": "codex/gpt-6.1-sol",
+      "attempts": 18,
+      "valid": 18,
+      "safety_passes": 18,
+      "mean_safe_tir": 73.10836226851852,
+      "mean_feasible_tir": 73.10836226851852,
+      "scored_trajectories": 2592,
+      "delta_vs_constant": 23.628231095679016,
+      "round_mean_sd": 0.4783129118310706,
+      "round_min_mean": 72.72051022376543,
+      "round_max_mean": 73.64281925154322
+    },
+    {
+      "method": "Responsive baseline",
+      "route_or_baseline": "responsive",
+      "attempts": 6,
+      "valid": 6,
+      "safety_passes": 6,
+      "mean_safe_tir": 58.02625868055556,
+      "mean_feasible_tir": 58.02625868055556,
+      "scored_trajectories": 864,
+      "delta_vs_constant": 8.546127507716053,
+      "round_mean_sd": null,
+      "round_min_mean": null,
+      "round_max_mean": null
+    },
+    {
+      "method": "MiniMax-M3.1-Flash",
+      "route_or_baseline": "minimax-code/MiniMax-M3.1-Flash",
+      "attempts": 18,
+      "valid": 16,
+      "safety_passes": 14,
+      "mean_safe_tir": 51.81757169495885,
+      "mean_feasible_tir": 66.62259217923281,
+      "scored_trajectories": 2304,
+      "delta_vs_constant": 2.337440522119343,
+      "round_mean_sd": 17.068590287487066,
+      "round_min_mean": 32.32409818672839,
+      "round_max_mean": 64.08227237654322
+    },
+    {
+      "method": "Constant baseline",
+      "route_or_baseline": "constant",
+      "attempts": 6,
+      "valid": 6,
+      "safety_passes": 6,
+      "mean_safe_tir": 49.480131172839506,
+      "mean_feasible_tir": 49.480131172839506,
+      "scored_trajectories": 864,
+      "delta_vs_constant": 0.0,
+      "round_mean_sd": null,
+      "round_min_mean": null,
+      "round_max_mean": null
+    },
+    {
+      "method": "Kimi-K3.1-Pro",
+      "route_or_baseline": "workbuddy/kimi-k3.1-pro",
+      "attempts": 18,
+      "valid": 18,
+      "safety_passes": 14,
+      "mean_safe_tir": 44.2259034207819,
+      "mean_feasible_tir": 56.861875826719576,
+      "scored_trajectories": 2592,
+      "delta_vs_constant": -5.25422775205761,
+      "round_mean_sd": 7.239841260748815,
+      "round_min_mean": 36.1107494212963,
+      "round_max_mean": 50.02230420524691
+    }
+  ],
+  "status_counts": {
+    "verified": 58,
+    "safety_failure": 6,
+    "submission_failure": 2
+  },
+  "agent_attempts": 54,
+  "baseline_attempts": 12,
+  "audited_api_reservations": 573,
+  "reverified_designs": [
+    {
+      "trial_id": "v02-sealed-01__gpt__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-01__kimi__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-01__minimax__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-02__kimi__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-01__baseline-constant",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-01__baseline-responsive",
+      "trajectories": 144
+    }
+  ],
+  "uncertainty": "Percentile bootstrap of paired case means. The 20,000 resamples retain every repetition of each sampled case."
+}

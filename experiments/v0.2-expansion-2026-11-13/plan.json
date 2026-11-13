@@ -1,0 +1,144 @@
+{
+  "version": "gri-design-bench-0.2.0",
+  "registered_utc": "2026-11-13T01:15:51.811163+00:00",
+  "pilot_commit": "58881dce9d7719bc5070a4e2b2916e179a0edd52",
+  "models": [
+    {
+      "id": "deepseek",
+      "display": "DeepSeek V4.1 Flash 1017",
+      "route": "wanjie/deepseek-v4.1-flash-1017",
+      "reference_checkpoint": null,
+      "public_model_sources": [
+        "https://api-docs.deepseek.com/updates/",
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+      ],
+      "served_checkpoint": null,
+      "engine": null,
+      "quantization": null
+    },
+    {
+      "id": "glm",
+      "display": "GLM-5.3",
+      "route": "tokendance/glm-5.3",
+      "reference_checkpoint": null,
+      "public_model_sources": [
+        "https://huggingface.co/zai-org/GLM-5.3",
+        "https://github.com/zai-org/GLM-5"
+      ],
+      "served_checkpoint": null,
+      "engine": null,
+      "quantization": null
+    },
+    {
+      "id": "qwen",
+      "display": "Qwen3.8-27B",
+      "route": "atria/qwen3.8-27b",
+      "reference_checkpoint": {
+        "repository": "Qwen/Qwen3.8-27B",
+        "model_card_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "revision": "37561816e66b5b9153b1b64c10968c18c1e6f4a0",
+        "last_modified": "2026-11-07T04:42:17.000Z",
+        "license": "apache-2.0",
+        "weight_files": 18,
+        "parameters": 27781427952
+      },
+      "public_model_sources": [],
+      "served_checkpoint": null,
+      "engine": null,
+      "quantization": null
+    },
+    {
+      "id": "mimo",
+      "display": "MiMo-V2.6-Pro",
+      "route": "tokendance/mimo-v2.6-pro",
+      "reference_checkpoint": {
+        "repository": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+        "model_card_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+        "revision": "a066ba0057192126bd5d255f37138265fc1a435e",
+        "last_modified": "2026-10-28T14:16:57.000Z",
+        "license": "mit",
+        "weight_files": 132,
+        "parameters": 1024216603392
+      },
+      "public_model_sources": [],
+      "served_checkpoint": null,
+      "engine": null,
+      "quantization": null
+    },
+    {
+      "id": "step",
+      "display": "Step-5-Preview",
+      "route": "workbuddy/step-5-preview",
+      "reference_checkpoint": {
+        "repository": "stepfun-ai/Step-5-Preview",
+        "model_card_url": "https://huggingface.co/stepfun-ai/Step-5-Preview",
+        "revision": "364b3b03fed2477aa0953fe855a2c4c8c48ee3cc",
+        "last_modified": "2026-10-15T01:28:10.000Z",
+        "license": "other",
+        "weight_files": 28,
+        "parameters": 604339504832
+      },
+      "public_model_sources": [],
+      "served_checkpoint": null,
+      "engine": null,
+      "quantization": null
+    },
+    {
+      "id": "intern",
+      "display": "Intern-S2",
+      "route": "atria/intern-s2",
+      "reference_checkpoint": {
+        "repository": "internlm/Intern-S2-397B",
+        "model_card_url": "https://huggingface.co/internlm/Intern-S2-397B",
+        "revision": "85c1f58844e68836ec02245183cfa671de20977a",
+        "last_modified": "2026-09-24T07:00:15.000Z",
+        "license": "apache-2.0",
+        "license_name": null,
+        "weight_files": 188,
+        "parameters": 403423094768
+      },
+      "public_model_sources": [],
+      "served_checkpoint": null,
+      "engine": null,
+      "quantization": null
+    }
+  ],
+  "splits": {
+    "development": {
+      "cases": [
+        "dev-01",
+        "dev-02",
+        "dev-03",
+        "dev-04",
+        "dev-05",
+        "dev-06"
+      ],
+      "evaluation_seeds_per_case": 16,
+      "new_agent_attempts": 108
+    },
+    "sealed": {
+      "cases": [
+        "v02-sealed-01",
+        "v02-sealed-02",
+        "v02-sealed-03",
+        "v02-sealed-04",
+        "v02-sealed-05",
+        "v02-sealed-06"
+      ],
+      "evaluation_seeds_per_case": 16,
+      "new_agent_attempts": 108
+    }
+  },
+  "repetitions": 3,
+  "new_agent_attempts": 216,
+  "combined_agent_attempts": 324,
+  "schedule": "Development first, then sealed. Within each split, order by repetition then case, rotating routes cyclically.",
+  "pilot_evidence": "Reuse the original 108 attempts and 24 baseline results. Keep all planned attempts in the denominator.",
+  "analysis": {
+    "primary_split": "sealed",
+    "rank": "Mean safe_tir across attempts, with equal ranks for equal scores.",
+    "stability": "Per-batch round ranks and pairwise Kendall tau-b. Nine-route synthetic rounds align repeat indices across batches.",
+    "case_uncertainty": "Paired case-mean differences and leave-one-case-out ranks. Case bootstrap retains all repeats within each case.",
+    "comparison_scope": "Two chronological batches on the same fixed cases; model routes are not randomized across the batches."
+  }
+}

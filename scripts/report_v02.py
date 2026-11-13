@@ -54,14 +54,15 @@ def failing(m):
     return m["tbr70"] > 4 or m["tbr54"] > 1 or m["minimum"] < 40
 
 
-def audit_attempt(path, case, method, model, plan, instance, seeds):
+def audit_attempt(path, case, method, model, plan, instance, seeds, *, plan_path=None):
     meta = strict_json(path / "metadata.json")
     score = strict_json(path / "score.json")
     if (meta["trial_id"], meta["case"], meta["split"], meta["method"], meta["requested_model"]) != (
             path.name, case, plan["split"], method, model):
         raise ValueError("Unexpected trial identity: " + path.name)
     provenance = meta["provenance"]
-    if provenance["plan_sha256"] != digest(CONTRACT / f"{plan['split']}-plan.json"):
+    plan_path = plan_path if plan_path is not None else CONTRACT / f"{plan['split']}-plan.json"
+    if provenance["plan_sha256"] != digest(plan_path):
         raise ValueError("Unregistered trial plan: " + path.name)
     if provenance["runtime_sha256"] != digest(CONTRACT / "runtime-lock.json"):
         raise ValueError("Unregistered runtime: " + path.name)

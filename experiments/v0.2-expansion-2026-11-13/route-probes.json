@@ -1,0 +1,241 @@
+{
+  "scope": "Mock roundtrip. No case inputs or shell execution.",
+  "raw_probe_sha256": "8e4d3162f87c0a43970a3472354759d7702e332716376ec10fe41e18c9f5785c",
+  "probes": [
+    {
+      "requested_model": "wanjie/deepseek-v4.1-flash-1017",
+      "passed": true,
+      "calls": [
+        {
+          "http_status": 200,
+          "elapsed_seconds": 1.4373021256178617,
+          "returned_model": "wanjie/deepseek-v4.1-flash-1017",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "completion_tokens": 91,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_tokens": 528,
+            "prompt_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 619
+          }
+        },
+        {
+          "http_status": 200,
+          "elapsed_seconds": 1.2900814162567258,
+          "returned_model": "wanjie/deepseek-v4.1-flash-1017",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "completion_tokens": 67,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_tokens": 1448,
+            "prompt_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 512
+            },
+            "total_tokens": 1515
+          }
+        }
+      ]
+    },
+    {
+      "requested_model": "tokendance/glm-5.3",
+      "passed": true,
+      "calls": [
+        {
+          "http_status": 200,
+          "elapsed_seconds": 1.6381999589502811,
+          "returned_model": "tokendance/glm-5.3",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 389,
+            "completion_tokens": 16,
+            "total_tokens": 405
+          }
+        },
+        {
+          "http_status": 200,
+          "elapsed_seconds": 3.9891445422545075,
+          "returned_model": "tokendance/glm-5.3",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1227,
+            "completion_tokens": 31,
+            "total_tokens": 1258
+          }
+        }
+      ]
+    },
+    {
+      "requested_model": "atria/qwen3.8-27b",
+      "passed": true,
+      "calls": [
+        {
+          "http_status": 200,
+          "elapsed_seconds": 1.0537734581157565,
+          "returned_model": "atria/qwen3.8-27b",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 542,
+            "total_tokens": 631,
+            "completion_tokens": 89,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": {
+              "reasoning_tokens": 55
+            }
+          }
+        },
+        {
+          "http_status": 200,
+          "elapsed_seconds": 0.8776517501100898,
+          "returned_model": "atria/qwen3.8-27b",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 1465,
+            "total_tokens": 1609,
+            "completion_tokens": 144,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": {
+              "reasoning_tokens": 58
+            }
+          }
+        }
+      ]
+    },
+    {
+      "requested_model": "tokendance/mimo-v2.6-pro",
+      "passed": true,
+      "calls": [
+        {
+          "http_status": 200,
+          "elapsed_seconds": 4.309586999937892,
+          "returned_model": "tokendance/mimo-v2.6-pro",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "completion_tokens": 169,
+            "prompt_tokens": 329,
+            "total_tokens": 498,
+            "completion_tokens_details": {
+              "reasoning_tokens": 144
+            },
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          }
+        },
+        {
+          "http_status": 200,
+          "elapsed_seconds": 1.724448999390006,
+          "returned_model": "tokendance/mimo-v2.6-pro",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "completion_tokens": 58,
+            "prompt_tokens": 1324,
+            "total_tokens": 1382,
+            "completion_tokens_details": {
+              "reasoning_tokens": 19
+            },
+            "prompt_tokens_details": {
+              "cached_tokens": 256
+            }
+          }
+        }
+      ]
+    },
+    {
+      "requested_model": "workbuddy/step-5-preview",
+      "passed": true,
+      "calls": [
+        {
+          "http_status": 200,
+          "elapsed_seconds": 2.776329332962632,
+          "returned_model": "workbuddy/step-5-preview",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "completion_tokens": 59,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_tokens": 471,
+            "prompt_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 530
+          }
+        },
+        {
+          "http_status": 200,
+          "elapsed_seconds": 2.370444791391492,
+          "returned_model": "workbuddy/step-5-preview",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "completion_tokens": 47,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_tokens": 1331,
+            "prompt_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 1378
+          }
+        }
+      ]
+    },
+    {
+      "requested_model": "atria/intern-s2",
+      "passed": false,
+      "calls": [
+        {
+          "http_status": 200,
+          "elapsed_seconds": 1.5813812920823693,
+          "returned_model": "atria/intern-s2",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "prompt_tokens": 496,
+            "total_tokens": 586,
+            "completion_tokens": 90,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 57,
+              "accepted_prediction_tokens": null,
+              "rejected_prediction_tokens": null,
+              "audio_tokens": null
+            }
+          }
+        },
+        {
+          "http_status": 200,
+          "elapsed_seconds": 4.243442250415683,
+          "returned_model": "atria/intern-s2",
+          "finish_reason": "tool_calls",
+          "usage": {
+            "completion_tokens": 280,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 177,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens": 1364,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 1644
+          },
+          "error": "Unexpected design arguments"
+        }
+      ]
+    }
+  ]
+}

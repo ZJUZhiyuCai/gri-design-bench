@@ -1,0 +1,6139 @@
+{
+  "primary_split": "sealed",
+  "model_attempts": 324,
+  "new_model_attempts": 216,
+  "baseline_runs": 24,
+  "comparison_scope": "Two chronological batches on the same fixed cases; model routes are not randomized across the batches.",
+  "round_scope": "The combined round table matches repeat indices across the two chronological batches.",
+  "uncertainty": "Descriptive percentile intervals from 20,000 paired case resamples. All repeats of a sampled case stay together.",
+  "splits": {
+    "development": {
+      "split": "development",
+      "models": [
+        {
+          "split": "development",
+          "rank": 1.0,
+          "cohort": "expansion",
+          "method": "DeepSeek V4.1 Flash 1017",
+          "route_or_baseline": "wanjie/deepseek-v4.1-flash-1017",
+          "attempts": 18,
+          "valid": 18,
+          "safety_passes": 14,
+          "mean_safe_tir": 47.574829603909464,
+          "mean_feasible_tir": 61.16763806216931,
+          "scored_trajectories": 2592,
+          "delta_vs_constant": 0.6010882844650203,
+          "round_mean_sd": 4.70138828645175,
+          "round_min_mean": 44.435763888888886,
+          "round_max_mean": 52.98008294753087,
+          "rank_r1": 2.0,
+          "rank_r2": 1.0,
+          "rank_r3": 3.0,
+          "leave_one_case_rank_min": 1.0,
+          "leave_one_case_rank_max": 2.0,
+          "within_case_sd_mean": 18.98798817693195,
+          "submission_failures": 0,
+          "safety_failures": 4,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 0,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "development",
+          "rank": 2.0,
+          "cohort": "pilot",
+          "method": "GPT-6.1 Sol",
+          "route_or_baseline": "codex/gpt-6.1-sol",
+          "attempts": 18,
+          "valid": 18,
+          "safety_passes": 12,
+          "mean_safe_tir": 45.899201067386834,
+          "mean_feasible_tir": 68.84880160108025,
+          "scored_trajectories": 2592,
+          "delta_vs_constant": -1.0745402520576104,
+          "round_mean_sd": 19.78586117741838,
+          "round_min_mean": 31.78927951388889,
+          "round_max_mean": 68.51574556327161,
+          "rank_r1": 5.0,
+          "rank_r2": 2.0,
+          "rank_r3": 1.0,
+          "leave_one_case_rank_min": 1.0,
+          "leave_one_case_rank_max": 2.0,
+          "within_case_sd_mean": 30.443866836361607,
+          "submission_failures": 0,
+          "safety_failures": 6,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 0,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "development",
+          "rank": 3.0,
+          "cohort": "pilot",
+          "method": "Kimi-K3.1-Pro",
+          "route_or_baseline": "workbuddy/kimi-k3.1-pro",
+          "attempts": 18,
+          "valid": 18,
+          "safety_passes": 14,
+          "mean_safe_tir": 41.14097061471193,
+          "mean_feasible_tir": 52.89553364748677,
+          "scored_trajectories": 2592,
+          "delta_vs_constant": -5.832770704732511,
+          "round_mean_sd": 10.36887437884218,
+          "round_min_mean": 30.486352237654323,
+          "round_max_mean": 51.19827835648148,
+          "rank_r1": 1.0,
+          "rank_r2": 4.0,
+          "rank_r3": 4.0,
+          "leave_one_case_rank_min": 3.0,
+          "leave_one_case_rank_max": 3.0,
+          "within_case_sd_mean": 21.091581166410506,
+          "submission_failures": 0,
+          "safety_failures": 4,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 0,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "development",
+          "rank": 4.0,
+          "cohort": "expansion",
+          "method": "MiMo-V2.6-Pro",
+          "route_or_baseline": "tokendance/mimo-v2.6-pro",
+          "attempts": 18,
+          "valid": 14,
+          "safety_passes": 10,
+          "mean_safe_tir": 37.33695826903292,
+          "mean_feasible_tir": 67.20652488425925,
+          "scored_trajectories": 2016,
+          "delta_vs_constant": -9.636783050411525,
+          "round_mean_sd": 25.207807821246384,
+          "round_min_mean": 20.546513310185187,
+          "round_max_mean": 66.3233024691358,
+          "rank_r1": 8.0,
+          "rank_r2": 5.0,
+          "rank_r3": 2.0,
+          "leave_one_case_rank_min": 4.0,
+          "leave_one_case_rank_max": 4.0,
+          "within_case_sd_mean": 34.1714815770478,
+          "submission_failures": 4,
+          "safety_failures": 4,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 13,
+          "response_timeouts": 9,
+          "reasoning_only_http_errors": 4
+        },
+        {
+          "split": "development",
+          "rank": 5.0,
+          "cohort": "expansion",
+          "method": "Step-5-Preview",
+          "route_or_baseline": "workbuddy/step-5-preview",
+          "attempts": 18,
+          "valid": 17,
+          "safety_passes": 11,
+          "mean_safe_tir": 24.55102237654321,
+          "mean_feasible_tir": 40.17440025252525,
+          "scored_trajectories": 2448,
+          "delta_vs_constant": -22.422718942901234,
+          "round_mean_sd": 14.058467132766912,
+          "round_min_mean": 8.420138888888891,
+          "round_max_mean": 34.19331114969136,
+          "rank_r1": 3.0,
+          "rank_r2": 7.0,
+          "rank_r3": 6.0,
+          "leave_one_case_rank_min": 5.0,
+          "leave_one_case_rank_max": 6.0,
+          "within_case_sd_mean": 20.916173276365644,
+          "submission_failures": 1,
+          "safety_failures": 6,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 2,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 2
+        },
+        {
+          "split": "development",
+          "rank": 6.0,
+          "cohort": "pilot",
+          "method": "MiniMax-M3.1-Flash",
+          "route_or_baseline": "minimax-code/MiniMax-M3.1-Flash",
+          "attempts": 18,
+          "valid": 15,
+          "safety_passes": 7,
+          "mean_safe_tir": 22.462062757201647,
+          "mean_feasible_tir": 57.75958994708995,
+          "scored_trajectories": 2160,
+          "delta_vs_constant": -24.5116785622428,
+          "round_mean_sd": 12.806886300056785,
+          "round_min_mean": 8.008897569444445,
+          "round_max_mean": 32.39896797839506,
+          "rank_r1": 6.0,
+          "rank_r2": 3.0,
+          "rank_r3": 7.0,
+          "leave_one_case_rank_min": 5.0,
+          "leave_one_case_rank_max": 7.0,
+          "within_case_sd_mean": 17.02833633418898,
+          "submission_failures": 3,
+          "safety_failures": 8,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 0,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "development",
+          "rank": 7.0,
+          "cohort": "expansion",
+          "method": "GLM-5.3",
+          "route_or_baseline": "tokendance/glm-5.3",
+          "attempts": 18,
+          "valid": 18,
+          "safety_passes": 9,
+          "mean_safe_tir": 21.686318479938272,
+          "mean_feasible_tir": 43.372636959876544,
+          "scored_trajectories": 2592,
+          "delta_vs_constant": -25.28742283950617,
+          "round_mean_sd": 16.621936677633393,
+          "round_min_mean": 5.348427854938272,
+          "round_max_mean": 38.57843846450618,
+          "rank_r1": 9.0,
+          "rank_r2": 6.0,
+          "rank_r3": 5.0,
+          "leave_one_case_rank_min": 5.0,
+          "leave_one_case_rank_max": 7.0,
+          "within_case_sd_mean": 18.931839132505537,
+          "submission_failures": 0,
+          "safety_failures": 9,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 0,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "development",
+          "rank": 8.0,
+          "cohort": "expansion",
+          "method": "Qwen3.8-27B",
+          "route_or_baseline": "atria/qwen3.8-27b",
+          "attempts": 18,
+          "valid": 7,
+          "safety_passes": 3,
+          "mean_safe_tir": 10.630264596193415,
+          "mean_feasible_tir": 63.781587577160494,
+          "scored_trajectories": 1008,
+          "delta_vs_constant": -36.34347672325103,
+          "round_mean_sd": 18.41215837850765,
+          "round_min_mean": 0.0,
+          "round_max_mean": 31.890793788580247,
+          "rank_r1": 4.0,
+          "rank_r2": 8.5,
+          "rank_r3": 8.5,
+          "leave_one_case_rank_min": 8.0,
+          "leave_one_case_rank_max": 9.0,
+          "within_case_sd_mean": 18.41215837850765,
+          "submission_failures": 11,
+          "safety_failures": 4,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 20,
+          "response_timeouts": 20,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "development",
+          "rank": 9.0,
+          "cohort": "expansion",
+          "method": "Intern-S2",
+          "route_or_baseline": "atria/intern-s2",
+          "attempts": 18,
+          "valid": 4,
+          "safety_passes": 4,
+          "mean_safe_tir": 8.518438143004115,
+          "mean_feasible_tir": 38.33297164351852,
+          "scored_trajectories": 576,
+          "delta_vs_constant": -38.45530317644033,
+          "round_mean_sd": 14.754367664815804,
+          "round_min_mean": 0.0,
+          "round_max_mean": 25.555314429012345,
+          "rank_r1": 7.0,
+          "rank_r2": 8.5,
+          "rank_r3": 8.5,
+          "leave_one_case_rank_min": 8.0,
+          "leave_one_case_rank_max": 9.0,
+          "within_case_sd_mean": 14.754367664815804,
+          "submission_failures": 14,
+          "safety_failures": 0,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 18,
+          "response_timeouts": 16,
+          "reasoning_only_http_errors": 2
+        }
+      ],
+      "baselines": [
+        {
+          "method": "Constant baseline",
+          "route_or_baseline": "constant",
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 46.97374131944444,
+          "mean_feasible_tir": 46.97374131944444,
+          "scored_trajectories": 864,
+          "delta_vs_constant": 0.0,
+          "round_mean_sd": null,
+          "round_min_mean": null,
+          "round_max_mean": null
+        },
+        {
+          "method": "Responsive baseline",
+          "route_or_baseline": "responsive",
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 41.44350405092593,
+          "mean_feasible_tir": 49.732204861111114,
+          "scored_trajectories": 864,
+          "delta_vs_constant": -5.5302372685185155,
+          "round_mean_sd": null,
+          "round_min_mean": null,
+          "round_max_mean": null
+        }
+      ],
+      "aggregate_rank_groups": [
+        [
+          "wanjie/deepseek-v4.1-flash-1017"
+        ],
+        [
+          "codex/gpt-6.1-sol"
+        ],
+        [
+          "workbuddy/kimi-k3.1-pro"
+        ],
+        [
+          "tokendance/mimo-v2.6-pro"
+        ],
+        [
+          "workbuddy/step-5-preview"
+        ],
+        [
+          "minimax-code/MiniMax-M3.1-Flash"
+        ],
+        [
+          "tokendance/glm-5.3"
+        ],
+        [
+          "atria/qwen3.8-27b"
+        ],
+        [
+          "atria/intern-s2"
+        ]
+      ],
+      "stability": {
+        "combined": {
+          "rank_groups_by_round": [
+            [
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ],
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "atria/qwen3.8-27b"
+              ],
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ],
+              [
+                "atria/intern-s2"
+              ],
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ]
+            ],
+            [
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ],
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ],
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "atria/intern-s2",
+                "atria/qwen3.8-27b"
+              ]
+            ],
+            [
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ],
+              [
+                "atria/intern-s2",
+                "atria/qwen3.8-27b"
+              ]
+            ]
+          ],
+          "kendall_tau_b": [
+            {
+              "round_a": 1,
+              "round_b": 2,
+              "tau_b": 0.253546276418555
+            },
+            {
+              "round_a": 1,
+              "round_b": 3,
+              "tau_b": 0.08451542547285165
+            },
+            {
+              "round_a": 2,
+              "round_b": 3,
+              "tau_b": 0.6
+            }
+          ],
+          "pair_counts": {
+            "consistent_order": 17,
+            "consistent_tie": 0,
+            "reversed": 18,
+            "tie_in_some_rounds": 1
+          }
+        },
+        "pilot": {
+          "rank_groups_by_round": [
+            [
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ],
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ]
+            ],
+            [
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ],
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ]
+            ],
+            [
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ]
+            ]
+          ],
+          "kendall_tau_b": [
+            {
+              "round_a": 1,
+              "round_b": 2,
+              "tau_b": -0.33333333333333337
+            },
+            {
+              "round_a": 1,
+              "round_b": 3,
+              "tau_b": 0.33333333333333337
+            },
+            {
+              "round_a": 2,
+              "round_b": 3,
+              "tau_b": 0.33333333333333337
+            }
+          ],
+          "pair_counts": {
+            "consistent_order": 1,
+            "consistent_tie": 0,
+            "reversed": 2,
+            "tie_in_some_rounds": 0
+          }
+        },
+        "expansion": {
+          "rank_groups_by_round": [
+            [
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "atria/qwen3.8-27b"
+              ],
+              [
+                "atria/intern-s2"
+              ],
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ]
+            ],
+            [
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "atria/intern-s2",
+                "atria/qwen3.8-27b"
+              ]
+            ],
+            [
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "atria/intern-s2",
+                "atria/qwen3.8-27b"
+              ]
+            ]
+          ],
+          "kendall_tau_b": [
+            {
+              "round_a": 1,
+              "round_b": 2,
+              "tau_b": 0.13801311186847082
+            },
+            {
+              "round_a": 1,
+              "round_b": 3,
+              "tau_b": 0.0
+            },
+            {
+              "round_a": 2,
+              "round_b": 3,
+              "tau_b": 0.8571428571428572
+            }
+          ],
+          "pair_counts": {
+            "consistent_order": 7,
+            "consistent_tie": 0,
+            "reversed": 7,
+            "tie_in_some_rounds": 1
+          }
+        }
+      },
+      "rounds": [
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 1,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 51.19827835648148,
+          "mean_feasible_tir": 61.43793402777778,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 1,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 44.435763888888886,
+          "mean_feasible_tir": 66.65364583333333,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 1,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 34.19331114969136,
+          "mean_feasible_tir": 41.03197337962963,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 1,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 3,
+          "mean_safe_tir": 31.890793788580247,
+          "mean_feasible_tir": 63.781587577160494,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 1,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 5.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 31.78927951388889,
+          "mean_feasible_tir": 63.57855902777778,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 1,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 6.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 26.97832272376543,
+          "mean_feasible_tir": 53.95664544753086,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 1,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 7.0,
+          "attempts": 6,
+          "valid": 4,
+          "safety_passes": 4,
+          "mean_safe_tir": 25.555314429012345,
+          "mean_feasible_tir": 38.33297164351852,
+          "scored_trajectories": 576
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 1,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 8.0,
+          "attempts": 6,
+          "valid": 4,
+          "safety_passes": 2,
+          "mean_safe_tir": 20.546513310185187,
+          "mean_feasible_tir": 61.63953993055556,
+          "scored_trajectories": 576
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 1,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 9.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 2,
+          "mean_safe_tir": 5.348427854938272,
+          "mean_feasible_tir": 16.045283564814817,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 2,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 52.98008294753087,
+          "mean_feasible_tir": 52.98008294753087,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 2,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 37.392578125,
+          "mean_feasible_tir": 74.78515625,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 2,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 3,
+          "mean_safe_tir": 32.39896797839506,
+          "mean_feasible_tir": 64.79793595679013,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 2,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 30.486352237654323,
+          "mean_feasible_tir": 45.72952835648149,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 2,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 5.0,
+          "attempts": 6,
+          "valid": 4,
+          "safety_passes": 2,
+          "mean_safe_tir": 25.141059027777775,
+          "mean_feasible_tir": 75.42317708333333,
+          "scored_trajectories": 576
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 2,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 6.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 21.13208912037037,
+          "mean_feasible_tir": 42.26417824074074,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 2,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 7.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 1,
+          "mean_safe_tir": 8.420138888888891,
+          "mean_feasible_tir": 50.52083333333334,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 2,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 8.5,
+          "attempts": 6,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 2,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 8.5,
+          "attempts": 6,
+          "valid": 2,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 288
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 3,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 68.51574556327161,
+          "mean_feasible_tir": 68.51574556327161,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 3,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 66.3233024691358,
+          "mean_feasible_tir": 66.3233024691358,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 3,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 45.30864197530864,
+          "mean_feasible_tir": 67.96296296296296,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 3,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 41.73828125,
+          "mean_feasible_tir": 50.0859375,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 3,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 5.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 38.57843846450618,
+          "mean_feasible_tir": 57.86765769675926,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 3,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 6.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 5,
+          "mean_safe_tir": 31.039617091049383,
+          "mean_feasible_tir": 37.24754050925926,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 3,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 7.0,
+          "attempts": 6,
+          "valid": 4,
+          "safety_passes": 1,
+          "mean_safe_tir": 8.008897569444445,
+          "mean_feasible_tir": 48.053385416666664,
+          "scored_trajectories": 576
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 3,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 8.5,
+          "attempts": 6,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "cohort": "combined",
+          "split": "development",
+          "round": 3,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 8.5,
+          "attempts": 6,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "cohort": "pilot",
+          "split": "development",
+          "round": 1,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 51.19827835648148,
+          "mean_feasible_tir": 61.43793402777778,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "development",
+          "round": 1,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 31.78927951388889,
+          "mean_feasible_tir": 63.57855902777778,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "development",
+          "round": 1,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 26.97832272376543,
+          "mean_feasible_tir": 53.95664544753086,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "development",
+          "round": 2,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 37.392578125,
+          "mean_feasible_tir": 74.78515625,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "development",
+          "round": 2,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 3,
+          "mean_safe_tir": 32.39896797839506,
+          "mean_feasible_tir": 64.79793595679013,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "pilot",
+          "split": "development",
+          "round": 2,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 30.486352237654323,
+          "mean_feasible_tir": 45.72952835648149,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "development",
+          "round": 3,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 68.51574556327161,
+          "mean_feasible_tir": 68.51574556327161,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "development",
+          "round": 3,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 41.73828125,
+          "mean_feasible_tir": 50.0859375,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "development",
+          "round": 3,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 4,
+          "safety_passes": 1,
+          "mean_safe_tir": 8.008897569444445,
+          "mean_feasible_tir": 48.053385416666664,
+          "scored_trajectories": 576
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 1,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 44.435763888888886,
+          "mean_feasible_tir": 66.65364583333333,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 1,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 34.19331114969136,
+          "mean_feasible_tir": 41.03197337962963,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 1,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 3,
+          "mean_safe_tir": 31.890793788580247,
+          "mean_feasible_tir": 63.781587577160494,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 1,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 4,
+          "safety_passes": 4,
+          "mean_safe_tir": 25.555314429012345,
+          "mean_feasible_tir": 38.33297164351852,
+          "scored_trajectories": 576
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 1,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 5.0,
+          "attempts": 6,
+          "valid": 4,
+          "safety_passes": 2,
+          "mean_safe_tir": 20.546513310185187,
+          "mean_feasible_tir": 61.63953993055556,
+          "scored_trajectories": 576
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 1,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 6.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 2,
+          "mean_safe_tir": 5.348427854938272,
+          "mean_feasible_tir": 16.045283564814817,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 2,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 52.98008294753087,
+          "mean_feasible_tir": 52.98008294753087,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 2,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 4,
+          "safety_passes": 2,
+          "mean_safe_tir": 25.141059027777775,
+          "mean_feasible_tir": 75.42317708333333,
+          "scored_trajectories": 576
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 2,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 21.13208912037037,
+          "mean_feasible_tir": 42.26417824074074,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 2,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 1,
+          "mean_safe_tir": 8.420138888888891,
+          "mean_feasible_tir": 50.52083333333334,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 2,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 5.5,
+          "attempts": 6,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 2,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 5.5,
+          "attempts": 6,
+          "valid": 2,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 288
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 3,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 66.3233024691358,
+          "mean_feasible_tir": 66.3233024691358,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 3,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 45.30864197530864,
+          "mean_feasible_tir": 67.96296296296296,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 3,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 38.57843846450618,
+          "mean_feasible_tir": 57.86765769675926,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 3,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 5,
+          "mean_safe_tir": 31.039617091049383,
+          "mean_feasible_tir": 37.24754050925926,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 3,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 5.5,
+          "attempts": 6,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "cohort": "expansion",
+          "split": "development",
+          "round": 3,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 5.5,
+          "attempts": 6,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        }
+      ],
+      "cases": [
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "dev-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 53.15465856481482,
+          "mean_feasible_tir": 79.73198784722223,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "dev-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 24.187644675925924,
+          "mean_feasible_tir": 72.56293402777777,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "dev-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 51.603250385802475,
+          "mean_feasible_tir": 77.40487557870371,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "dev-04",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 18.432436342592595,
+          "mean_feasible_tir": 27.648654513888893,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "dev-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 89.47410300925927,
+          "mean_feasible_tir": 89.47410300925927,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "dev-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 38.543113425925924,
+          "mean_feasible_tir": 57.814670138888886,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "dev-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 65.95896026234568,
+          "mean_feasible_tir": 65.95896026234568,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "dev-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 19.927420910493826,
+          "mean_feasible_tir": 59.782262731481474,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "dev-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 44.73620756172839,
+          "mean_feasible_tir": 67.10431134259258,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "dev-04",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 23.294270833333332,
+          "mean_feasible_tir": 23.294270833333332,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "dev-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 75.20423418209876,
+          "mean_feasible_tir": 75.20423418209876,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "dev-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 17.724729938271608,
+          "mean_feasible_tir": 26.587094907407412,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "dev-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 36.08772183641975,
+          "mean_feasible_tir": 54.131582754629626,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "dev-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "dev-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 20.23075810185185,
+          "mean_feasible_tir": 60.69227430555556,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "dev-04",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 8.67163387345679,
+          "mean_feasible_tir": 26.01490162037037,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "dev-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 69.78226273148148,
+          "mean_feasible_tir": 69.78226273148148,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "dev-06",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "dev-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 76.16174768518519,
+          "mean_feasible_tir": 76.16174768518519,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "dev-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 25.558449074074076,
+          "mean_feasible_tir": 76.67534722222223,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "dev-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 76.80700231481481,
+          "mean_feasible_tir": 76.80700231481481,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "dev-04",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 27.518084490740737,
+          "mean_feasible_tir": 27.518084490740737,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "dev-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 64.47362075617283,
+          "mean_feasible_tir": 64.47362075617283,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "dev-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 14.930073302469138,
+          "mean_feasible_tir": 44.79021990740741,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "dev-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 49.22839506172839,
+          "mean_feasible_tir": 73.84259259259258,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "dev-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "dev-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "dev-04",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 24.797694830246915,
+          "mean_feasible_tir": 24.797694830246915,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "dev-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 42.07875192901235,
+          "mean_feasible_tir": 42.07875192901235,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "dev-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 14.013069058641976,
+          "mean_feasible_tir": 42.03920717592593,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "dev-01",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 1,
+          "mean_safe_tir": 26.615065586419757,
+          "mean_feasible_tir": 79.84519675925927,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "dev-02",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "dev-03",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "dev-04",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 8.18383487654321,
+          "mean_feasible_tir": 24.551504629629633,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "dev-05",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 28.982687114197528,
+          "mean_feasible_tir": 86.94806134259258,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "dev-06",
+          "attempts": 3,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "dev-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 53.46113040123456,
+          "mean_feasible_tir": 80.19169560185185,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "dev-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 19.93778935185185,
+          "mean_feasible_tir": 59.81336805555556,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "dev-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 63.628231095679006,
+          "mean_feasible_tir": 63.628231095679006,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "dev-04",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 1,
+          "mean_safe_tir": 9.107108410493828,
+          "mean_feasible_tir": 27.32132523148148,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "dev-05",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 2,
+          "mean_safe_tir": 58.249903549382715,
+          "mean_feasible_tir": 87.37485532407408,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "dev-06",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 19.637586805555554,
+          "mean_feasible_tir": 58.912760416666664,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "dev-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 18.371672453703706,
+          "mean_feasible_tir": 55.115017361111114,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "dev-02",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 1,
+          "mean_safe_tir": 16.2938850308642,
+          "mean_feasible_tir": 48.881655092592595,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "dev-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 11.511140046296296,
+          "mean_feasible_tir": 17.266710069444443,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "dev-04",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 6.281346450617283,
+          "mean_feasible_tir": 9.422019675925924,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "dev-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 68.91324266975309,
+          "mean_feasible_tir": 68.91324266975309,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "dev-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 25.934847608024693,
+          "mean_feasible_tir": 38.90227141203704,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Intern-S2",
+          "case": "dev-01",
+          "attempts": 3,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "method": "Intern-S2",
+          "case": "dev-02",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 17.745949074074073,
+          "mean_feasible_tir": 53.237847222222214,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Intern-S2",
+          "case": "dev-03",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 23.334538966049383,
+          "mean_feasible_tir": 70.00361689814815,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Intern-S2",
+          "case": "dev-04",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 7.55666473765432,
+          "mean_feasible_tir": 22.669994212962962,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Intern-S2",
+          "case": "dev-05",
+          "attempts": 3,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "method": "Intern-S2",
+          "case": "dev-06",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 2.4734760802469133,
+          "mean_feasible_tir": 7.42042824074074,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "dev-01",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 61.61675347222222,
+          "mean_feasible_tir": 61.61675347222222,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "dev-02",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 37.344473379629626,
+          "mean_feasible_tir": 37.344473379629626,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "dev-03",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 46.87210648148148,
+          "mean_feasible_tir": 46.87210648148148,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "dev-04",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 26.942997685185187,
+          "mean_feasible_tir": 26.942997685185187,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "dev-05",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 83.60532407407408,
+          "mean_feasible_tir": 83.60532407407408,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "dev-06",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 25.460792824074073,
+          "mean_feasible_tir": 25.460792824074073,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "dev-01",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 77.46600115740742,
+          "mean_feasible_tir": 77.46600115740742,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "dev-02",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 49.30989583333334,
+          "mean_feasible_tir": 49.30989583333334,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "dev-03",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "dev-04",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 19.82132523148148,
+          "mean_feasible_tir": 19.82132523148148,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "dev-05",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 78.4888599537037,
+          "mean_feasible_tir": 78.4888599537037,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "dev-06",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 23.574942129629633,
+          "mean_feasible_tir": 23.574942129629633,
+          "scored_trajectories": 144
+        }
+      ],
+      "paired": [
+        {
+          "split": "development",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Constant baseline",
+          "cases": 6,
+          "mean_delta_tir_points": 0.6010882844650203,
+          "bootstrap_95_low": -11.965181327160494,
+          "bootstrap_95_high": 15.01832561728395,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "development",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "GPT-6.1 Sol",
+          "cases": 6,
+          "mean_delta_tir_points": 1.675628536522631,
+          "bootstrap_95_low": -14.69300572273663,
+          "bootstrap_95_high": 17.446911972736622,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Responsive baseline",
+          "cases": 6,
+          "mean_delta_tir_points": 6.131325552983536,
+          "bootstrap_95_low": -14.247082368827163,
+          "bootstrap_95_high": 35.90960969650205,
+          "cases_a_higher": 2,
+          "cases_tied": 0,
+          "cases_b_higher": 4
+        },
+        {
+          "split": "development",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Kimi-K3.1-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 6.433858989197531,
+          "bootstrap_95_low": -3.100485468106996,
+          "bootstrap_95_high": 17.974054783950617,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "MiMo-V2.6-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 10.237871334876544,
+          "bootstrap_95_low": 2.972583912037043,
+          "bootstrap_95_high": 17.38184799382716,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 23.023807227366255,
+          "bootstrap_95_low": 1.029610339506169,
+          "bootstrap_95_high": 46.856594007201636,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "MiniMax-M3.1-Flash",
+          "cases": 6,
+          "mean_delta_tir_points": 25.11276684670782,
+          "bootstrap_95_low": 9.955230838477368,
+          "bootstrap_95_high": 40.73623971193416,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 25.888511123971192,
+          "bootstrap_95_low": 9.204684284979422,
+          "bootstrap_95_high": 47.376382458847736,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 36.944565007716044,
+          "bootstrap_95_low": 21.71231995884774,
+          "bootstrap_95_high": 55.06478266460905,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 39.05639146090535,
+          "bootstrap_95_low": 18.518558706275723,
+          "bootstrap_95_high": 60.87416409465021,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "Constant baseline",
+          "method_b": "GPT-6.1 Sol",
+          "cases": 6,
+          "mean_delta_tir_points": 1.0745402520576104,
+          "bootstrap_95_low": -6.502218364197536,
+          "bootstrap_95_high": 8.429060570987653,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "development",
+          "method_a": "Constant baseline",
+          "method_b": "Responsive baseline",
+          "cases": 6,
+          "mean_delta_tir_points": 5.5302372685185155,
+          "bootstrap_95_low": -8.213372878086425,
+          "bootstrap_95_high": 23.168402777777775,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "Constant baseline",
+          "method_b": "Kimi-K3.1-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 5.832770704732511,
+          "bootstrap_95_low": 0.7329443158436213,
+          "bootstrap_95_high": 11.29557291666667,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "Constant baseline",
+          "method_b": "MiMo-V2.6-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 9.636783050411525,
+          "bootstrap_95_low": -1.8223540380658392,
+          "bootstrap_95_high": 18.94607606738683,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "Constant baseline",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 22.422718942901234,
+          "bootstrap_95_low": 11.548755787037036,
+          "bootstrap_95_high": 33.40832368827161,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "Constant baseline",
+          "method_b": "MiniMax-M3.1-Flash",
+          "cases": 6,
+          "mean_delta_tir_points": 24.5116785622428,
+          "bootstrap_95_low": 18.728218235596714,
+          "bootstrap_95_high": 30.401154192386826,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "Constant baseline",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 25.28742283950617,
+          "bootstrap_95_low": 11.966427147633745,
+          "bootstrap_95_high": 38.48918145576132,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "Constant baseline",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 36.34347672325103,
+          "bootstrap_95_low": 26.797678755144034,
+          "bootstrap_95_high": 45.889274691358025,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "Constant baseline",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 38.45530317644033,
+          "bootstrap_95_low": 20.784465020576132,
+          "bootstrap_95_high": 59.73685257523128,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Responsive baseline",
+          "cases": 6,
+          "mean_delta_tir_points": 4.455697016460905,
+          "bootstrap_95_low": -14.743320794753089,
+          "bootstrap_95_high": 26.075303819444446,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "development",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Kimi-K3.1-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 4.7582304526749,
+          "bootstrap_95_low": -4.320706340020573,
+          "bootstrap_95_high": 13.264089827674903,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "MiMo-V2.6-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 8.562242798353914,
+          "bootstrap_95_low": -2.1957384902263306,
+          "bootstrap_95_high": 19.81835133744856,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 21.34817869084362,
+          "bootstrap_95_low": 12.209804205246913,
+          "bootstrap_95_high": 31.29521122685186,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "MiniMax-M3.1-Flash",
+          "cases": 6,
+          "mean_delta_tir_points": 23.437138310185187,
+          "bootstrap_95_low": 16.22462545010288,
+          "bootstrap_95_high": 31.064252186213995,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 24.21288258744856,
+          "bootstrap_95_low": 7.363683127572018,
+          "bootstrap_95_high": 41.119148662551446,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 35.26893647119342,
+          "bootstrap_95_low": 22.17938207304527,
+          "bootstrap_95_high": 48.78215020576132,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 37.38076292438272,
+          "bootstrap_95_low": 16.49554719650206,
+          "bootstrap_95_high": 61.420396090534986,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "Responsive baseline",
+          "method_b": "Kimi-K3.1-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 0.3025334362139951,
+          "bootstrap_95_low": -20.05405253343621,
+          "bootstrap_95_high": 16.095116383744863,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "Responsive baseline",
+          "method_b": "MiMo-V2.6-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 4.10654578189301,
+          "bootstrap_95_low": -24.476835776748967,
+          "bootstrap_95_high": 22.95118795010289,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "Responsive baseline",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 16.892481674382715,
+          "bootstrap_95_low": -0.11035558127571961,
+          "bootstrap_95_high": 36.2524514531893,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "Responsive baseline",
+          "method_b": "MiniMax-M3.1-Flash",
+          "cases": 6,
+          "mean_delta_tir_points": 18.981441293724284,
+          "bootstrap_95_low": 0.0903822659465033,
+          "bootstrap_95_high": 36.18264531893004,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "Responsive baseline",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 19.757185570987655,
+          "bootstrap_95_low": 4.344417116769545,
+          "bootstrap_95_high": 35.4295669367284,
+          "cases_a_higher": 4,
+          "cases_tied": 1,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "Responsive baseline",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 30.81323945473251,
+          "bootstrap_95_low": 14.087054719650206,
+          "bootstrap_95_high": 45.59984246399177,
+          "cases_a_higher": 5,
+          "cases_tied": 1,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "Responsive baseline",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 32.92506590792181,
+          "bootstrap_95_low": 4.816663451646092,
+          "bootstrap_95_high": 60.93299897119342,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "Kimi-K3.1-Pro",
+          "method_b": "MiMo-V2.6-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 3.804012345679014,
+          "bootstrap_95_low": -6.940827546296295,
+          "bootstrap_95_high": 12.743296682098764,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "development",
+          "method_a": "Kimi-K3.1-Pro",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 16.589948238168724,
+          "bootstrap_95_low": 2.3584587191358004,
+          "bootstrap_95_high": 32.60842656893004,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "Kimi-K3.1-Pro",
+          "method_b": "MiniMax-M3.1-Flash",
+          "cases": 6,
+          "mean_delta_tir_points": 18.67890785751029,
+          "bootstrap_95_low": 12.55357028034979,
+          "bootstrap_95_high": 24.532214506172846,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "Kimi-K3.1-Pro",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 19.45465213477366,
+          "bootstrap_95_low": 7.182114840534982,
+          "bootstrap_95_high": 32.09342046039094,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "Kimi-K3.1-Pro",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 30.510706018518515,
+          "bootstrap_95_low": 20.755007394547324,
+          "bootstrap_95_high": 40.481851208847736,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "Kimi-K3.1-Pro",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 32.62253247170782,
+          "bootstrap_95_low": 12.000787680041151,
+          "bootstrap_95_high": 54.78515624999999,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "MiMo-V2.6-Pro",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 12.785935892489709,
+          "bootstrap_95_low": -3.8475758744855995,
+          "bootstrap_95_high": 32.64564043209876,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "MiMo-V2.6-Pro",
+          "method_b": "MiniMax-M3.1-Flash",
+          "cases": 6,
+          "mean_delta_tir_points": 14.874895511831273,
+          "bootstrap_95_low": 0.9523292824074071,
+          "bootstrap_95_high": 27.98984857253086,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "MiMo-V2.6-Pro",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 15.650639789094647,
+          "bootstrap_95_low": -1.7124807098765453,
+          "bootstrap_95_high": 36.7799559542181,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "development",
+          "method_a": "MiMo-V2.6-Pro",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 26.706693672839503,
+          "bootstrap_95_low": 13.136815200617283,
+          "bootstrap_95_high": 43.28788097993827,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "MiMo-V2.6-Pro",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 28.818520126028805,
+          "bootstrap_95_low": 10.71682902520576,
+          "bootstrap_95_high": 47.20373585390946,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "Step-5-Preview",
+          "method_b": "MiniMax-M3.1-Flash",
+          "cases": 6,
+          "mean_delta_tir_points": 2.088959619341565,
+          "bootstrap_95_low": -9.355107060185183,
+          "bootstrap_95_high": 14.084964956275721,
+          "cases_a_higher": 2,
+          "cases_tied": 0,
+          "cases_b_higher": 4
+        },
+        {
+          "split": "development",
+          "method_a": "Step-5-Preview",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 2.8647038966049387,
+          "bootstrap_95_low": -14.540493184156373,
+          "bootstrap_95_high": 18.214882933063123,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "Step-5-Preview",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 13.920757780349795,
+          "bootstrap_95_low": 1.2522103266460898,
+          "bootstrap_95_high": 27.16499485596708,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "Step-5-Preview",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 16.032584233539097,
+          "bootstrap_95_low": -2.485492219650205,
+          "bootstrap_95_high": 39.458228845164605,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "development",
+          "method_a": "MiniMax-M3.1-Flash",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 0.7757442772633736,
+          "bootstrap_95_low": -12.236488876028806,
+          "bootstrap_95_high": 15.033436213991768,
+          "cases_a_higher": 2,
+          "cases_tied": 1,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "development",
+          "method_a": "MiniMax-M3.1-Flash",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 11.83179816100823,
+          "bootstrap_95_low": 1.660075874485596,
+          "bootstrap_95_high": 25.136115933641975,
+          "cases_a_higher": 4,
+          "cases_tied": 2,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "MiniMax-M3.1-Flash",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 13.943624614197532,
+          "bootstrap_95_low": -7.176327803497943,
+          "bootstrap_95_high": 40.08125964506173,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "development",
+          "method_a": "GLM-5.3",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 11.056053883744855,
+          "bootstrap_95_low": 4.518188978909467,
+          "bootstrap_95_high": 17.441084747942387,
+          "cases_a_higher": 4,
+          "cases_tied": 2,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "development",
+          "method_a": "GLM-5.3",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 13.167880336934157,
+          "bootstrap_95_low": -8.896725501543209,
+          "bootstrap_95_high": 35.232486175411516,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "development",
+          "method_a": "Qwen3.8-27B",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 2.111826453189301,
+          "bootstrap_95_low": -13.586556391460904,
+          "bootstrap_95_high": 18.61947016460905,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        }
+      ],
+      "leave_one_out": [
+        {
+          "split": "development",
+          "omitted_case": "dev-01",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 1.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-01",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 2.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-01",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 3.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-01",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 4.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-01",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 5.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-01",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 6.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-01",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 7.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-01",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 8.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-01",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 9.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-02",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 1.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-02",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 2.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-02",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 3.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-02",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 4.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-02",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 5.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-02",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 6.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-02",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 7.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-02",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 8.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-02",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 9.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-03",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 1.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-03",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 2.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-03",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 3.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-03",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 4.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-03",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 5.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-03",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 6.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-03",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 7.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-03",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 8.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-03",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 9.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-04",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 1.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-04",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 2.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-04",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 3.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-04",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 4.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-04",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 5.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-04",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 6.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-04",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 7.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-04",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 8.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-04",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 9.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-05",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 1.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-05",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 2.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-05",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 3.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-05",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 4.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-05",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 5.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-05",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 6.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-05",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 7.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-05",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 8.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-05",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 9.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-06",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 1.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-06",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 2.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-06",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 3.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-06",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 4.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-06",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 5.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-06",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 6.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-06",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 7.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-06",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 8.0
+        },
+        {
+          "split": "development",
+          "omitted_case": "dev-06",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 9.0
+        }
+      ]
+    },
+    "sealed": {
+      "split": "sealed",
+      "models": [
+        {
+          "split": "sealed",
+          "rank": 1.0,
+          "cohort": "pilot",
+          "method": "GPT-6.1 Sol",
+          "route_or_baseline": "codex/gpt-6.1-sol",
+          "attempts": 18,
+          "valid": 18,
+          "safety_passes": 18,
+          "mean_safe_tir": 73.10836226851852,
+          "mean_feasible_tir": 73.10836226851852,
+          "scored_trajectories": 2592,
+          "delta_vs_constant": 23.628231095679016,
+          "round_mean_sd": 0.4783129118310706,
+          "round_min_mean": 72.72051022376543,
+          "round_max_mean": 73.64281925154322,
+          "rank_r1": 1.0,
+          "rank_r2": 1.0,
+          "rank_r3": 1.0,
+          "leave_one_case_rank_min": 1.0,
+          "leave_one_case_rank_max": 1.0,
+          "within_case_sd_mean": 1.2742379283993783,
+          "submission_failures": 0,
+          "safety_failures": 0,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 0,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "sealed",
+          "rank": 2.0,
+          "cohort": "expansion",
+          "method": "DeepSeek V4.1 Flash 1017",
+          "route_or_baseline": "wanjie/deepseek-v4.1-flash-1017",
+          "attempts": 18,
+          "valid": 18,
+          "safety_passes": 14,
+          "mean_safe_tir": 51.965181327160494,
+          "mean_feasible_tir": 66.8123759920635,
+          "scored_trajectories": 2448,
+          "delta_vs_constant": 2.4850501543209886,
+          "round_mean_sd": 3.1214100363807935,
+          "round_min_mean": 50.02628279320988,
+          "round_max_mean": 55.56592399691358,
+          "rank_r1": 3.0,
+          "rank_r2": 3.0,
+          "rank_r3": 4.0,
+          "leave_one_case_rank_min": 2.0,
+          "leave_one_case_rank_max": 4.0,
+          "within_case_sd_mean": 28.041740009384174,
+          "submission_failures": 0,
+          "safety_failures": 3,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 1,
+          "api_error_calls": 0,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "sealed",
+          "rank": 3.0,
+          "cohort": "pilot",
+          "method": "MiniMax-M3.1-Flash",
+          "route_or_baseline": "minimax-code/MiniMax-M3.1-Flash",
+          "attempts": 18,
+          "valid": 16,
+          "safety_passes": 14,
+          "mean_safe_tir": 51.81757169495885,
+          "mean_feasible_tir": 66.62259217923281,
+          "scored_trajectories": 2304,
+          "delta_vs_constant": 2.337440522119343,
+          "round_mean_sd": 17.068590287487066,
+          "round_min_mean": 32.32409818672839,
+          "round_max_mean": 64.08227237654322,
+          "rank_r1": 5.0,
+          "rank_r2": 2.0,
+          "rank_r3": 2.0,
+          "leave_one_case_rank_min": 2.0,
+          "leave_one_case_rank_max": 4.0,
+          "within_case_sd_mean": 24.812900856777624,
+          "submission_failures": 2,
+          "safety_failures": 2,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 0,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "sealed",
+          "rank": 4.0,
+          "cohort": "expansion",
+          "method": "MiMo-V2.6-Pro",
+          "route_or_baseline": "tokendance/mimo-v2.6-pro",
+          "attempts": 18,
+          "valid": 15,
+          "safety_passes": 11,
+          "mean_safe_tir": 46.4745691872428,
+          "mean_feasible_tir": 76.04929503367003,
+          "scored_trajectories": 2160,
+          "delta_vs_constant": -3.0055619855967053,
+          "round_mean_sd": 11.223006952456707,
+          "round_min_mean": 33.728419174382715,
+          "round_max_mean": 54.87437307098765,
+          "rank_r1": 2.0,
+          "rank_r2": 5.0,
+          "rank_r3": 3.0,
+          "leave_one_case_rank_min": 3.0,
+          "leave_one_case_rank_max": 5.0,
+          "within_case_sd_mean": 20.27208008404852,
+          "submission_failures": 3,
+          "safety_failures": 4,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 7,
+          "response_timeouts": 5,
+          "reasoning_only_http_errors": 2
+        },
+        {
+          "split": "sealed",
+          "rank": 5.0,
+          "cohort": "pilot",
+          "method": "Kimi-K3.1-Pro",
+          "route_or_baseline": "workbuddy/kimi-k3.1-pro",
+          "attempts": 18,
+          "valid": 18,
+          "safety_passes": 14,
+          "mean_safe_tir": 44.2259034207819,
+          "mean_feasible_tir": 56.861875826719576,
+          "scored_trajectories": 2592,
+          "delta_vs_constant": -5.25422775205761,
+          "round_mean_sd": 7.239841260748815,
+          "round_min_mean": 36.1107494212963,
+          "round_max_mean": 50.02230420524691,
+          "rank_r1": 4.0,
+          "rank_r2": 4.0,
+          "rank_r3": 5.0,
+          "leave_one_case_rank_min": 3.0,
+          "leave_one_case_rank_max": 5.0,
+          "within_case_sd_mean": 24.165476174258302,
+          "submission_failures": 0,
+          "safety_failures": 4,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 0,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "sealed",
+          "rank": 6.0,
+          "cohort": "expansion",
+          "method": "Step-5-Preview",
+          "route_or_baseline": "workbuddy/step-5-preview",
+          "attempts": 18,
+          "valid": 16,
+          "safety_passes": 10,
+          "mean_safe_tir": 33.388953189300416,
+          "mean_feasible_tir": 60.10011574074074,
+          "scored_trajectories": 2304,
+          "delta_vs_constant": -16.09117798353909,
+          "round_mean_sd": 10.83349727131647,
+          "round_min_mean": 23.249300733024697,
+          "round_max_mean": 44.80348186728395,
+          "rank_r1": 6.0,
+          "rank_r2": 6.0,
+          "rank_r3": 6.0,
+          "leave_one_case_rank_min": 6.0,
+          "leave_one_case_rank_max": 6.0,
+          "within_case_sd_mean": 31.30828085787699,
+          "submission_failures": 2,
+          "safety_failures": 6,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 4,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 4
+        },
+        {
+          "split": "sealed",
+          "rank": 7.0,
+          "cohort": "expansion",
+          "method": "GLM-5.3",
+          "route_or_baseline": "tokendance/glm-5.3",
+          "attempts": 18,
+          "valid": 18,
+          "safety_passes": 9,
+          "mean_safe_tir": 20.952047968106996,
+          "mean_feasible_tir": 41.90409593621399,
+          "scored_trajectories": 2592,
+          "delta_vs_constant": -28.52808320473251,
+          "round_mean_sd": 0.5347537850625564,
+          "round_min_mean": 20.385320216049383,
+          "round_max_mean": 21.447723765432098,
+          "rank_r1": 7.0,
+          "rank_r2": 7.0,
+          "rank_r3": 8.0,
+          "leave_one_case_rank_min": 7.0,
+          "leave_one_case_rank_max": 8.0,
+          "within_case_sd_mean": 32.59839549524597,
+          "submission_failures": 0,
+          "safety_failures": 9,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 0,
+          "response_timeouts": 0,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "sealed",
+          "rank": 8.0,
+          "cohort": "expansion",
+          "method": "Qwen3.8-27B",
+          "route_or_baseline": "atria/qwen3.8-27b",
+          "attempts": 18,
+          "valid": 8,
+          "safety_passes": 5,
+          "mean_safe_tir": 17.05962255658436,
+          "mean_feasible_tir": 61.4146412037037,
+          "scored_trajectories": 1152,
+          "delta_vs_constant": -32.42050861625514,
+          "round_mean_sd": 15.789094752329376,
+          "round_min_mean": 0.0,
+          "round_max_mean": 31.15921585648148,
+          "rank_r1": 9.0,
+          "rank_r2": 8.0,
+          "rank_r3": 7.0,
+          "leave_one_case_rank_min": 7.0,
+          "leave_one_case_rank_max": 8.0,
+          "within_case_sd_mean": 19.55269431133802,
+          "submission_failures": 10,
+          "safety_failures": 3,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 16,
+          "response_timeouts": 16,
+          "reasoning_only_http_errors": 0
+        },
+        {
+          "split": "sealed",
+          "rank": 9.0,
+          "cohort": "expansion",
+          "method": "Intern-S2",
+          "route_or_baseline": "atria/intern-s2",
+          "attempts": 18,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 8.201597865226338,
+          "mean_feasible_tir": 73.81438078703704,
+          "scored_trajectories": 432,
+          "delta_vs_constant": -41.278533307613166,
+          "round_mean_sd": 7.1184660146254455,
+          "round_min_mean": 0.0,
+          "round_max_mean": 12.774522569444445,
+          "rank_r1": 8.0,
+          "rank_r2": 9.0,
+          "rank_r3": 9.0,
+          "leave_one_case_rank_min": 9.0,
+          "leave_one_case_rank_max": 9.0,
+          "within_case_sd_mean": 7.118466014625445,
+          "submission_failures": 15,
+          "safety_failures": 1,
+          "infrastructure_errors": 0,
+          "simulation_failures": 0,
+          "resource_violations": 0,
+          "api_error_calls": 20,
+          "response_timeouts": 20,
+          "reasoning_only_http_errors": 0
+        }
+      ],
+      "baselines": [
+        {
+          "method": "Responsive baseline",
+          "route_or_baseline": "responsive",
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 58.02625868055556,
+          "mean_feasible_tir": 58.02625868055556,
+          "scored_trajectories": 864,
+          "delta_vs_constant": 8.546127507716053,
+          "round_mean_sd": null,
+          "round_min_mean": null,
+          "round_max_mean": null
+        },
+        {
+          "method": "Constant baseline",
+          "route_or_baseline": "constant",
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 49.480131172839506,
+          "mean_feasible_tir": 49.480131172839506,
+          "scored_trajectories": 864,
+          "delta_vs_constant": 0.0,
+          "round_mean_sd": null,
+          "round_min_mean": null,
+          "round_max_mean": null
+        }
+      ],
+      "aggregate_rank_groups": [
+        [
+          "codex/gpt-6.1-sol"
+        ],
+        [
+          "wanjie/deepseek-v4.1-flash-1017"
+        ],
+        [
+          "minimax-code/MiniMax-M3.1-Flash"
+        ],
+        [
+          "tokendance/mimo-v2.6-pro"
+        ],
+        [
+          "workbuddy/kimi-k3.1-pro"
+        ],
+        [
+          "workbuddy/step-5-preview"
+        ],
+        [
+          "tokendance/glm-5.3"
+        ],
+        [
+          "atria/qwen3.8-27b"
+        ],
+        [
+          "atria/intern-s2"
+        ]
+      ],
+      "stability": {
+        "combined": {
+          "rank_groups_by_round": [
+            [
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ],
+              [
+                "atria/intern-s2"
+              ],
+              [
+                "atria/qwen3.8-27b"
+              ]
+            ],
+            [
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ],
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ],
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ],
+              [
+                "atria/qwen3.8-27b"
+              ],
+              [
+                "atria/intern-s2"
+              ]
+            ],
+            [
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ],
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "atria/qwen3.8-27b"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ],
+              [
+                "atria/intern-s2"
+              ]
+            ]
+          ],
+          "kendall_tau_b": [
+            {
+              "round_a": 1,
+              "round_b": 2,
+              "tau_b": 0.6666666666666666
+            },
+            {
+              "round_a": 1,
+              "round_b": 3,
+              "tau_b": 0.7222222222222222
+            },
+            {
+              "round_a": 2,
+              "round_b": 3,
+              "tau_b": 0.8333333333333334
+            }
+          ],
+          "pair_counts": {
+            "consistent_order": 29,
+            "consistent_tie": 0,
+            "reversed": 7,
+            "tie_in_some_rounds": 0
+          }
+        },
+        "pilot": {
+          "rank_groups_by_round": [
+            [
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ]
+            ],
+            [
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ],
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ]
+            ],
+            [
+              [
+                "codex/gpt-6.1-sol"
+              ],
+              [
+                "minimax-code/MiniMax-M3.1-Flash"
+              ],
+              [
+                "workbuddy/kimi-k3.1-pro"
+              ]
+            ]
+          ],
+          "kendall_tau_b": [
+            {
+              "round_a": 1,
+              "round_b": 2,
+              "tau_b": 0.33333333333333337
+            },
+            {
+              "round_a": 1,
+              "round_b": 3,
+              "tau_b": 0.33333333333333337
+            },
+            {
+              "round_a": 2,
+              "round_b": 3,
+              "tau_b": 1.0
+            }
+          ],
+          "pair_counts": {
+            "consistent_order": 2,
+            "consistent_tie": 0,
+            "reversed": 1,
+            "tie_in_some_rounds": 0
+          }
+        },
+        "expansion": {
+          "rank_groups_by_round": [
+            [
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ],
+              [
+                "atria/intern-s2"
+              ],
+              [
+                "atria/qwen3.8-27b"
+              ]
+            ],
+            [
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ],
+              [
+                "atria/qwen3.8-27b"
+              ],
+              [
+                "atria/intern-s2"
+              ]
+            ],
+            [
+              [
+                "tokendance/mimo-v2.6-pro"
+              ],
+              [
+                "wanjie/deepseek-v4.1-flash-1017"
+              ],
+              [
+                "workbuddy/step-5-preview"
+              ],
+              [
+                "atria/qwen3.8-27b"
+              ],
+              [
+                "tokendance/glm-5.3"
+              ],
+              [
+                "atria/intern-s2"
+              ]
+            ]
+          ],
+          "kendall_tau_b": [
+            {
+              "round_a": 1,
+              "round_b": 2,
+              "tau_b": 0.7333333333333333
+            },
+            {
+              "round_a": 1,
+              "round_b": 3,
+              "tau_b": 0.7333333333333333
+            },
+            {
+              "round_a": 2,
+              "round_b": 3,
+              "tau_b": 0.7333333333333333
+            }
+          ],
+          "pair_counts": {
+            "consistent_order": 12,
+            "consistent_tie": 0,
+            "reversed": 3,
+            "tie_in_some_rounds": 0
+          }
+        }
+      },
+      "rounds": [
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 1,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 73.64281925154322,
+          "mean_feasible_tir": 73.64281925154322,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 1,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 4,
+          "mean_safe_tir": 50.820915316358025,
+          "mean_feasible_tir": 76.23137297453704,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 1,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 50.02628279320988,
+          "mean_feasible_tir": 60.031539351851855,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 1,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 36.1107494212963,
+          "mean_feasible_tir": 54.16612413194444,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 1,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 5.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 3,
+          "mean_safe_tir": 32.32409818672839,
+          "mean_feasible_tir": 64.64819637345678,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 1,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 6.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 32.114076967592595,
+          "mean_feasible_tir": 48.17111545138889,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 1,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 7.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 20.385320216049383,
+          "mean_feasible_tir": 40.770640432098766,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 1,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 8.0,
+          "attempts": 6,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 12.774522569444445,
+          "mean_feasible_tir": 76.64713541666667,
+          "scored_trajectories": 144
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 1,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 9.0,
+          "attempts": 6,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 2,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 72.96175733024691,
+          "mean_feasible_tir": 72.96175733024691,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 2,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 5,
+          "mean_safe_tir": 59.04634452160494,
+          "mean_feasible_tir": 70.85561342592592,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 2,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 55.56592399691358,
+          "mean_feasible_tir": 66.6791087962963,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 2,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 50.02230420524691,
+          "mean_feasible_tir": 60.0267650462963,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 2,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 5.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 3,
+          "mean_safe_tir": 33.728419174382715,
+          "mean_feasible_tir": 67.45683834876543,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 2,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 6.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 2,
+          "mean_safe_tir": 23.249300733024697,
+          "mean_feasible_tir": 69.74790219907409,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 2,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 7.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 21.447723765432098,
+          "mean_feasible_tir": 42.895447530864196,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 2,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 8.0,
+          "attempts": 6,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 20.019651813271604,
+          "mean_feasible_tir": 60.05895543981481,
+          "scored_trajectories": 432
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 2,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 9.0,
+          "attempts": 6,
+          "valid": 2,
+          "safety_passes": 1,
+          "mean_safe_tir": 11.830271026234568,
+          "mean_feasible_tir": 70.9816261574074,
+          "scored_trajectories": 288
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 3,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 72.72051022376543,
+          "mean_feasible_tir": 72.72051022376543,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 3,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 64.08227237654322,
+          "mean_feasible_tir": 64.08227237654322,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 3,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 4,
+          "mean_safe_tir": 54.87437307098765,
+          "mean_feasible_tir": 82.31155960648148,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 3,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 50.303337191358025,
+          "mean_feasible_tir": 75.45500578703704,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 3,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 5.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 46.54465663580247,
+          "mean_feasible_tir": 55.85358796296296,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 3,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 6.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 4,
+          "mean_safe_tir": 44.80348186728395,
+          "mean_feasible_tir": 67.20522280092592,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 3,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 7.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 3,
+          "mean_safe_tir": 31.15921585648148,
+          "mean_feasible_tir": 62.31843171296296,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 3,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 8.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 21.023099922839506,
+          "mean_feasible_tir": 42.04619984567901,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "combined",
+          "split": "sealed",
+          "round": 3,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 9.0,
+          "attempts": 6,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "cohort": "pilot",
+          "split": "sealed",
+          "round": 1,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 73.64281925154322,
+          "mean_feasible_tir": 73.64281925154322,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "sealed",
+          "round": 1,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 36.1107494212963,
+          "mean_feasible_tir": 54.16612413194444,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "sealed",
+          "round": 1,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 3,
+          "mean_safe_tir": 32.32409818672839,
+          "mean_feasible_tir": 64.64819637345678,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "pilot",
+          "split": "sealed",
+          "round": 2,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 72.96175733024691,
+          "mean_feasible_tir": 72.96175733024691,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "sealed",
+          "round": 2,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 5,
+          "mean_safe_tir": 59.04634452160494,
+          "mean_feasible_tir": 70.85561342592592,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "pilot",
+          "split": "sealed",
+          "round": 2,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 50.02230420524691,
+          "mean_feasible_tir": 60.0267650462963,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "sealed",
+          "round": 3,
+          "model": "GPT-6.1 Sol",
+          "route": "codex/gpt-6.1-sol",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 72.72051022376543,
+          "mean_feasible_tir": 72.72051022376543,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "sealed",
+          "round": 3,
+          "model": "MiniMax-M3.1-Flash",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 6,
+          "mean_safe_tir": 64.08227237654322,
+          "mean_feasible_tir": 64.08227237654322,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "pilot",
+          "split": "sealed",
+          "round": 3,
+          "model": "Kimi-K3.1-Pro",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 46.54465663580247,
+          "mean_feasible_tir": 55.85358796296296,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 1,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 4,
+          "mean_safe_tir": 50.820915316358025,
+          "mean_feasible_tir": 76.23137297453704,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 1,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 50.02628279320988,
+          "mean_feasible_tir": 60.031539351851855,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 1,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 32.114076967592595,
+          "mean_feasible_tir": 48.17111545138889,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 1,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 20.385320216049383,
+          "mean_feasible_tir": 40.770640432098766,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 1,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 5.0,
+          "attempts": 6,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 12.774522569444445,
+          "mean_feasible_tir": 76.64713541666667,
+          "scored_trajectories": 144
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 1,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 6.0,
+          "attempts": 6,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 2,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 5,
+          "mean_safe_tir": 55.56592399691358,
+          "mean_feasible_tir": 66.6791087962963,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 2,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 3,
+          "mean_safe_tir": 33.728419174382715,
+          "mean_feasible_tir": 67.45683834876543,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 2,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 2,
+          "mean_safe_tir": 23.249300733024697,
+          "mean_feasible_tir": 69.74790219907409,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 2,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 21.447723765432098,
+          "mean_feasible_tir": 42.895447530864196,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 2,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 5.0,
+          "attempts": 6,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 20.019651813271604,
+          "mean_feasible_tir": 60.05895543981481,
+          "scored_trajectories": 432
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 2,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 6.0,
+          "attempts": 6,
+          "valid": 2,
+          "safety_passes": 1,
+          "mean_safe_tir": 11.830271026234568,
+          "mean_feasible_tir": 70.9816261574074,
+          "scored_trajectories": 288
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 3,
+          "model": "MiMo-V2.6-Pro",
+          "route": "tokendance/mimo-v2.6-pro",
+          "rank": 1.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 4,
+          "mean_safe_tir": 54.87437307098765,
+          "mean_feasible_tir": 82.31155960648148,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 3,
+          "model": "DeepSeek V4.1 Flash 1017",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "rank": 2.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 4,
+          "mean_safe_tir": 50.303337191358025,
+          "mean_feasible_tir": 75.45500578703704,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 3,
+          "model": "Step-5-Preview",
+          "route": "workbuddy/step-5-preview",
+          "rank": 3.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 4,
+          "mean_safe_tir": 44.80348186728395,
+          "mean_feasible_tir": 67.20522280092592,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 3,
+          "model": "Qwen3.8-27B",
+          "route": "atria/qwen3.8-27b",
+          "rank": 4.0,
+          "attempts": 6,
+          "valid": 5,
+          "safety_passes": 3,
+          "mean_safe_tir": 31.15921585648148,
+          "mean_feasible_tir": 62.31843171296296,
+          "scored_trajectories": 720
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 3,
+          "model": "GLM-5.3",
+          "route": "tokendance/glm-5.3",
+          "rank": 5.0,
+          "attempts": 6,
+          "valid": 6,
+          "safety_passes": 3,
+          "mean_safe_tir": 21.023099922839506,
+          "mean_feasible_tir": 42.04619984567901,
+          "scored_trajectories": 864
+        },
+        {
+          "cohort": "expansion",
+          "split": "sealed",
+          "round": 3,
+          "model": "Intern-S2",
+          "route": "atria/intern-s2",
+          "rank": 6.0,
+          "attempts": 6,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        }
+      ],
+      "cases": [
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "v02-sealed-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 56.24831211419753,
+          "mean_feasible_tir": 56.24831211419753,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "v02-sealed-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 88.3371913580247,
+          "mean_feasible_tir": 88.3371913580247,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "v02-sealed-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 84.01861496913581,
+          "mean_feasible_tir": 84.01861496913581,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "v02-sealed-04",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 27.347849151234566,
+          "mean_feasible_tir": 27.347849151234566,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "v02-sealed-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 94.53920717592592,
+          "mean_feasible_tir": 94.53920717592592,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GPT-6.1 Sol",
+          "case": "v02-sealed-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 88.1589988425926,
+          "mean_feasible_tir": 88.1589988425926,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "v02-sealed-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 47.20823688271605,
+          "mean_feasible_tir": 47.20823688271605,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "v02-sealed-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 57.60368441358025,
+          "mean_feasible_tir": 86.40552662037038,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "v02-sealed-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 10.210744598765432,
+          "mean_feasible_tir": 30.632233796296298,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "v02-sealed-04",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 22.22511574074074,
+          "mean_feasible_tir": 22.22511574074074,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "v02-sealed-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 54.14183063271605,
+          "mean_feasible_tir": 81.21274594907408,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Kimi-K3.1-Pro",
+          "case": "v02-sealed-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 73.96580825617285,
+          "mean_feasible_tir": 73.96580825617285,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "v02-sealed-01",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 2,
+          "mean_safe_tir": 27.81756365740741,
+          "mean_feasible_tir": 41.726345486111114,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "v02-sealed-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 55.32600308641975,
+          "mean_feasible_tir": 82.98900462962963,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "v02-sealed-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 71.2331211419753,
+          "mean_feasible_tir": 71.2331211419753,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "v02-sealed-04",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 2,
+          "mean_safe_tir": 14.090229552469136,
+          "mean_feasible_tir": 21.135344328703702,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "v02-sealed-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 62.86892361111111,
+          "mean_feasible_tir": 94.30338541666666,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiniMax-M3.1-Flash",
+          "case": "v02-sealed-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 79.56958912037038,
+          "mean_feasible_tir": 79.56958912037038,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "v02-sealed-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 42.71677276234568,
+          "mean_feasible_tir": 42.71677276234568,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "v02-sealed-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 55.760995370370374,
+          "mean_feasible_tir": 83.64149305555557,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "v02-sealed-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 48.04108796296296,
+          "mean_feasible_tir": 72.06163194444444,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "v02-sealed-04",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 18.072434413580247,
+          "mean_feasible_tir": 27.10865162037037,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "v02-sealed-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 93.31163194444444,
+          "mean_feasible_tir": 93.31163194444444,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "DeepSeek V4.1 Flash 1017",
+          "case": "v02-sealed-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 53.88816550925926,
+          "mean_feasible_tir": 80.83224826388889,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "v02-sealed-01",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 5.56761188271605,
+          "mean_feasible_tir": 16.70283564814815,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "v02-sealed-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 31.286410108024693,
+          "mean_feasible_tir": 46.92961516203704,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "v02-sealed-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 24.227912808641975,
+          "mean_feasible_tir": 72.68373842592592,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "v02-sealed-04",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 17.349054783950617,
+          "mean_feasible_tir": 26.023582175925924,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "v02-sealed-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 30.73857060185185,
+          "mean_feasible_tir": 46.10785590277778,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "GLM-5.3",
+          "case": "v02-sealed-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 1,
+          "mean_safe_tir": 16.54272762345679,
+          "mean_feasible_tir": 49.628182870370374,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "v02-sealed-01",
+          "attempts": 3,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "v02-sealed-02",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "v02-sealed-03",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "v02-sealed-04",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 2,
+          "mean_safe_tir": 11.066502700617283,
+          "mean_feasible_tir": 16.599754050925924,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "v02-sealed-05",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 2,
+          "mean_safe_tir": 62.65769675925926,
+          "mean_feasible_tir": 93.98654513888889,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "Qwen3.8-27B",
+          "case": "v02-sealed-06",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 28.63353587962963,
+          "mean_feasible_tir": 85.90060763888889,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "v02-sealed-01",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "v02-sealed-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 56.39371141975308,
+          "mean_feasible_tir": 84.59056712962962,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "v02-sealed-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 46.908998842592595,
+          "mean_feasible_tir": 70.36349826388889,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "v02-sealed-04",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 7.573302469135803,
+          "mean_feasible_tir": 22.71990740740741,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "v02-sealed-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 90.89699074074075,
+          "mean_feasible_tir": 90.89699074074075,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "MiMo-V2.6-Pro",
+          "case": "v02-sealed-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 3,
+          "mean_safe_tir": 77.07441165123457,
+          "mean_feasible_tir": 77.07441165123457,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "v02-sealed-01",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 2,
+          "mean_safe_tir": 17.12191358024692,
+          "mean_feasible_tir": 25.682870370370377,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "v02-sealed-02",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 54.6166087962963,
+          "mean_feasible_tir": 81.92491319444444,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "v02-sealed-03",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "v02-sealed-04",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 2,
+          "mean_safe_tir": 14.602623456790123,
+          "mean_feasible_tir": 21.903935185185183,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "v02-sealed-05",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 60.743875385802475,
+          "mean_feasible_tir": 91.11581307870371,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Step-5-Preview",
+          "case": "v02-sealed-06",
+          "attempts": 3,
+          "valid": 3,
+          "safety_passes": 2,
+          "mean_safe_tir": 53.248697916666664,
+          "mean_feasible_tir": 79.873046875,
+          "scored_trajectories": 432
+        },
+        {
+          "method": "Intern-S2",
+          "case": "v02-sealed-01",
+          "attempts": 3,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "method": "Intern-S2",
+          "case": "v02-sealed-02",
+          "attempts": 3,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "method": "Intern-S2",
+          "case": "v02-sealed-03",
+          "attempts": 3,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "method": "Intern-S2",
+          "case": "v02-sealed-04",
+          "attempts": 3,
+          "valid": 0,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 0
+        },
+        {
+          "method": "Intern-S2",
+          "case": "v02-sealed-05",
+          "attempts": 3,
+          "valid": 2,
+          "safety_passes": 2,
+          "mean_safe_tir": 49.209587191358025,
+          "mean_feasible_tir": 73.81438078703704,
+          "scored_trajectories": 288
+        },
+        {
+          "method": "Intern-S2",
+          "case": "v02-sealed-06",
+          "attempts": 3,
+          "valid": 1,
+          "safety_passes": 0,
+          "mean_safe_tir": 0.0,
+          "mean_feasible_tir": null,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "v02-sealed-01",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 14.496527777777779,
+          "mean_feasible_tir": 14.496527777777779,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "v02-sealed-02",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 66.75419560185185,
+          "mean_feasible_tir": 66.75419560185185,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "v02-sealed-03",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 34.26070601851851,
+          "mean_feasible_tir": 34.26070601851851,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "v02-sealed-04",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 26.828703703703702,
+          "mean_feasible_tir": 26.828703703703702,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "v02-sealed-05",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 91.08940972222223,
+          "mean_feasible_tir": 91.08940972222223,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Constant baseline",
+          "case": "v02-sealed-06",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 63.45124421296296,
+          "mean_feasible_tir": 63.45124421296296,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "v02-sealed-01",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 28.703703703703702,
+          "mean_feasible_tir": 28.703703703703702,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "v02-sealed-02",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 72.68952546296298,
+          "mean_feasible_tir": 72.68952546296298,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "v02-sealed-03",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 62.736545138888886,
+          "mean_feasible_tir": 62.736545138888886,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "v02-sealed-04",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 19.47627314814815,
+          "mean_feasible_tir": 19.47627314814815,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "v02-sealed-05",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 82.41247106481481,
+          "mean_feasible_tir": 82.41247106481481,
+          "scored_trajectories": 144
+        },
+        {
+          "method": "Responsive baseline",
+          "case": "v02-sealed-06",
+          "attempts": 1,
+          "valid": 1,
+          "safety_passes": 1,
+          "mean_safe_tir": 82.13903356481482,
+          "mean_feasible_tir": 82.13903356481482,
+          "scored_trajectories": 144
+        }
+      ],
+      "paired": [
+        {
+          "split": "sealed",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Responsive baseline",
+          "cases": 6,
+          "mean_delta_tir_points": 15.082103587962964,
+          "bootstrap_95_low": 9.489454732510287,
+          "bootstrap_95_high": 21.23918949331276,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "DeepSeek V4.1 Flash 1017",
+          "cases": 6,
+          "mean_delta_tir_points": 21.143180941358025,
+          "bootstrap_95_low": 10.126752186213992,
+          "bootstrap_95_high": 31.100742669753092,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "MiniMax-M3.1-Flash",
+          "cases": 6,
+          "mean_delta_tir_points": 21.290790573559672,
+          "bootstrap_95_low": 13.452369470164605,
+          "bootstrap_95_high": 28.732036072530864,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Constant baseline",
+          "cases": 6,
+          "mean_delta_tir_points": 23.628231095679016,
+          "bootstrap_95_low": 9.0381060313786,
+          "bootstrap_95_high": 38.21835615997943,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "MiMo-V2.6-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 26.63379308127572,
+          "bootstrap_95_low": 13.52860564557613,
+          "bootstrap_95_high": 40.90611336162552,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Kimi-K3.1-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 28.882458847736626,
+          "bootstrap_95_low": 12.208719135802468,
+          "bootstrap_95_high": 49.61287133487655,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 39.71940907921811,
+          "bootstrap_95_low": 24.344618055555554,
+          "bootstrap_95_high": 59.26617155349795,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 52.15631430041152,
+          "bootstrap_95_low": 34.044737011316876,
+          "bootstrap_95_high": 64.61254983281893,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 56.04873971193416,
+          "bootstrap_95_low": 35.34991480195473,
+          "bootstrap_95_high": 76.74756462191358,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "GPT-6.1 Sol",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 64.90676440329219,
+          "bootstrap_95_low": 45.32644515174897,
+          "bootstrap_95_high": 82.20988458076133,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "Responsive baseline",
+          "method_b": "DeepSeek V4.1 Flash 1017",
+          "cases": 6,
+          "mean_delta_tir_points": 6.061077353395064,
+          "bootstrap_95_low": -6.139845357510289,
+          "bootstrap_95_high": 17.951750578703713,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "Responsive baseline",
+          "method_b": "MiniMax-M3.1-Flash",
+          "cases": 6,
+          "mean_delta_tir_points": 6.208686985596709,
+          "bootstrap_95_low": -1.2108973122427986,
+          "bootstrap_95_high": 13.734366962448567,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "Responsive baseline",
+          "method_b": "Constant baseline",
+          "cases": 6,
+          "mean_delta_tir_points": 8.546127507716053,
+          "bootstrap_95_low": -1.9860387731481488,
+          "bootstrap_95_high": 19.078293788580254,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "Responsive baseline",
+          "method_b": "MiMo-V2.6-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 11.551689493312757,
+          "bootstrap_95_low": 2.0337818287037046,
+          "bootstrap_95_high": 20.275688014403297,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "Responsive baseline",
+          "method_b": "Kimi-K3.1-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 13.800355259773664,
+          "bootstrap_95_low": -3.55444637345679,
+          "bootstrap_95_high": 32.60235821759259,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "Responsive baseline",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 24.637305491255145,
+          "bootstrap_95_low": 12.108731995884773,
+          "bootstrap_95_high": 41.12577964248971,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "Responsive baseline",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 37.07421071244856,
+          "bootstrap_95_low": 20.432460455246915,
+          "bootstrap_95_high": 52.408693415637856,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "Responsive baseline",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 40.96663612397119,
+          "bootstrap_95_low": 22.6903694058642,
+          "bootstrap_95_high": 59.659529320987666,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "Responsive baseline",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 49.82466081532922,
+          "bootstrap_95_low": 31.30003375771605,
+          "bootstrap_95_high": 68.54540412808643,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "MiniMax-M3.1-Flash",
+          "cases": 6,
+          "mean_delta_tir_points": 0.1476096322016455,
+          "bootstrap_95_low": -15.554952739197532,
+          "bootstrap_95_high": 16.03005240483539,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Constant baseline",
+          "cases": 6,
+          "mean_delta_tir_points": 2.4850501543209886,
+          "bootstrap_95_low": -7.941100823045265,
+          "bootstrap_95_high": 14.83756108539095,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "sealed",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "MiMo-V2.6-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 5.490612139917694,
+          "bootstrap_95_low": -9.252146026234572,
+          "bootstrap_95_high": 22.897336355452676,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Kimi-K3.1-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 7.739277906378599,
+          "bootstrap_95_low": -9.188930684156382,
+          "bootstrap_95_high": 24.890729488168727,
+          "cases_a_higher": 2,
+          "cases_tied": 0,
+          "cases_b_higher": 4
+        },
+        {
+          "split": "sealed",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 18.57622813786008,
+          "bootstrap_95_low": 5.438729745370371,
+          "bootstrap_95_high": 33.8208912037037,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 31.013133359053498,
+          "bootstrap_95_low": 16.44728170010288,
+          "bootstrap_95_high": 45.68922003600824,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 34.90555877057613,
+          "bootstrap_95_low": 21.72779224537037,
+          "bootstrap_95_high": 47.21591274434156,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "DeepSeek V4.1 Flash 1017",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 43.763583461934154,
+          "bootstrap_95_low": 32.7145192338606,
+          "bootstrap_95_high": 51.90690907921811,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiniMax-M3.1-Flash",
+          "method_b": "Constant baseline",
+          "cases": 6,
+          "mean_delta_tir_points": 2.337440522119343,
+          "bootstrap_95_low": -14.882048932613168,
+          "bootstrap_95_high": 19.155574845679013,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiniMax-M3.1-Flash",
+          "method_b": "MiMo-V2.6-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 5.343002507716049,
+          "bootstrap_95_low": -9.460680298353909,
+          "bootstrap_95_high": 18.882579411008226,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiniMax-M3.1-Flash",
+          "method_b": "Kimi-K3.1-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 7.5916682741769534,
+          "bootstrap_95_low": -9.076485339506172,
+          "bootstrap_95_high": 30.685924639917697,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiniMax-M3.1-Flash",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 18.428618505658434,
+          "bootstrap_95_low": 2.2024498456790096,
+          "bootstrap_95_high": 40.47578285751029,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiniMax-M3.1-Flash",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 30.86552372685185,
+          "bootstrap_95_low": 14.217986432613166,
+          "bootstrap_95_high": 46.83564714345372,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiniMax-M3.1-Flash",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 34.757949138374485,
+          "bootstrap_95_low": 13.73517071759259,
+          "bootstrap_95_high": 55.31197755915638,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiniMax-M3.1-Flash",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 43.61597382973251,
+          "bootstrap_95_low": 23.10711644804527,
+          "bootstrap_95_high": 64.54394933127573,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "Constant baseline",
+          "method_b": "MiMo-V2.6-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 3.0055619855967053,
+          "bootstrap_95_low": -6.998336226851856,
+          "bootstrap_95_high": 13.009460198045266,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "Constant baseline",
+          "method_b": "Kimi-K3.1-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 5.25422775205761,
+          "bootstrap_95_low": -13.296240033436215,
+          "bootstrap_95_high": 22.624863361625515,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "Constant baseline",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 16.09117798353909,
+          "bootstrap_95_low": 6.586331340020574,
+          "bootstrap_95_high": 26.155438207304524,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "Constant baseline",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 28.52808320473251,
+          "bootstrap_95_low": 13.719618055555552,
+          "bootstrap_95_high": 45.392955889917694,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "Constant baseline",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 32.42050861625514,
+          "bootstrap_95_low": 20.416867605452676,
+          "bootstrap_95_high": 47.51720036008229,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "Constant baseline",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 41.278533307613166,
+          "bootstrap_95_low": 26.465165252057613,
+          "bootstrap_95_high": 56.393108603395056,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiMo-V2.6-Pro",
+          "method_b": "Kimi-K3.1-Pro",
+          "cases": 6,
+          "mean_delta_tir_points": 2.248665766460905,
+          "bootstrap_95_low": -22.057626229745367,
+          "bootstrap_95_high": 24.79142554012346,
+          "cases_a_higher": 3,
+          "cases_tied": 0,
+          "cases_b_higher": 3
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiMo-V2.6-Pro",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 13.085615997942387,
+          "bootstrap_95_low": -4.308207947530867,
+          "bootstrap_95_high": 31.009074395576135,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiMo-V2.6-Pro",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 25.522521219135804,
+          "bootstrap_95_low": 3.2546457047325075,
+          "bootstrap_95_high": 48.194765946502066,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiMo-V2.6-Pro",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 29.414946630658438,
+          "bootstrap_95_low": 10.451228137860083,
+          "bootstrap_95_high": 47.46957786779836,
+          "cases_a_higher": 4,
+          "cases_tied": 1,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "MiMo-V2.6-Pro",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 38.27297132201646,
+          "bootstrap_95_low": 16.63238650977366,
+          "bootstrap_95_high": 59.201107574588484,
+          "cases_a_higher": 5,
+          "cases_tied": 1,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "Kimi-K3.1-Pro",
+          "method_b": "Step-5-Preview",
+          "cases": 6,
+          "mean_delta_tir_points": 10.836950231481481,
+          "bootstrap_95_low": 1.7672164351851831,
+          "bootstrap_95_high": 20.338059413580247,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "Kimi-K3.1-Pro",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 23.273855452674898,
+          "bootstrap_95_low": 4.64474022633745,
+          "bootstrap_95_high": 41.307990933641975,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "Kimi-K3.1-Pro",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 27.16628086419753,
+          "bootstrap_95_low": 7.405598958333333,
+          "bootstrap_95_high": 45.77236850565844,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "Kimi-K3.1-Pro",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 36.02430555555556,
+          "bootstrap_95_low": 16.592962319958847,
+          "bootstrap_95_high": 56.4231690457819,
+          "cases_a_higher": 6,
+          "cases_tied": 0,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "Step-5-Preview",
+          "method_b": "GLM-5.3",
+          "cases": 6,
+          "mean_delta_tir_points": 12.436905221193417,
+          "bootstrap_95_low": -5.140014146090533,
+          "bootstrap_95_high": 27.901274755658434,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "Step-5-Preview",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 16.32933063271605,
+          "bootstrap_95_low": 2.805065264917699,
+          "bootstrap_95_high": 33.366769547325106,
+          "cases_a_higher": 4,
+          "cases_tied": 1,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "Step-5-Preview",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 25.187355324074076,
+          "bootstrap_95_low": 9.552067258230457,
+          "bootstrap_95_high": 41.43442161779836,
+          "cases_a_higher": 5,
+          "cases_tied": 1,
+          "cases_b_higher": 0
+        },
+        {
+          "split": "sealed",
+          "method_a": "GLM-5.3",
+          "method_b": "Qwen3.8-27B",
+          "cases": 6,
+          "mean_delta_tir_points": 3.892425411522634,
+          "bootstrap_95_low": -13.00877700617284,
+          "bootstrap_95_high": 20.479801633230455,
+          "cases_a_higher": 4,
+          "cases_tied": 0,
+          "cases_b_higher": 2
+        },
+        {
+          "split": "sealed",
+          "method_a": "GLM-5.3",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 12.75045010288066,
+          "bootstrap_95_low": -0.9641444830246909,
+          "bootstrap_95_high": 24.153404706790123,
+          "cases_a_higher": 5,
+          "cases_tied": 0,
+          "cases_b_higher": 1
+        },
+        {
+          "split": "sealed",
+          "method_a": "Qwen3.8-27B",
+          "method_b": "Intern-S2",
+          "cases": 6,
+          "mean_delta_tir_points": 8.858024691358025,
+          "bootstrap_95_low": 1.8444171167695471,
+          "bootstrap_95_high": 18.00560217335391,
+          "cases_a_higher": 3,
+          "cases_tied": 3,
+          "cases_b_higher": 0
+        }
+      ],
+      "leave_one_out": [
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-01",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 1.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-01",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 2.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-01",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 3.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-01",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 4.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-01",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 5.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-01",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 6.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-01",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 7.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-01",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 8.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-01",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 9.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-02",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 1.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-02",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 2.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-02",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 3.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-02",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 4.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-02",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 5.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-02",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 6.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-02",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 7.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-02",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 8.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-02",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 9.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-03",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 1.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-03",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 2.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-03",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 3.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-03",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 4.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-03",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 5.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-03",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 6.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-03",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 7.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-03",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 8.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-03",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 9.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-04",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 1.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-04",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 2.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-04",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 3.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-04",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 4.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-04",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 5.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-04",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 6.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-04",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 7.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-04",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 8.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-04",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 9.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-05",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 1.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-05",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 2.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-05",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 3.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-05",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 4.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-05",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 5.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-05",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 6.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-05",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 7.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-05",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 8.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-05",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 9.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-06",
+          "route": "codex/gpt-6.1-sol",
+          "model": "GPT-6.1 Sol",
+          "rank": 1.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-06",
+          "route": "wanjie/deepseek-v4.1-flash-1017",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "rank": 2.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-06",
+          "route": "minimax-code/MiniMax-M3.1-Flash",
+          "model": "MiniMax-M3.1-Flash",
+          "rank": 3.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-06",
+          "route": "tokendance/mimo-v2.6-pro",
+          "model": "MiMo-V2.6-Pro",
+          "rank": 4.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-06",
+          "route": "workbuddy/kimi-k3.1-pro",
+          "model": "Kimi-K3.1-Pro",
+          "rank": 5.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-06",
+          "route": "workbuddy/step-5-preview",
+          "model": "Step-5-Preview",
+          "rank": 6.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-06",
+          "route": "tokendance/glm-5.3",
+          "model": "GLM-5.3",
+          "rank": 7.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-06",
+          "route": "atria/qwen3.8-27b",
+          "model": "Qwen3.8-27B",
+          "rank": 8.0
+        },
+        {
+          "split": "sealed",
+          "omitted_case": "v02-sealed-06",
+          "route": "atria/intern-s2",
+          "model": "Intern-S2",
+          "rank": 9.0
+        }
+      ]
+    }
+  }
+}

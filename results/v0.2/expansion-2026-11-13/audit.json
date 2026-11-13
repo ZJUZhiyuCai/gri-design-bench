@@ -1,0 +1,67 @@
+{
+  "source_commits": [
+    "b8fc26099cabae4944506bda4ff52980bd993d0c"
+  ],
+  "plan_sha256": "e809fae6894cd62143a8f32478b9d8290091ce62829d91fcb278f667da4febdf",
+  "runtime_sha256": "28cbee60053b79ae0089823072c585229d1c8a210511c95c517ba053a37ce7b3",
+  "image_id": "sha256:48a66cf17685d8cff00e5696627d0d5be77c30651e73dd1a026f19aa39f7b79a",
+  "audited_attempts": 216,
+  "audited_attempts_by_split": {
+    "development": 108,
+    "sealed": 108
+  },
+  "started_utc": "2026-11-13T01:16:06.224000+00:00",
+  "finished_utc": "2026-11-13T05:02:42.687522+00:00",
+  "audited_api_reservations": 2092,
+  "native_trajectories": 22320,
+  "reverified_designs": [
+    {
+      "trial_id": "dev-01__deepseek__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "dev-01__glm__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "dev-01__qwen__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "dev-01__mimo__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "dev-01__step__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "dev-02__intern__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-01__deepseek__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-01__glm__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-01__mimo__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-01__step__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-05__intern__r1",
+      "trajectories": 144
+    },
+    {
+      "trial_id": "v02-sealed-03__qwen__r2",
+      "trajectories": 144
+    }
+  ]
+}

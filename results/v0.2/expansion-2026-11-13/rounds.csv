@@ -1,0 +1,109 @@
+split,cohort,round,model,route,rank,attempts,valid,safety_passes,mean_safe_tir,mean_feasible_tir,scored_trajectories
+development,combined,1,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,1.0,6,6,5,51.19827835648148,61.43793402777778,864
+development,combined,1,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,2.0,6,6,4,44.435763888888886,66.65364583333333,864
+development,combined,1,Step-5-Preview,workbuddy/step-5-preview,3.0,6,6,5,34.19331114969136,41.03197337962963,864
+development,combined,1,Qwen3.8-27B,atria/qwen3.8-27b,4.0,6,5,3,31.890793788580247,63.781587577160494,720
+development,combined,1,GPT-6.1 Sol,codex/gpt-6.1-sol,5.0,6,6,3,31.78927951388889,63.57855902777778,864
+development,combined,1,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,6.0,6,6,3,26.97832272376543,53.95664544753086,864
+development,combined,1,Intern-S2,atria/intern-s2,7.0,6,4,4,25.555314429012345,38.33297164351852,576
+development,combined,1,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,8.0,6,4,2,20.546513310185187,61.63953993055556,576
+development,combined,1,GLM-5.3,tokendance/glm-5.3,9.0,6,6,2,5.348427854938272,16.045283564814817,864
+development,combined,2,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,1.0,6,6,6,52.98008294753087,52.98008294753087,864
+development,combined,2,GPT-6.1 Sol,codex/gpt-6.1-sol,2.0,6,6,3,37.392578125,74.78515625,864
+development,combined,2,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,3.0,6,5,3,32.39896797839506,64.79793595679013,720
+development,combined,2,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,4.0,6,6,4,30.486352237654323,45.72952835648149,864
+development,combined,2,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,5.0,6,4,2,25.141059027777775,75.42317708333333,576
+development,combined,2,GLM-5.3,tokendance/glm-5.3,6.0,6,6,3,21.13208912037037,42.26417824074074,864
+development,combined,2,Step-5-Preview,workbuddy/step-5-preview,7.0,6,6,1,8.420138888888891,50.52083333333334,864
+development,combined,2,Intern-S2,atria/intern-s2,8.5,6,0,0,0.0,,0
+development,combined,2,Qwen3.8-27B,atria/qwen3.8-27b,8.5,6,2,0,0.0,,288
+development,combined,3,GPT-6.1 Sol,codex/gpt-6.1-sol,1.0,6,6,6,68.51574556327161,68.51574556327161,864
+development,combined,3,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,2.0,6,6,6,66.3233024691358,66.3233024691358,864
+development,combined,3,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,3.0,6,6,4,45.30864197530864,67.96296296296296,864
+development,combined,3,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,4.0,6,6,5,41.73828125,50.0859375,864
+development,combined,3,GLM-5.3,tokendance/glm-5.3,5.0,6,6,4,38.57843846450618,57.86765769675926,864
+development,combined,3,Step-5-Preview,workbuddy/step-5-preview,6.0,6,5,5,31.039617091049383,37.24754050925926,720
+development,combined,3,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,7.0,6,4,1,8.008897569444445,48.053385416666664,576
+development,combined,3,Intern-S2,atria/intern-s2,8.5,6,0,0,0.0,,0
+development,combined,3,Qwen3.8-27B,atria/qwen3.8-27b,8.5,6,0,0,0.0,,0
+development,pilot,1,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,1.0,6,6,5,51.19827835648148,61.43793402777778,864
+development,pilot,1,GPT-6.1 Sol,codex/gpt-6.1-sol,2.0,6,6,3,31.78927951388889,63.57855902777778,864
+development,pilot,1,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,3.0,6,6,3,26.97832272376543,53.95664544753086,864
+development,pilot,2,GPT-6.1 Sol,codex/gpt-6.1-sol,1.0,6,6,3,37.392578125,74.78515625,864
+development,pilot,2,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,2.0,6,5,3,32.39896797839506,64.79793595679013,720
+development,pilot,2,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,3.0,6,6,4,30.486352237654323,45.72952835648149,864
+development,pilot,3,GPT-6.1 Sol,codex/gpt-6.1-sol,1.0,6,6,6,68.51574556327161,68.51574556327161,864
+development,pilot,3,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,2.0,6,6,5,41.73828125,50.0859375,864
+development,pilot,3,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,3.0,6,4,1,8.008897569444445,48.053385416666664,576
+development,expansion,1,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,1.0,6,6,4,44.435763888888886,66.65364583333333,864
+development,expansion,1,Step-5-Preview,workbuddy/step-5-preview,2.0,6,6,5,34.19331114969136,41.03197337962963,864
+development,expansion,1,Qwen3.8-27B,atria/qwen3.8-27b,3.0,6,5,3,31.890793788580247,63.781587577160494,720
+development,expansion,1,Intern-S2,atria/intern-s2,4.0,6,4,4,25.555314429012345,38.33297164351852,576
+development,expansion,1,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,5.0,6,4,2,20.546513310185187,61.63953993055556,576
+development,expansion,1,GLM-5.3,tokendance/glm-5.3,6.0,6,6,2,5.348427854938272,16.045283564814817,864
+development,expansion,2,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,1.0,6,6,6,52.98008294753087,52.98008294753087,864
+development,expansion,2,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,2.0,6,4,2,25.141059027777775,75.42317708333333,576
+development,expansion,2,GLM-5.3,tokendance/glm-5.3,3.0,6,6,3,21.13208912037037,42.26417824074074,864
+development,expansion,2,Step-5-Preview,workbuddy/step-5-preview,4.0,6,6,1,8.420138888888891,50.52083333333334,864
+development,expansion,2,Intern-S2,atria/intern-s2,5.5,6,0,0,0.0,,0
+development,expansion,2,Qwen3.8-27B,atria/qwen3.8-27b,5.5,6,2,0,0.0,,288
+development,expansion,3,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,1.0,6,6,6,66.3233024691358,66.3233024691358,864
+development,expansion,3,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,2.0,6,6,4,45.30864197530864,67.96296296296296,864
+development,expansion,3,GLM-5.3,tokendance/glm-5.3,3.0,6,6,4,38.57843846450618,57.86765769675926,864
+development,expansion,3,Step-5-Preview,workbuddy/step-5-preview,4.0,6,5,5,31.039617091049383,37.24754050925926,720
+development,expansion,3,Intern-S2,atria/intern-s2,5.5,6,0,0,0.0,,0
+development,expansion,3,Qwen3.8-27B,atria/qwen3.8-27b,5.5,6,0,0,0.0,,0
+sealed,combined,1,GPT-6.1 Sol,codex/gpt-6.1-sol,1.0,6,6,6,73.64281925154322,73.64281925154322,864
+sealed,combined,1,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,2.0,6,5,4,50.820915316358025,76.23137297453704,720
+sealed,combined,1,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,3.0,6,6,5,50.02628279320988,60.031539351851855,864
+sealed,combined,1,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,4.0,6,6,4,36.1107494212963,54.16612413194444,864
+sealed,combined,1,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,5.0,6,5,3,32.32409818672839,64.64819637345678,720
+sealed,combined,1,Step-5-Preview,workbuddy/step-5-preview,6.0,6,6,4,32.114076967592595,48.17111545138889,864
+sealed,combined,1,GLM-5.3,tokendance/glm-5.3,7.0,6,6,3,20.385320216049383,40.770640432098766,864
+sealed,combined,1,Intern-S2,atria/intern-s2,8.0,6,1,1,12.774522569444445,76.64713541666667,144
+sealed,combined,1,Qwen3.8-27B,atria/qwen3.8-27b,9.0,6,0,0,0.0,,0
+sealed,combined,2,GPT-6.1 Sol,codex/gpt-6.1-sol,1.0,6,6,6,72.96175733024691,72.96175733024691,864
+sealed,combined,2,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,2.0,6,5,5,59.04634452160494,70.85561342592592,720
+sealed,combined,2,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,3.0,6,6,5,55.56592399691358,66.6791087962963,864
+sealed,combined,2,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,4.0,6,6,5,50.02230420524691,60.0267650462963,864
+sealed,combined,2,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,5.0,6,5,3,33.728419174382715,67.45683834876543,720
+sealed,combined,2,Step-5-Preview,workbuddy/step-5-preview,6.0,6,5,2,23.249300733024697,69.74790219907409,720
+sealed,combined,2,GLM-5.3,tokendance/glm-5.3,7.0,6,6,3,21.447723765432098,42.895447530864196,864
+sealed,combined,2,Qwen3.8-27B,atria/qwen3.8-27b,8.0,6,3,2,20.019651813271604,60.05895543981481,432
+sealed,combined,2,Intern-S2,atria/intern-s2,9.0,6,2,1,11.830271026234568,70.9816261574074,288
+sealed,combined,3,GPT-6.1 Sol,codex/gpt-6.1-sol,1.0,6,6,6,72.72051022376543,72.72051022376543,864
+sealed,combined,3,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,2.0,6,6,6,64.08227237654322,64.08227237654322,864
+sealed,combined,3,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,3.0,6,5,4,54.87437307098765,82.31155960648148,720
+sealed,combined,3,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,4.0,6,6,4,50.303337191358025,75.45500578703704,720
+sealed,combined,3,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,5.0,6,6,5,46.54465663580247,55.85358796296296,864
+sealed,combined,3,Step-5-Preview,workbuddy/step-5-preview,6.0,6,5,4,44.80348186728395,67.20522280092592,720
+sealed,combined,3,Qwen3.8-27B,atria/qwen3.8-27b,7.0,6,5,3,31.15921585648148,62.31843171296296,720
+sealed,combined,3,GLM-5.3,tokendance/glm-5.3,8.0,6,6,3,21.023099922839506,42.04619984567901,864
+sealed,combined,3,Intern-S2,atria/intern-s2,9.0,6,0,0,0.0,,0
+sealed,pilot,1,GPT-6.1 Sol,codex/gpt-6.1-sol,1.0,6,6,6,73.64281925154322,73.64281925154322,864
+sealed,pilot,1,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,2.0,6,6,4,36.1107494212963,54.16612413194444,864
+sealed,pilot,1,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,3.0,6,5,3,32.32409818672839,64.64819637345678,720
+sealed,pilot,2,GPT-6.1 Sol,codex/gpt-6.1-sol,1.0,6,6,6,72.96175733024691,72.96175733024691,864
+sealed,pilot,2,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,2.0,6,5,5,59.04634452160494,70.85561342592592,720
+sealed,pilot,2,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,3.0,6,6,5,50.02230420524691,60.0267650462963,864
+sealed,pilot,3,GPT-6.1 Sol,codex/gpt-6.1-sol,1.0,6,6,6,72.72051022376543,72.72051022376543,864
+sealed,pilot,3,MiniMax-M3.1-Flash,minimax-code/MiniMax-M3.1-Flash,2.0,6,6,6,64.08227237654322,64.08227237654322,864
+sealed,pilot,3,Kimi-K3.1-Pro,workbuddy/kimi-k3.1-pro,3.0,6,6,5,46.54465663580247,55.85358796296296,864
+sealed,expansion,1,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,1.0,6,5,4,50.820915316358025,76.23137297453704,720
+sealed,expansion,1,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,2.0,6,6,5,50.02628279320988,60.031539351851855,864
+sealed,expansion,1,Step-5-Preview,workbuddy/step-5-preview,3.0,6,6,4,32.114076967592595,48.17111545138889,864
+sealed,expansion,1,GLM-5.3,tokendance/glm-5.3,4.0,6,6,3,20.385320216049383,40.770640432098766,864
+sealed,expansion,1,Intern-S2,atria/intern-s2,5.0,6,1,1,12.774522569444445,76.64713541666667,144
+sealed,expansion,1,Qwen3.8-27B,atria/qwen3.8-27b,6.0,6,0,0,0.0,,0
+sealed,expansion,2,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,1.0,6,6,5,55.56592399691358,66.6791087962963,864
+sealed,expansion,2,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,2.0,6,5,3,33.728419174382715,67.45683834876543,720
+sealed,expansion,2,Step-5-Preview,workbuddy/step-5-preview,3.0,6,5,2,23.249300733024697,69.74790219907409,720
+sealed,expansion,2,GLM-5.3,tokendance/glm-5.3,4.0,6,6,3,21.447723765432098,42.895447530864196,864
+sealed,expansion,2,Qwen3.8-27B,atria/qwen3.8-27b,5.0,6,3,2,20.019651813271604,60.05895543981481,432
+sealed,expansion,2,Intern-S2,atria/intern-s2,6.0,6,2,1,11.830271026234568,70.9816261574074,288
+sealed,expansion,3,MiMo-V2.6-Pro,tokendance/mimo-v2.6-pro,1.0,6,5,4,54.87437307098765,82.31155960648148,720
+sealed,expansion,3,DeepSeek V4.1 Flash 1017,wanjie/deepseek-v4.1-flash-1017,2.0,6,6,4,50.303337191358025,75.45500578703704,720
+sealed,expansion,3,Step-5-Preview,workbuddy/step-5-preview,3.0,6,5,4,44.80348186728395,67.20522280092592,720
+sealed,expansion,3,Qwen3.8-27B,atria/qwen3.8-27b,4.0,6,5,3,31.15921585648148,62.31843171296296,720
+sealed,expansion,3,GLM-5.3,tokendance/glm-5.3,5.0,6,6,3,21.023099922839506,42.04619984567901,864
+sealed,expansion,3,Intern-S2,atria/intern-s2,6.0,6,0,0,0.0,,0

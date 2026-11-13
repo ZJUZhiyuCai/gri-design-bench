@@ -6,21 +6,27 @@ GRI Design Bench compares how well AI agents design glucose-responsive insulin f
 
 [![Glucose changes release from a fixed formulation. The agent tests and submits candidates. An independent verifier scores the final design on 144 trajectories.](docs/assets/benchmark-overview-v02-en.png)](docs/assets/benchmark-overview-v02-en.svg)
 
-## v0.2 results
+## v0.2 nine-route results
 
-Three Magpie routes ran six public development cases and six new sealed cases, with three repetitions per case and route. Each split contains 54 model attempts.
+Nine Magpie routes ran the same six development and six sealed cases three times each, for 324 model attempts. The table shows the 18 sealed attempts per route. Round ranks align repetition indices across the two batches.
 
-| Model or baseline | Valid designs | Safety passes | Mean score (%) | vs. constant (pp) |
-|---|---:|---:|---:|---:|
-| GPT-6.1 Sol | 18/18 | 18/18 | 73.11 | +23.63 |
-| Responsive baseline | 6/6 | 6/6 | 58.03 | +8.55 |
-| MiniMax-M3.1-Flash | 16/18 | 14/18 | 51.82 | +2.34 |
-| Constant baseline | 6/6 | 6/6 | 49.48 | — |
-| Kimi-K3.1-Pro | 18/18 | 14/18 | 44.23 | -5.25 |
+| Rank | Model | Valid designs | Safety passes | Mean score (%) | Round ranks |
+|---:|---|---:|---:|---:|---:|
+| 1 | GPT-6.1 Sol | 18/18 | 18/18 | 73.11 | 1 / 1 / 1 |
+| 2 | DeepSeek V4.1 Flash 1017 | 18/18 | 14/18 | 51.97 | 3 / 3 / 4 |
+| 3 | MiniMax-M3.1-Flash | 16/18 | 14/18 | 51.82 | 5 / 2 / 2 |
+| 4 | MiMo-V2.6-Pro | 15/18 | 11/18 | 46.47 | 2 / 5 / 3 |
+| 5 | Kimi-K3.1-Pro | 18/18 | 14/18 | 44.23 | 4 / 4 / 5 |
+| 6 | Step-5-Preview | 16/18 | 10/18 | 33.39 | 6 / 6 / 6 |
+| 7 | GLM-5.3 | 18/18 | 9/18 | 20.95 | 7 / 7 / 8 |
+| 8 | Qwen3.8-27B | 8/18 | 5/18 | 17.06 | 9 / 8 / 7 |
+| 9 | Intern-S2 | 3/18 | 2/18 | 8.20 | 8 / 9 / 9 |
 
-The case-resampled 95% interval for GPT-6.1 Sol's advantage over the constant baseline is +9.04 to +38.22 percentage points.
+The constant and responsive baselines scored 49.48% and 58.03%. GPT-6.1 Sol scored +23.63 points relative to constant release, with a case-resampled 95% interval of [+9.04, +38.22].
 
-[Sealed results](results/v0.2/sealed/README.md) · [Development pilot](results/v0.2/development/README.md) · [Calibration and long-budget search](results/v0.2/calibration/README.md)
+GPT-6.1 Sol led in all three rounds. Across the three round pairs, Kendall's τ-b spanned 0.67–0.83. 7 of the 36 model pairs swapped order at least once. The second and third routes were 0.15 points apart, with a paired 95% interval of [-15.55, +16.03].
+
+[Nine-route report and round data](results/v0.2/expansion-2026-11-13/README.md) · [Original three-route run](results/v0.2/sealed/README.md) · [Calibration](results/v0.2/calibration/README.md)
 
 ## The design problem
 

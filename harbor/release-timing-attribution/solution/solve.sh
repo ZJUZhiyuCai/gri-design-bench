@@ -1,3 +1,4 @@
 #!/bin/sh
 set -eu
-python -I /solution/solve.py
+cp /solution/solve.py /app/output/reproduce.py
+python -I /app/output/reproduce.py

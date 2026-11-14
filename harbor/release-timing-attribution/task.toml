@@ -1,5 +1,5 @@
 schema_version = "1.4"
-artifacts = ["/app/output/results.json"]
+artifacts = ["/app/output/results.json", "/app/output/reproduce.py"]
 
 [task]
 name = "gri-design-bench/release-timing-attribution"
@@ -10,6 +10,7 @@ keywords = ["drug-delivery", "in-silico", "counterfactual", "mechanistic-analysi
 [metadata]
 domain = "life-sciences"
 field = "medicine-and-health"
+protocol = "release-timing-replay-v2"
 
 [agent]
 timeout_sec = 900.0

@@ -32,13 +32,13 @@ def save(path, value):
         stream.write("\n")
 
 
-def public_panel():
+def public_panel(meal_seeds=(981032001, 981032002)):
     instance_path = ROOT / "instances/dev/dev-06.json"
     reference_path = ROOT / "results/v0.2/calibration/robust-reference.json"
     instance = json.loads(instance_path.read_text())
     design = next(row["design"] for row in json.loads(reference_path.read_text())["cases"] if row["case"] == "dev-06")
     validate_design(design, instance)
-    panel = {"instance": instance, "design": design, "seeds": [981032001, 981032002]}
+    panel = {"instance": instance, "design": design, "seeds": list(meal_seeds)}
     return panel, {str(path.relative_to(ROOT)): sha(path) for path in (instance_path, reference_path)}
 
 
@@ -117,11 +117,15 @@ def main():
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--agent-base", default=IMAGE)
     parser.add_argument("--verifier-base", default=IMAGE)
+    parser.add_argument("--meal-seeds", nargs=2, type=int, default=(981032001, 981032002),
+                        metavar=("SEED1", "SEED2"), help="Two distinct public meal seeds for the task panel.")
     parser.add_argument("--reuse-reference", type=Path, help="Reuse a previously built, provenance-checked reference.")
     args = parser.parse_args()
     if any(not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_./:@-]+", image)
            for image in (args.agent_base, args.verifier_base)):
         parser.error("Invalid base image reference")
+    if len(set(args.meal_seeds)) != 2 or any(not 0 <= seed < 2**32 for seed in args.meal_seeds):
+        parser.error("Meal seeds must be distinct unsigned 32-bit integers")
     out = args.output.resolve()
     out.mkdir(parents=True, exist_ok=False)
     shutil.copytree(TEMPLATE, out, dirs_exist_ok=True, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
@@ -129,7 +133,7 @@ def main():
     public.mkdir(parents=True)
     (out / "environment/simulator").mkdir()
     shutil.move(out / "results.schema.json", public / "results.schema.json")
-    panel, input_hashes = public_panel()
+    panel, input_hashes = public_panel(args.meal_seeds)
     save(public / "panel.json", panel)
     dockerfiles(out, args.agent_base, args.verifier_base)
     for path in (out / "solution/solve.sh", out / "tests/test.sh"):
@@ -146,6 +150,9 @@ def main():
         if (previous["input_sha256"] != input_hashes or ref["panel"] != panel
                 or previous.get("reference_sha256", sha(previous_reference)) != sha(previous_reference)):
             raise ValueError("Previous reference does not match the declared panel and inputs")
+        for name in SIMULATOR_FILES:
+            if sha(original / "environment/simulator" / name) != sha(out / "environment/simulator" / name):
+                raise ValueError(f"Previous reference uses a different simulator file: {name}")
         shutil.copyfile(previous_reference, ref_path)
         source = original / "authoring/provenance/reference_generator.py"
         if not source.exists():
@@ -162,6 +169,7 @@ def main():
         "source_git_head": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
         "upstream_rubric_commit": UPSTREAM, "input_sha256": input_hashes,
         "public_panel_sha256": sha(public / "panel.json"),
+        "simulator_sha256": {name: sha(out / "environment/simulator" / name) for name in SIMULATOR_FILES},
         "reference_method": "Native dopri5 with upstream simglucose 0.2.11 T1DPatient.model; generated without the author solution.",
         "fixed_design_source": "Public v0.2 high-budget responsive development reference, dev-06.",
         "reference_generator_sha256": generator_hash, "reference_sha256": sha(ref_path),

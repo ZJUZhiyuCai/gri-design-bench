@@ -72,7 +72,10 @@ def submission(expected):
         pytest.fail(f"Missing or invalid results.json: {exc}", pytrace=False)
 
     assert isinstance(value, Mapping) and set(value) == {"rows", "mean_responsive_minus_control"}
-    assert isinstance(value["rows"], list) and len(value["rows"]) == len(expected)
+    assert isinstance(value["rows"], list), "rows must be an array"
+    assert len(value["rows"]) == len(expected), (
+        f"Expected {len(expected)} scenario-arm rows, received {len(value['rows'])}"
+    )
     rows = {}
     for row in value["rows"]:
         assert isinstance(row, Mapping) and set(row) == FIELDS, "Row fields differ from the schema"
@@ -138,4 +141,7 @@ def test_paired_effects(submission):
         for metric in METRICS:
             values = [row[metric] - rows[(*key[:3], arm)][metric] for key, row in rows.items() if key[-1] == "responsive"]
             estimate = sum(values) / len(values)
-            assert effects[arm][metric] == pytest.approx(estimate, rel=0, abs=2e-5), (arm, metric)
+            assert effects[arm][metric] == pytest.approx(estimate, rel=0, abs=2e-5), (
+                f"{arm}/{metric}: expected mean of responsive minus control = {estimate:.10g}, "
+                f"received {effects[arm][metric]:.10g}"
+            )

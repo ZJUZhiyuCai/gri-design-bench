@@ -6,7 +6,7 @@ GRI Design Bench uses glucose-responsive insulin (GRI) release in virtual patien
 
 | Task or study | What it does | Trial status | Entry |
 |---|---|---|---|
-| Release-timing attribution | Local Harbor prototype: build dose-matched controls and reproduce 54 result rows | Four local verifier control runs. Agent trials pending. | [Harbor prototype](harbor/release-timing-attribution/README.md) |
+| Release-timing attribution | Build dose-matched controls and submit 54 result rows with a runnable script | Offline validation complete. Model retest paused. | [Harbor task](harbor/release-timing-attribution/README.md) |
 | Timing study | Author-run dry experiment using the same controls on 216 paired scenarios | Author study complete | [Timing study](results/timing-study-2026-11-13/README.md) |
 | v0.2 design task | Formulation search under a compute budget, scored on new meals | 9 routes, 324 attempts | [Nine-route report](results/v0.2/expansion-2026-11-13/README.md) |
 | Material validation diagnostic | Which added measurement changes a go/no-go call on 24 simulated states | Baseline comparison complete | [Material validation](results/material-validation-2026-11-13/README.md) |
@@ -31,20 +31,26 @@ The task supplies a fixed formulation and three virtual patients from `dev-06`, 
 
 Both controls use the completed responsive release trace for a retrospective comparison. Day 1 serves as a common warm-up.
 
-The agent writes `/app/output/results.json` with 54 rows (3 patients × 2 seeds × 3 meal variants × 3 arms). Each row includes the release trajectory, daily amounts, time in range (TIR, 70–180 mg/dL), time below 70 and 54 mg/dL, and minimum glucose. Time fractions use days 2–3. Minimum glucose uses all three days. The file also reports mean paired differences for each control comparison. [Task instructions](harbor/release-timing-attribution/instruction.md)
+The agent writes `/app/output/results.json` with 54 rows (3 patients × 2 seeds × 3 meal variants × 3 arms). Each row includes the release trajectory, daily amounts, time in range (TIR, 70–180 mg/dL), time below 70 and 54 mg/dL, and minimum glucose. Time fractions use days 2–3. Minimum glucose uses all three days. The file also reports mean paired differences as responsive minus control. The agent submits the script that generated it as `/app/output/reproduce.py`. [Task instructions](harbor/release-timing-attribution/instruction.md)
 
-A separate Docker verifier checks row coverage, release rates, per-day dose matching, the shared warm-up, control definitions, glucose metrics and paired differences. It uses a reference generated independently with the original `simglucose` physiology and native dopri5. Correct results pass within numerical tolerance, including when the responsive arm performs worse.
+A separate Docker verifier checks row coverage, release rates, per-day dose matching, the shared warm-up, control definitions, glucose metrics and paired differences. It uses a reference generated independently with the original `simglucose` physiology and native dopri5. Full acceptance requires the archived script to produce numerically matching results in a fresh offline task container and both outputs to pass the same scientific checks. [Local acceptance workflow](harbor/release-timing-attribution/README.md#local-run)
 
-| Author control | Verifier result |
-|---|---:|
-| Native solution | 1 |
-| RK4 release solver with native replay | 1 |
-| Empty submission | 0 |
-| Uniform release pooled across two days | 0 |
+### Validation status
 
-The last control keeps the three-day total nearly unchanged but alters one day's dose by 0.554 U, which would mix amount and timing. [Control record](results/timing-study-2026-11-13/harbor-verification.json)
+Offline validation used Harbor 0.25.0 and one fixed panel of 18 meal scenarios. The native solution and the RK4 release solver with native replay each passed all five checks on both runs and reproduced their own output byte for byte. Six controls were rejected.
 
-The task specifies the controls and tests whether the agent can execute and reproduce the analysis. This local prototype follows the Terminal-Bench-Science pattern of containerized research tasks and programmatic verification. Agent difficulty and suitability for upstream inclusion remain to be evaluated. [Terminal-Bench-Science task criteria](https://www.terminal-bench-science.ai/contribute)
+| Rejected control | Check that caught it |
+|---|---|
+| Uniform release pooled across both evaluation days | Per-day dose and timing |
+| Reversed paired effect | Signed paired difference, even when replay matched byte for byte |
+| Empty submission | Required results |
+| Missing script | Required replay script |
+| Script that fails when rerun | Replay exit code |
+| Script that produces a different valid result | Numerical agreement between the two outputs |
+
+The original cross-day pooling control preserved the three-day total to floating-point precision and shifted one day's dose by 0.554 U. [Original verifier controls](results/timing-study-2026-11-13/harbor-verification.json)
+
+The earlier model pilot used this same 18-scenario panel and exposed budget exhaustion, script errors, and reversed paired effects. On the updated task, the fixed script passed all five initial checks in three runs. The model retest was paused before the first model trial reached verification. Raw trial records are kept locally.
 
 ## Author-run timing study
 
@@ -63,7 +69,7 @@ Compared with dose-matched daily uniform release, the responsive arm had mean TI
 | Supplement | The full per-scenario table, including scenarios without improvement, plus input and script versions |
 | Conclusion | Limited to this simulator and these six fixed designs |
 
-The verifier checks the submitted JSON. Before using an agent's analysis in a paper, review its code and provenance and rerun it independently. The strength of further validation depends on the claim. To measure whether agents reduce research work, compare them with a strong fixed script on the same held-out inputs, with the same simulation budget and verifier. Track researcher time spent preparing, checking and correcting each result.
+The acceptance workflow checks the submitted JSON and reruns the archived script. Researchers can review the code and provenance alongside the verified outputs. Measuring the effect on research workload requires timing preparation, review and corrections under matched inputs, simulation budgets and verification.
 
 ## v0.2 design task
 

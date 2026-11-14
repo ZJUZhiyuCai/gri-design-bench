@@ -1,0 +1,9 @@
+# Attribute a glucose-responsive release effect to timing
+
+Assess how redistributing insulin within a day changes glucose outcomes in a virtual-patient simulation. `/app/public/panel.json` supplies a three-patient case, one fixed responsive formulation, and the meal seeds. The case specifies the variants, patient seeds and scaling. Use each patient, seed and variant combination. The preinstalled `gri_bench.api.Experiment` provides the scaled meal schedules, and `gri_bench.native.native_trace` and `gri_bench.physiology.fast_trace` are available for simulating the formulation.
+
+For each scenario, compute the three-day responsive release history at three-minute intervals. Simulate two prescribed-rate replays from the same initial patient state and meals. Both use the original release history on day 1. In `daily_flat`, redistribute each of days 2 and 3 uniformly over that same day. In `daily_shift_12h`, move each day's rate sequence 12 hours later, wrapping within that day. Each arm must retain the original total insulin for each day. Replay the prescribed rates without feedback and record the resulting plasma glucose.
+
+Write `/app/output/results.json` following `/app/public/results.schema.json`. Include one row per patient, seed, variant and arm, with the 1,440 rates in U/min, the three daily amounts in U, and plasma outcomes. TIR counts three-minute endpoints within 70–180 mg/dL inclusive on days 2–3. TBR70 and TBR54 count endpoints strictly below their respective thresholds on days 2–3. Express these time fractions as percentages. The minimum covers the initial value and all minute endpoints across all three days. Report signed responsive-minus-control mean differences for all four outcomes with equal weight per scenario. Numerical integration methods may differ within numerical tolerance.
+
+You have 900 seconds to complete this task. Do not cheat by using online solutions or hints specific to this task.

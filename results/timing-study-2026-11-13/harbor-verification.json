@@ -1,0 +1,139 @@
+{
+  "verified": true,
+  "harbor": "0.25.0",
+  "docker": "29.5.2 aarch64",
+  "docker_context": "colima-etbench",
+  "local_base_and_audit_image_ids": {
+    "gri-bench:0.2.0": "sha256:48a66cf17685d8cff00e5696627d0d5be77c30651e73dd1a026f19aa39f7b79a",
+    "gri-release-timing-verifier:local": "sha256:c2e307a8bbc9c3a2d2c05aa3fafecf877e005b8bb8ac6cd19341ae0b772f71ca",
+    "gri-release-timing-agent:local": "sha256:a7ccc8ce179f84bf6c79f0e9ea04b70b2a8dcfc600e4450d00d0d537048919a6"
+  },
+  "reference": {
+    "source_git_head": "1a23868224298c985e23e7f7fefe8261a83e15c1",
+    "upstream_rubric_commit": "0c224bf9349047c82ff8ff5fae62e12dca8e89ad",
+    "input_sha256": {
+      "instances/dev/dev-06.json": "cc7fc5f4faf85835317120f0eb50bf3a72e5a8b6ad3a1777da18daa52955003e",
+      "results/v0.2/calibration/robust-reference.json": "dbf0c377002ee1ec78b1da49874a8fd3f5e164f478759daf855c366d82f246fa"
+    },
+    "public_panel_sha256": "e13c0f635e0aedb26a359b6902864360fae461b5f55fc22e1df40c694eee984d",
+    "reference_method": "Native dopri5 with upstream simglucose 0.2.11 T1DPatient.model; generated without the author solution.",
+    "fixed_design_source": "Public v0.2 high-budget responsive development reference, dev-06.",
+    "reference_generator_sha256": "d06af0ddc7d4e45b12ad3467b10923908fef4f1d22b3af1fc6f994960e2ebca6",
+    "reference_sha256": "20986eef8d365431492a04df0650890b236fb599cdce5cb04208cd48c6579197",
+    "agent_base_image": "gri-bench:0.2.0",
+    "verifier_base_image": "gri-release-timing-verifier:local"
+  },
+  "reference_rows": 54,
+  "verifier_files_sha256": {
+    "test_results.py": "b508519462bd24077b91a4d9ff4807d27bef4e0a67bab2f16e8acc4eeb873c5a",
+    "Dockerfile": "6e9c312af8be2fa9e2eac50cc72b7495ada947110bf2b092689833e27a5e6dee",
+    "reference.json": "20986eef8d365431492a04df0650890b236fb599cdce5cb04208cd48c6579197",
+    "requirements-lock.txt": "ab4070637cebdc82afe9efdcef9379db290a8214af8bd896cbd03c6cd0ded095",
+    "test.sh": "e22ad40931c03e0c1c40c1dead80c83e8cea44136567f1b42daf817c4399406a"
+  },
+  "controls": [
+    {
+      "control": "oracle",
+      "reward": 1,
+      "trial_id": "75697e4e-7fa4-4b67-9727-e95ecabc6d48",
+      "verifier_environment_mode": "separate",
+      "agent_seconds": 28.415,
+      "result_path": "private/timing-harbor-2026-11-13/final/jobs/oracle/release-timing-attribution__pYBu7J6/result.json",
+      "result_sha256": "f751e403e0c8f1e61f247a1625939943cd7080575af13a829af5c8067770ade0",
+      "ctrf_sha256": "b68e92e2f6d6256581e262936b06ac9974ec29248faab996c02e3e10ecfeb5b7",
+      "checks": {
+        "test_complete_scenario_matrix": "passed",
+        "test_responsive_schedule": "passed",
+        "test_daily_dose_and_timing": "passed",
+        "test_replayed_glucose_outcomes": "passed",
+        "test_paired_effects": "passed"
+      },
+      "artifact_sha256": "3b86f226ede642446a3ef597c5c15118ef505032cc33ce2b85a4239aa15cdba7",
+      "output_rows": 54,
+      "max_outcome_differences": {
+        "tir": 1.4210854715202004e-14,
+        "tbr70": 3.552713678800501e-15,
+        "tbr54": 1.7763568394002505e-15,
+        "minimum": 2.4570567802584264e-11
+      },
+      "max_rate_difference_u_per_min": 1.6445178552260131e-15
+    },
+    {
+      "control": "alternate",
+      "reward": 1,
+      "trial_id": "020fea40-ffa3-42ee-902d-d80bb1057b5c",
+      "verifier_environment_mode": "separate",
+      "agent_seconds": 26.464,
+      "result_path": "private/timing-harbor-2026-11-13/final/jobs/alternate/alternate__HhuCfMi/result.json",
+      "result_sha256": "5bbd2fc0379a7ff078743f3b7f534da7e45646c1d49b985307a076a1bc570349",
+      "ctrf_sha256": "f0822c3e4b894726e7b4992255cd30dffaba5de3d3e13cf8b6a0f4d205c804dd",
+      "checks": {
+        "test_complete_scenario_matrix": "passed",
+        "test_responsive_schedule": "passed",
+        "test_daily_dose_and_timing": "passed",
+        "test_replayed_glucose_outcomes": "passed",
+        "test_paired_effects": "passed"
+      },
+      "artifact_sha256": "d28ed0590978b3e9fac6f775467b54adfce47c7380f0bbb1602ad41df3042c5c",
+      "output_rows": 54,
+      "max_outcome_differences": {
+        "tir": 1.4210854715202004e-14,
+        "tbr70": 3.552713678800501e-15,
+        "tbr54": 1.7763568394002505e-15,
+        "minimum": 5.086891864181098e-05
+      },
+      "max_rate_difference_u_per_min": 5.799387398433553e-08
+    },
+    {
+      "control": "nop",
+      "reward": 0,
+      "trial_id": "0af93ded-bbdd-4237-af3b-6c67a1549ca4",
+      "verifier_environment_mode": "separate",
+      "agent_seconds": 0.001,
+      "result_path": "private/timing-harbor-2026-11-13/final/jobs/nop/release-timing-attribution__M4YVEBF/result.json",
+      "result_sha256": "9399d243cbe871e41b39194737ac1026a42189f1c822eba5b50ec8c8e0518328",
+      "ctrf_sha256": "dca9c30bbdadbf4ff9dd691bd1e6bc0b227c218702f05b93c61d5c2a0c9caf58",
+      "checks": {
+        "test_complete_scenario_matrix": "failed",
+        "test_responsive_schedule": "failed",
+        "test_daily_dose_and_timing": "failed",
+        "test_replayed_glucose_outcomes": "failed",
+        "test_paired_effects": "failed"
+      }
+    },
+    {
+      "control": "wrong-dose",
+      "reward": 0,
+      "trial_id": "96defafb-1319-4cbe-a692-340cb65b8cfd",
+      "verifier_environment_mode": "separate",
+      "agent_seconds": 35.685,
+      "result_path": "private/timing-harbor-2026-11-13/final/jobs/wrong-dose/wrong-dose__ourAyxu/result.json",
+      "result_sha256": "100c6ef1672cc0a5af491237bc5e646e729ed9c562eab5ea6c22af27d4405967",
+      "ctrf_sha256": "778a9ae97afdbf6332840b54e75de2062ec145a935b055fdd4ffa16a8288912b",
+      "checks": {
+        "test_complete_scenario_matrix": "passed",
+        "test_responsive_schedule": "passed",
+        "test_daily_dose_and_timing": "failed",
+        "test_replayed_glucose_outcomes": "failed",
+        "test_paired_effects": "passed"
+      },
+      "artifact_sha256": "2361621b2527669691aa679a605e674d9048ffacc2b4db570d311c7b3e5d6b65",
+      "output_rows": 54,
+      "max_outcome_differences": {
+        "tir": 4.6875,
+        "tbr70": 0.8333333333333357,
+        "tbr54": 1.7763568394002505e-15,
+        "minimum": 6.747704499469862
+      },
+      "max_rate_difference_u_per_min": 0.000384516376483731,
+      "max_daily_dose_difference_u": 0.5537035821365706,
+      "max_total_dose_difference_u": 3.694822225952521e-13
+    }
+  ],
+  "agent_image_contents_check": "Passed; public panel/schema and five allow-listed simulator modules present, reference and oracle absent.",
+  "project_test_suite": {
+    "passed": 52,
+    "warnings": 5
+  },
+  "new_model_trials": 0
+}

@@ -1,0 +1,40 @@
+{
+  "observed_utc": "2026-11-13T05:11:53.182442+00:00",
+  "frozen_source_head": "b8fc26099cabae4944506bda4ff52980bd993d0c",
+  "current_head": "1a23868224298c985e23e7f7fefe8261a83e15c1",
+  "protected_count": 1643,
+  "unchanged_count": 1641,
+  "concurrent_changes": [
+    {
+      "path": "README.md",
+      "frozen_sha256": "29ac3efe1abab0d7d161b98bee00a258acad1f3d7a472394023fb09ddb6888f6",
+      "current_sha256": "e23aa954b6e17957080d83bc8dd6fbe8adbb70fe7cb48baff44248b6c4ecfd0c",
+      "original_available_at": "b8fc26099cabae4944506bda4ff52980bd993d0c:README.md"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "frozen_sha256": "2ffa98559dcd6792cfcd8a1480a5c538887d984a68fb8601e6c7f226d9173b1b",
+      "current_sha256": "95e06dcdb5e89683c8c11adb55837998784957a451957e384bcd35df03abdd7d",
+      "original_available_at": "b8fc26099cabae4944506bda4ff52980bd993d0c:README.zh-CN.md"
+    }
+  ],
+  "concurrent_commit_files": [
+    "M\tREADME.md",
+    "M\tREADME.zh-CN.md",
+    "A\tresults/v0.2/expansion-2026-11-13/README.md",
+    "A\tresults/v0.2/expansion-2026-11-13/audit.json",
+    "A\tresults/v0.2/expansion-2026-11-13/cases.csv",
+    "A\tresults/v0.2/expansion-2026-11-13/development-attempts.json",
+    "A\tresults/v0.2/expansion-2026-11-13/leaderboard.csv",
+    "A\tresults/v0.2/expansion-2026-11-13/leave-one-case-out.csv",
+    "A\tresults/v0.2/expansion-2026-11-13/paired.csv",
+    "A\tresults/v0.2/expansion-2026-11-13/rounds.csv",
+    "A\tresults/v0.2/expansion-2026-11-13/sealed-attempts.json",
+    "A\tresults/v0.2/expansion-2026-11-13/summary.json",
+    "A\tscripts/analyze_v02_expansion.py"
+  ],
+  "frozen_implementation_check": "passed",
+  "prior_numerical_results": "unchanged",
+  "action": "Kept concurrent commit intact; did not alter the frozen manifest or runner; original READMEs remain in base Git history.",
+  "report_scope": "The prescreen files are additive and uncommitted. The earlier analyze.py snapshot had all 1643 original file hashes unchanged; final strict preserve fails on these two later README updates."
+}

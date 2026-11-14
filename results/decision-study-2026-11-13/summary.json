@@ -1,0 +1,485 @@
+{
+  "plan_sha256": "201c48f25eaddb0c67c20812dc768079928d05fb1b42217b70ffd068db73c3d4",
+  "decisions_sha256": "8f68102194e8921bd1273156a7c8bab1353cff306c95211ca1053e92847c2019",
+  "primary_floor_pp": 5,
+  "decisions_by_floor": {
+    "0": {
+      "independent_advance": [
+        "dev-01",
+        "dev-02",
+        "dev-03",
+        "dev-04",
+        "dev-05",
+        "dev-06"
+      ],
+      "policies": {
+        "initial": {
+          "matches": 5,
+          "unsupported_advances": [],
+          "missed_advances": [
+            "dev-02"
+          ],
+          "advance": [
+            "dev-01",
+            "dev-03",
+            "dev-04",
+            "dev-05",
+            "dev-06"
+          ],
+          "changed_from_initial": []
+        },
+        "more_ordinary": {
+          "matches": 6,
+          "unsupported_advances": [],
+          "missed_advances": [],
+          "advance": [
+            "dev-01",
+            "dev-02",
+            "dev-03",
+            "dev-04",
+            "dev-05",
+            "dev-06"
+          ],
+          "changed_from_initial": [
+            "dev-02"
+          ]
+        },
+        "mixed_meals": {
+          "matches": 6,
+          "unsupported_advances": [],
+          "missed_advances": [],
+          "advance": [
+            "dev-01",
+            "dev-02",
+            "dev-03",
+            "dev-04",
+            "dev-05",
+            "dev-06"
+          ],
+          "changed_from_initial": [
+            "dev-02"
+          ]
+        }
+      }
+    },
+    "5": {
+      "independent_advance": [
+        "dev-03",
+        "dev-04",
+        "dev-06"
+      ],
+      "policies": {
+        "initial": {
+          "matches": 5,
+          "unsupported_advances": [],
+          "missed_advances": [
+            "dev-06"
+          ],
+          "advance": [
+            "dev-03",
+            "dev-04"
+          ],
+          "changed_from_initial": []
+        },
+        "more_ordinary": {
+          "matches": 6,
+          "unsupported_advances": [],
+          "missed_advances": [],
+          "advance": [
+            "dev-03",
+            "dev-04",
+            "dev-06"
+          ],
+          "changed_from_initial": [
+            "dev-06"
+          ]
+        },
+        "mixed_meals": {
+          "matches": 6,
+          "unsupported_advances": [],
+          "missed_advances": [],
+          "advance": [
+            "dev-03",
+            "dev-04",
+            "dev-06"
+          ],
+          "changed_from_initial": [
+            "dev-06"
+          ]
+        }
+      }
+    },
+    "10": {
+      "independent_advance": [
+        "dev-04"
+      ],
+      "policies": {
+        "initial": {
+          "matches": 6,
+          "unsupported_advances": [],
+          "missed_advances": [],
+          "advance": [
+            "dev-04"
+          ],
+          "changed_from_initial": []
+        },
+        "more_ordinary": {
+          "matches": 5,
+          "unsupported_advances": [
+            "dev-03"
+          ],
+          "missed_advances": [],
+          "advance": [
+            "dev-03",
+            "dev-04"
+          ],
+          "changed_from_initial": [
+            "dev-03"
+          ]
+        },
+        "mixed_meals": {
+          "matches": 6,
+          "unsupported_advances": [],
+          "missed_advances": [],
+          "advance": [
+            "dev-04"
+          ],
+          "changed_from_initial": []
+        }
+      }
+    }
+  },
+  "independent_decisions": {
+    "dev-01": {
+      "0": {
+        "advance": true,
+        "reasons_to_defer": []
+      },
+      "5": {
+        "advance": false,
+        "reasons_to_defer": [
+          "insufficient_tir_gain"
+        ]
+      },
+      "10": {
+        "advance": false,
+        "reasons_to_defer": [
+          "insufficient_tir_gain"
+        ]
+      }
+    },
+    "dev-02": {
+      "0": {
+        "advance": true,
+        "reasons_to_defer": []
+      },
+      "5": {
+        "advance": false,
+        "reasons_to_defer": [
+          "insufficient_tir_gain"
+        ]
+      },
+      "10": {
+        "advance": false,
+        "reasons_to_defer": [
+          "insufficient_tir_gain"
+        ]
+      }
+    },
+    "dev-03": {
+      "0": {
+        "advance": true,
+        "reasons_to_defer": []
+      },
+      "5": {
+        "advance": true,
+        "reasons_to_defer": []
+      },
+      "10": {
+        "advance": false,
+        "reasons_to_defer": [
+          "insufficient_tir_gain"
+        ]
+      }
+    },
+    "dev-04": {
+      "0": {
+        "advance": true,
+        "reasons_to_defer": []
+      },
+      "5": {
+        "advance": true,
+        "reasons_to_defer": []
+      },
+      "10": {
+        "advance": true,
+        "reasons_to_defer": []
+      }
+    },
+    "dev-05": {
+      "0": {
+        "advance": true,
+        "reasons_to_defer": []
+      },
+      "5": {
+        "advance": false,
+        "reasons_to_defer": [
+          "insufficient_tir_gain"
+        ]
+      },
+      "10": {
+        "advance": false,
+        "reasons_to_defer": [
+          "insufficient_tir_gain"
+        ]
+      }
+    },
+    "dev-06": {
+      "0": {
+        "advance": true,
+        "reasons_to_defer": []
+      },
+      "5": {
+        "advance": true,
+        "reasons_to_defer": []
+      },
+      "10": {
+        "advance": false,
+        "reasons_to_defer": [
+          "insufficient_tir_gain"
+        ]
+      }
+    }
+  },
+  "case_observations": {
+    "dev-01": {
+      "initial": {
+        "scenarios": 6,
+        "mean_responsive_minus_flat": {
+          "tir": 1.5277777777777786,
+          "tbr70": -0.8680555555555555,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "more_ordinary": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 2.2858796296296333,
+          "tbr70": -1.8518518518518519,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "mixed_meals": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 2.106481481481483,
+          "tbr70": -2.2453703703703702,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "independent": {
+        "scenarios": 72,
+        "mean_responsive_minus_flat": {
+          "tir": 3.3897569444444446,
+          "tbr70": -2.800925925925926,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      }
+    },
+    "dev-02": {
+      "initial": {
+        "scenarios": 6,
+        "mean_responsive_minus_flat": {
+          "tir": -0.06944444444444405,
+          "tbr70": -0.78125,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "more_ordinary": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 3.443287037037038,
+          "tbr70": -2.783564814814815,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "mixed_meals": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 2.4131944444444433,
+          "tbr70": -2.471064814814815,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "independent": {
+        "scenarios": 72,
+        "mean_responsive_minus_flat": {
+          "tir": 2.4927662037037037,
+          "tbr70": -1.5928819444444444,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      }
+    },
+    "dev-03": {
+      "initial": {
+        "scenarios": 6,
+        "mean_responsive_minus_flat": {
+          "tir": 5.13888888888889,
+          "tbr70": -3.6458333333333335,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "more_ordinary": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 10.248842592592592,
+          "tbr70": -7.407407407407407,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "mixed_meals": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 6.603009259259259,
+          "tbr70": -5.1157407407407405,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "independent": {
+        "scenarios": 72,
+        "mean_responsive_minus_flat": {
+          "tir": 7.460937500000001,
+          "tbr70": -5.750868055555555,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      }
+    },
+    "dev-04": {
+      "initial": {
+        "scenarios": 6,
+        "mean_responsive_minus_flat": {
+          "tir": 12.673611111111112,
+          "tbr70": 0.0,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "more_ordinary": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 14.253472222222221,
+          "tbr70": 0.0,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "mixed_meals": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 13.182870370370368,
+          "tbr70": 0.0,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "independent": {
+        "scenarios": 72,
+        "mean_responsive_minus_flat": {
+          "tir": 14.036458333333334,
+          "tbr70": 0.0,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      }
+    },
+    "dev-05": {
+      "initial": {
+        "scenarios": 6,
+        "mean_responsive_minus_flat": {
+          "tir": 2.6215277777777763,
+          "tbr70": -2.118055555555556,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "more_ordinary": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 3.4664351851851833,
+          "tbr70": -3.2002314814814814,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "mixed_meals": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 2.118055555555554,
+          "tbr70": -1.996527777777778,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "independent": {
+        "scenarios": 72,
+        "mean_responsive_minus_flat": {
+          "tir": 3.0483217592592604,
+          "tbr70": -2.6707175925925926,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      }
+    },
+    "dev-06": {
+      "initial": {
+        "scenarios": 6,
+        "mean_responsive_minus_flat": {
+          "tir": 4.35763888888889,
+          "tbr70": -5.104166666666667,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "more_ordinary": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 5.613425925925927,
+          "tbr70": -4.849537037037037,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "mixed_meals": {
+        "scenarios": 18,
+        "mean_responsive_minus_flat": {
+          "tir": 6.070601851851852,
+          "tbr70": -4.114583333333333,
+          "tbr54": 0.0
+        },
+        "responsive_failures": []
+      },
+      "independent": {
+        "scenarios": 72,
+        "mean_responsive_minus_flat": {
+          "tir": 6.344039351851851,
+          "tbr70": -4.74681712962963,
+          "tbr54": -0.04918981481481481
+        },
+        "responsive_failures": []
+      }
+    }
+  },
+  "interpretation": "Agreement on a finite held-out simulation panel, not biological or clinical correctness."
+}

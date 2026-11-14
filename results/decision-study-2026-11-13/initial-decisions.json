@@ -1,0 +1,106 @@
+{
+  "dev-01": {
+    "0": {
+      "advance": true,
+      "reasons_to_defer": []
+    },
+    "5": {
+      "advance": false,
+      "reasons_to_defer": [
+        "insufficient_tir_gain"
+      ]
+    },
+    "10": {
+      "advance": false,
+      "reasons_to_defer": [
+        "insufficient_tir_gain"
+      ]
+    }
+  },
+  "dev-02": {
+    "0": {
+      "advance": false,
+      "reasons_to_defer": [
+        "insufficient_tir_gain"
+      ]
+    },
+    "5": {
+      "advance": false,
+      "reasons_to_defer": [
+        "insufficient_tir_gain"
+      ]
+    },
+    "10": {
+      "advance": false,
+      "reasons_to_defer": [
+        "insufficient_tir_gain"
+      ]
+    }
+  },
+  "dev-03": {
+    "0": {
+      "advance": true,
+      "reasons_to_defer": []
+    },
+    "5": {
+      "advance": true,
+      "reasons_to_defer": []
+    },
+    "10": {
+      "advance": false,
+      "reasons_to_defer": [
+        "insufficient_tir_gain"
+      ]
+    }
+  },
+  "dev-04": {
+    "0": {
+      "advance": true,
+      "reasons_to_defer": []
+    },
+    "5": {
+      "advance": true,
+      "reasons_to_defer": []
+    },
+    "10": {
+      "advance": true,
+      "reasons_to_defer": []
+    }
+  },
+  "dev-05": {
+    "0": {
+      "advance": true,
+      "reasons_to_defer": []
+    },
+    "5": {
+      "advance": false,
+      "reasons_to_defer": [
+        "insufficient_tir_gain"
+      ]
+    },
+    "10": {
+      "advance": false,
+      "reasons_to_defer": [
+        "insufficient_tir_gain"
+      ]
+    }
+  },
+  "dev-06": {
+    "0": {
+      "advance": true,
+      "reasons_to_defer": []
+    },
+    "5": {
+      "advance": false,
+      "reasons_to_defer": [
+        "insufficient_tir_gain"
+      ]
+    },
+    "10": {
+      "advance": false,
+      "reasons_to_defer": [
+        "insufficient_tir_gain"
+      ]
+    }
+  }
+}

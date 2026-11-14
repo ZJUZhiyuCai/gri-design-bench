@@ -1,0 +1,1088 @@
+{
+  "case": "dev-04",
+  "state": "higher_leak_faster_response",
+  "stage": "planning",
+  "cpu_seconds": 57.651387,
+  "rows": [
+    {
+      "patient": "adult#004",
+      "seed": 991180300,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 6.458333333333334,
+        "tbr70": 7.291666666666667,
+        "tbr54": 0.0,
+        "minimum": 55.79149238054548
+      },
+      "daily_flat": {
+        "tir": 8.75,
+        "tbr70": 0.8333333333333334,
+        "tbr54": 0.0,
+        "minimum": 55.79149238054548
+      },
+      "daily_dose_u": [
+        38.730488599609,
+        3.529439366266004,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.730488599609,
+        3.529439366266004,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180300,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 6.458333333333334,
+        "tbr70": 7.291666666666667,
+        "tbr54": 0.0,
+        "minimum": 55.79149238054548
+      },
+      "daily_flat": {
+        "tir": 8.75,
+        "tbr70": 0.8333333333333334,
+        "tbr54": 0.0,
+        "minimum": 55.79149238054548
+      },
+      "daily_dose_u": [
+        38.730488599609,
+        3.529439366266004,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.730488599609,
+        3.529439366266004,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180300,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 6.458333333333334,
+        "tbr70": 7.291666666666667,
+        "tbr54": 0.0,
+        "minimum": 55.79149238054548
+      },
+      "daily_flat": {
+        "tir": 8.75,
+        "tbr70": 0.8333333333333334,
+        "tbr54": 0.0,
+        "minimum": 55.79149238054548
+      },
+      "daily_dose_u": [
+        38.730488599609,
+        3.529439366266004,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.730488599609,
+        3.529439366266004,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180301,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 5.9375,
+        "tbr70": 7.8125,
+        "tbr54": 0.0,
+        "minimum": 55.34791942681095
+      },
+      "daily_flat": {
+        "tir": 7.708333333333334,
+        "tbr70": 1.9791666666666665,
+        "tbr54": 0.0,
+        "minimum": 55.34791942681095
+      },
+      "daily_dose_u": [
+        38.76408582703547,
+        3.495842138839539,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.76408582703547,
+        3.4958421388395386,
+        0.0
+      ],
+      "dose_match_error_u": 4.440892098500626e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180301,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 5.9375,
+        "tbr70": 7.8125,
+        "tbr54": 0.0,
+        "minimum": 55.34791942681095
+      },
+      "daily_flat": {
+        "tir": 7.708333333333334,
+        "tbr70": 1.9791666666666665,
+        "tbr54": 0.0,
+        "minimum": 55.34791942681095
+      },
+      "daily_dose_u": [
+        38.76408582703547,
+        3.495842138839539,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.76408582703547,
+        3.4958421388395386,
+        0.0
+      ],
+      "dose_match_error_u": 4.440892098500626e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180301,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 5.9375,
+        "tbr70": 7.8125,
+        "tbr54": 0.0,
+        "minimum": 55.34791942681095
+      },
+      "daily_flat": {
+        "tir": 7.708333333333334,
+        "tbr70": 1.9791666666666665,
+        "tbr54": 0.0,
+        "minimum": 55.34791942681095
+      },
+      "daily_dose_u": [
+        38.76408582703547,
+        3.495842138839539,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.76408582703547,
+        3.4958421388395386,
+        0.0
+      ],
+      "dose_match_error_u": 4.440892098500626e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180302,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 4.166666666666666,
+        "tbr70": 8.854166666666668,
+        "tbr54": 6.041666666666667,
+        "minimum": 52.33064631207438
+      },
+      "daily_flat": {
+        "tir": 5.729166666666666,
+        "tbr70": 4.270833333333333,
+        "tbr54": 1.0416666666666665,
+        "minimum": 53.72588254269173
+      },
+      "daily_dose_u": [
+        38.6958921029382,
+        3.564035862936792,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.6958921029382,
+        3.5640358629367914,
+        0.0
+      ],
+      "dose_match_error_u": 4.440892098500626e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180302,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 4.166666666666666,
+        "tbr70": 8.854166666666668,
+        "tbr54": 6.041666666666667,
+        "minimum": 52.33064631207438
+      },
+      "daily_flat": {
+        "tir": 5.729166666666666,
+        "tbr70": 4.270833333333333,
+        "tbr54": 1.0416666666666665,
+        "minimum": 53.72588254269173
+      },
+      "daily_dose_u": [
+        38.6958921029382,
+        3.564035862936792,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.6958921029382,
+        3.5640358629367914,
+        0.0
+      ],
+      "dose_match_error_u": 4.440892098500626e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180302,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 4.166666666666666,
+        "tbr70": 8.854166666666668,
+        "tbr54": 6.041666666666667,
+        "minimum": 52.33064631207438
+      },
+      "daily_flat": {
+        "tir": 5.729166666666666,
+        "tbr70": 4.270833333333333,
+        "tbr54": 1.0416666666666665,
+        "minimum": 53.72588254269173
+      },
+      "daily_dose_u": [
+        38.6958921029382,
+        3.564035862936792,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.6958921029382,
+        3.5640358629367914,
+        0.0
+      ],
+      "dose_match_error_u": 4.440892098500626e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180303,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 5.104166666666667,
+        "tbr70": 8.75,
+        "tbr54": 3.958333333333333,
+        "minimum": 52.38251040285501
+      },
+      "daily_flat": {
+        "tir": 5.833333333333333,
+        "tbr70": 4.166666666666666,
+        "tbr54": 0.0,
+        "minimum": 55.21947405078321
+      },
+      "daily_dose_u": [
+        38.73806286051932,
+        3.5218651053556704,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.73806286051932,
+        3.5218651053556704,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180303,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 5.104166666666667,
+        "tbr70": 8.75,
+        "tbr54": 3.958333333333333,
+        "minimum": 52.38251040285501
+      },
+      "daily_flat": {
+        "tir": 5.833333333333333,
+        "tbr70": 4.166666666666666,
+        "tbr54": 0.0,
+        "minimum": 55.21947405078321
+      },
+      "daily_dose_u": [
+        38.73806286051932,
+        3.5218651053556704,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.73806286051932,
+        3.5218651053556704,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#004",
+      "seed": 991180303,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 5.104166666666667,
+        "tbr70": 8.75,
+        "tbr54": 3.958333333333333,
+        "minimum": 52.38251040285501
+      },
+      "daily_flat": {
+        "tir": 5.833333333333333,
+        "tbr70": 4.166666666666666,
+        "tbr54": 0.0,
+        "minimum": 55.21947405078321
+      },
+      "daily_dose_u": [
+        38.73806286051932,
+        3.5218651053556704,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        38.73806286051932,
+        3.5218651053556704,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180300,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 17.291666666666668,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 67.99923634647139
+      },
+      "daily_flat": {
+        "tir": 16.145833333333336,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 67.99923634647139
+      },
+      "daily_dose_u": [
+        79.1365919200278,
+        6.258311019972148,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.1365919200278,
+        6.258311019972148,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180300,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 17.291666666666668,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 67.99923634647139
+      },
+      "daily_flat": {
+        "tir": 16.145833333333336,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 67.99923634647139
+      },
+      "daily_dose_u": [
+        79.1365919200278,
+        6.258311019972148,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.1365919200278,
+        6.258311019972148,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180300,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 17.291666666666668,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 67.99923634647139
+      },
+      "daily_flat": {
+        "tir": 16.145833333333336,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 67.99923634647139
+      },
+      "daily_dose_u": [
+        79.1365919200278,
+        6.258311019972148,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.1365919200278,
+        6.258311019972148,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180301,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 15.520833333333334,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 71.95081867489847
+      },
+      "daily_flat": {
+        "tir": 14.895833333333334,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 76.08652313727298
+      },
+      "daily_dose_u": [
+        79.24927917333511,
+        6.145623766664809,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.24927917333511,
+        6.145623766664809,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180301,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 15.520833333333334,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 71.95081867489847
+      },
+      "daily_flat": {
+        "tir": 14.895833333333334,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 76.08652313727298
+      },
+      "daily_dose_u": [
+        79.24927917333511,
+        6.145623766664809,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.24927917333511,
+        6.145623766664809,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180301,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 15.520833333333334,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 71.95081867489847
+      },
+      "daily_flat": {
+        "tir": 14.895833333333334,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 76.08652313727298
+      },
+      "daily_dose_u": [
+        79.24927917333511,
+        6.145623766664809,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.24927917333511,
+        6.145623766664809,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180302,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 6.770833333333333,
+        "tbr70": 9.479166666666666,
+        "tbr54": 0.0,
+        "minimum": 54.46712836169992
+      },
+      "daily_flat": {
+        "tir": 9.270833333333334,
+        "tbr70": 5.208333333333334,
+        "tbr54": 0.0,
+        "minimum": 62.489713475246994
+      },
+      "daily_dose_u": [
+        79.18629329052726,
+        6.208609649472762,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.18629329052726,
+        6.2086096494727645,
+        0.0
+      ],
+      "dose_match_error_u": 2.6645352591003757e-15,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180302,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 6.770833333333333,
+        "tbr70": 9.479166666666666,
+        "tbr54": 0.0,
+        "minimum": 54.46712836169992
+      },
+      "daily_flat": {
+        "tir": 9.270833333333334,
+        "tbr70": 5.208333333333334,
+        "tbr54": 0.0,
+        "minimum": 62.489713475246994
+      },
+      "daily_dose_u": [
+        79.18629329052726,
+        6.208609649472762,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.18629329052726,
+        6.2086096494727645,
+        0.0
+      ],
+      "dose_match_error_u": 2.6645352591003757e-15,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180302,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 6.770833333333333,
+        "tbr70": 9.479166666666666,
+        "tbr54": 0.0,
+        "minimum": 54.46712836169992
+      },
+      "daily_flat": {
+        "tir": 9.270833333333334,
+        "tbr70": 5.208333333333334,
+        "tbr54": 0.0,
+        "minimum": 62.489713475246994
+      },
+      "daily_dose_u": [
+        79.18629329052726,
+        6.208609649472762,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.18629329052726,
+        6.2086096494727645,
+        0.0
+      ],
+      "dose_match_error_u": 2.6645352591003757e-15,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180303,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 10.520833333333334,
+        "tbr70": 6.979166666666667,
+        "tbr54": 0.0,
+        "minimum": 58.17964587270093
+      },
+      "daily_flat": {
+        "tir": 17.1875,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 66.08904548976817
+      },
+      "daily_dose_u": [
+        79.2007783489865,
+        6.194124591013397,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.2007783489865,
+        6.194124591013397,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180303,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 10.520833333333334,
+        "tbr70": 6.979166666666667,
+        "tbr54": 0.0,
+        "minimum": 58.17964587270093
+      },
+      "daily_flat": {
+        "tir": 17.1875,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 66.08904548976817
+      },
+      "daily_dose_u": [
+        79.2007783489865,
+        6.194124591013397,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.2007783489865,
+        6.194124591013397,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#005",
+      "seed": 991180303,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 10.520833333333334,
+        "tbr70": 6.979166666666667,
+        "tbr54": 0.0,
+        "minimum": 58.17964587270093
+      },
+      "daily_flat": {
+        "tir": 17.1875,
+        "tbr70": 0.0,
+        "tbr54": 0.0,
+        "minimum": 66.08904548976817
+      },
+      "daily_dose_u": [
+        79.2007783489865,
+        6.194124591013397,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        79.2007783489865,
+        6.194124591013397,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180300,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 6.458333333333334,
+        "tbr70": 9.583333333333334,
+        "tbr54": 5.520833333333333,
+        "minimum": 44.10645079028339
+      },
+      "daily_flat": {
+        "tir": 9.583333333333334,
+        "tbr70": 2.8125,
+        "tbr54": 0.0,
+        "minimum": 44.59011600019746
+      },
+      "daily_dose_u": [
+        70.12566333025502,
+        6.610348269745018,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.12566333025502,
+        6.610348269745019,
+        0.0
+      ],
+      "dose_match_error_u": 8.881784197001252e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180300,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 6.458333333333334,
+        "tbr70": 9.583333333333334,
+        "tbr54": 5.520833333333333,
+        "minimum": 44.10645079028339
+      },
+      "daily_flat": {
+        "tir": 9.583333333333334,
+        "tbr70": 2.8125,
+        "tbr54": 0.0,
+        "minimum": 44.59011600019746
+      },
+      "daily_dose_u": [
+        70.12566333025502,
+        6.610348269745018,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.12566333025502,
+        6.610348269745019,
+        0.0
+      ],
+      "dose_match_error_u": 8.881784197001252e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180300,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 6.458333333333334,
+        "tbr70": 9.583333333333334,
+        "tbr54": 5.520833333333333,
+        "minimum": 44.10645079028339
+      },
+      "daily_flat": {
+        "tir": 9.583333333333334,
+        "tbr70": 2.8125,
+        "tbr54": 0.0,
+        "minimum": 44.59011600019746
+      },
+      "daily_dose_u": [
+        70.12566333025502,
+        6.610348269745018,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.12566333025502,
+        6.610348269745019,
+        0.0
+      ],
+      "dose_match_error_u": 8.881784197001252e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180301,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 5.208333333333334,
+        "tbr70": 10.0,
+        "tbr54": 6.041666666666667,
+        "minimum": 42.9208815947538
+      },
+      "daily_flat": {
+        "tir": 8.541666666666666,
+        "tbr70": 3.958333333333333,
+        "tbr54": 0.0,
+        "minimum": 45.60156130013971
+      },
+      "daily_dose_u": [
+        70.22243479822853,
+        6.513576801771512,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.22243479822853,
+        6.51357680177151,
+        0.0
+      ],
+      "dose_match_error_u": 1.7763568394002505e-15,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180301,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 5.208333333333334,
+        "tbr70": 10.0,
+        "tbr54": 6.041666666666667,
+        "minimum": 42.9208815947538
+      },
+      "daily_flat": {
+        "tir": 8.541666666666666,
+        "tbr70": 3.958333333333333,
+        "tbr54": 0.0,
+        "minimum": 45.60156130013971
+      },
+      "daily_dose_u": [
+        70.22243479822853,
+        6.513576801771512,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.22243479822853,
+        6.51357680177151,
+        0.0
+      ],
+      "dose_match_error_u": 1.7763568394002505e-15,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180301,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 5.208333333333334,
+        "tbr70": 10.0,
+        "tbr54": 6.041666666666667,
+        "minimum": 42.9208815947538
+      },
+      "daily_flat": {
+        "tir": 8.541666666666666,
+        "tbr70": 3.958333333333333,
+        "tbr54": 0.0,
+        "minimum": 45.60156130013971
+      },
+      "daily_dose_u": [
+        70.22243479822853,
+        6.513576801771512,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.22243479822853,
+        6.51357680177151,
+        0.0
+      ],
+      "dose_match_error_u": 1.7763568394002505e-15,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180302,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 3.4375000000000004,
+        "tbr70": 11.666666666666666,
+        "tbr54": 10.208333333333334,
+        "minimum": 35.83655000580171
+      },
+      "daily_flat": {
+        "tir": 5.729166666666666,
+        "tbr70": 7.083333333333333,
+        "tbr54": 5.416666666666667,
+        "minimum": 40.73304264998633
+      },
+      "daily_dose_u": [
+        70.12578814537855,
+        6.610223454621487,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.12578814537855,
+        6.610223454621486,
+        0.0
+      ],
+      "dose_match_error_u": 8.881784197001252e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180302,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 3.4375000000000004,
+        "tbr70": 11.666666666666666,
+        "tbr54": 10.208333333333334,
+        "minimum": 35.83655000580171
+      },
+      "daily_flat": {
+        "tir": 5.729166666666666,
+        "tbr70": 7.083333333333333,
+        "tbr54": 5.416666666666667,
+        "minimum": 40.73304264998633
+      },
+      "daily_dose_u": [
+        70.12578814537855,
+        6.610223454621487,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.12578814537855,
+        6.610223454621486,
+        0.0
+      ],
+      "dose_match_error_u": 8.881784197001252e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180302,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 3.4375000000000004,
+        "tbr70": 11.666666666666666,
+        "tbr54": 10.208333333333334,
+        "minimum": 35.83655000580171
+      },
+      "daily_flat": {
+        "tir": 5.729166666666666,
+        "tbr70": 7.083333333333333,
+        "tbr54": 5.416666666666667,
+        "minimum": 40.73304264998633
+      },
+      "daily_dose_u": [
+        70.12578814537855,
+        6.610223454621487,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.12578814537855,
+        6.610223454621486,
+        0.0
+      ],
+      "dose_match_error_u": 8.881784197001252e-16,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180303,
+      "variant": "ordinary",
+      "responsive": {
+        "tir": 5.0,
+        "tbr70": 11.5625,
+        "tbr54": 9.166666666666666,
+        "minimum": 37.32858994265662
+      },
+      "daily_flat": {
+        "tir": 6.25,
+        "tbr70": 6.770833333333333,
+        "tbr54": 3.854166666666667,
+        "minimum": 43.03560262082473
+      },
+      "daily_dose_u": [
+        70.19461680084498,
+        6.541394799155082,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.19461680084498,
+        6.541394799155082,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180303,
+      "variant": "missed_lunch",
+      "responsive": {
+        "tir": 5.0,
+        "tbr70": 11.5625,
+        "tbr54": 9.166666666666666,
+        "minimum": 37.32858994265662
+      },
+      "daily_flat": {
+        "tir": 6.25,
+        "tbr70": 6.770833333333333,
+        "tbr54": 3.854166666666667,
+        "minimum": 43.03560262082473
+      },
+      "daily_dose_u": [
+        70.19461680084498,
+        6.541394799155082,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.19461680084498,
+        6.541394799155082,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    },
+    {
+      "patient": "adult#006",
+      "seed": 991180303,
+      "variant": "large_dinner",
+      "responsive": {
+        "tir": 5.0,
+        "tbr70": 11.5625,
+        "tbr54": 9.166666666666666,
+        "minimum": 37.32858994265662
+      },
+      "daily_flat": {
+        "tir": 6.25,
+        "tbr70": 6.770833333333333,
+        "tbr54": 3.854166666666667,
+        "minimum": 43.03560262082473
+      },
+      "daily_dose_u": [
+        70.19461680084498,
+        6.541394799155082,
+        0.0
+      ],
+      "control_daily_dose_u": [
+        70.19461680084498,
+        6.541394799155082,
+        0.0
+      ],
+      "dose_match_error_u": 0.0,
+      "warmup_match_error_mg_dl": 0.0,
+      "reservoir_remaining_u": 0.0
+    }
+  ]
+}

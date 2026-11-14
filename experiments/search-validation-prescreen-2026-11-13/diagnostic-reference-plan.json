@@ -1,0 +1,93 @@
+{
+  "registered_utc": "2026-11-13T04:51:44.409968+00:00",
+  "scope": "Diagnostic addendum recorded before new evaluation outcomes. No changes to original methods, budgets, primary comparisons, or gates.",
+  "purpose": "Distinguish low-budget search limitations from absence of task headroom. Historical target-cohort designs have high offline cost and may encode prior development feedback; never rank as equal-budget baselines.",
+  "source_sha256": "dbf0c377002ee1ec78b1da49874a8fd3f5e164f478759daf855c366d82f246fa",
+  "evaluation": "Same frozen fresh32 panel, first16 primary; audit same first seed and threshold-near rule. No new optimization.",
+  "designs": [
+    {
+      "case": "dev-01",
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.0002355872763411028,
+          "relative_leak": 1.9512442380544404,
+          "ec50_mg_dl": 73.81496849159744,
+          "hill_n": 11.280885132968004,
+          "tau_min": 0.12185480599428894,
+          "theta_L": 3.6707992604287245
+        }
+      }
+    },
+    {
+      "case": "dev-02",
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.00018338454809701797,
+          "relative_leak": 2.0668529084793934,
+          "ec50_mg_dl": 117.62046612289997,
+          "hill_n": 13.649926562615729,
+          "tau_min": 0.20668230202790225,
+          "theta_L": 2.67588448189869
+        }
+      }
+    },
+    {
+      "case": "dev-03",
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.00018609216949757622,
+          "relative_leak": 1.6350161716892593,
+          "ec50_mg_dl": 87.00331172725568,
+          "hill_n": 13.139465262042586,
+          "tau_min": 0.1194262942412134,
+          "theta_L": 2.2569355773765745
+        }
+      }
+    },
+    {
+      "case": "dev-04",
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.0002734577189374841,
+          "relative_leak": 1.4561663149972979,
+          "ec50_mg_dl": 61.982755478717415,
+          "hill_n": 0.6628447764298869,
+          "tau_min": 19.75138766669191,
+          "theta_L": 1.25
+        }
+      }
+    },
+    {
+      "case": "dev-05",
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 9.828500250688706e-05,
+          "relative_leak": 5.491910565888406,
+          "ec50_mg_dl": 87.97611146357146,
+          "hill_n": 7.91910207490708,
+          "tau_min": 0.05161774780883581,
+          "theta_L": 2.76518341105175
+        }
+      }
+    },
+    {
+      "case": "dev-06",
+      "design": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.0003304538449805153,
+          "relative_leak": 0.5167791347085505,
+          "ec50_mg_dl": 137.59767181311128,
+          "hill_n": 3.999971791401783,
+          "tau_min": 2.0,
+          "theta_L": 3.5672591841554357
+        }
+      }
+    }
+  ]
+}

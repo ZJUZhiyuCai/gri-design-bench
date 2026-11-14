@@ -1,0 +1,533 @@
+{
+  "overall": {
+    "arms": {
+      "responsive": {
+        "scenarios": 216,
+        "mean_tir": 68.05748456790124,
+        "mean_tbr70": 0.01591435185185185,
+        "mean_tbr54": 0.0,
+        "mean_minimum": 85.91732148438368,
+        "any_low_glucose_gate_violations": 0
+      },
+      "daily_flat": {
+        "scenarios": 216,
+        "mean_tir": 62.23331404320987,
+        "mean_tbr70": 3.755787037037037,
+        "mean_tbr54": 0.0,
+        "mean_minimum": 83.35091881262815,
+        "any_low_glucose_gate_violations": 72
+      },
+      "daily_shift_12h": {
+        "scenarios": 216,
+        "mean_tir": 57.973572530864196,
+        "mean_tbr70": 6.1810378086419755,
+        "mean_tbr54": 0.5888310185185185,
+        "mean_minimum": 76.79752861601412,
+        "any_low_glucose_gate_violations": 101
+      }
+    },
+    "contrasts": {
+      "daily_flat": {
+        "mean_responsive_minus_control": {
+          "tir": 5.824170524691358,
+          "tbr70": -3.739872685185185,
+          "tbr54": 0.0,
+          "minimum": 2.5664026717555175
+        },
+        "tir_higher": 162,
+        "tbr70_higher": 0,
+        "tbr54_higher": 0
+      },
+      "daily_shift_12h": {
+        "mean_responsive_minus_control": {
+          "tir": 10.083912037037036,
+          "tbr70": -6.165123456790123,
+          "tbr54": -0.5888310185185185,
+          "minimum": 9.119792868369549
+        },
+        "tir_higher": 177,
+        "tbr70_higher": 0,
+        "tbr54_higher": 0
+      }
+    }
+  },
+  "by_case": {
+    "dev-01": {
+      "arms": {
+        "responsive": {
+          "scenarios": 36,
+          "mean_tir": 81.09664351851852,
+          "mean_tbr70": 0.0,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 70.86051178518848,
+          "any_low_glucose_gate_violations": 0
+        },
+        "daily_flat": {
+          "scenarios": 36,
+          "mean_tir": 76.03877314814815,
+          "mean_tbr70": 4.661458333333333,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 69.659007372587,
+          "any_low_glucose_gate_violations": 17
+        },
+        "daily_shift_12h": {
+          "scenarios": 36,
+          "mean_tir": 70.04918981481481,
+          "mean_tbr70": 9.950810185185185,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 66.40720774641878,
+          "any_low_glucose_gate_violations": 32
+        }
+      },
+      "contrasts": {
+        "daily_flat": {
+          "mean_responsive_minus_control": {
+            "tir": 5.057870370370372,
+            "tbr70": -4.661458333333333,
+            "tbr54": 0.0,
+            "minimum": 1.2015044126014773
+          },
+          "tir_higher": 34,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        },
+        "daily_shift_12h": {
+          "mean_responsive_minus_control": {
+            "tir": 11.047453703703704,
+            "tbr70": -9.950810185185185,
+            "tbr54": 0.0,
+            "minimum": 4.453304038769711
+          },
+          "tir_higher": 36,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        }
+      }
+    },
+    "dev-02": {
+      "arms": {
+        "responsive": {
+          "scenarios": 36,
+          "mean_tir": 74.82060185185185,
+          "mean_tbr70": 0.0,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 98.10460271365204,
+          "any_low_glucose_gate_violations": 0
+        },
+        "daily_flat": {
+          "scenarios": 36,
+          "mean_tir": 74.27372685185185,
+          "mean_tbr70": 2.8356481481481484,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 93.78460935671207,
+          "any_low_glucose_gate_violations": 12
+        },
+        "daily_shift_12h": {
+          "scenarios": 36,
+          "mean_tir": 71.53645833333333,
+          "mean_tbr70": 4.3084490740740735,
+          "mean_tbr54": 0.12152777777777778,
+          "mean_minimum": 87.60312141243242,
+          "any_low_glucose_gate_violations": 12
+        }
+      },
+      "contrasts": {
+        "daily_flat": {
+          "mean_responsive_minus_control": {
+            "tir": 0.5468750000000004,
+            "tbr70": -2.8356481481481484,
+            "tbr54": 0.0,
+            "minimum": 4.3199933569399755
+          },
+          "tir_higher": 17,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        },
+        "daily_shift_12h": {
+          "mean_responsive_minus_control": {
+            "tir": 3.284143518518518,
+            "tbr70": -4.3084490740740735,
+            "tbr54": -0.12152777777777778,
+            "minimum": 10.50148130121963
+          },
+          "tir_higher": 23,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        }
+      }
+    },
+    "dev-03": {
+      "arms": {
+        "responsive": {
+          "scenarios": 36,
+          "mean_tir": 80.58738425925927,
+          "mean_tbr70": 0.017361111111111112,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 75.70931351061651,
+          "any_low_glucose_gate_violations": 0
+        },
+        "daily_flat": {
+          "scenarios": 36,
+          "mean_tir": 71.51331018518519,
+          "mean_tbr70": 6.892361111111111,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 70.38510965429454,
+          "any_low_glucose_gate_violations": 21
+        },
+        "daily_shift_12h": {
+          "scenarios": 36,
+          "mean_tir": 64.37210648148148,
+          "mean_tbr70": 9.997106481481481,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 63.75234049097339,
+          "any_low_glucose_gate_violations": 23
+        }
+      },
+      "contrasts": {
+        "daily_flat": {
+          "mean_responsive_minus_control": {
+            "tir": 9.074074074074076,
+            "tbr70": -6.875,
+            "tbr54": 0.0,
+            "minimum": 5.324203856321974
+          },
+          "tir_higher": 32,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        },
+        "daily_shift_12h": {
+          "mean_responsive_minus_control": {
+            "tir": 16.21527777777778,
+            "tbr70": -9.97974537037037,
+            "tbr54": 0.0,
+            "minimum": 11.956973019643126
+          },
+          "tir_higher": 33,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        }
+      }
+    },
+    "dev-04": {
+      "arms": {
+        "responsive": {
+          "scenarios": 36,
+          "mean_tir": 26.30787037037037,
+          "mean_tbr70": 0.0,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 89.9206415499942,
+          "any_low_glucose_gate_violations": 0
+        },
+        "daily_flat": {
+          "scenarios": 36,
+          "mean_tir": 14.007523148148149,
+          "mean_tbr70": 0.0,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 100.58434473895117,
+          "any_low_glucose_gate_violations": 0
+        },
+        "daily_shift_12h": {
+          "scenarios": 36,
+          "mean_tir": 12.453703703703704,
+          "mean_tbr70": 0.0,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 100.66780523341838,
+          "any_low_glucose_gate_violations": 0
+        }
+      },
+      "contrasts": {
+        "daily_flat": {
+          "mean_responsive_minus_control": {
+            "tir": 12.300347222222223,
+            "tbr70": 0.0,
+            "tbr54": 0.0,
+            "minimum": -10.663703188956971
+          },
+          "tir_higher": 36,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        },
+        "daily_shift_12h": {
+          "mean_responsive_minus_control": {
+            "tir": 13.854166666666668,
+            "tbr70": 0.0,
+            "tbr54": 0.0,
+            "minimum": -10.747163683424183
+          },
+          "tir_higher": 32,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        }
+      }
+    },
+    "dev-05": {
+      "arms": {
+        "responsive": {
+          "scenarios": 36,
+          "mean_tir": 87.35532407407408,
+          "mean_tbr70": 0.028935185185185182,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 75.8180537411897,
+          "any_low_glucose_gate_violations": 0
+        },
+        "daily_flat": {
+          "scenarios": 36,
+          "mean_tir": 85.05208333333333,
+          "mean_tbr70": 2.271412037037037,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 74.0232810659752,
+          "any_low_glucose_gate_violations": 10
+        },
+        "daily_shift_12h": {
+          "scenarios": 36,
+          "mean_tir": 80.12442129629629,
+          "mean_tbr70": 5.726273148148148,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 71.09937237528074,
+          "any_low_glucose_gate_violations": 22
+        }
+      },
+      "contrasts": {
+        "daily_flat": {
+          "mean_responsive_minus_control": {
+            "tir": 2.303240740740739,
+            "tbr70": -2.242476851851852,
+            "tbr54": 0.0,
+            "minimum": 1.7947726752145163
+          },
+          "tir_higher": 25,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        },
+        "daily_shift_12h": {
+          "mean_responsive_minus_control": {
+            "tir": 7.230902777777777,
+            "tbr70": -5.697337962962963,
+            "tbr54": 0.0,
+            "minimum": 4.718681365908971
+          },
+          "tir_higher": 35,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        }
+      }
+    },
+    "dev-06": {
+      "arms": {
+        "responsive": {
+          "scenarios": 36,
+          "mean_tir": 58.177083333333336,
+          "mean_tbr70": 0.04918981481481481,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 105.0908056056611,
+          "any_low_glucose_gate_violations": 0
+        },
+        "daily_flat": {
+          "scenarios": 36,
+          "mean_tir": 52.514467592592595,
+          "mean_tbr70": 5.873842592592593,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 91.66916068724896,
+          "any_low_glucose_gate_violations": 12
+        },
+        "daily_shift_12h": {
+          "scenarios": 36,
+          "mean_tir": 49.30555555555556,
+          "mean_tbr70": 7.103587962962963,
+          "mean_tbr54": 3.4114583333333335,
+          "mean_minimum": 71.25532443756106,
+          "any_low_glucose_gate_violations": 12
+        }
+      },
+      "contrasts": {
+        "daily_flat": {
+          "mean_responsive_minus_control": {
+            "tir": 5.66261574074074,
+            "tbr70": -5.824652777777778,
+            "tbr54": 0.0,
+            "minimum": 13.421644918412131
+          },
+          "tir_higher": 18,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        },
+        "daily_shift_12h": {
+          "mean_responsive_minus_control": {
+            "tir": 8.871527777777779,
+            "tbr70": -7.054398148148148,
+            "tbr54": -3.4114583333333335,
+            "minimum": 33.835481168100046
+          },
+          "tir_higher": 18,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        }
+      }
+    }
+  },
+  "by_variant": {
+    "large_dinner": {
+      "arms": {
+        "responsive": {
+          "scenarios": 72,
+          "mean_tir": 64.11747685185185,
+          "mean_tbr70": 0.04774305555555555,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 85.65308572490494,
+          "any_low_glucose_gate_violations": 0
+        },
+        "daily_flat": {
+          "scenarios": 72,
+          "mean_tir": 58.109085648148145,
+          "mean_tbr70": 4.252025462962963,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 82.42851673322696,
+          "any_low_glucose_gate_violations": 27
+        },
+        "daily_shift_12h": {
+          "scenarios": 72,
+          "mean_tir": 54.396701388888886,
+          "mean_tbr70": 6.548032407407407,
+          "mean_tbr54": 0.6799768518518519,
+          "mean_minimum": 76.29645754052137,
+          "any_low_glucose_gate_violations": 35
+        }
+      },
+      "contrasts": {
+        "daily_flat": {
+          "mean_responsive_minus_control": {
+            "tir": 6.008391203703704,
+            "tbr70": -4.204282407407407,
+            "tbr54": 0.0,
+            "minimum": 3.2245689916779785
+          },
+          "tir_higher": 57,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        },
+        "daily_shift_12h": {
+          "mean_responsive_minus_control": {
+            "tir": 9.720775462962964,
+            "tbr70": -6.500289351851852,
+            "tbr54": -0.6799768518518519,
+            "minimum": 9.356628184383565
+          },
+          "tir_higher": 60,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        }
+      }
+    },
+    "missed_lunch": {
+      "arms": {
+        "responsive": {
+          "scenarios": 72,
+          "mean_tir": 72.8269675925926,
+          "mean_tbr70": 0.0,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 86.14558529291466,
+          "any_low_glucose_gate_violations": 0
+        },
+        "daily_flat": {
+          "scenarios": 72,
+          "mean_tir": 67.9050925925926,
+          "mean_tbr70": 2.5477430555555554,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 84.77493057979767,
+          "any_low_glucose_gate_violations": 18
+        },
+        "daily_shift_12h": {
+          "scenarios": 72,
+          "mean_tir": 63.3912037037037,
+          "mean_tbr70": 5.026041666666667,
+          "mean_tbr54": 0.3949652777777778,
+          "mean_minimum": 77.72876670200876,
+          "any_low_glucose_gate_violations": 31
+        }
+      },
+      "contrasts": {
+        "daily_flat": {
+          "mean_responsive_minus_control": {
+            "tir": 4.921875,
+            "tbr70": -2.5477430555555554,
+            "tbr54": 0.0,
+            "minimum": 1.3706547131169973
+          },
+          "tir_higher": 50,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        },
+        "daily_shift_12h": {
+          "mean_responsive_minus_control": {
+            "tir": 9.43576388888889,
+            "tbr70": -5.026041666666667,
+            "tbr54": -0.3949652777777778,
+            "minimum": 8.416818590905908
+          },
+          "tir_higher": 61,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        }
+      }
+    },
+    "ordinary": {
+      "arms": {
+        "responsive": {
+          "scenarios": 72,
+          "mean_tir": 67.22800925925927,
+          "mean_tbr70": 0.0,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 85.95329343533142,
+          "any_low_glucose_gate_violations": 0
+        },
+        "daily_flat": {
+          "scenarios": 72,
+          "mean_tir": 60.685763888888886,
+          "mean_tbr70": 4.467592592592593,
+          "mean_tbr54": 0.0,
+          "mean_minimum": 82.84930912485984,
+          "any_low_glucose_gate_violations": 27
+        },
+        "daily_shift_12h": {
+          "scenarios": 72,
+          "mean_tir": 56.1328125,
+          "mean_tbr70": 6.969039351851852,
+          "mean_tbr54": 0.6915509259259259,
+          "mean_minimum": 76.36736160551224,
+          "any_low_glucose_gate_violations": 35
+        }
+      },
+      "contrasts": {
+        "daily_flat": {
+          "mean_responsive_minus_control": {
+            "tir": 6.542245370370371,
+            "tbr70": -4.467592592592593,
+            "tbr54": 0.0,
+            "minimum": 3.103984310471576
+          },
+          "tir_higher": 55,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        },
+        "daily_shift_12h": {
+          "mean_responsive_minus_control": {
+            "tir": 11.09519675925926,
+            "tbr70": -6.969039351851852,
+            "tbr54": -0.6915509259259259,
+            "minimum": 9.585931829819176
+          },
+          "tir_higher": 56,
+          "tbr70_higher": 0,
+          "tbr54_higher": 0
+        }
+      }
+    }
+  },
+  "max_daily_dose_difference_u": 2.1316282072803006e-14,
+  "scope": "Exploratory public development cohorts, fixed historical responsive designs, new meal seeds. No model trials.",
+  "plan_sha256": "b3e78e6f6c7bd1155525011bebd54216b986db6a1e43aebd3f6b57a749b123ce",
+  "paired_scenarios": 216,
+  "physiology_outcomes": 648,
+  "identity_replays": 216,
+  "max_identity_replay_error_mg_dl": 0.0
+}

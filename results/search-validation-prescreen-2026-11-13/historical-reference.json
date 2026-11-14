@@ -1,0 +1,174 @@
+{
+  "scope": "Diagnostic addendum recorded before new evaluation outcomes. No changes to original methods, budgets, primary comparisons, or gates.",
+  "addendum_sha256": "606631aff9659d500982d5f418dba9ea7276edc7fb4eca32a6ae9ce3e8a4865b",
+  "cases": [
+    {
+      "case": "dev-01",
+      "design_id": "f484c17d6421c1753f09f5f3",
+      "primary": {
+        "mean_tir": 81.23191550925927,
+        "max_trajectory_tbr70": 2.604166666666667,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.62270544742586,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 81.23191550925927,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "expanded": {
+        "mean_tir": 80.73676215277777,
+        "max_trajectory_tbr70": 2.604166666666667,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.62270544742586,
+        "trajectories": 288,
+        "feasible": true,
+        "safe_tir": 80.73676215277777,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "audit_count": 9,
+      "audit_safety_mismatches": 0
+    },
+    {
+      "case": "dev-02",
+      "design_id": "987cfb69acfeee5289183107",
+      "primary": {
+        "mean_tir": 78.38469328703702,
+        "max_trajectory_tbr70": 0.0,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 70.27204411650065,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 78.38469328703702,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "expanded": {
+        "mean_tir": 78.09208622685186,
+        "max_trajectory_tbr70": 0.0,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 70.25383101034112,
+        "trajectories": 288,
+        "feasible": true,
+        "safe_tir": 78.09208622685186,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "audit_count": 9,
+      "audit_safety_mismatches": 0
+    },
+    {
+      "case": "dev-03",
+      "design_id": "e7a1c484599838c23b883f2d",
+      "primary": {
+        "mean_tir": 81.328125,
+        "max_trajectory_tbr70": 1.5625,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.75764010209713,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 81.328125,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "expanded": {
+        "mean_tir": 81.68981481481481,
+        "max_trajectory_tbr70": 1.5625,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.75764010209713,
+        "trajectories": 288,
+        "feasible": true,
+        "safe_tir": 81.68981481481481,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "audit_count": 9,
+      "audit_safety_mismatches": 0
+    },
+    {
+      "case": "dev-04",
+      "design_id": "754c2ef8e91db04ca34d0b66",
+      "primary": {
+        "mean_tir": 27.53616898148148,
+        "max_trajectory_tbr70": 0.0,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 81.753493468349,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 27.53616898148148,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "expanded": {
+        "mean_tir": 27.892433449074076,
+        "max_trajectory_tbr70": 0.0,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 81.753493468349,
+        "trajectories": 288,
+        "feasible": true,
+        "safe_tir": 27.892433449074076,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "audit_count": 9,
+      "audit_safety_mismatches": 0
+    },
+    {
+      "case": "dev-05",
+      "design_id": "e7aa7f0a1f4d29b23d708fd5",
+      "primary": {
+        "mean_tir": 90.45211226851852,
+        "max_trajectory_tbr70": 1.25,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.9407590640072,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 90.45211226851852,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "expanded": {
+        "mean_tir": 90.54796006944444,
+        "max_trajectory_tbr70": 1.25,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 69.9407590640072,
+        "trajectories": 288,
+        "feasible": true,
+        "safe_tir": 90.54796006944444,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "audit_count": 9,
+      "audit_safety_mismatches": 0
+    },
+    {
+      "case": "dev-06",
+      "design_id": "b6fd847d50013814042bf137",
+      "primary": {
+        "mean_tir": 58.982204861111114,
+        "max_trajectory_tbr70": 2.1875,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 68.83206748969371,
+        "trajectories": 144,
+        "feasible": true,
+        "safe_tir": 58.982204861111114,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "expanded": {
+        "mean_tir": 58.696108217592595,
+        "max_trajectory_tbr70": 2.1875,
+        "max_trajectory_tbr54": 0.0,
+        "minimum_glucose": 68.83206748969371,
+        "trajectories": 288,
+        "feasible": true,
+        "safe_tir": 58.696108217592595,
+        "failed_trajectories": 0,
+        "violation_fraction": 0.0
+      },
+      "audit_count": 9,
+      "audit_safety_mismatches": 0
+    }
+  ]
+}

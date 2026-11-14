@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["rows", "mean_responsive_minus_control"],
+  "additionalProperties": false,
+  "properties": {
+    "rows": {"type": "array", "items": {"$ref": "#/$defs/row"}},
+    "mean_responsive_minus_control": {
+      "type": "object",
+      "required": ["daily_flat", "daily_shift_12h"],
+      "additionalProperties": false,
+      "properties": {
+        "daily_flat": {"$ref": "#/$defs/effects"},
+        "daily_shift_12h": {"$ref": "#/$defs/effects"}
+      }
+    }
+  },
+  "$defs": {
+    "row": {
+      "type": "object",
+      "required": ["patient", "seed", "variant", "arm", "rate_u_min", "daily_dose_u", "tir", "tbr70", "tbr54", "minimum"],
+      "additionalProperties": false,
+      "properties": {
+        "patient": {"type": "string"},
+        "seed": {"type": "integer"},
+        "variant": {"enum": ["ordinary", "missed_lunch", "large_dinner"]},
+        "arm": {"enum": ["responsive", "daily_flat", "daily_shift_12h"]},
+        "rate_u_min": {"type": "array", "minItems": 1440, "maxItems": 1440, "items": {"type": "number", "minimum": 0}},
+        "daily_dose_u": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number", "minimum": 0}},
+        "tir": {"type": "number", "minimum": 0, "maximum": 100},
+        "tbr70": {"type": "number", "minimum": 0, "maximum": 100},
+        "tbr54": {"type": "number", "minimum": 0, "maximum": 100},
+        "minimum": {"type": "number", "description": "Minimum plasma glucose in mg/dL"}
+      }
+    },
+    "effects": {
+      "type": "object",
+      "required": ["tir", "tbr70", "tbr54", "minimum"],
+      "additionalProperties": false,
+      "properties": {"tir": {"type": "number"}, "tbr70": {"type": "number"}, "tbr54": {"type": "number"}, "minimum": {"type": "number"}}
+    }
+  }
+}

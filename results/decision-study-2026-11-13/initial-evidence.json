@@ -1,0 +1,674 @@
+{
+  "dev-01": {
+    "initial": [
+      {
+        "patient": "adult#001",
+        "seed": 990070000,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 84.47916666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 72.64759276561105
+        },
+        "daily_flat": {
+          "tir": 86.04166666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 72.73496940104326
+        },
+        "daily_dose_max_difference_u": 1.4210854715202004e-14
+      },
+      {
+        "patient": "adult#001",
+        "seed": 990070001,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 80.72916666666666,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 71.24509360589444
+        },
+        "daily_flat": {
+          "tir": 80.83333333333333,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 71.93574026125617
+        },
+        "daily_dose_max_difference_u": 1.4210854715202004e-14
+      },
+      {
+        "patient": "adult#002",
+        "seed": 990070000,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 89.6875,
+          "tbr70": 0.5208333333333333,
+          "tbr54": 0.0,
+          "minimum": 69.98598920989892
+        },
+        "daily_flat": {
+          "tir": 85.52083333333333,
+          "tbr70": 3.5416666666666665,
+          "tbr54": 0.0,
+          "minimum": 68.79717890240259
+        },
+        "daily_dose_max_difference_u": 1.4210854715202004e-14
+      },
+      {
+        "patient": "adult#002",
+        "seed": 990070001,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 84.6875,
+          "tbr70": 1.4583333333333333,
+          "tbr54": 0.0,
+          "minimum": 69.88742404793966
+        },
+        "daily_flat": {
+          "tir": 84.47916666666667,
+          "tbr70": 3.6458333333333335,
+          "tbr54": 0.0,
+          "minimum": 68.68538531171448
+        },
+        "daily_dose_max_difference_u": 0.0
+      },
+      {
+        "patient": "adult#003",
+        "seed": 990070000,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 95.41666666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 71.81201656008867
+        },
+        "daily_flat": {
+          "tir": 92.5,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 70.14599409987841
+        },
+        "daily_dose_max_difference_u": 1.4210854715202004e-14
+      },
+      {
+        "patient": "adult#003",
+        "seed": 990070001,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 90.72916666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 71.77672216566862
+        },
+        "daily_flat": {
+          "tir": 87.1875,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 70.21385861062411
+        },
+        "daily_dose_max_difference_u": 2.842170943040401e-14
+      }
+    ]
+  },
+  "dev-02": {
+    "initial": [
+      {
+        "patient": "adolescent#001",
+        "seed": 990070100,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 100.0,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 115.15412372617831
+        },
+        "daily_flat": {
+          "tir": 100.0,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 114.16603550262154
+        },
+        "daily_dose_max_difference_u": 7.105427357601002e-15
+      },
+      {
+        "patient": "adolescent#001",
+        "seed": 990070101,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 100.0,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 115.00002703159778
+        },
+        "daily_flat": {
+          "tir": 100.0,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 114.75220897194012
+        },
+        "daily_dose_max_difference_u": 3.552713678800501e-15
+      },
+      {
+        "patient": "adolescent#002",
+        "seed": 990070100,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 66.875,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 71.56917491508585
+        },
+        "daily_flat": {
+          "tir": 63.020833333333336,
+          "tbr70": 3.75,
+          "tbr54": 0.0,
+          "minimum": 65.89047959625931
+        },
+        "daily_dose_max_difference_u": 1.4210854715202004e-14
+      },
+      {
+        "patient": "adolescent#002",
+        "seed": 990070101,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 67.91666666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 72.45363872579532
+        },
+        "daily_flat": {
+          "tir": 67.5,
+          "tbr70": 0.9375,
+          "tbr54": 0.0,
+          "minimum": 68.80920533202308
+        },
+        "daily_dose_max_difference_u": 1.4210854715202004e-14
+      },
+      {
+        "patient": "adolescent#003",
+        "seed": 990070100,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 65.3125,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 109.46721752104087
+        },
+        "daily_flat": {
+          "tir": 68.125,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 102.61796001805321
+        },
+        "daily_dose_max_difference_u": 7.105427357601002e-15
+      },
+      {
+        "patient": "adolescent#003",
+        "seed": 990070101,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 71.77083333333333,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 109.63926807400469
+        },
+        "daily_flat": {
+          "tir": 73.64583333333333,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 107.52393787351106
+        },
+        "daily_dose_max_difference_u": 7.105427357601002e-15
+      }
+    ]
+  },
+  "dev-03": {
+    "initial": [
+      {
+        "patient": "child#001",
+        "seed": 990070200,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 78.33333333333333,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 72.27659926098504
+        },
+        "daily_flat": {
+          "tir": 76.35416666666667,
+          "tbr70": 3.229166666666667,
+          "tbr54": 0.0,
+          "minimum": 67.85594100726426
+        },
+        "daily_dose_max_difference_u": 1.7763568394002505e-15
+      },
+      {
+        "patient": "child#001",
+        "seed": 990070201,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 91.35416666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 71.79452776084017
+        },
+        "daily_flat": {
+          "tir": 72.70833333333333,
+          "tbr70": 9.0625,
+          "tbr54": 0.0,
+          "minimum": 64.8556747361153
+        },
+        "daily_dose_max_difference_u": 3.552713678800501e-15
+      },
+      {
+        "patient": "child#002",
+        "seed": 990070200,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 95.83333333333334,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 83.77809528113528
+        },
+        "daily_flat": {
+          "tir": 93.64583333333333,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 82.71260102977354
+        },
+        "daily_dose_max_difference_u": 1.7763568394002505e-15
+      },
+      {
+        "patient": "child#002",
+        "seed": 990070201,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 100.0,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 84.29607008956908
+        },
+        "daily_flat": {
+          "tir": 100.0,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 81.55553329481313
+        },
+        "daily_dose_max_difference_u": 7.105427357601002e-15
+      },
+      {
+        "patient": "child#003",
+        "seed": 990070200,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 74.27083333333333,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 70.4768761251395
+        },
+        "daily_flat": {
+          "tir": 67.60416666666667,
+          "tbr70": 7.5,
+          "tbr54": 0.0,
+          "minimum": 66.34928321893058
+        },
+        "daily_dose_max_difference_u": 1.7763568394002505e-15
+      },
+      {
+        "patient": "child#003",
+        "seed": 990070201,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 73.22916666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 74.3408605067186
+        },
+        "daily_flat": {
+          "tir": 71.875,
+          "tbr70": 2.083333333333333,
+          "tbr54": 0.0,
+          "minimum": 69.41110328072233
+        },
+        "daily_dose_max_difference_u": 3.552713678800501e-15
+      }
+    ]
+  },
+  "dev-04": {
+    "initial": [
+      {
+        "patient": "adult#004",
+        "seed": 990070300,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 27.500000000000004,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 92.0992683357468
+        },
+        "daily_flat": {
+          "tir": 11.875,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 103.88771557161458
+        },
+        "daily_dose_max_difference_u": 0.0
+      },
+      {
+        "patient": "adult#004",
+        "seed": 990070301,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 23.125,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 92.30795622265563
+        },
+        "daily_flat": {
+          "tir": 11.770833333333334,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 100.40727423635867
+        },
+        "daily_dose_max_difference_u": 0.0
+      },
+      {
+        "patient": "adult#005",
+        "seed": 990070300,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 28.229166666666668,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 83.94960840951961
+        },
+        "daily_flat": {
+          "tir": 16.979166666666668,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 103.34238962471906
+        },
+        "daily_dose_max_difference_u": 3.552713678800501e-15
+      },
+      {
+        "patient": "adult#005",
+        "seed": 990070301,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 23.4375,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 84.64872903370257
+        },
+        "daily_flat": {
+          "tir": 15.312500000000002,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 99.03531889652494
+        },
+        "daily_dose_max_difference_u": 0.0
+      },
+      {
+        "patient": "adult#006",
+        "seed": 990070300,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 28.229166666666668,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 90.81464000691138
+        },
+        "daily_flat": {
+          "tir": 11.145833333333334,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 104.94170851107023
+        },
+        "daily_dose_max_difference_u": 1.0658141036401503e-14
+      },
+      {
+        "patient": "adult#006",
+        "seed": 990070301,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 23.229166666666668,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 95.08656867770009
+        },
+        "daily_flat": {
+          "tir": 10.625,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 100.62824410337204
+        },
+        "daily_dose_max_difference_u": 0.0
+      }
+    ]
+  },
+  "dev-05": {
+    "initial": [
+      {
+        "patient": "adolescent#004",
+        "seed": 990070400,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 94.58333333333333,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 70.88084553994666
+        },
+        "daily_flat": {
+          "tir": 84.47916666666667,
+          "tbr70": 8.645833333333334,
+          "tbr54": 0.0,
+          "minimum": 67.89384357347579
+        },
+        "daily_dose_max_difference_u": 0.0
+      },
+      {
+        "patient": "adolescent#004",
+        "seed": 990070401,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 89.16666666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 70.33981253782217
+        },
+        "daily_flat": {
+          "tir": 84.0625,
+          "tbr70": 4.0625,
+          "tbr54": 0.0,
+          "minimum": 69.42613486172074
+        },
+        "daily_dose_max_difference_u": 7.105427357601002e-15
+      },
+      {
+        "patient": "adolescent#005",
+        "seed": 990070400,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 83.95833333333333,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 74.34628538648617
+        },
+        "daily_flat": {
+          "tir": 83.4375,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 71.40192065245236
+        },
+        "daily_dose_max_difference_u": 0.0
+      },
+      {
+        "patient": "adolescent#005",
+        "seed": 990070401,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 83.22916666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 74.19203028255765
+        },
+        "daily_flat": {
+          "tir": 82.91666666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 71.97427856557516
+        },
+        "daily_dose_max_difference_u": 7.105427357601002e-15
+      },
+      {
+        "patient": "adolescent#006",
+        "seed": 990070400,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 100.0,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 83.02801756051004
+        },
+        "daily_flat": {
+          "tir": 100.0,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 81.94553499290788
+        },
+        "daily_dose_max_difference_u": 7.105427357601002e-15
+      },
+      {
+        "patient": "adolescent#006",
+        "seed": 990070401,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 98.54166666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 82.78051784876656
+        },
+        "daily_flat": {
+          "tir": 98.85416666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 82.00551813885836
+        },
+        "daily_dose_max_difference_u": 1.4210854715202004e-14
+      }
+    ]
+  },
+  "dev-06": {
+    "initial": [
+      {
+        "patient": "child#004",
+        "seed": 990070500,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 38.54166666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 133.7160873999379
+        },
+        "daily_flat": {
+          "tir": 45.625,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 114.81483932580642
+        },
+        "daily_dose_max_difference_u": 5.329070518200751e-15
+      },
+      {
+        "patient": "child#004",
+        "seed": 990070501,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 30.104166666666664,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 133.7160873999379
+        },
+        "daily_flat": {
+          "tir": 38.4375,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 108.78103128309063
+        },
+        "daily_dose_max_difference_u": 5.329070518200751e-15
+      },
+      {
+        "patient": "child#005",
+        "seed": 990070500,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 92.29166666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 76.89974235549006
+        },
+        "daily_flat": {
+          "tir": 75.0,
+          "tbr70": 17.5,
+          "tbr54": 0.0,
+          "minimum": 65.87296866006601
+        },
+        "daily_dose_max_difference_u": 3.552713678800501e-15
+      },
+      {
+        "patient": "child#005",
+        "seed": 990070501,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 93.95833333333333,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 73.85401022255449
+        },
+        "daily_flat": {
+          "tir": 75.20833333333333,
+          "tbr70": 13.125,
+          "tbr54": 0.0,
+          "minimum": 58.04398592697216
+        },
+        "daily_dose_max_difference_u": 3.552713678800501e-15
+      },
+      {
+        "patient": "child#006",
+        "seed": 990070500,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 53.85416666666667,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 109.3794480615634
+        },
+        "daily_flat": {
+          "tir": 51.145833333333336,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 102.45092227351495
+        },
+        "daily_dose_max_difference_u": 0.0
+      },
+      {
+        "patient": "child#006",
+        "seed": 990070501,
+        "variant": "ordinary",
+        "responsive": {
+          "tir": 45.104166666666664,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 108.91887156523792
+        },
+        "daily_flat": {
+          "tir": 42.291666666666664,
+          "tbr70": 0.0,
+          "tbr54": 0.0,
+          "minimum": 94.52099600576385
+        },
+        "daily_dose_max_difference_u": 5.329070518200751e-15
+      }
+    ]
+  }
+}

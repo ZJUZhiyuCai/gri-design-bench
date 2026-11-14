@@ -1,0 +1,212 @@
+{
+  "created_utc": "2026-11-13T15:04:53.396403+00:00",
+  "question": "Does checking a mixed meal panel change which fixed responsive designs merit follow-up, and do those decisions agree with a separate mixed meal panel?",
+  "scope": "Exploratory, six previously seen public development cohorts. Fixed historical designs. No model trials or clinical dose selection.",
+  "cases": {
+    "dev-01": {
+      "patients": [
+        "adult#001",
+        "adult#002",
+        "adult#003"
+      ],
+      "initial": [
+        990070000,
+        990070001
+      ],
+      "review": [
+        990070010,
+        990070011,
+        990070012,
+        990070013,
+        990070014,
+        990070015
+      ],
+      "independent": [
+        990070030,
+        990070031,
+        990070032,
+        990070033,
+        990070034,
+        990070035,
+        990070036,
+        990070037
+      ]
+    },
+    "dev-02": {
+      "patients": [
+        "adolescent#001",
+        "adolescent#002",
+        "adolescent#003"
+      ],
+      "initial": [
+        990070100,
+        990070101
+      ],
+      "review": [
+        990070110,
+        990070111,
+        990070112,
+        990070113,
+        990070114,
+        990070115
+      ],
+      "independent": [
+        990070130,
+        990070131,
+        990070132,
+        990070133,
+        990070134,
+        990070135,
+        990070136,
+        990070137
+      ]
+    },
+    "dev-03": {
+      "patients": [
+        "child#001",
+        "child#002",
+        "child#003"
+      ],
+      "initial": [
+        990070200,
+        990070201
+      ],
+      "review": [
+        990070210,
+        990070211,
+        990070212,
+        990070213,
+        990070214,
+        990070215
+      ],
+      "independent": [
+        990070230,
+        990070231,
+        990070232,
+        990070233,
+        990070234,
+        990070235,
+        990070236,
+        990070237
+      ]
+    },
+    "dev-04": {
+      "patients": [
+        "adult#004",
+        "adult#005",
+        "adult#006"
+      ],
+      "initial": [
+        990070300,
+        990070301
+      ],
+      "review": [
+        990070310,
+        990070311,
+        990070312,
+        990070313,
+        990070314,
+        990070315
+      ],
+      "independent": [
+        990070330,
+        990070331,
+        990070332,
+        990070333,
+        990070334,
+        990070335,
+        990070336,
+        990070337
+      ]
+    },
+    "dev-05": {
+      "patients": [
+        "adolescent#004",
+        "adolescent#005",
+        "adolescent#006"
+      ],
+      "initial": [
+        990070400,
+        990070401
+      ],
+      "review": [
+        990070410,
+        990070411,
+        990070412,
+        990070413,
+        990070414,
+        990070415
+      ],
+      "independent": [
+        990070430,
+        990070431,
+        990070432,
+        990070433,
+        990070434,
+        990070435,
+        990070436,
+        990070437
+      ]
+    },
+    "dev-06": {
+      "patients": [
+        "child#004",
+        "child#005",
+        "child#006"
+      ],
+      "initial": [
+        990070500,
+        990070501
+      ],
+      "review": [
+        990070510,
+        990070511,
+        990070512,
+        990070513,
+        990070514,
+        990070515
+      ],
+      "independent": [
+        990070530,
+        990070531,
+        990070532,
+        990070533,
+        990070534,
+        990070535,
+        990070536,
+        990070537
+      ]
+    }
+  },
+  "policies": {
+    "initial": "Two ordinary seeds. Retain this initial decision without additional observations.",
+    "more_ordinary": "Six fresh ordinary seeds. Recompute the decision on the review panel alone.",
+    "mixed_meals": "First two of the six review seeds, crossed with all three variants. Recompute on the review panel alone.",
+    "independent": "Eight separate seeds crossed with all three variants. Run after decisions are written."
+  },
+  "unit_of_decision": "One fixed responsive formulation and its public three-patient cohort.",
+  "control": "Open-loop rate uniform within each of days 2 and 3, with daily delivered amounts and day-one rate history matched to responsive.",
+  "primary_floor_pp": 5,
+  "sensitivity_floors_pp": [
+    0,
+    5,
+    10
+  ],
+  "advance_rule": "Mean paired TIR gain meets the stated floor, mean paired TBR70 change is at most zero, and no responsive trajectory breaches TBR70 >4%, TBR54 >1%, or minimum <40 mg/dL. These are finite-panel research-screening criteria.",
+  "files_sha256": {
+    "scripts/run_decision_study.py": "f20a99753ff44a500cdc4bc14dffa352958913bd82dde46fb044097306a2e23b",
+    "results/v0.2/calibration/robust-reference.json": "dbf0c377002ee1ec78b1da49874a8fd3f5e164f478759daf855c366d82f246fa",
+    "requirements-lock.txt": "85479068b2ebc7732dfebd046848f1c330e36d78948846f704797290a6f0481b",
+    "src/gri_bench/api.py": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "src/gri_bench/native.py": "bc748cb2560fcbc7a7852811d271fe9d025644735cc2b79737d6c000e9553aae",
+    "src/gri_bench/physiology.py": "a391604da8aed369e7dee2d1a7c081c88ffc824aad4afd620038d82bcaef06c2",
+    "src/gri_bench/release.py": "571aa5f5b2cf829bf20082a9dfc3ef26e3e8f329b4f6d44e948669732435269d",
+    "src/gri_bench/timing_study.py": "aa41b78df4d67b9af067fc8543723bf66f05aaacd7882ba42eff1023dfadd9f4",
+    "instances/dev/dev-01.json": "25a230add714c1bbf55c1e502efcadcb9c08c1dd661897a0129ebc0f663c7e71",
+    "instances/dev/dev-02.json": "76e9292d28546f012b74e0a8b0f8246a6a994470c989db9e3da19b91c557295f",
+    "instances/dev/dev-03.json": "e58e575867c744968435a91ed4b3cb8c4641b68e1f88f031a2931ffc713e8c1d",
+    "instances/dev/dev-04.json": "1f7a01514712e3a9bb6f09cca6d6bb70d1c73de90aea4d5db2bbf29fb1fd16fb",
+    "instances/dev/dev-05.json": "c4f0201ddd07268aa43221317f6ad4285c6f66ac8bf383765e6f70eefdcf59cc",
+    "instances/dev/dev-06.json": "cc7fc5f4faf85835317120f0eb50bf3a72e5a8b6ad3a1777da18daa52955003e"
+  }
+}

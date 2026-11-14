@@ -1,0 +1,1026 @@
+{
+  "frozen_utc": "2026-11-13T15:47:52.653371+00:00",
+  "protocol": {
+    "question": "Can a low-glucose release measurement or a glucose-step response measurement improve which fixed candidate formulations are advanced for further in-vitro work?",
+    "literature": {
+      "article": "https://doi.org/10.1038/s41565-025-01860-0",
+      "figure": "https://www.nature.com/articles/s41565-025-01860-0/figures/2",
+      "sheet": "Figure 2i",
+      "material": "i-crystal-1",
+      "concentrations_mg_dl": [
+        0,
+        100,
+        200,
+        400
+      ],
+      "sample_minutes": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70
+      ],
+      "replicates_per_concentration": 3,
+      "source_workbook_sha256": "42a54d364180a2931010b9f7bc4d7b96b0996d22f445b97727a29fda6ae4027a",
+      "historical_conditional_fit_sha256": "3b5575c212836c51d36970f6e64c5b855121ad0627f46e3106e4dad0e1b5a6fd",
+      "relative_leak_bootstrap_endpoints": [
+        1.525782885662927,
+        2.3296221371880423
+      ],
+      "tau_profile_support_minutes": [
+        0.1,
+        10.0
+      ],
+      "step_experiment_precedent": "https://doi.org/10.1038/s41551-023-01138-7",
+      "interpretation": "Conditional fit to cumulative release at fixed glucose. Ten-minute sampling leaves the fast edge unresolved. The fitted startup lag is excluded. No translation of assay amplitude into human insulin units."
+    },
+    "cases": [
+      "dev-01",
+      "dev-02",
+      "dev-03",
+      "dev-04",
+      "dev-05",
+      "dev-06"
+    ],
+    "candidate_source": "results/v0.2/calibration/robust-reference.json",
+    "leak_levels": {
+      "lower": 1.53,
+      "higher": 2.33
+    },
+    "tau_levels_minutes": {
+      "faster": 2.0,
+      "slower": 10.0
+    },
+    "perturbation": "Cross two leakage levels with two response time constants for every historical design. Keep release amplitude, EC50, Hill exponent, reservoir and scaling fixed. Also replay the historical nominal design as a descriptive anchor. The four corners are stress cases, not a joint confidence region or a prevalence estimate.",
+    "control": "For each material state and scenario, use a replay uniform within each of days 2 and 3, matching that state's own delivered amount on each day and its full first-day rate history.",
+    "seeds": {
+      "base": 991180000,
+      "case_stride": 100,
+      "planning_offsets": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "independent_offsets": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "variants": [
+      "ordinary",
+      "missed_lunch",
+      "large_dinner"
+    ],
+    "advance_rule": {
+      "tir_gain_floor_pp": 5,
+      "tbr70_mean_change_max_pp": 0,
+      "maximum_trajectory_tbr70_pct": 4,
+      "maximum_trajectory_tbr54_pct": 1,
+      "minimum_trajectory_glucose_mg_dl": 40
+    },
+    "tir_floor_sensitivity_pp": [
+      0,
+      10
+    ],
+    "assays": {
+      "leak": "Idealized one-unit observation of the lower/higher leakage category, conceptually a sustained low-glucose release measurement with a separately established responsive amplitude.",
+      "delay": "Idealized one-unit observation of the faster/slower category, conceptually a time-resolved glucose-step measurement with sufficient temporal resolution.",
+      "both": "Two-unit diagnostic reveals both categories; outside the one-assay comparison."
+    },
+    "decision_policy": "All four hidden states have equal weight within a case. A policy sees only the planning table and its chosen assay result. Advance if a strict majority of compatible states meets the planning rule; ties defer. Case-specific selection minimizes planning errors with deterministic leak-first ties. The global fixed assay minimizes summed planning errors across all cases with the same tie rule.",
+    "agent_gate": {
+      "minimum_confirmed_preferences_each_direction": 1,
+      "minimum_errors_saved_vs_best_heldout_fixed": 2,
+      "description": "At least one case per assay has a strict advantage over the other assay on both planning and independent panels. The case-specific policy locked on planning data saves at least two of 24 classification errors versus even the better of the two global fixed assays on the independent panel. Neither false advances nor misses may increase relative to the planning-selected global fixed assay. Apply to the main rule only. Count cases, not trajectories, when judging transfer."
+    }
+  },
+  "cases": {
+    "dev-01": {
+      "instance": {
+        "id": "dev-01",
+        "split": "development",
+        "patients": [
+          "adult#001",
+          "adult#002",
+          "adult#003"
+        ],
+        "tdi": {
+          "adult#001": 50.416652,
+          "adult#002": 57.86877688,
+          "adult#003": 56.4297186222
+        },
+        "bounds": {
+          "theta_a": [
+            0.0,
+            0.007
+          ],
+          "relative_leak": [
+            0.5124966150526034,
+            5.518918645844859
+          ],
+          "ec50_mg_dl": [
+            59.26305046791457,
+            816.1143093473472
+          ],
+          "hill_n": [
+            0.5880395112623367,
+            24.0
+          ],
+          "tau_min": [
+            0.05,
+            20.0
+          ],
+          "theta_L": [
+            0.4,
+            4.0
+          ]
+        },
+        "constant_theta_c_bounds": [
+          0.0,
+          0.007
+        ],
+        "training_seeds": [
+          6111001
+        ],
+        "variants": [
+          "ordinary",
+          "missed_lunch",
+          "large_dinner"
+        ],
+        "days": 3,
+        "warmup_minutes": 1440,
+        "reference_weight_kg": 86.0704,
+        "patient_seed": 2026111101,
+        "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+      },
+      "nominal": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.0002355872763411028,
+          "relative_leak": 1.9512442380544404,
+          "ec50_mg_dl": 73.81496849159744,
+          "hill_n": 11.280885132968004,
+          "tau_min": 0.12185480599428894,
+          "theta_L": 3.6707992604287245
+        }
+      },
+      "states": {
+        "lower_leak_faster_response": {
+          "leak": "lower",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0002355872763411028,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 73.81496849159744,
+              "hill_n": 11.280885132968004,
+              "tau_min": 2.0,
+              "theta_L": 3.6707992604287245
+            }
+          }
+        },
+        "lower_leak_slower_response": {
+          "leak": "lower",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0002355872763411028,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 73.81496849159744,
+              "hill_n": 11.280885132968004,
+              "tau_min": 10.0,
+              "theta_L": 3.6707992604287245
+            }
+          }
+        },
+        "higher_leak_faster_response": {
+          "leak": "higher",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0002355872763411028,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 73.81496849159744,
+              "hill_n": 11.280885132968004,
+              "tau_min": 2.0,
+              "theta_L": 3.6707992604287245
+            }
+          }
+        },
+        "higher_leak_slower_response": {
+          "leak": "higher",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0002355872763411028,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 73.81496849159744,
+              "hill_n": 11.280885132968004,
+              "tau_min": 10.0,
+              "theta_L": 3.6707992604287245
+            }
+          }
+        }
+      },
+      "panels": {
+        "planning": [
+          991180000,
+          991180001,
+          991180002,
+          991180003
+        ],
+        "independent": [
+          991180030,
+          991180031,
+          991180032,
+          991180033,
+          991180034,
+          991180035,
+          991180036,
+          991180037
+        ]
+      }
+    },
+    "dev-02": {
+      "instance": {
+        "id": "dev-02",
+        "split": "development",
+        "patients": [
+          "adolescent#001",
+          "adolescent#002",
+          "adolescent#003"
+        ],
+        "tdi": {
+          "adolescent#001": 36.7339146827,
+          "adolescent#002": 62.031042736,
+          "adolescent#003": 24.2427803659
+        },
+        "bounds": {
+          "theta_a": [
+            0.0,
+            0.007
+          ],
+          "relative_leak": [
+            0.5124966150526034,
+            5.518918645844859
+          ],
+          "ec50_mg_dl": [
+            59.26305046791457,
+            816.1143093473472
+          ],
+          "hill_n": [
+            0.5880395112623367,
+            24.0
+          ],
+          "tau_min": [
+            0.05,
+            20.0
+          ],
+          "theta_L": [
+            0.4,
+            4.0
+          ]
+        },
+        "constant_theta_c_bounds": [
+          0.0,
+          0.007
+        ],
+        "training_seeds": [
+          6111002
+        ],
+        "variants": [
+          "ordinary",
+          "missed_lunch",
+          "large_dinner"
+        ],
+        "days": 3,
+        "warmup_minutes": 1440,
+        "reference_weight_kg": 86.0704,
+        "patient_seed": 2026111101,
+        "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+      },
+      "nominal": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.00018338454809701797,
+          "relative_leak": 2.0668529084793934,
+          "ec50_mg_dl": 117.62046612289997,
+          "hill_n": 13.649926562615729,
+          "tau_min": 0.20668230202790225,
+          "theta_L": 2.67588448189869
+        }
+      },
+      "states": {
+        "lower_leak_faster_response": {
+          "leak": "lower",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.00018338454809701797,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 117.62046612289997,
+              "hill_n": 13.649926562615729,
+              "tau_min": 2.0,
+              "theta_L": 2.67588448189869
+            }
+          }
+        },
+        "lower_leak_slower_response": {
+          "leak": "lower",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.00018338454809701797,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 117.62046612289997,
+              "hill_n": 13.649926562615729,
+              "tau_min": 10.0,
+              "theta_L": 2.67588448189869
+            }
+          }
+        },
+        "higher_leak_faster_response": {
+          "leak": "higher",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.00018338454809701797,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 117.62046612289997,
+              "hill_n": 13.649926562615729,
+              "tau_min": 2.0,
+              "theta_L": 2.67588448189869
+            }
+          }
+        },
+        "higher_leak_slower_response": {
+          "leak": "higher",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.00018338454809701797,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 117.62046612289997,
+              "hill_n": 13.649926562615729,
+              "tau_min": 10.0,
+              "theta_L": 2.67588448189869
+            }
+          }
+        }
+      },
+      "panels": {
+        "planning": [
+          991180100,
+          991180101,
+          991180102,
+          991180103
+        ],
+        "independent": [
+          991180130,
+          991180131,
+          991180132,
+          991180133,
+          991180134,
+          991180135,
+          991180136,
+          991180137
+        ]
+      }
+    },
+    "dev-03": {
+      "instance": {
+        "id": "dev-03",
+        "split": "development",
+        "patients": [
+          "child#001",
+          "child#002",
+          "child#003"
+        ],
+        "tdi": {
+          "child#001": 17.4729287744,
+          "child#002": 18.1778368801,
+          "child#003": 16.0218757795
+        },
+        "bounds": {
+          "theta_a": [
+            0.0,
+            0.007
+          ],
+          "relative_leak": [
+            0.5124966150526034,
+            5.518918645844859
+          ],
+          "ec50_mg_dl": [
+            59.26305046791457,
+            816.1143093473472
+          ],
+          "hill_n": [
+            0.5880395112623367,
+            24.0
+          ],
+          "tau_min": [
+            0.05,
+            20.0
+          ],
+          "theta_L": [
+            0.4,
+            4.0
+          ]
+        },
+        "constant_theta_c_bounds": [
+          0.0,
+          0.007
+        ],
+        "training_seeds": [
+          6111003
+        ],
+        "variants": [
+          "ordinary",
+          "missed_lunch",
+          "large_dinner"
+        ],
+        "days": 3,
+        "warmup_minutes": 1440,
+        "reference_weight_kg": 86.0704,
+        "patient_seed": 2026111101,
+        "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+      },
+      "nominal": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.00018609216949757622,
+          "relative_leak": 1.6350161716892593,
+          "ec50_mg_dl": 87.00331172725568,
+          "hill_n": 13.139465262042586,
+          "tau_min": 0.1194262942412134,
+          "theta_L": 2.2569355773765745
+        }
+      },
+      "states": {
+        "lower_leak_faster_response": {
+          "leak": "lower",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.00018609216949757622,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 87.00331172725568,
+              "hill_n": 13.139465262042586,
+              "tau_min": 2.0,
+              "theta_L": 2.2569355773765745
+            }
+          }
+        },
+        "lower_leak_slower_response": {
+          "leak": "lower",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.00018609216949757622,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 87.00331172725568,
+              "hill_n": 13.139465262042586,
+              "tau_min": 10.0,
+              "theta_L": 2.2569355773765745
+            }
+          }
+        },
+        "higher_leak_faster_response": {
+          "leak": "higher",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.00018609216949757622,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 87.00331172725568,
+              "hill_n": 13.139465262042586,
+              "tau_min": 2.0,
+              "theta_L": 2.2569355773765745
+            }
+          }
+        },
+        "higher_leak_slower_response": {
+          "leak": "higher",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.00018609216949757622,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 87.00331172725568,
+              "hill_n": 13.139465262042586,
+              "tau_min": 10.0,
+              "theta_L": 2.2569355773765745
+            }
+          }
+        }
+      },
+      "panels": {
+        "planning": [
+          991180200,
+          991180201,
+          991180202,
+          991180203
+        ],
+        "independent": [
+          991180230,
+          991180231,
+          991180232,
+          991180233,
+          991180234,
+          991180235,
+          991180236,
+          991180237
+        ]
+      }
+    },
+    "dev-04": {
+      "instance": {
+        "id": "dev-04",
+        "split": "development",
+        "patients": [
+          "adult#004",
+          "adult#005",
+          "adult#006"
+        ],
+        "tdi": {
+          "adult#004": 33.8079423727,
+          "adult#005": 68.315922352,
+          "adult#006": 61.38880928
+        },
+        "bounds": {
+          "theta_a": [
+            0.0,
+            0.007
+          ],
+          "relative_leak": [
+            0.5124966150526034,
+            5.518918645844859
+          ],
+          "ec50_mg_dl": [
+            59.26305046791457,
+            816.1143093473472
+          ],
+          "hill_n": [
+            0.5880395112623367,
+            24.0
+          ],
+          "tau_min": [
+            0.05,
+            20.0
+          ],
+          "theta_L": [
+            0.4,
+            1.25
+          ]
+        },
+        "constant_theta_c_bounds": [
+          0.0,
+          0.007
+        ],
+        "training_seeds": [
+          6111004
+        ],
+        "variants": [
+          "ordinary",
+          "missed_lunch",
+          "large_dinner"
+        ],
+        "days": 3,
+        "warmup_minutes": 1440,
+        "reference_weight_kg": 86.0704,
+        "patient_seed": 2026111101,
+        "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+      },
+      "nominal": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.0002734577189374841,
+          "relative_leak": 1.4561663149972979,
+          "ec50_mg_dl": 61.982755478717415,
+          "hill_n": 0.6628447764298869,
+          "tau_min": 19.75138766669191,
+          "theta_L": 1.25
+        }
+      },
+      "states": {
+        "lower_leak_faster_response": {
+          "leak": "lower",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0002734577189374841,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 61.982755478717415,
+              "hill_n": 0.6628447764298869,
+              "tau_min": 2.0,
+              "theta_L": 1.25
+            }
+          }
+        },
+        "lower_leak_slower_response": {
+          "leak": "lower",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0002734577189374841,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 61.982755478717415,
+              "hill_n": 0.6628447764298869,
+              "tau_min": 10.0,
+              "theta_L": 1.25
+            }
+          }
+        },
+        "higher_leak_faster_response": {
+          "leak": "higher",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0002734577189374841,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 61.982755478717415,
+              "hill_n": 0.6628447764298869,
+              "tau_min": 2.0,
+              "theta_L": 1.25
+            }
+          }
+        },
+        "higher_leak_slower_response": {
+          "leak": "higher",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0002734577189374841,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 61.982755478717415,
+              "hill_n": 0.6628447764298869,
+              "tau_min": 10.0,
+              "theta_L": 1.25
+            }
+          }
+        }
+      },
+      "panels": {
+        "planning": [
+          991180300,
+          991180301,
+          991180302,
+          991180303
+        ],
+        "independent": [
+          991180330,
+          991180331,
+          991180332,
+          991180333,
+          991180334,
+          991180335,
+          991180336,
+          991180337
+        ]
+      }
+    },
+    "dev-05": {
+      "instance": {
+        "id": "dev-05",
+        "split": "development",
+        "patients": [
+          "adolescent#004",
+          "adolescent#005",
+          "adolescent#006"
+        ],
+        "tdi": {
+          "adolescent#004": 35.2528665417,
+          "adolescent#005": 34.0047207467,
+          "adolescent#006": 49.5812925714
+        },
+        "bounds": {
+          "theta_a": [
+            0.0,
+            0.007
+          ],
+          "relative_leak": [
+            1.5,
+            5.518918645844859
+          ],
+          "ec50_mg_dl": [
+            59.26305046791457,
+            400.0
+          ],
+          "hill_n": [
+            0.5880395112623367,
+            24.0
+          ],
+          "tau_min": [
+            0.05,
+            20.0
+          ],
+          "theta_L": [
+            0.4,
+            4.0
+          ]
+        },
+        "constant_theta_c_bounds": [
+          0.0,
+          0.007
+        ],
+        "training_seeds": [
+          6111005
+        ],
+        "variants": [
+          "ordinary",
+          "missed_lunch",
+          "large_dinner"
+        ],
+        "days": 3,
+        "warmup_minutes": 1440,
+        "reference_weight_kg": 86.0704,
+        "patient_seed": 2026111101,
+        "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+      },
+      "nominal": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 9.828500250688706e-05,
+          "relative_leak": 5.491910565888406,
+          "ec50_mg_dl": 87.97611146357146,
+          "hill_n": 7.91910207490708,
+          "tau_min": 0.05161774780883581,
+          "theta_L": 2.76518341105175
+        }
+      },
+      "states": {
+        "lower_leak_faster_response": {
+          "leak": "lower",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 9.828500250688706e-05,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 87.97611146357146,
+              "hill_n": 7.91910207490708,
+              "tau_min": 2.0,
+              "theta_L": 2.76518341105175
+            }
+          }
+        },
+        "lower_leak_slower_response": {
+          "leak": "lower",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 9.828500250688706e-05,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 87.97611146357146,
+              "hill_n": 7.91910207490708,
+              "tau_min": 10.0,
+              "theta_L": 2.76518341105175
+            }
+          }
+        },
+        "higher_leak_faster_response": {
+          "leak": "higher",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 9.828500250688706e-05,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 87.97611146357146,
+              "hill_n": 7.91910207490708,
+              "tau_min": 2.0,
+              "theta_L": 2.76518341105175
+            }
+          }
+        },
+        "higher_leak_slower_response": {
+          "leak": "higher",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 9.828500250688706e-05,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 87.97611146357146,
+              "hill_n": 7.91910207490708,
+              "tau_min": 10.0,
+              "theta_L": 2.76518341105175
+            }
+          }
+        }
+      },
+      "panels": {
+        "planning": [
+          991180400,
+          991180401,
+          991180402,
+          991180403
+        ],
+        "independent": [
+          991180430,
+          991180431,
+          991180432,
+          991180433,
+          991180434,
+          991180435,
+          991180436,
+          991180437
+        ]
+      }
+    },
+    "dev-06": {
+      "instance": {
+        "id": "dev-06",
+        "split": "development",
+        "patients": [
+          "child#004",
+          "child#005",
+          "child#006"
+        ],
+        "tdi": {
+          "child#004": 19.8151389176,
+          "child#005": 40.9345323552,
+          "child#006": 20.2240173973
+        },
+        "bounds": {
+          "theta_a": [
+            0.0,
+            0.007
+          ],
+          "relative_leak": [
+            0.5124966150526034,
+            5.518918645844859
+          ],
+          "ec50_mg_dl": [
+            59.26305046791457,
+            816.1143093473472
+          ],
+          "hill_n": [
+            0.5880395112623367,
+            4.0
+          ],
+          "tau_min": [
+            2.0,
+            20.0
+          ],
+          "theta_L": [
+            0.4,
+            4.0
+          ]
+        },
+        "constant_theta_c_bounds": [
+          0.0,
+          0.007
+        ],
+        "training_seeds": [
+          6111006
+        ],
+        "variants": [
+          "ordinary",
+          "missed_lunch",
+          "large_dinner"
+        ],
+        "days": 3,
+        "warmup_minutes": 1440,
+        "reference_weight_kg": 86.0704,
+        "patient_seed": 2026111101,
+        "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+      },
+      "nominal": {
+        "mode": "responsive",
+        "parameters": {
+          "theta_a": 0.0003304538449805153,
+          "relative_leak": 0.5167791347085505,
+          "ec50_mg_dl": 137.59767181311128,
+          "hill_n": 3.999971791401783,
+          "tau_min": 2.0,
+          "theta_L": 3.5672591841554357
+        }
+      },
+      "states": {
+        "lower_leak_faster_response": {
+          "leak": "lower",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0003304538449805153,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 137.59767181311128,
+              "hill_n": 3.999971791401783,
+              "tau_min": 2.0,
+              "theta_L": 3.5672591841554357
+            }
+          }
+        },
+        "lower_leak_slower_response": {
+          "leak": "lower",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0003304538449805153,
+              "relative_leak": 1.53,
+              "ec50_mg_dl": 137.59767181311128,
+              "hill_n": 3.999971791401783,
+              "tau_min": 10.0,
+              "theta_L": 3.5672591841554357
+            }
+          }
+        },
+        "higher_leak_faster_response": {
+          "leak": "higher",
+          "delay": "faster",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0003304538449805153,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 137.59767181311128,
+              "hill_n": 3.999971791401783,
+              "tau_min": 2.0,
+              "theta_L": 3.5672591841554357
+            }
+          }
+        },
+        "higher_leak_slower_response": {
+          "leak": "higher",
+          "delay": "slower",
+          "design": {
+            "mode": "responsive",
+            "parameters": {
+              "theta_a": 0.0003304538449805153,
+              "relative_leak": 2.33,
+              "ec50_mg_dl": 137.59767181311128,
+              "hill_n": 3.999971791401783,
+              "tau_min": 10.0,
+              "theta_L": 3.5672591841554357
+            }
+          }
+        }
+      },
+      "panels": {
+        "planning": [
+          991180500,
+          991180501,
+          991180502,
+          991180503
+        ],
+        "independent": [
+          991180530,
+          991180531,
+          991180532,
+          991180533,
+          991180534,
+          991180535,
+          991180536,
+          991180537
+        ]
+      }
+    }
+  },
+  "files_sha256": {
+    "scripts/run_material_validation.py": "2e71b7a35494d4cc48ccc07ec3b5f635e8eab0585c023d4aaf522e9c6fe51648",
+    "experiments/material-validation-2026-11-13/protocol.json": "f34385d62db29cd6bea2a4c7c1aab23fde64e9cd1c77609c16c09760b7b8f0a7",
+    "results/v0.2/calibration/robust-reference.json": "dbf0c377002ee1ec78b1da49874a8fd3f5e164f478759daf855c366d82f246fa",
+    "requirements-lock.txt": "85479068b2ebc7732dfebd046848f1c330e36d78948846f704797290a6f0481b",
+    "src/gri_bench/api.py": "a770c4d26a1481fe442ae5f6e49c5c2b55df32b62c692677c7182cb0e89a386e",
+    "src/gri_bench/native.py": "bc748cb2560fcbc7a7852811d271fe9d025644735cc2b79737d6c000e9553aae",
+    "src/gri_bench/physiology.py": "a391604da8aed369e7dee2d1a7c081c88ffc824aad4afd620038d82bcaef06c2",
+    "src/gri_bench/release.py": "571aa5f5b2cf829bf20082a9dfc3ef26e3e8f329b4f6d44e948669732435269d",
+    "src/gri_bench/timing_study.py": "aa41b78df4d67b9af067fc8543723bf66f05aaacd7882ba42eff1023dfadd9f4",
+    "instances/dev/dev-01.json": "25a230add714c1bbf55c1e502efcadcb9c08c1dd661897a0129ebc0f663c7e71",
+    "instances/dev/dev-02.json": "76e9292d28546f012b74e0a8b0f8246a6a994470c989db9e3da19b91c557295f",
+    "instances/dev/dev-03.json": "e58e575867c744968435a91ed4b3cb8c4641b68e1f88f031a2931ffc713e8c1d",
+    "instances/dev/dev-04.json": "1f7a01514712e3a9bb6f09cca6d6bb70d1c73de90aea4d5db2bbf29fb1fd16fb",
+    "instances/dev/dev-05.json": "c4f0201ddd07268aa43221317f6ad4285c6f66ac8bf383765e6f70eefdcf59cc",
+    "instances/dev/dev-06.json": "cc7fc5f4faf85835317120f0eb50bf3a72e5a8b6ad3a1777da18daa52955003e"
+  }
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "a": "de_fixed",
+    "b": "de_search",
+    "cases": [
+      "dev-01",
+      "dev-02",
+      "dev-03",
+      "dev-04",
+      "dev-05",
+      "dev-06"
+    ],
+    "differences": [
+      5.655381944444443,
+      7.793402777777775,
+      -0.8100405092592524,
+      -1.9597800925925952,
+      -10.046151620370374,
+      -3.1465567129629637
+    ],
+    "mean": -0.4189573688271612,
+    "positive_cases": 2,
+    "negative_cases": 4,
+    "exploratory_case_bootstrap95": [
+      -5.050829475308643,
+      4.179832175925926
+    ],
+    "expanded32_mean": -0.41450858410493946
+  },
+  {
+    "a": "de_racing",
+    "b": "de_fixed",
+    "cases": [
+      "dev-01",
+      "dev-02",
+      "dev-03",
+      "dev-04",
+      "dev-05",
+      "dev-06"
+    ],
+    "differences": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean": 0.0,
+    "positive_cases": 0,
+    "negative_cases": 0,
+    "exploratory_case_bootstrap95": [
+      0.0,
+      0.0
+    ],
+    "expanded32_mean": 0.0
+  },
+  {
+    "a": "de_fixed",
+    "b": "de_early",
+    "cases": [
+      "dev-01",
+      "dev-02",
+      "dev-03",
+      "dev-04",
+      "dev-05",
+      "dev-06"
+    ],
+    "differences": [
+      0.0,
+      17.20558449074074,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean": 2.867597415123457,
+    "positive_cases": 1,
+    "negative_cases": 0,
+    "exploratory_case_bootstrap95": [
+      0.0,
+      8.60279224537037
+    ],
+    "expanded32_mean": 2.842242959104938
+  },
+  {
+    "a": "de_fixed",
+    "b": "de_no_margin",
+    "cases": [
+      "dev-01",
+      "dev-02",
+      "dev-03",
+      "dev-04",
+      "dev-05",
+      "dev-06"
+    ],
+    "differences": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean": 0.0,
+    "positive_cases": 0,
+    "negative_cases": 0,
+    "exploratory_case_bootstrap95": [
+      0.0,
+      0.0
+    ],
+    "expanded32_mean": 0.0
+  },
+  {
+    "a": "de_fixed",
+    "b": "sobol_fixed",
+    "cases": [
+      "dev-01",
+      "dev-02",
+      "dev-03",
+      "dev-04",
+      "dev-05",
+      "dev-06"
+    ],
+    "differences": [
+      29.38411458333333,
+      -4.363136574074076,
+      5.0230034722222285,
+      15.56394675925926,
+      7.197916666666664,
+      -6.424334490740742
+    ],
+    "mean": 7.730251736111111,
+    "positive_cases": 4,
+    "negative_cases": 2,
+    "exploratory_case_bootstrap95": [
+      -1.5400511188271626,
+      17.758511766975307
+    ],
+    "expanded32_mean": 7.726466049382714
+  },
+  {
+    "a": "de_fixed",
+    "b": "constant_fixed",
+    "cases": [
+      "dev-01",
+      "dev-02",
+      "dev-03",
+      "dev-04",
+      "dev-05",
+      "dev-06"
+    ],
+    "differences": [
+      10.577256944444436,
+      -3.5543981481481524,
+      -18.800925925925924,
+      14.63527199074074,
+      3.9458912037037024,
+      5.197193287037036
+    ],
+    "mean": 2.00004822530864,
+    "positive_cases": 4,
+    "negative_cases": 2,
+    "exploratory_case_bootstrap95": [
+      -7.363787615740741,
+      9.719473379629626
+    ],
+    "expanded32_mean": 2.0827305169753068
+  },
+  {
+    "a": "constant_fixed",
+    "b": "constant_search",
+    "cases": [
+      "dev-01",
+      "dev-02",
+      "dev-03",
+      "dev-04",
+      "dev-05",
+      "dev-06"
+    ],
+    "differences": [
+      -2.0666956018518476,
+      -5.761429398148145,
+      -1.33984375,
+      -2.997685185185185,
+      -18.876446759259267,
+      -2.658130787037037
+    ],
+    "mean": -5.616705246913581,
+    "positive_cases": 0,
+    "negative_cases": 6,
+    "exploratory_case_bootstrap95": [
+      -11.18593267746914,
+      -2.1121720679012346
+    ],
+    "expanded32_mean": -3.3902150848765404
+  },
+  {
+    "a": "fixed_transfer",
+    "b": "de_fixed",
+    "cases": [
+      "dev-01",
+      "dev-02",
+      "dev-03",
+      "dev-04",
+      "dev-05",
+      "dev-06"
+    ],
+    "differences": [
+      -7.899016203703702,
+      -30.859519675925924,
+      -34.26721643518519,
+      1.581597222222225,
+      29.17390046296297,
+      -10.453559027777777
+    ],
+    "mean": -8.787302276234566,
+    "positive_cases": 2,
+    "negative_cases": 4,
+    "exploratory_case_bootstrap95": [
+      -24.76767457561728,
+      8.390793788580252
+    ],
+    "expanded32_mean": -8.526656539351853
+  }
+]

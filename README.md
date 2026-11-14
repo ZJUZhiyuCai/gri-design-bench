@@ -2,76 +2,153 @@
 
 English · [简体中文](README.zh-CN.md)
 
-GRI Design Bench compares how well AI agents design glucose-responsive insulin formulations under a fixed compute budget. Each agent chooses one set of formulation parameters for three virtual patients. It searches with a public simulator and submits a design for independent testing on new meal scenarios.
+GRI Design Bench uses glucose-responsive insulin (GRI) release in virtual patients to test whether an agent can run a controlled pharmaceutical simulation and produce results that an independent verifier can reproduce. The release-timing task asks how changing when insulin is released affects simulated glucose when each day's amount stays the same.
 
-[![Glucose changes release from a fixed formulation. The agent tests and submits candidates. An independent verifier scores the final design on 144 trajectories.](docs/assets/benchmark-overview-v02-en.png)](docs/assets/benchmark-overview-v02-en.svg)
+| Task or study | What it does | Trial status | Entry |
+|---|---|---|---|
+| Release-timing attribution | Local Harbor prototype: build dose-matched controls and reproduce 54 result rows | Four local verifier control runs. Agent trials pending. | [Harbor prototype](harbor/release-timing-attribution/README.md) |
+| Timing study | Author-run dry experiment using the same controls on 216 paired scenarios | Author study complete | [Timing study](results/timing-study-2026-11-13/README.md) |
+| v0.2 design task | Formulation search under a compute budget, scored on new meals | 9 routes, 324 attempts | [Nine-route report](results/v0.2/expansion-2026-11-13/README.md) |
+| Material validation diagnostic | Which added measurement changes a go/no-go call on 24 simulated states | Baseline comparison complete | [Material validation](results/material-validation-2026-11-13/README.md) |
 
-## v0.2 nine-route results
+[Scientific scope](docs/SCIENTIFIC_SCOPE.md) · [Capabilities and research loop](docs/RESEARCH_LOOP.md) · [Material bounds](docs/BOUND_PROVENANCE.md)
 
-Nine Magpie routes ran the same six development and six sealed cases three times each, for 324 model attempts. The table shows the 18 sealed attempts per route. Round ranks align repetition indices across the two batches.
+## Why GRI comes first
 
-| Rank | Model | Valid designs | Safety passes | Mean score (%) | Round ranks |
-|---:|---|---:|---:|---:|---:|
-| 1 | GPT-6.1 Sol | 18/18 | 18/18 | 73.11 | 1 / 1 / 1 |
-| 2 | DeepSeek V4.1 Flash 1017 | 18/18 | 14/18 | 51.97 | 3 / 3 / 4 |
-| 3 | MiniMax-M3.1-Flash | 16/18 | 14/18 | 51.82 | 5 / 2 / 2 |
-| 4 | MiMo-V2.6-Pro | 15/18 | 11/18 | 46.47 | 2 / 5 / 3 |
-| 5 | Kimi-K3.1-Pro | 18/18 | 14/18 | 44.23 | 4 / 4 / 5 |
-| 6 | Step-5-Preview | 16/18 | 10/18 | 33.39 | 6 / 6 / 6 |
-| 7 | GLM-5.3 | 18/18 | 9/18 | 20.95 | 7 / 7 / 8 |
-| 8 | Qwen3.8-27B | 8/18 | 5/18 | 17.06 | 9 / 8 / 7 |
-| 9 | Intern-S2 | 3/18 | 2/18 | 8.20 | 8 / 9 / 9 |
+Differences between responsive and steady release can arise from the amount of insulin delivered each day or its timing. In the simulator, we can keep the virtual patient, meals, initial state and each day's delivered amount fixed, then change the within-day release schedule.
 
-The constant and responsive baselines scored 49.48% and 58.03%. GPT-6.1 Sol scored +23.63 points relative to constant release, with a case-resampled 95% interval of [+9.04, +38.22].
+GRI design has a precedent in pharmacokinetic modeling, and published in vitro measurements inform part of our release model. We chose it first because the daily dose constraint can be checked row by row. Paired results show where the timing effect appears or weakens and help identify assumptions to test in the next experiment. [Bakh et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28841775/) · [Xu et al. (2025)](https://pubmed.ncbi.nlm.nih.gov/40011600/)
 
-GPT-6.1 Sol led in all three rounds. Across the three round pairs, Kendall's τ-b spanned 0.67–0.83. 7 of the 36 model pairs swapped order at least once. The second and third routes were 0.15 points apart, with a paired 95% interval of [-15.55, +16.03].
+A complementary prototype in the broader project uses plasma concentrations from a published growth-hormone patch study to infer effective timing and predict the held-out tails of the same three curves. That task tests inference from measurements. The GRI task tests whether an agent can implement a controlled comparison and reproduce its outcomes. [Han et al. (2025)](https://pubmed.ncbi.nlm.nih.gov/40181125/)
 
-[Nine-route report and round data](results/v0.2/expansion-2026-11-13/README.md) · [Original three-route run](results/v0.2/sealed/README.md) · [Calibration](results/v0.2/calibration/README.md)
+## Release-timing attribution
 
-## The design problem
+The task supplies a fixed formulation and three virtual patients from `dev-06`, two meal seeds, and three meal variants (ordinary meals, a missed lunch and a larger dinner). The agent runs three simulations per scenario.
 
-Insulin helps move glucose from the blood into cells. A person with type 1 diabetes needs replacement insulin. Too little leaves glucose high, while too much can cause hypoglycemia. The amount needed changes with meals and differs across patients. [Type 1 diabetes overview, NIDDK](https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes)
+1. Simulate the original responsive release trajectory.
+2. Keep day 1 unchanged and redistribute each of days 2 and 3 uniformly within that day.
+3. Keep day 1 unchanged and shift each of days 2 and 3 by 12 hours, wrapping within the day.
 
-A glucose-responsive formulation acts like a valve attached to a finite insulin reservoir. Higher glucose in the surrounding tissue opens it further. The same formulation can release insulin slowly when glucose falls. Leakage, response delay and the remaining supply shape how much insulin is released. **The agent fixes the formulation parameters in advance. The release rate changes throughout the simulation.**
+Both controls use the completed responsive release trace for a retrospective comparison. Day 1 serves as a common warm-up.
 
-| Parameter | What it controls |
+The agent writes `/app/output/results.json` with 54 rows (3 patients × 2 seeds × 3 meal variants × 3 arms). Each row includes the release trajectory, daily amounts, time in range (TIR, 70–180 mg/dL), time below 70 and 54 mg/dL, and minimum glucose. Time fractions use days 2–3. Minimum glucose uses all three days. The file also reports mean paired differences for each control comparison. [Task instructions](harbor/release-timing-attribution/instruction.md)
+
+A separate Docker verifier checks row coverage, release rates, per-day dose matching, the shared warm-up, control definitions, glucose metrics and paired differences. It uses a reference generated independently with the original `simglucose` physiology and native dopri5. Correct results pass within numerical tolerance, including when the responsive arm performs worse.
+
+| Author control | Verifier result |
+|---|---:|
+| Native solution | 1 |
+| RK4 release solver with native replay | 1 |
+| Empty submission | 0 |
+| Uniform release pooled across two days | 0 |
+
+The last control keeps the three-day total nearly unchanged but alters one day's dose by 0.554 U, which would mix amount and timing. [Control record](results/timing-study-2026-11-13/harbor-verification.json)
+
+The task specifies the controls and tests whether the agent can execute and reproduce the analysis. This local prototype follows the Terminal-Bench-Science pattern of containerized research tasks and programmatic verification. Agent difficulty and suitability for upstream inclusion remain to be evaluated. [Terminal-Bench-Science task criteria](https://www.terminal-bench-science.ai/contribute)
+
+## Author-run timing study
+
+The authors ran the same comparison on six fixed designs across the public development cohorts. The 216 paired meal scenarios reuse 18 virtual patients. The Harbor task uses its own smaller input panel.
+
+Compared with dose-matched daily uniform release, the responsive arm had mean TIR **5.82 percentage points higher** and mean time below 70 mg/dL **3.74 points lower**. Cohort-level TIR gains ranged from 0.55 to 12.30 points. Some individual scenarios saw no gain.
+
+[Plan](results/timing-study-2026-11-13/plan.json) · [Summary](results/timing-study-2026-11-13/summary.json) · [Per-scenario outcomes](results/timing-study-2026-11-13/outcomes.json)
+
+### From output to paper evidence
+
+| Paper element | What the artifacts provide |
+|---|---|
+| Methods | Run plan recorded before simulation, with the three arms, shared warm-up, per-day dose matching and analysis window |
+| Main figure | Paired differences by cohort, recomputable from the per-scenario table |
+| Supplement | The full per-scenario table, including scenarios without improvement, plus input and script versions |
+| Conclusion | Limited to this simulator and these six fixed designs |
+
+The verifier checks the submitted JSON. Before using an agent's analysis in a paper, review its code and provenance and rerun it independently. The strength of further validation depends on the claim. To measure whether agents reduce research work, compare them with a strong fixed script on the same held-out inputs, with the same simulation budget and verifier. Track researcher time spent preparing, checking and correcting each result.
+
+## v0.2 design task
+
+[![v0.2 design task: glucose changes release from a fixed formulation. The agent tests and submits candidates. An independent verifier scores the final design on 144 trajectories.](docs/assets/benchmark-overview-v02-en.png)](docs/assets/benchmark-overview-v02-en.svg)
+
+The agent receives three virtual patients, material bounds and two training meal seeds. It has 30 cumulative CPU seconds to search for a responsive or constant-rate formulation. The latest valid design accepted through `submit_design` is scored. The same parameters apply to all three patients, with release and reservoir scaled to each patient's reference daily insulin amount.
+
+| Responsive parameter | What it controls |
 |---|---|
 | `theta_a` | Overall release scale |
 | `relative_leak` | Basal release when the glucose response is weak |
 | `ec50_mg_dl` | Glucose level at half of the maximum responsive component |
 | `hill_n` | How sharply release increases around that midpoint |
-| `tau_min` | How quickly the formulation responds to changes in tissue glucose |
+| `tau_min` | How quickly the formulation responds to tissue glucose |
 | `theta_L` | Total insulin available in the reservoir |
 
-A larger dinner tests whether release rises enough. A missed lunch tests whether leakage and delayed responses cause low glucose when demand falls. A larger reservoir can sustain release over several days. How long it lasts depends on the release trajectory for each patient. The benchmark derives the release model from data on membrane-coated insulin crystals and uses synthetic bounds for the optimization task. [Xu et al. (2025)](https://pubmed.ncbi.nlm.nih.gov/40011600/) · [Release model](src/gri_bench/release.py) · [Material bounds](docs/BOUND_PROVENANCE.md)
+The verifier reruns 144 three-day trajectories (3 patients × 16 fresh meal seeds × 3 meal variants) with native dopri5. Every trajectory must meet all three simulated glucose limits.
 
-## How a design earns a score
+- Time below 70 mg/dL is at most 4% on days 2–3.
+- Time below 54 mg/dL is at most 1% on days 2–3.
+- Minute-sampled glucose stays at or above 40 mg/dL across all three days.
 
-1. The agent receives the cohort, material bounds and two training meal seeds. It can use 30 CPU seconds to try candidates with the public simulator.
-2. The agent calls `submit_design` with a static responsive design or a constant release rate. The host validates it and saves the latest accepted version. A single parameter vector applies to the cohort, with release and reservoir scaled by each patient's native daily insulin dose.
-3. The verifier runs **144 three-day trajectories per design**. It combines three patients, 16 fresh meal seeds and three meal variants. It checks every trajectory for time below 70 mg/dL at most 4%, time below 54 mg/dL at most 1%, and minimum glucose at least 40 mg/dL across the full three days.
+A passing design scores its mean TIR on days 2–3. Missing or invalid submissions, failed simulations, glucose-limit failures and resource violations score zero. [v0.2 protocol](docs/v02/PROTOCOL.md) · [Release model](src/gri_bench/release.py)
 
-A design that passes earns its mean **time in range (TIR)**, the percentage of evaluated time at 70–180 mg/dL. The first day is warmup for time-based metrics. A TIR of 75% represents 36 of the remaining 48 hours in range. If any safety check fails or the agent submits no valid design, the attempt scores zero. The leaderboard averages all attempts. The equal-budget constant baseline shows how much benefit a search finds beyond a steady release rate. [v0.2 protocol](docs/v02/PROTOCOL.md)
+Nine Magpie routes ran six development and six sealed cases three times each, for 324 attempts. The 24 fixed-optimizer baseline runs used the same search CPU budget. The sealed cases use new combinations from the same public pool of virtual patients and new meal scenarios. Each route has 18 sealed attempts.
 
-## Run a development case
+| Route or baseline | Valid designs | Passes glucose limits | Mean score (%) |
+|---|---:|---:|---:|
+| GPT-6.1 Sol (highest) | 18/18 | 18/18 | 73.11 |
+| Intern-S2 (lowest) | 3/18 | 2/18 | 8.20 |
+| Responsive baseline | | | 58.03 |
+| Constant baseline | | | 49.48 |
 
-Use Python 3.12, curl and Docker with cgroup v2.
+On the sealed set, pairwise agreement between round rankings ranged from 0.67 to 0.83 (Kendall's τ-b). Seven of 36 route pairs changed order at least once. The end-to-end score reflects tool use, search, budget management and submission quality. The full report shows development results and failure categories.
+
+[Nine-route report and full table](results/v0.2/expansion-2026-11-13/README.md) · [Original three-route run](results/v0.2/sealed/README.md) · [Calibration](results/v0.2/calibration/README.md)
+
+## Which additional evidence changes a decision?
+
+This study asks which added measurement would change a go/no-go call on a candidate. It covers six cohorts with four simulated material states each, judged on an independent meal panel.
+
+- Always verifying baseline leakage raised agreement with the reference decision from 22/24 to 24/24, recovering two missed states.
+- Always verifying response delay stayed at 22/24.
+- Choosing the measurement per case picked the same measurement on these inputs and matched the fixed leakage baseline.
+
+The measurements were idealized simulator queries. The case-specific policy matched the fixed leakage policy. This study stopped at the baseline comparison. The next experiment prioritizes measured release at low glucose and the amount remaining in the reservoir. [Research loop](docs/RESEARCH_LOOP.md) · [Material validation study](results/material-validation-2026-11-13/README.md)
+
+## Model sources and scope
+
+- **Release model.** Part of the release shape comes from a historical fit to the in vitro curve of membrane-coated insulin crystals in Xu et al. Xu et al. studied a material that responds to glucose and β-hydroxybutyrate. The benchmark uses a glucose-only model with a finite reservoir, expanded fit bounds and synthetic dose and loading constraints. [Bound provenance](docs/BOUND_PROVENANCE.md)
+- **Physiology.** The benchmark uses `simglucose 0.2.11`, an open-source research implementation with 30 virtual subjects, together with a custom release layer and a three-day multi-meal protocol. The physiological equations omit hypoglycemia counterregulation. [simglucose](https://github.com/jxx123/simglucose)
+- **Regulatory precedent.** In 2008 the FDA accepted the original UVA/Padova type 1 diabetes simulator in lieu of animal trials for specific preclinical tests of artificial-pancreas closed-loop control strategies. The developers describe the validated and accepted setting as limited to a single meal. This project's three-day protocol supports model-specific conclusions. Clinical safety, efficacy and material feasibility require separate evidence. [Kovatchev et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC2681269/) · [Dalla Man et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4454102/)
+
+## Reproduce
+
+Set up the project from the repository root with Python 3.12.
 
 ```bash
-git clone https://github.com/ZJUZhiyuCai/gri-design-bench.git
-cd gri-design-bench
 python3.12 -m venv .venv
 .venv/bin/python -m pip install setuptools==80.10.2 wheel==0.48.0
 .venv/bin/python -m pip install --no-build-isolation -r requirements-lock.txt
 .venv/bin/python -m pip install --no-deps -e .
-docker --context default build -t gri-bench:0.1.1 .
-docker --context default build -f Dockerfile.v02 -t gri-bench:0.2.0 .
-.venv/bin/python -m gri_bench.v02.matrix --context default \
+```
+
+Run the timing study in the Python environment and use a new output directory.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 NUMBA_NUM_THREADS=1 \
+  .venv/bin/python -I scripts/run_timing_study.py --output private/my-timing-study
+```
+
+A v0.2 development case also needs `curl` and a running Docker context with cgroup v2. Set `gri_docker_context` to its name.
+
+```bash
+gri_docker_context=default
+docker --context "$gri_docker_context" build -t gri-bench:0.1.1 .
+docker --context "$gri_docker_context" build -f Dockerfile.v02 -t gri-bench:0.2.0 .
+.venv/bin/python -m gri_bench.v02.matrix --context "$gri_docker_context" \
   --case dev-01 --output private/my-baseline
 ```
 
-To run an agent on the same case, add `--model YOUR_ROUTE` and choose a new output directory. The runner uses `GRI_MODEL_BASE_URL` (default `http://127.0.0.1:3425/v1`) and the optional `GRI_MODEL_API_KEY`. It stores the submission, trial record and native score in the output directory.
+This runs the fixed responsive baseline without a model account. To run an agent on the same case, add `--model YOUR_ROUTE` and choose a new output directory. The runner uses `GRI_MODEL_BASE_URL` (default `http://127.0.0.1:3425/v1`) and the optional `GRI_MODEL_API_KEY`. Use a fresh output directory for each run. The directory stores the submission, trial record and native score.
+
+Build and offline control instructions for the Harbor task are in [its README](harbor/release-timing-attribution/README.md).
 
 [Development inputs](instances/dev/) · [Evaluation seeds](instances/v0.2/development-evaluation.json) · [Registered development plan](contract/v0.2/development-plan.json) · [Sealed commitments](contract/v0.2/sealed-manifest.json)
 
-The [v0.1.1 archive](https://github.com/ZJUZhiyuCai/gri-design-bench/tree/31b8731f927691ccb4ed46064d3974dd5bf55373) contains the nine-route, 324-attempt comparison under the earlier task. The benchmark uses [simglucose 0.2.11](https://github.com/jxx123/simglucose) physiology, Numba RK4 for search and native dopri5 for scoring. [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
+The v0.1.1 archive holds an earlier nine-route, 324-attempt comparison using its own protocol. [v0.1.1 archive](https://github.com/ZJUZhiyuCai/gri-design-bench/tree/31b8731f927691ccb4ed46064d3974dd5bf55373) · [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)

@@ -1,0 +1,1425 @@
+{
+  "written_utc": "2026-11-13T15:52:58.638618+00:00",
+  "plan_sha256": "0f0acb38faa4321036d2ef19b97b89e262632295297a38cffe38ae71dce86c89",
+  "locked": {
+    "5": {
+      "selected_fixed_assay": "leak",
+      "planning_errors_fixed": {
+        "leak": 0,
+        "delay": 2
+      },
+      "planning_by_case": {
+        "dev-01": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        },
+        "dev-02": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        },
+        "dev-03": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        },
+        "dev-04": {
+          "labels": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": true,
+              "lower_leak_slower_response": true,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": true,
+              "lower_leak_slower_response": true,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 2
+          },
+          "selected_assay": "leak"
+        },
+        "dev-05": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        },
+        "dev-06": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        }
+      },
+      "decisions": {
+        "dev-01": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-02": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-03": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-04": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-05": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-06": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        }
+      }
+    },
+    "0": {
+      "selected_fixed_assay": "leak",
+      "planning_errors_fixed": {
+        "leak": 0,
+        "delay": 8
+      },
+      "planning_by_case": {
+        "dev-01": {
+          "labels": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": true,
+              "lower_leak_slower_response": true,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": true,
+              "lower_leak_slower_response": true,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 2
+          },
+          "selected_assay": "leak"
+        },
+        "dev-02": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        },
+        "dev-03": {
+          "labels": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": true,
+              "lower_leak_slower_response": true,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": true,
+              "lower_leak_slower_response": true,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 2
+          },
+          "selected_assay": "leak"
+        },
+        "dev-04": {
+          "labels": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": true,
+              "lower_leak_slower_response": true,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": true,
+              "lower_leak_slower_response": true,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 2
+          },
+          "selected_assay": "leak"
+        },
+        "dev-05": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": true,
+            "higher_leak_slower_response": true
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": true,
+              "higher_leak_slower_response": true
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": true,
+              "higher_leak_slower_response": true
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 2
+          },
+          "selected_assay": "leak"
+        },
+        "dev-06": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        }
+      },
+      "decisions": {
+        "dev-01": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-02": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-03": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-04": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-05": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": true,
+            "higher_leak_slower_response": true
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": true,
+            "higher_leak_slower_response": true
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": true,
+            "higher_leak_slower_response": true
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": true,
+            "higher_leak_slower_response": true
+          }
+        },
+        "dev-06": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        }
+      }
+    },
+    "10": {
+      "selected_fixed_assay": "leak",
+      "planning_errors_fixed": {
+        "leak": 0,
+        "delay": 2
+      },
+      "planning_by_case": {
+        "dev-01": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        },
+        "dev-02": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        },
+        "dev-03": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        },
+        "dev-04": {
+          "labels": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": true,
+              "lower_leak_slower_response": true,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": true,
+              "lower_leak_slower_response": true,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 2
+          },
+          "selected_assay": "leak"
+        },
+        "dev-05": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        },
+        "dev-06": {
+          "labels": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "options": {
+            "none": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "leak": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "delay": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            },
+            "both": {
+              "lower_leak_faster_response": false,
+              "lower_leak_slower_response": false,
+              "higher_leak_faster_response": false,
+              "higher_leak_slower_response": false
+            }
+          },
+          "planning_errors": {
+            "leak": 0,
+            "delay": 0
+          },
+          "selected_assay": "leak"
+        }
+      },
+      "decisions": {
+        "dev-01": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-02": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-03": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-04": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": true,
+            "lower_leak_slower_response": true,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-05": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        },
+        "dev-06": {
+          "no_assay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_leak": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "fixed_delay": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "selected_fixed": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "case_specific": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          },
+          "both_assays": {
+            "lower_leak_faster_response": false,
+            "lower_leak_slower_response": false,
+            "higher_leak_faster_response": false,
+            "higher_leak_slower_response": false
+          }
+        }
+      }
+    }
+  }
+}

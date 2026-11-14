@@ -1,0 +1,1188 @@
+{
+  "scope": "Post-screen descriptive diagnostics; not preregistered hypotheses or new optimization.",
+  "agreements": [
+    {
+      "a": "de_fixed",
+      "b": "de_racing",
+      "identical_designs": 30,
+      "total_pairs": 30,
+      "changed_pairs": []
+    },
+    {
+      "a": "de_fixed",
+      "b": "de_no_margin",
+      "identical_designs": 30,
+      "total_pairs": 30,
+      "changed_pairs": []
+    },
+    {
+      "a": "de_fixed",
+      "b": "de_early",
+      "identical_designs": 28,
+      "total_pairs": 30,
+      "changed_pairs": [
+        {
+          "case": "dev-02",
+          "repetition": 3,
+          "a_primary": {
+            "mean_tir": 67.62659143518518,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 75.78097187939073,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 67.62659143518518,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 75.29658564814814,
+            "max_trajectory_tbr70": 8.125,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 68.93084182151534,
+            "trajectories": 144,
+            "feasible": false,
+            "safe_tir": 0.0,
+            "failed_trajectories": 6,
+            "violation_fraction": 0.041666666666666664
+          }
+        },
+        {
+          "case": "dev-02",
+          "repetition": 5,
+          "a_primary": {
+            "mean_tir": 18.40133101851852,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 103.0505542816842,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 18.40133101851852,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 27.622974537037035,
+            "max_trajectory_tbr70": 6.354166666666666,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 68.41471462636432,
+            "trajectories": 144,
+            "feasible": false,
+            "safe_tir": 0.0,
+            "failed_trajectories": 9,
+            "violation_fraction": 0.0625
+          }
+        }
+      ]
+    },
+    {
+      "a": "de_fixed",
+      "b": "de_search",
+      "identical_designs": 15,
+      "total_pairs": 30,
+      "changed_pairs": [
+        {
+          "case": "dev-01",
+          "repetition": 2,
+          "a_primary": {
+            "mean_tir": 20.577980324074073,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 106.55372106387048,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 20.577980324074073,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 54.08203125,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 99.33779312206268,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 54.08203125,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-01",
+          "repetition": 3,
+          "a_primary": {
+            "mean_tir": 61.78096064814814,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 89.20417636879753,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 61.78096064814814,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 79.14279513888889,
+            "max_trajectory_tbr70": 6.875000000000001,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 68.2744680365148,
+            "trajectories": 144,
+            "feasible": false,
+            "safe_tir": 0.0,
+            "failed_trajectories": 8,
+            "violation_fraction": 0.05555555555555555
+          }
+        },
+        {
+          "case": "dev-02",
+          "repetition": 1,
+          "a_primary": {
+            "mean_tir": 18.40133101851852,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 103.0505542816842,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 18.40133101851852,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 23.82957175925926,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 124.75918600288537,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 23.82957175925926,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-02",
+          "repetition": 2,
+          "a_primary": {
+            "mean_tir": 20.005063657407405,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 127.86023354752344,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 20.005063657407405,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 55.852864583333336,
+            "max_trajectory_tbr70": 5.416666666666667,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 63.33954244685782,
+            "trajectories": 144,
+            "feasible": false,
+            "safe_tir": 0.0,
+            "failed_trajectories": 2,
+            "violation_fraction": 0.013888888888888888
+          }
+        },
+        {
+          "case": "dev-02",
+          "repetition": 3,
+          "a_primary": {
+            "mean_tir": 67.62659143518518,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 75.78097187939073,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 67.62659143518518,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 75.29658564814814,
+            "max_trajectory_tbr70": 8.125,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 68.93084182151534,
+            "trajectories": 144,
+            "feasible": false,
+            "safe_tir": 0.0,
+            "failed_trajectories": 6,
+            "violation_fraction": 0.041666666666666664
+          }
+        },
+        {
+          "case": "dev-02",
+          "repetition": 5,
+          "a_primary": {
+            "mean_tir": 18.40133101851852,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 103.0505542816842,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 18.40133101851852,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 61.63773148148149,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 82.24287640672027,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 61.63773148148149,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-03",
+          "repetition": 2,
+          "a_primary": {
+            "mean_tir": 24.793836805555557,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 94.86879562136698,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 24.793836805555557,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 28.47873263888889,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 99.11161211832412,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 28.47873263888889,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-03",
+          "repetition": 5,
+          "a_primary": {
+            "mean_tir": 24.793836805555557,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 94.86879562136698,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 24.793836805555557,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 25.15914351851852,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 79.10054252763423,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 25.15914351851852,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-04",
+          "repetition": 2,
+          "a_primary": {
+            "mean_tir": 17.60054976851852,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 97.71304269039474,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 17.60054976851852,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 27.39945023148148,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 84.77886152990749,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 27.39945023148148,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-05",
+          "repetition": 1,
+          "a_primary": {
+            "mean_tir": 44.4654224537037,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 124.49195978897914,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 44.4654224537037,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 47.85590277777778,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 122.20250453362428,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 47.85590277777778,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-05",
+          "repetition": 2,
+          "a_primary": {
+            "mean_tir": 49.922598379629626,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 116.29805969175777,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 49.922598379629626,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 86.53211805555556,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 76.83858210894364,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 86.53211805555556,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-05",
+          "repetition": 4,
+          "a_primary": {
+            "mean_tir": 32.80960648148149,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 99.74377889546885,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 32.80960648148149,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 34.626736111111114,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 120.96150588814305,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 34.626736111111114,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-05",
+          "repetition": 5,
+          "a_primary": {
+            "mean_tir": 81.32595486111111,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 84.62361290540525,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 81.32595486111111,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 89.73958333333333,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 70.5112960531845,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 89.73958333333333,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-06",
+          "repetition": 1,
+          "a_primary": {
+            "mean_tir": 1.8381076388888888,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 81.14074219596155,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 1.8381076388888888,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 18.04253472222222,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 101.58123100721025,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 18.04253472222222,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        },
+        {
+          "case": "dev-06",
+          "repetition": 2,
+          "a_primary": {
+            "mean_tir": 15.009403935185183,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 105.68538816521337,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 15.009403935185183,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          },
+          "b_primary": {
+            "mean_tir": 14.537760416666666,
+            "max_trajectory_tbr70": 0.0,
+            "max_trajectory_tbr54": 0.0,
+            "minimum_glucose": 114.47944057813595,
+            "trajectories": 144,
+            "feasible": true,
+            "safe_tir": 14.537760416666666,
+            "failed_trajectories": 0,
+            "violation_fraction": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "case_methods": [
+    {
+      "case": "dev-01",
+      "method": "de_search",
+      "attempts": 5,
+      "score16": 45.741898148148145,
+      "safe16": 4,
+      "score32": 46.23206018518518,
+      "safe32": 4
+    },
+    {
+      "case": "dev-01",
+      "method": "de_fixed",
+      "attempts": 5,
+      "score16": 51.39728009259259,
+      "safe16": 5,
+      "score32": 51.9634693287037,
+      "safe32": 5
+    },
+    {
+      "case": "dev-01",
+      "method": "de_racing",
+      "attempts": 5,
+      "score16": 51.39728009259259,
+      "safe16": 5,
+      "score32": 51.9634693287037,
+      "safe32": 5
+    },
+    {
+      "case": "dev-01",
+      "method": "sobol_fixed",
+      "attempts": 5,
+      "score16": 22.01316550925926,
+      "safe16": 5,
+      "score32": 23.132233796296298,
+      "safe32": 5
+    },
+    {
+      "case": "dev-01",
+      "method": "constant_search",
+      "attempts": 5,
+      "score16": 42.88671875,
+      "safe16": 5,
+      "score32": 43.451967592592595,
+      "safe32": 5
+    },
+    {
+      "case": "dev-01",
+      "method": "constant_fixed",
+      "attempts": 5,
+      "score16": 40.82002314814815,
+      "safe16": 5,
+      "score32": 41.43373842592593,
+      "safe32": 5
+    },
+    {
+      "case": "dev-01",
+      "method": "de_no_margin",
+      "attempts": 5,
+      "score16": 51.39728009259259,
+      "safe16": 5,
+      "score32": 51.9634693287037,
+      "safe32": 5
+    },
+    {
+      "case": "dev-01",
+      "method": "de_early",
+      "attempts": 5,
+      "score16": 51.39728009259259,
+      "safe16": 5,
+      "score32": 51.9634693287037,
+      "safe32": 5
+    },
+    {
+      "case": "dev-01",
+      "method": "fixed_transfer",
+      "attempts": 1,
+      "score16": 43.498263888888886,
+      "safe16": 1,
+      "score32": 44.625289351851855,
+      "safe32": 1
+    },
+    {
+      "case": "dev-02",
+      "method": "de_search",
+      "attempts": 5,
+      "score16": 23.06611689814815,
+      "safe16": 3,
+      "score32": 22.760489004629633,
+      "safe32": 3
+    },
+    {
+      "case": "dev-02",
+      "method": "de_fixed",
+      "attempts": 5,
+      "score16": 30.859519675925924,
+      "safe16": 5,
+      "score32": 30.811631944444443,
+      "safe32": 5
+    },
+    {
+      "case": "dev-02",
+      "method": "de_racing",
+      "attempts": 5,
+      "score16": 30.859519675925924,
+      "safe16": 5,
+      "score32": 30.811631944444443,
+      "safe32": 5
+    },
+    {
+      "case": "dev-02",
+      "method": "sobol_fixed",
+      "attempts": 5,
+      "score16": 35.22265625,
+      "safe16": 5,
+      "score32": 35.06358506944444,
+      "safe32": 5
+    },
+    {
+      "case": "dev-02",
+      "method": "constant_search",
+      "attempts": 5,
+      "score16": 40.17534722222222,
+      "safe16": 5,
+      "score32": 39.64879918981482,
+      "safe32": 5
+    },
+    {
+      "case": "dev-02",
+      "method": "constant_fixed",
+      "attempts": 5,
+      "score16": 34.413917824074076,
+      "safe16": 5,
+      "score32": 33.72135416666667,
+      "safe32": 5
+    },
+    {
+      "case": "dev-02",
+      "method": "de_no_margin",
+      "attempts": 5,
+      "score16": 30.859519675925924,
+      "safe16": 5,
+      "score32": 30.811631944444443,
+      "safe32": 5
+    },
+    {
+      "case": "dev-02",
+      "method": "de_early",
+      "attempts": 5,
+      "score16": 13.653935185185185,
+      "safe16": 3,
+      "score32": 13.758174189814815,
+      "safe32": 3
+    },
+    {
+      "case": "dev-02",
+      "method": "fixed_transfer",
+      "attempts": 1,
+      "score16": 0.0,
+      "safe16": 0,
+      "score32": 0.0,
+      "safe32": 0
+    },
+    {
+      "case": "dev-03",
+      "method": "de_search",
+      "attempts": 5,
+      "score16": 35.07725694444444,
+      "safe16": 5,
+      "score32": 34.981119791666664,
+      "safe32": 5
+    },
+    {
+      "case": "dev-03",
+      "method": "de_fixed",
+      "attempts": 5,
+      "score16": 34.26721643518519,
+      "safe16": 5,
+      "score32": 34.04636863425926,
+      "safe32": 5
+    },
+    {
+      "case": "dev-03",
+      "method": "de_racing",
+      "attempts": 5,
+      "score16": 34.26721643518519,
+      "safe16": 5,
+      "score32": 34.04636863425926,
+      "safe32": 5
+    },
+    {
+      "case": "dev-03",
+      "method": "sobol_fixed",
+      "attempts": 5,
+      "score16": 29.244212962962962,
+      "safe16": 5,
+      "score32": 28.875578703703706,
+      "safe32": 5
+    },
+    {
+      "case": "dev-03",
+      "method": "constant_search",
+      "attempts": 5,
+      "score16": 54.407986111111114,
+      "safe16": 5,
+      "score32": 40.95044849537037,
+      "safe32": 4
+    },
+    {
+      "case": "dev-03",
+      "method": "constant_fixed",
+      "attempts": 5,
+      "score16": 53.068142361111114,
+      "safe16": 5,
+      "score32": 52.99594907407407,
+      "safe32": 5
+    },
+    {
+      "case": "dev-03",
+      "method": "de_no_margin",
+      "attempts": 5,
+      "score16": 34.26721643518519,
+      "safe16": 5,
+      "score32": 34.04636863425926,
+      "safe32": 5
+    },
+    {
+      "case": "dev-03",
+      "method": "de_early",
+      "attempts": 5,
+      "score16": 34.26721643518519,
+      "safe16": 5,
+      "score32": 34.04636863425926,
+      "safe32": 5
+    },
+    {
+      "case": "dev-03",
+      "method": "fixed_transfer",
+      "attempts": 1,
+      "score16": 0.0,
+      "safe16": 0,
+      "score32": 0.0,
+      "safe32": 0
+    },
+    {
+      "case": "dev-04",
+      "method": "de_search",
+      "attempts": 5,
+      "score16": 25.745659722222225,
+      "safe16": 5,
+      "score32": 26.023075810185187,
+      "safe32": 5
+    },
+    {
+      "case": "dev-04",
+      "method": "de_fixed",
+      "attempts": 5,
+      "score16": 23.78587962962963,
+      "safe16": 5,
+      "score32": 23.959997106481485,
+      "safe32": 5
+    },
+    {
+      "case": "dev-04",
+      "method": "de_racing",
+      "attempts": 5,
+      "score16": 23.78587962962963,
+      "safe16": 5,
+      "score32": 23.959997106481485,
+      "safe32": 5
+    },
+    {
+      "case": "dev-04",
+      "method": "sobol_fixed",
+      "attempts": 5,
+      "score16": 8.22193287037037,
+      "safe16": 5,
+      "score32": 8.387659143518519,
+      "safe32": 5
+    },
+    {
+      "case": "dev-04",
+      "method": "constant_search",
+      "attempts": 5,
+      "score16": 12.148292824074074,
+      "safe16": 3,
+      "score32": 12.235677083333334,
+      "safe32": 3
+    },
+    {
+      "case": "dev-04",
+      "method": "constant_fixed",
+      "attempts": 5,
+      "score16": 9.15060763888889,
+      "safe16": 4,
+      "score32": 9.164207175925926,
+      "safe32": 4
+    },
+    {
+      "case": "dev-04",
+      "method": "de_no_margin",
+      "attempts": 5,
+      "score16": 23.78587962962963,
+      "safe16": 5,
+      "score32": 23.959997106481485,
+      "safe32": 5
+    },
+    {
+      "case": "dev-04",
+      "method": "de_early",
+      "attempts": 5,
+      "score16": 23.78587962962963,
+      "safe16": 5,
+      "score32": 23.959997106481485,
+      "safe32": 5
+    },
+    {
+      "case": "dev-04",
+      "method": "fixed_transfer",
+      "attempts": 1,
+      "score16": 25.367476851851855,
+      "safe16": 1,
+      "score32": 25.87890625,
+      "safe32": 1
+    },
+    {
+      "case": "dev-05",
+      "method": "de_search",
+      "attempts": 5,
+      "score16": 67.63368055555556,
+      "safe16": 5,
+      "score32": 67.34338831018519,
+      "safe32": 5
+    },
+    {
+      "case": "dev-05",
+      "method": "de_fixed",
+      "attempts": 5,
+      "score16": 57.58752893518518,
+      "safe16": 5,
+      "score32": 57.20811631944444,
+      "safe32": 5
+    },
+    {
+      "case": "dev-05",
+      "method": "de_racing",
+      "attempts": 5,
+      "score16": 57.58752893518518,
+      "safe16": 5,
+      "score32": 57.20811631944444,
+      "safe32": 5
+    },
+    {
+      "case": "dev-05",
+      "method": "sobol_fixed",
+      "attempts": 5,
+      "score16": 50.38961226851852,
+      "safe16": 5,
+      "score32": 49.80975115740741,
+      "safe32": 5
+    },
+    {
+      "case": "dev-05",
+      "method": "constant_search",
+      "attempts": 5,
+      "score16": 72.51808449074075,
+      "safe16": 5,
+      "score32": 72.07863136574073,
+      "safe32": 5
+    },
+    {
+      "case": "dev-05",
+      "method": "constant_fixed",
+      "attempts": 5,
+      "score16": 53.64163773148148,
+      "safe16": 5,
+      "score32": 53.22714120370371,
+      "safe32": 5
+    },
+    {
+      "case": "dev-05",
+      "method": "de_no_margin",
+      "attempts": 5,
+      "score16": 57.58752893518518,
+      "safe16": 5,
+      "score32": 57.20811631944444,
+      "safe32": 5
+    },
+    {
+      "case": "dev-05",
+      "method": "de_early",
+      "attempts": 5,
+      "score16": 57.58752893518518,
+      "safe16": 5,
+      "score32": 57.20811631944444,
+      "safe32": 5
+    },
+    {
+      "case": "dev-05",
+      "method": "fixed_transfer",
+      "attempts": 1,
+      "score16": 86.76142939814815,
+      "safe16": 1,
+      "score32": 86.88331886574073,
+      "safe32": 1
+    },
+    {
+      "case": "dev-06",
+      "method": "de_search",
+      "attempts": 5,
+      "score16": 13.60011574074074,
+      "safe16": 5,
+      "score32": 13.694372106481481,
+      "safe32": 5
+    },
+    {
+      "case": "dev-06",
+      "method": "de_fixed",
+      "attempts": 5,
+      "score16": 10.453559027777777,
+      "safe16": 5,
+      "score32": 10.55787037037037,
+      "safe32": 5
+    },
+    {
+      "case": "dev-06",
+      "method": "de_racing",
+      "attempts": 5,
+      "score16": 10.453559027777777,
+      "safe16": 5,
+      "score32": 10.55787037037037,
+      "safe32": 5
+    },
+    {
+      "case": "dev-06",
+      "method": "sobol_fixed",
+      "attempts": 5,
+      "score16": 16.87789351851852,
+      "safe16": 5,
+      "score32": 16.919849537037038,
+      "safe32": 5
+    },
+    {
+      "case": "dev-06",
+      "method": "constant_search",
+      "attempts": 5,
+      "score16": 7.914496527777778,
+      "safe16": 4,
+      "score32": 8.02683738425926,
+      "safe32": 4
+    },
+    {
+      "case": "dev-06",
+      "method": "constant_fixed",
+      "attempts": 5,
+      "score16": 5.2563657407407405,
+      "safe16": 5,
+      "score32": 5.508680555555555,
+      "safe32": 5
+    },
+    {
+      "case": "dev-06",
+      "method": "de_no_margin",
+      "attempts": 5,
+      "score16": 10.453559027777777,
+      "safe16": 5,
+      "score32": 10.55787037037037,
+      "safe32": 5
+    },
+    {
+      "case": "dev-06",
+      "method": "de_early",
+      "attempts": 5,
+      "score16": 10.453559027777777,
+      "safe16": 5,
+      "score32": 10.55787037037037,
+      "safe32": 5
+    },
+    {
+      "case": "dev-06",
+      "method": "fixed_transfer",
+      "attempts": 1,
+      "score16": 0.0,
+      "safe16": 0,
+      "score32": 0.0,
+      "safe32": 0
+    }
+  ],
+  "validation_shortlists": [
+    {
+      "case": "dev-01",
+      "repetition": 1,
+      "selected_candidate_index": 17,
+      "top_two_loss_gap": 13.951822916666679,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-01",
+      "repetition": 2,
+      "selected_candidate_index": 51,
+      "top_two_loss_gap": 6.141493055555555,
+      "validation_feasible_candidates": 7
+    },
+    {
+      "case": "dev-01",
+      "repetition": 3,
+      "selected_candidate_index": 25,
+      "top_two_loss_gap": 24.545717592592588,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-01",
+      "repetition": 4,
+      "selected_candidate_index": 32,
+      "top_two_loss_gap": 6.371527777777779,
+      "validation_feasible_candidates": 7
+    },
+    {
+      "case": "dev-01",
+      "repetition": 5,
+      "selected_candidate_index": 34,
+      "top_two_loss_gap": 34.05526620370371,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-02",
+      "repetition": 1,
+      "selected_candidate_index": 1,
+      "top_two_loss_gap": 12.094184027777775,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-02",
+      "repetition": 2,
+      "selected_candidate_index": 59,
+      "top_two_loss_gap": 1.6963252314814845,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-02",
+      "repetition": 3,
+      "selected_candidate_index": 28,
+      "top_two_loss_gap": 11.744791666666664,
+      "validation_feasible_candidates": 7
+    },
+    {
+      "case": "dev-02",
+      "repetition": 4,
+      "selected_candidate_index": 29,
+      "top_two_loss_gap": 11.264467592592592,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-02",
+      "repetition": 5,
+      "selected_candidate_index": 1,
+      "top_two_loss_gap": 12.197627314814813,
+      "validation_feasible_candidates": 7
+    },
+    {
+      "case": "dev-03",
+      "repetition": 1,
+      "selected_candidate_index": 1,
+      "top_two_loss_gap": 21.91261574074074,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-03",
+      "repetition": 2,
+      "selected_candidate_index": 1,
+      "top_two_loss_gap": 10.421730324074073,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-03",
+      "repetition": 3,
+      "selected_candidate_index": 42,
+      "top_two_loss_gap": 29.884259259259267,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-03",
+      "repetition": 4,
+      "selected_candidate_index": 1,
+      "top_two_loss_gap": 24.894386574074073,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-03",
+      "repetition": 5,
+      "selected_candidate_index": 1,
+      "top_two_loss_gap": 20.07595486111111,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-04",
+      "repetition": 1,
+      "selected_candidate_index": 17,
+      "top_two_loss_gap": 9.87413194444444,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-04",
+      "repetition": 2,
+      "selected_candidate_index": 51,
+      "top_two_loss_gap": 9.900896990740739,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-04",
+      "repetition": 3,
+      "selected_candidate_index": 25,
+      "top_two_loss_gap": 16.26519097222222,
+      "validation_feasible_candidates": 7
+    },
+    {
+      "case": "dev-04",
+      "repetition": 4,
+      "selected_candidate_index": 29,
+      "top_two_loss_gap": 16.181278935185187,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-04",
+      "repetition": 5,
+      "selected_candidate_index": 34,
+      "top_two_loss_gap": 19.834346064814813,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-05",
+      "repetition": 1,
+      "selected_candidate_index": 43,
+      "top_two_loss_gap": 7.756799768518512,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-05",
+      "repetition": 2,
+      "selected_candidate_index": 59,
+      "top_two_loss_gap": 19.822048611111107,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-05",
+      "repetition": 3,
+      "selected_candidate_index": 28,
+      "top_two_loss_gap": 3.2711226851851904,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-05",
+      "repetition": 4,
+      "selected_candidate_index": 29,
+      "top_two_loss_gap": 8.73046875,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-05",
+      "repetition": 5,
+      "selected_candidate_index": 45,
+      "top_two_loss_gap": 57.34375,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-06",
+      "repetition": 1,
+      "selected_candidate_index": 44,
+      "top_two_loss_gap": 1.7578125,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-06",
+      "repetition": 2,
+      "selected_candidate_index": 37,
+      "top_two_loss_gap": 10.952690972222221,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-06",
+      "repetition": 3,
+      "selected_candidate_index": 48,
+      "top_two_loss_gap": 9.846643518518519,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-06",
+      "repetition": 4,
+      "selected_candidate_index": 13,
+      "top_two_loss_gap": 6.616030092592593,
+      "validation_feasible_candidates": 8
+    },
+    {
+      "case": "dev-06",
+      "repetition": 5,
+      "selected_candidate_index": 57,
+      "top_two_loss_gap": 6.524160879629633,
+      "validation_feasible_candidates": 8
+    }
+  ],
+  "zero_release_selections": {
+    "de_search": 0,
+    "de_fixed": 0,
+    "de_racing": 0,
+    "sobol_fixed": 0,
+    "constant_search": 0,
+    "constant_fixed": 0,
+    "de_no_margin": 0,
+    "de_early": 0,
+    "fixed_transfer": 0
+  }
+}

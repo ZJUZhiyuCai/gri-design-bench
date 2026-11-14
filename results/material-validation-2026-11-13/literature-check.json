@@ -1,0 +1,61 @@
+{
+  "source_workbook_sha256": "42a54d364180a2931010b9f7bc4d7b96b0996d22f445b97727a29fda6ae4027a",
+  "fit_sha256": "3b5575c212836c51d36970f6e64c5b855121ad0627f46e3106e4dad0e1b5a6fd",
+  "figure_2i_time_min": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70
+  ],
+  "figure_2i_raw_values": 96,
+  "figure_2j_time_hours": [
+    0,
+    24,
+    48,
+    72,
+    96,
+    120,
+    144
+  ],
+  "figure_2j_material": "i-crystal-3",
+  "descriptive_30_to_70_min_slopes_mg_ml_per_min": {
+    "0": 0.0014575583333333332,
+    "100": 0.0015408583333333336,
+    "200": 0.0021918166666666664,
+    "400": 0.002215933333333333
+  },
+  "conditional_fit": {
+    "relative_leak": {
+      "profile_support": [
+        1.0249932301052067,
+        2.7594593229224293
+      ],
+      "bootstrap_percentile_95": [
+        1.525782885662927,
+        2.3296221371880423
+      ],
+      "touches_search_boundary": [
+        false,
+        false
+      ]
+    },
+    "tau_min": {
+      "profile_support": [
+        0.10000000000000002,
+        9.999999999999998
+      ],
+      "bootstrap_percentile_95": [
+        0.10000000000000292,
+        2.59077952365235
+      ],
+      "touches_search_boundary": [
+        true,
+        false
+      ]
+    }
+  }
+}

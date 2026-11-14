@@ -1,0 +1,45 @@
+{
+  "question": "Can a low-glucose release measurement or a glucose-step response measurement improve which fixed candidate formulations are advanced for further in-vitro work?",
+  "literature": {
+    "article": "https://doi.org/10.1038/s41565-025-01860-0",
+    "figure": "https://www.nature.com/articles/s41565-025-01860-0/figures/2",
+    "sheet": "Figure 2i",
+    "material": "i-crystal-1",
+    "concentrations_mg_dl": [0, 100, 200, 400],
+    "sample_minutes": [0, 10, 20, 30, 40, 50, 60, 70],
+    "replicates_per_concentration": 3,
+    "source_workbook_sha256": "42a54d364180a2931010b9f7bc4d7b96b0996d22f445b97727a29fda6ae4027a",
+    "historical_conditional_fit_sha256": "3b5575c212836c51d36970f6e64c5b855121ad0627f46e3106e4dad0e1b5a6fd",
+    "relative_leak_bootstrap_endpoints": [1.525782885662927, 2.3296221371880423],
+    "tau_profile_support_minutes": [0.1, 10.0],
+    "step_experiment_precedent": "https://doi.org/10.1038/s41551-023-01138-7",
+    "interpretation": "Conditional fit to cumulative release at fixed glucose. Ten-minute sampling leaves the fast edge unresolved. The fitted startup lag is excluded. No translation of assay amplitude into human insulin units."
+  },
+  "cases": ["dev-01", "dev-02", "dev-03", "dev-04", "dev-05", "dev-06"],
+  "candidate_source": "results/v0.2/calibration/robust-reference.json",
+  "leak_levels": {"lower": 1.53, "higher": 2.33},
+  "tau_levels_minutes": {"faster": 2.0, "slower": 10.0},
+  "perturbation": "Cross two leakage levels with two response time constants for every historical design. Keep release amplitude, EC50, Hill exponent, reservoir and scaling fixed. Also replay the historical nominal design as a descriptive anchor. The four corners are stress cases, not a joint confidence region or a prevalence estimate.",
+  "control": "For each material state and scenario, use a replay uniform within each of days 2 and 3, matching that state's own delivered amount on each day and its full first-day rate history.",
+  "seeds": {"base": 991180000, "case_stride": 100, "planning_offsets": [0, 1, 2, 3], "independent_offsets": [30, 31, 32, 33, 34, 35, 36, 37]},
+  "variants": ["ordinary", "missed_lunch", "large_dinner"],
+  "advance_rule": {
+    "tir_gain_floor_pp": 5,
+    "tbr70_mean_change_max_pp": 0,
+    "maximum_trajectory_tbr70_pct": 4,
+    "maximum_trajectory_tbr54_pct": 1,
+    "minimum_trajectory_glucose_mg_dl": 40
+  },
+  "tir_floor_sensitivity_pp": [0, 10],
+  "assays": {
+    "leak": "Idealized one-unit observation of the lower/higher leakage category, conceptually a sustained low-glucose release measurement with a separately established responsive amplitude.",
+    "delay": "Idealized one-unit observation of the faster/slower category, conceptually a time-resolved glucose-step measurement with sufficient temporal resolution.",
+    "both": "Two-unit diagnostic reveals both categories; outside the one-assay comparison."
+  },
+  "decision_policy": "All four hidden states have equal weight within a case. A policy sees only the planning table and its chosen assay result. Advance if a strict majority of compatible states meets the planning rule; ties defer. Case-specific selection minimizes planning errors with deterministic leak-first ties. The global fixed assay minimizes summed planning errors across all cases with the same tie rule.",
+  "agent_gate": {
+    "minimum_confirmed_preferences_each_direction": 1,
+    "minimum_errors_saved_vs_best_heldout_fixed": 2,
+    "description": "At least one case per assay has a strict advantage over the other assay on both planning and independent panels. The case-specific policy locked on planning data saves at least two of 24 classification errors versus even the better of the two global fixed assays on the independent panel. Neither false advances nor misses may increase relative to the planning-selected global fixed assay. Apply to the main rule only. Count cases, not trajectories, when judging transfer."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "verified_utc": "2026-11-13T05:12:55.065197+00:00",
+  "frozen_plan_and_implementation": "passed",
+  "original_scientific_files": "unchanged",
+  "protected_files_unchanged": 1641,
+  "documented_concurrent_readme_updates": 2,
+  "strict_preserve_status": "Fails only on the two exact concurrent README hashes recorded in workspace-concurrency.json; frozen check was not weakened.",
+  "local_links_checked": 30,
+  "numerical_audit": "passed; see numeric-audit.json",
+  "selection_audit": "passed; see private/search-validation-prescreen-2026-11-13/selection-audit.json",
+  "full_native_confirmation": "Not triggered by failed validation gate.",
+  "prescreen_files": "uncommitted; no publication or authorship action in this task",
+  "earlier_receipt": "completion.json records checks before the concurrent README update was documented; final document hashes are below.",
+  "report_sha256": {
+    "CONCLUSION.md": "0b4471fa0354c0995d6174a559f1183c1903427710710a7db775ac8fca6c296a",
+    "README.md": "564feb12b44c95a8ba8ba76ae9863bed539181ad219f14093d2a8058b1e8c7e1",
+    "attempts.csv": "e33e44a2b7f0c302f0e2c085cd8592044937b3e4ef60822e6cdbcc710b75cd2b",
+    "comparison.png": "7c455dd6e581b78e4d0ac86b2b8c21285a828810b686f735354d87f0a60bfbae",
+    "comparison.svg": "4e64c6ca59543d9308c22069e7f7e6cc15673cba043095384220ac5873cd635e",
+    "completion.json": "16a0367b232651dabc4f8adf1e70b148d3aed868b8dc6fc38b183d67d9406481",
+    "expanded32.csv": "c56c410b1829944ea6f8574f64fc93249f4ec236c6c1f1a100d6120496bd0b35",
+    "historical-reference.json": "04f3bec1f09a41bf7b5c93c63a56556c9b5d79a2759de396a3651824bd2cb5c6",
+    "mechanisms.json": "02d958e58dc87f851e3105c7cde3785c7c69dfe9328dec4071eda398b20a083e",
+    "methods.csv": "bd4c34690116e7baded93741e2ba03fd4186a05a55c7ea0506b2c086928cbb3a",
+    "native-audit.csv": "ee75a8712f827e687867f6393bae1b4d04a4da1253dab0b589db2146c7597880",
+    "numeric-audit.json": "1ddb52a0aedf2e9d3d16594621d57e821f10af5675ae5f711c748dcd79f21f02",
+    "paired-cases.json": "c43e9d11feba300abb8b7a47ef7ec7ee8faa9b790f3964863077559ec191d618",
+    "paired-effects.png": "dad73fb36930596fdcd0efb92b1dc4f9af8bb01dfaba02bd79d1298e4d443957",
+    "paired-effects.svg": "9103e5d12be49b423819b14ac896dcc5ac5600b81958dbc9f109240271b20a4b",
+    "summary.json": "e68d1de375201263eed81451a2b88880e88863df9d068759a5c4bc3a47d7ed10",
+    "workspace-concurrency.json": "ae0a1fc6749624e376333192efd9118a051f615ec9782fe0542b1860be4ebec3"
+  }
+}

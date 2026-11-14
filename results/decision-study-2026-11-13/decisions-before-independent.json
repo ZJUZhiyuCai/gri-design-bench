@@ -1,0 +1,320 @@
+{
+  "plan_sha256": "201c48f25eaddb0c67c20812dc768079928d05fb1b42217b70ffd068db73c3d4",
+  "written_utc": "2026-11-13T15:06:23.845956+00:00",
+  "decisions": {
+    "dev-01": {
+      "initial": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      },
+      "more_ordinary": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      },
+      "mixed_meals": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      }
+    },
+    "dev-02": {
+      "initial": {
+        "0": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "5": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      },
+      "more_ordinary": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      },
+      "mixed_meals": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      }
+    },
+    "dev-03": {
+      "initial": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      },
+      "more_ordinary": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "10": {
+          "advance": true,
+          "reasons_to_defer": []
+        }
+      },
+      "mixed_meals": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      }
+    },
+    "dev-04": {
+      "initial": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "10": {
+          "advance": true,
+          "reasons_to_defer": []
+        }
+      },
+      "more_ordinary": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "10": {
+          "advance": true,
+          "reasons_to_defer": []
+        }
+      },
+      "mixed_meals": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "10": {
+          "advance": true,
+          "reasons_to_defer": []
+        }
+      }
+    },
+    "dev-05": {
+      "initial": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      },
+      "more_ordinary": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      },
+      "mixed_meals": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      }
+    },
+    "dev-06": {
+      "initial": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      },
+      "more_ordinary": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      },
+      "mixed_meals": {
+        "0": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "5": {
+          "advance": true,
+          "reasons_to_defer": []
+        },
+        "10": {
+          "advance": false,
+          "reasons_to_defer": [
+            "insufficient_tir_gain"
+          ]
+        }
+      }
+    }
+  }
+}

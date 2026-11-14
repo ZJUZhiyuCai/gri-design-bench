@@ -1,0 +1,934 @@
+{
+  "id": "search-validation-prescreen-2026-11-13",
+  "created_utc": "2026-11-13T04:36:21.884280+00:00",
+  "scope": "Exploratory no-model prescreen on six previously seen development cohorts; new meal panels. Not new-patient validation.",
+  "cases": [
+    "dev-01",
+    "dev-02",
+    "dev-03",
+    "dev-04",
+    "dev-05",
+    "dev-06"
+  ],
+  "repetitions": 5,
+  "search_seeds": [
+    2026111341,
+    2026111342,
+    2026111343,
+    2026111344,
+    2026111345
+  ],
+  "methods": [
+    "de_search",
+    "de_fixed",
+    "de_racing",
+    "sobol_fixed",
+    "constant_search",
+    "constant_fixed",
+    "de_no_margin",
+    "de_early",
+    "fixed_transfer"
+  ],
+  "instances": {
+    "dev-01": {
+      "id": "dev-01",
+      "split": "development",
+      "patients": [
+        "adult#001",
+        "adult#002",
+        "adult#003"
+      ],
+      "tdi": {
+        "adult#001": 50.416652,
+        "adult#002": 57.86877688,
+        "adult#003": 56.4297186222
+      },
+      "bounds": {
+        "theta_a": [
+          0.0,
+          0.007
+        ],
+        "relative_leak": [
+          0.5124966150526034,
+          5.518918645844859
+        ],
+        "ec50_mg_dl": [
+          59.26305046791457,
+          816.1143093473472
+        ],
+        "hill_n": [
+          0.5880395112623367,
+          24.0
+        ],
+        "tau_min": [
+          0.05,
+          20.0
+        ],
+        "theta_L": [
+          0.4,
+          4.0
+        ]
+      },
+      "constant_theta_c_bounds": [
+        0.0,
+        0.007
+      ],
+      "training_seeds": [
+        6111001
+      ],
+      "variants": [
+        "ordinary",
+        "missed_lunch",
+        "large_dinner"
+      ],
+      "days": 3,
+      "warmup_minutes": 1440,
+      "reference_weight_kg": 86.0704,
+      "patient_seed": 2026111101,
+      "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+    },
+    "dev-02": {
+      "id": "dev-02",
+      "split": "development",
+      "patients": [
+        "adolescent#001",
+        "adolescent#002",
+        "adolescent#003"
+      ],
+      "tdi": {
+        "adolescent#001": 36.7339146827,
+        "adolescent#002": 62.031042736,
+        "adolescent#003": 24.2427803659
+      },
+      "bounds": {
+        "theta_a": [
+          0.0,
+          0.007
+        ],
+        "relative_leak": [
+          0.5124966150526034,
+          5.518918645844859
+        ],
+        "ec50_mg_dl": [
+          59.26305046791457,
+          816.1143093473472
+        ],
+        "hill_n": [
+          0.5880395112623367,
+          24.0
+        ],
+        "tau_min": [
+          0.05,
+          20.0
+        ],
+        "theta_L": [
+          0.4,
+          4.0
+        ]
+      },
+      "constant_theta_c_bounds": [
+        0.0,
+        0.007
+      ],
+      "training_seeds": [
+        6111002
+      ],
+      "variants": [
+        "ordinary",
+        "missed_lunch",
+        "large_dinner"
+      ],
+      "days": 3,
+      "warmup_minutes": 1440,
+      "reference_weight_kg": 86.0704,
+      "patient_seed": 2026111101,
+      "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+    },
+    "dev-03": {
+      "id": "dev-03",
+      "split": "development",
+      "patients": [
+        "child#001",
+        "child#002",
+        "child#003"
+      ],
+      "tdi": {
+        "child#001": 17.4729287744,
+        "child#002": 18.1778368801,
+        "child#003": 16.0218757795
+      },
+      "bounds": {
+        "theta_a": [
+          0.0,
+          0.007
+        ],
+        "relative_leak": [
+          0.5124966150526034,
+          5.518918645844859
+        ],
+        "ec50_mg_dl": [
+          59.26305046791457,
+          816.1143093473472
+        ],
+        "hill_n": [
+          0.5880395112623367,
+          24.0
+        ],
+        "tau_min": [
+          0.05,
+          20.0
+        ],
+        "theta_L": [
+          0.4,
+          4.0
+        ]
+      },
+      "constant_theta_c_bounds": [
+        0.0,
+        0.007
+      ],
+      "training_seeds": [
+        6111003
+      ],
+      "variants": [
+        "ordinary",
+        "missed_lunch",
+        "large_dinner"
+      ],
+      "days": 3,
+      "warmup_minutes": 1440,
+      "reference_weight_kg": 86.0704,
+      "patient_seed": 2026111101,
+      "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+    },
+    "dev-04": {
+      "id": "dev-04",
+      "split": "development",
+      "patients": [
+        "adult#004",
+        "adult#005",
+        "adult#006"
+      ],
+      "tdi": {
+        "adult#004": 33.8079423727,
+        "adult#005": 68.315922352,
+        "adult#006": 61.38880928
+      },
+      "bounds": {
+        "theta_a": [
+          0.0,
+          0.007
+        ],
+        "relative_leak": [
+          0.5124966150526034,
+          5.518918645844859
+        ],
+        "ec50_mg_dl": [
+          59.26305046791457,
+          816.1143093473472
+        ],
+        "hill_n": [
+          0.5880395112623367,
+          24.0
+        ],
+        "tau_min": [
+          0.05,
+          20.0
+        ],
+        "theta_L": [
+          0.4,
+          1.25
+        ]
+      },
+      "constant_theta_c_bounds": [
+        0.0,
+        0.007
+      ],
+      "training_seeds": [
+        6111004
+      ],
+      "variants": [
+        "ordinary",
+        "missed_lunch",
+        "large_dinner"
+      ],
+      "days": 3,
+      "warmup_minutes": 1440,
+      "reference_weight_kg": 86.0704,
+      "patient_seed": 2026111101,
+      "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+    },
+    "dev-05": {
+      "id": "dev-05",
+      "split": "development",
+      "patients": [
+        "adolescent#004",
+        "adolescent#005",
+        "adolescent#006"
+      ],
+      "tdi": {
+        "adolescent#004": 35.2528665417,
+        "adolescent#005": 34.0047207467,
+        "adolescent#006": 49.5812925714
+      },
+      "bounds": {
+        "theta_a": [
+          0.0,
+          0.007
+        ],
+        "relative_leak": [
+          1.5,
+          5.518918645844859
+        ],
+        "ec50_mg_dl": [
+          59.26305046791457,
+          400.0
+        ],
+        "hill_n": [
+          0.5880395112623367,
+          24.0
+        ],
+        "tau_min": [
+          0.05,
+          20.0
+        ],
+        "theta_L": [
+          0.4,
+          4.0
+        ]
+      },
+      "constant_theta_c_bounds": [
+        0.0,
+        0.007
+      ],
+      "training_seeds": [
+        6111005
+      ],
+      "variants": [
+        "ordinary",
+        "missed_lunch",
+        "large_dinner"
+      ],
+      "days": 3,
+      "warmup_minutes": 1440,
+      "reference_weight_kg": 86.0704,
+      "patient_seed": 2026111101,
+      "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+    },
+    "dev-06": {
+      "id": "dev-06",
+      "split": "development",
+      "patients": [
+        "child#004",
+        "child#005",
+        "child#006"
+      ],
+      "tdi": {
+        "child#004": 19.8151389176,
+        "child#005": 40.9345323552,
+        "child#006": 20.2240173973
+      },
+      "bounds": {
+        "theta_a": [
+          0.0,
+          0.007
+        ],
+        "relative_leak": [
+          0.5124966150526034,
+          5.518918645844859
+        ],
+        "ec50_mg_dl": [
+          59.26305046791457,
+          816.1143093473472
+        ],
+        "hill_n": [
+          0.5880395112623367,
+          4.0
+        ],
+        "tau_min": [
+          2.0,
+          20.0
+        ],
+        "theta_L": [
+          0.4,
+          4.0
+        ]
+      },
+      "constant_theta_c_bounds": [
+        0.0,
+        0.007
+      ],
+      "training_seeds": [
+        6111006
+      ],
+      "variants": [
+        "ordinary",
+        "missed_lunch",
+        "large_dinner"
+      ],
+      "days": 3,
+      "warmup_minutes": 1440,
+      "reference_weight_kg": 86.0704,
+      "patient_seed": 2026111101,
+      "material_constraint_provenance": "Synthetic subrange of prior fitted shape envelope; not a measured new material."
+    }
+  },
+  "panels": {
+    "dev-01": {
+      "training": [
+        6111001,
+        1006111008
+      ],
+      "validation": [
+        960000339,
+        960028620,
+        960020252,
+        960045658,
+        960083588,
+        960050772,
+        960040219,
+        960050502,
+        960042176,
+        960058550,
+        960041726,
+        960016515,
+        960097337,
+        960099957,
+        960072321,
+        960027419,
+        960016888,
+        960084675,
+        960048528,
+        960001965,
+        960010367,
+        960089211,
+        960095672,
+        960011807,
+        960014392,
+        960098701,
+        960028572,
+        960037770,
+        960093969,
+        960007329,
+        960031211,
+        960084120,
+        960063578,
+        960049963,
+        960022147,
+        960044788,
+        960083532,
+        960065799,
+        960055867,
+        960046711,
+        960067988,
+        960068679,
+        960029307,
+        960076768
+      ],
+      "evaluation": [
+        970073492,
+        970057808,
+        970021188,
+        970056944,
+        970060466,
+        970020442,
+        970059992,
+        970004611,
+        970089863,
+        970078396,
+        970041857,
+        970098826,
+        970054342,
+        970097047,
+        970073087,
+        970094465,
+        970068757,
+        970007662,
+        970080483,
+        970094823,
+        970063194,
+        970088914,
+        970017493,
+        970019553,
+        970097208,
+        970009741,
+        970098653,
+        970087423,
+        970029502,
+        970078282,
+        970009941,
+        970077049
+      ]
+    },
+    "dev-02": {
+      "training": [
+        6111002,
+        1006111009
+      ],
+      "validation": [
+        960150455,
+        960159656,
+        960127962,
+        960124783,
+        960119739,
+        960176111,
+        960128735,
+        960142985,
+        960117310,
+        960145098,
+        960152621,
+        960128259,
+        960148392,
+        960110533,
+        960180893,
+        960190899,
+        960175425,
+        960152500,
+        960177486,
+        960152299,
+        960162595,
+        960120846,
+        960178599,
+        960149027,
+        960190823,
+        960148434,
+        960151499,
+        960169003,
+        960181304,
+        960156689,
+        960137286,
+        960188161,
+        960138093,
+        960183981,
+        960176368,
+        960142312,
+        960119922,
+        960149022,
+        960199241,
+        960181739,
+        960141747,
+        960132868,
+        960136288,
+        960161981
+      ],
+      "evaluation": [
+        970153092,
+        970156818,
+        970140724,
+        970144994,
+        970190830,
+        970129339,
+        970122973,
+        970113679,
+        970193077,
+        970152648,
+        970160964,
+        970138928,
+        970126041,
+        970120185,
+        970182677,
+        970105489,
+        970126467,
+        970185172,
+        970120234,
+        970133085,
+        970100047,
+        970114918,
+        970111371,
+        970159374,
+        970192595,
+        970125338,
+        970160486,
+        970124996,
+        970113574,
+        970106752,
+        970100497,
+        970153036
+      ]
+    },
+    "dev-03": {
+      "training": [
+        6111003,
+        1006111010
+      ],
+      "validation": [
+        960226884,
+        960267353,
+        960221211,
+        960285460,
+        960243562,
+        960235927,
+        960273133,
+        960253165,
+        960282114,
+        960213686,
+        960242614,
+        960294671,
+        960206314,
+        960221178,
+        960272397,
+        960207618,
+        960233448,
+        960295407,
+        960236557,
+        960235928,
+        960213234,
+        960209117,
+        960263081,
+        960236692,
+        960299909,
+        960224818,
+        960274496,
+        960268884,
+        960230143,
+        960286778,
+        960247193,
+        960210700,
+        960209848,
+        960220874,
+        960240524,
+        960250104,
+        960287118,
+        960262869,
+        960286949,
+        960293225,
+        960275367,
+        960235873,
+        960229485,
+        960233220
+      ],
+      "evaluation": [
+        970241339,
+        970238387,
+        970246357,
+        970237387,
+        970244742,
+        970267780,
+        970225805,
+        970239458,
+        970266229,
+        970299356,
+        970283644,
+        970206909,
+        970243873,
+        970286233,
+        970259688,
+        970289899,
+        970262991,
+        970240378,
+        970260870,
+        970279257,
+        970245625,
+        970236245,
+        970268031,
+        970211463,
+        970218138,
+        970275709,
+        970222447,
+        970282970,
+        970292449,
+        970218830,
+        970278338,
+        970216583
+      ]
+    },
+    "dev-04": {
+      "training": [
+        6111004,
+        1006111011
+      ],
+      "validation": [
+        960311995,
+        960355620,
+        960362402,
+        960334055,
+        960399190,
+        960343510,
+        960333580,
+        960325292,
+        960344265,
+        960373669,
+        960358760,
+        960372000,
+        960361587,
+        960390311,
+        960396759,
+        960316215,
+        960332018,
+        960393713,
+        960300779,
+        960309956,
+        960352440,
+        960349720,
+        960328258,
+        960331622,
+        960300634,
+        960302751,
+        960374694,
+        960378870,
+        960384487,
+        960374693,
+        960313962,
+        960347531,
+        960354703,
+        960341792,
+        960327408,
+        960362009,
+        960307243,
+        960363721,
+        960334117,
+        960353822,
+        960387206,
+        960303875,
+        960311880,
+        960382390
+      ],
+      "evaluation": [
+        970308152,
+        970380334,
+        970351068,
+        970386510,
+        970399565,
+        970318560,
+        970319871,
+        970395281,
+        970365716,
+        970345076,
+        970333809,
+        970322128,
+        970363383,
+        970338904,
+        970325834,
+        970335499,
+        970391052,
+        970334661,
+        970395376,
+        970329049,
+        970378479,
+        970315686,
+        970316791,
+        970377936,
+        970379448,
+        970344202,
+        970353455,
+        970308339,
+        970337531,
+        970372509,
+        970364719,
+        970339672
+      ]
+    },
+    "dev-05": {
+      "training": [
+        6111005,
+        1006111012
+      ],
+      "validation": [
+        960487887,
+        960433780,
+        960496821,
+        960407274,
+        960472137,
+        960434042,
+        960499237,
+        960400582,
+        960422620,
+        960474860,
+        960430771,
+        960480498,
+        960481901,
+        960479904,
+        960408406,
+        960456721,
+        960444199,
+        960420664,
+        960449970,
+        960459370,
+        960450586,
+        960439071,
+        960477677,
+        960406095,
+        960436377,
+        960457298,
+        960427879,
+        960471711,
+        960406133,
+        960420387,
+        960414169,
+        960469696,
+        960421676,
+        960497188,
+        960477767,
+        960400969,
+        960429471,
+        960432018,
+        960411742,
+        960406597,
+        960496548,
+        960403834,
+        960498276,
+        960481285
+      ],
+      "evaluation": [
+        970411662,
+        970425158,
+        970401722,
+        970416450,
+        970489706,
+        970427741,
+        970487070,
+        970429131,
+        970459297,
+        970479794,
+        970450512,
+        970438189,
+        970449072,
+        970465421,
+        970446953,
+        970474169,
+        970402760,
+        970458100,
+        970441670,
+        970411014,
+        970446596,
+        970441254,
+        970406108,
+        970482684,
+        970466680,
+        970449436,
+        970477437,
+        970475668,
+        970438804,
+        970472237,
+        970407028,
+        970456116
+      ]
+    },
+    "dev-06": {
+      "training": [
+        6111006,
+        1006111013
+      ],
+      "validation": [
+        960549633,
+        960574947,
+        960533969,
+        960529059,
+        960526776,
+        960568449,
+        960519677,
+        960547463,
+        960591519,
+        960534165,
+        960553699,
+        960504189,
+        960575953,
+        960590052,
+        960547099,
+        960519485,
+        960548477,
+        960592652,
+        960508531,
+        960598888,
+        960506427,
+        960555243,
+        960597405,
+        960588651,
+        960518096,
+        960523654,
+        960514915,
+        960545823,
+        960596292,
+        960503841,
+        960589893,
+        960508957,
+        960554065,
+        960512426,
+        960560254,
+        960569753,
+        960587204,
+        960519938,
+        960557229,
+        960512929,
+        960552270,
+        960568764,
+        960535698,
+        960502716
+      ],
+      "evaluation": [
+        970569863,
+        970532468,
+        970579804,
+        970567514,
+        970568120,
+        970508403,
+        970502610,
+        970557912,
+        970548248,
+        970512817,
+        970584992,
+        970542358,
+        970593103,
+        970554741,
+        970548841,
+        970502006,
+        970522453,
+        970501180,
+        970522936,
+        970532667,
+        970572648,
+        970522282,
+        970507979,
+        970583070,
+        970543079,
+        970562823,
+        970557135,
+        970502313,
+        970536814,
+        970581687,
+        970502977,
+        970589117
+      ]
+    }
+  },
+  "query_unit": "One design x one seed x all 3 patients x all 3 variants (9 trajectories).",
+  "query_budget": 256,
+  "search_candidates_full": 128,
+  "search_candidates_split": 64,
+  "shortlist": 8,
+  "fixed_validation_seeds": 16,
+  "racing_blocks": [
+    4,
+    8,
+    32
+  ],
+  "racing_survivors": [
+    4,
+    2,
+    1
+  ],
+  "racing_zero": "Zero-release candidate reserved at each non-final elimination.",
+  "margin": {
+    "tbr70": 3,
+    "tbr54": 0.5,
+    "minimum": 45
+  },
+  "no_margin": "Selection-only ablation on exactly the same fixed-validation observations.",
+  "early": "Training incumbent after 64 candidates / 128 queries; intentionally half budget, not cost matched.",
+  "fixed_transfer": "Leave-target-case-out raw-parameter median of five historical robust-reference designs, clipped to target bounds; zero online queries; historical offline cost not zero.",
+  "optimizer": "Sequential DE/rand/1/bin population16, F Uniform(.45,1), CR .85, Sobol initialization; declared old-prompt anchor and zero control; no polishing.",
+  "evaluation": "First 16 fresh seeds primary; all 32 sensitivity. Existing v0.2 safety/TIR windows and thresholds unchanged.",
+  "primary_estimator": "Case means over all 5 optimizer seeds; paired case differences, six disjoint patient groups. No trial/trajectory pseudoreplication.",
+  "native_audit": "All trajectories on first evaluation seed per unique design plus every fast trajectory within 0.5pp TBR70 of4, 0.25pp TBR54 of1, or5mg/dL minimum of40. Native original RHS check on six deterministic anchors. Any safety-classification mismatch blocks unqualified continuation.",
+  "gates": {
+    "validation": "de_fixed - de_search >=5pp case-mean score, positive in >=4/6 cases, safety passes no more than1/30 worse; point-estimate screening only, not significance.",
+    "adaptive": "de_racing - de_fixed >=3pp, positive in>=4/6 cases, no lower safety-pass count.",
+    "transfer": "Transfer within5pp of best responsive online mean AND safe on>=5/6 cases suggests limited need for per-case search; not an equivalence test.",
+    "native_confirmation": "If validation gate passes with zero audited safety-classification mismatches, natively rescore ALL 16-seed trajectories for de_search and de_fixed, all30 runs each. Other methods remain audited fast-screen evidence.",
+    "outcome": "Continue method study only when main effect survives native confirmation; adaptive claim requires its separate gate. If gates fail, retain negative findings and do not launch new Agent runs."
+  },
+  "disclosure": "Primary screen is RK4; selective native audit does not make un-audited scores native-verified. Hash freeze is local, not public preregistration.",
+  "workers": 3,
+  "host": "macOS-26.5.2-arm64-arm-64bit",
+  "python": "3.12.13"
+}

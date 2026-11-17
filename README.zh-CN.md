@@ -6,6 +6,7 @@ GRI Design Bench 以葡萄糖响应胰岛素（GRI）释药为例，评估 Agent
 
 | 任务或研究 | 内容 | 当前进度 | 入口 |
 |---|---|---|---|
+| 储库归因试测 | 区分剂量和释药时序效应，并在留出进餐上复核测量决策 | 4 个模型，8 次正式试跑 | [试测结果](results/reservoir-attribution-2026-11-17/README.md) |
 | 释药时序归因 | 构造等日剂量对照，提交 54 行结果和可运行脚本 | 离线验证完成，模型复测暂停 | [Harbor 任务](harbor/release-timing-attribution/README.md) |
 | 时序实验 | 作者按同一对照运行的干实验，共 216 个配对情景 | 已完成作者实验 | [时序实验](results/timing-study-2026-11-13/README.md) |
 | v0.2 设计任务 | 固定计算预算下搜索配方，用新进餐情景评分 | 9 条路由，324 次尝试 | [九模型报告](results/v0.2/expansion-2026-11-13/README.md) |

@@ -1,0 +1,209 @@
+{
+  "date": "2026-11-17",
+  "task": {
+    "name": "gri-reservoir-attribution",
+    "content_sha256": "68c950eea375a35fd4d4da33462c9a320b119c4cfa9c168abbf935cb5fc4cc10",
+    "harbor_version": "0.25.0",
+    "verifier_mode": "separate",
+    "verifier_network": "offline",
+    "holdout_meal_seeds_per_candidate": 32,
+    "paired_holdout_scenarios_per_candidate": 288,
+    "measurement_budget_units": 1,
+    "checks_for_full_acceptance": 13,
+    "agent_timeout_seconds": 28800.0,
+    "verifier_timeout_seconds": 360.0,
+    "replay_timeout_seconds": 120
+  },
+  "reference": {
+    "result": 1,
+    "checks_passed": 13,
+    "end_to_end_seconds": 39.68,
+    "estimated_api_usd": 0
+  },
+  "model_summary": [
+    {
+      "model": "GPT-6 Astra",
+      "passed": 5,
+      "trials": 5,
+      "median_end_to_end_seconds": 153.159,
+      "total_estimated_api_usd": 2.381623
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "passed": 1,
+      "trials": 1,
+      "median_end_to_end_seconds": 149.655,
+      "total_estimated_api_usd": 0.0935103
+    },
+    {
+      "model": "DeepSeek V4.1 Flash",
+      "passed": 0,
+      "trials": 1,
+      "median_end_to_end_seconds": 286.061,
+      "total_estimated_api_usd": null
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "passed": 1,
+      "trials": 1,
+      "median_end_to_end_seconds": 201.126,
+      "total_estimated_api_usd": null
+    }
+  ],
+  "model_runs": [
+    {
+      "run": "astra-01",
+      "model": "GPT-6 Astra",
+      "model_id": "gpt-6-astra",
+      "endpoint": "OpenAI Responses API",
+      "reasoning": "high",
+      "result": 1,
+      "checks_passed": 13,
+      "end_to_end_seconds": 158.773,
+      "agent_seconds": 122.948,
+      "model_calls": 7,
+      "input_tokens": 50940,
+      "cached_input_tokens": 37719,
+      "output_tokens": 6574,
+      "estimated_api_usd": 0.531629,
+      "cumulative_request_limit_bytes": 1500000
+    },
+    {
+      "run": "astra-02",
+      "model": "GPT-6 Astra",
+      "model_id": "gpt-6-astra",
+      "endpoint": "OpenAI Responses API",
+      "reasoning": "high",
+      "result": 1,
+      "checks_passed": 13,
+      "end_to_end_seconds": 153.159,
+      "agent_seconds": 121.273,
+      "model_calls": 7,
+      "input_tokens": 53515,
+      "cached_input_tokens": 42501,
+      "output_tokens": 6601,
+      "estimated_api_usd": 0.5101735,
+      "cumulative_request_limit_bytes": 1500000
+    },
+    {
+      "run": "astra-03",
+      "model": "GPT-6 Astra",
+      "model_id": "gpt-6-astra",
+      "endpoint": "OpenAI Responses API",
+      "reasoning": "high",
+      "result": 1,
+      "checks_passed": 13,
+      "end_to_end_seconds": 136.721,
+      "agent_seconds": 104.396,
+      "model_calls": 8,
+      "input_tokens": 58258,
+      "cached_input_tokens": 48228,
+      "output_tokens": 5932,
+      "estimated_api_usd": 0.470143,
+      "cumulative_request_limit_bytes": 1500000
+    },
+    {
+      "run": "astra-04",
+      "model": "GPT-6 Astra",
+      "model_id": "gpt-6-astra",
+      "endpoint": "OpenAI Responses API",
+      "reasoning": "high",
+      "result": 1,
+      "checks_passed": 13,
+      "end_to_end_seconds": 180.488,
+      "agent_seconds": 142.518,
+      "model_calls": 6,
+      "input_tokens": 33670,
+      "cached_input_tokens": 25251,
+      "output_tokens": 5765,
+      "estimated_api_usd": 0.4186935,
+      "cumulative_request_limit_bytes": 1500000
+    },
+    {
+      "run": "astra-05",
+      "model": "GPT-6 Astra",
+      "model_id": "gpt-6-astra",
+      "endpoint": "OpenAI Responses API",
+      "reasoning": "high",
+      "result": 1,
+      "checks_passed": 13,
+      "end_to_end_seconds": 138.97,
+      "agent_seconds": 105.936,
+      "model_calls": 7,
+      "input_tokens": 41062,
+      "cached_input_tokens": 32199,
+      "output_tokens": 6161,
+      "estimated_api_usd": 0.450984,
+      "cumulative_request_limit_bytes": 1500000
+    },
+    {
+      "run": "sol-01",
+      "model": "GPT-6.1 Sol",
+      "model_id": "gpt-6.1-sol",
+      "endpoint": "OpenAI Responses API",
+      "reasoning": "high",
+      "result": 1,
+      "checks_passed": 13,
+      "end_to_end_seconds": 149.655,
+      "agent_seconds": 109.808,
+      "model_calls": 8,
+      "input_tokens": 55139,
+      "cached_input_tokens": 42523,
+      "output_tokens": 5773,
+      "estimated_api_usd": 0.0935103,
+      "cumulative_request_limit_bytes": 1500000
+    },
+    {
+      "run": "deepseek-01",
+      "model": "DeepSeek V4.1 Flash",
+      "model_id": "wanjie/deepseek-v4.1-flash-1017",
+      "endpoint": "Magpie Chat Completions",
+      "reasoning": "gateway default",
+      "result": 0,
+      "checks_passed": 0,
+      "end_to_end_seconds": 286.061,
+      "agent_seconds": 253.108,
+      "model_calls": 16,
+      "input_tokens": 404401,
+      "cached_input_tokens": 350336,
+      "output_tokens": 39147,
+      "estimated_api_usd": null,
+      "cumulative_request_limit_bytes": 1500000
+    },
+    {
+      "run": "kimi-01",
+      "model": "Kimi K3.1 Pro",
+      "model_id": "workbuddy/kimi-k3.1-pro",
+      "endpoint": "Magpie Chat Completions",
+      "reasoning": "gateway default",
+      "result": 1,
+      "checks_passed": 13,
+      "end_to_end_seconds": 201.126,
+      "agent_seconds": 161.127,
+      "model_calls": 11,
+      "input_tokens": 82177,
+      "cached_input_tokens": 70400,
+      "output_tokens": 7476,
+      "estimated_api_usd": null,
+      "cumulative_request_limit_bytes": 3000000
+    }
+  ],
+  "diagnostics": {
+    "deepseek-01": {
+      "formal_stop": "cumulative_request_limit",
+      "rejection": "A self-test overwrote the planning report. The final report lacked the locked planning policies.",
+      "verifier_replays_started": false,
+      "original_script_diagnostic": {
+        "result": 1,
+        "checks_passed": 13,
+        "additional_model_calls": 0,
+        "end_to_end_seconds": 35.813
+      }
+    },
+    "kimi-01": {
+      "recovered_numpy_errors": 3,
+      "cumulative_request_bytes_used": 332823
+    }
+  },
+  "pricing_source": "https://developers.openai.com/api/docs/pricing"
+}

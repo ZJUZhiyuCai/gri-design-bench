@@ -6,6 +6,7 @@ GRI Design Bench uses glucose-responsive insulin (GRI) release in virtual patien
 
 | Task or study | What it does | Trial status | Entry |
 |---|---|---|---|
+| Reference variability audit | Determine whether quality records justify wider peak-exposure limits and when an endpoint claim must be held | 5 attempts per model across 4 models, with two hidden replays per submission | [Results and freeze record](results/reference-variability-qc-v3/README.md) |
 | Reservoir attribution pilot | Resolve dose and release-timing effects and replay the measurement decisions on held-out meals | 8 scored agent runs across 4 models | [Pilot results](results/reservoir-attribution-2026-11-17/README.md) |
 | Release-timing attribution | Build dose-matched controls and submit 54 result rows with a runnable script | Offline validation complete. Model retest paused. | [Harbor task](harbor/release-timing-attribution/README.md) |
 | Timing study | Author-run dry experiment using the same controls on 216 paired scenarios | Author study complete | [Timing study](results/timing-study-2026-11-13/README.md) |

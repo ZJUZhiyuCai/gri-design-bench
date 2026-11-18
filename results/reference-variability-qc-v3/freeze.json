@@ -1,0 +1,24 @@
+{
+  "tag": "pharma-reference-qc-v3-20261119",
+  "scope": "Scored reference-variability QC v3 study, including the two fixed controls and the four model cohorts.",
+  "task_sha256": "540ca770641b9195c156785621b4fb2a6ae2bf7bfafcf89fde3272f6fe529efb",
+  "holdout_manifest_sha256": "281e414f73b1f64efba79969513bdcd0050b09279f3d3db99f7d67a5800af8c8",
+  "grader_sha256": "05f3a623c9b85f32a1717bbba4edd341354067f6c53ddf70b981ca981166e93d",
+  "container_image_id": "sha256:732c386cfc6beb81e1a98b8ff84a9425c0fc7be9fc471704edef4083f853f7c4",
+  "three_model_protocol_sha256": "e4d4632137ce5d2839a0a9fc3db7bb16e2de8bb9d09789a36e14f6707fb88cc1",
+  "astra_protocol_sha256": "a6a5024dd6b4a8552efaac1d98964057d9999d378e381aaab89d881f1a89a056",
+  "three_model_submission_manifest_sha256": "3b09825cc77b1571703b10f2e227acf0db51e196f31e6fdc44fd3b2d1935575e",
+  "astra_submission_manifest_sha256": "3f290ea590870172c93e6ffcb1a6b5f37c7d6825bf008c93d92f88445f9547ea",
+  "three_model_results_sha256": "bf237bb119b93435d3a05ba161ef7bc215ce38707643d7900868e8e4f1025842",
+  "astra_results_sha256": "5af69450be957af1f8567bb4cfc49f67f84bbccce5264f3e5f95cf0b4427b0bf",
+  "control_confirmation_sha256": "bc4342c7fee834a8ade077935d99635a3e25b0b05b3967aadb7754904712b980",
+  "host_timing_observations_sha256": "cdd03c48f63e3566ce801e611c25c77f56cfd9c7ae7ec05196d7aa7ac9fb2bcb",
+  "local_archive": "The annotated Git tag identifies the scored commit and the SHA-256 fingerprints of the restricted evidence and runtime archives.",
+  "public_files_sha256": {
+    "instruction.md": "f2d26ba5574ec3ec160f9ffac7a10f7f32ecb478df3327885bee892b7030fcf2",
+    "example.json": "e3a7859ecda4004484465ed0bb31e1a059346bbe4e7a8445e273438f6c18690f",
+    "summary.json": "caeb7814c20e14967050acd83d180bfb377ea8eb475afdd6658aa402ec5ffc34",
+    "README.md": "22949d60f97262b69497b2b29dce8a1f14bcec109e2882a78fa179c6c5064a1a",
+    "README.zh-CN.md": "033d236b282628c68a705fa263ee20c1336ec0c968896602e296777fd226284f"
+  }
+}

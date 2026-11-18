@@ -1,0 +1,1795 @@
+{
+  "task_version": "reference-variability-qc-v3",
+  "date_local": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "design": {
+    "unique_pk_panels": 40,
+    "paired_evidence_variants": 9,
+    "primary_dossiers": 360,
+    "recoded_checks": 9,
+    "dossiers_per_verifier_pass": 369,
+    "evidence_gaps_on_primary": 84,
+    "required_deferrals_on_primary": 28,
+    "pending_permission_but_determinate_on_primary": 56,
+    "decision_sensitive_double_gap_panels": 4
+  },
+  "models": [
+    {
+      "id": "gpt-6-astra",
+      "display_name": "GPT-6 Astra",
+      "attempts": 5,
+      "delivered": 5,
+      "passed": 5,
+      "pass_rate": 1.0,
+      "wilson_95": [
+        0.565518,
+        1
+      ],
+      "conditional_pass_rate_among_delivered": 1.0,
+      "transport_interrupted_attempts": 0,
+      "stable_deliveries": 5,
+      "deliveries_with_direct_supplied_estimator_call_in_source": 5,
+      "deliveries_with_interpretable_scientific_error_on_360": 0,
+      "deliveries_with_execution_or_unreadable_output_on_360": 0,
+      "median_agent_seconds": 64.327,
+      "api_receipts": 26,
+      "unreceipted_requests": 0,
+      "estimated_usd": 1.4644615,
+      "per_attempt": [
+        {
+          "attempt": 1,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6-astra"
+          ],
+          "termination": "done",
+          "agent_seconds": 66.346,
+          "capture_seconds": 83.285,
+          "usage": {
+            "official_responses": 5,
+            "unreceipted_requests": 0,
+            "input_tokens": 24028,
+            "cached_tokens": 16116,
+            "cache_write_30m": 7897,
+            "cache_write_12h": 0,
+            "output_tokens": 3274,
+            "estimated_usd": 0.2786785
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 142.135,
+              "wall_seconds": 142.135
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 150.887,
+              "wall_seconds": 150.887
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 2,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6-astra"
+          ],
+          "termination": "done",
+          "agent_seconds": 55.247,
+          "capture_seconds": 70.971,
+          "usage": {
+            "official_responses": 5,
+            "unreceipted_requests": 0,
+            "input_tokens": 24128,
+            "cached_tokens": 18101,
+            "cache_write_30m": 6012,
+            "cache_write_12h": 0,
+            "output_tokens": 3237,
+            "estimated_usd": 0.255251
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 163.958,
+              "wall_seconds": 163.958
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 162.009,
+              "wall_seconds": 162.008
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 3,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6-astra"
+          ],
+          "termination": "done",
+          "agent_seconds": 58.797,
+          "capture_seconds": 74.025,
+          "usage": {
+            "official_responses": 5,
+            "unreceipted_requests": 0,
+            "input_tokens": 33946,
+            "cached_tokens": 25783,
+            "cache_write_30m": 8148,
+            "cache_write_12h": 0,
+            "output_tokens": 3235,
+            "estimated_usd": 0.289533
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 195.654,
+              "wall_seconds": 195.654
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 171.159,
+              "wall_seconds": 171.158
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 4,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6-astra"
+          ],
+          "termination": "done",
+          "agent_seconds": 75.898,
+          "capture_seconds": 91.429,
+          "usage": {
+            "official_responses": 5,
+            "unreceipted_requests": 0,
+            "input_tokens": 37101,
+            "cached_tokens": 28088,
+            "cache_write_30m": 8998,
+            "cache_write_12h": 0,
+            "output_tokens": 4463,
+            "estimated_usd": 0.363863
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 168.219,
+              "wall_seconds": 168.219
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 157.648,
+              "wall_seconds": 157.648
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 5,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6-astra"
+          ],
+          "termination": "done",
+          "agent_seconds": 64.327,
+          "capture_seconds": 79.771,
+          "usage": {
+            "official_responses": 6,
+            "unreceipted_requests": 0,
+            "input_tokens": 29392,
+            "cached_tokens": 23106,
+            "cache_write_30m": 6268,
+            "cache_write_12h": 0,
+            "output_tokens": 3510,
+            "estimated_usd": 0.277136
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 171.989,
+              "wall_seconds": 171.989
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 173.478,
+              "wall_seconds": 173.477
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "display_name": "GPT-6.1 Sol",
+      "attempts": 5,
+      "delivered": 5,
+      "passed": 5,
+      "pass_rate": 1.0,
+      "wilson_95": [
+        0.565518,
+        1
+      ],
+      "conditional_pass_rate_among_delivered": 1.0,
+      "transport_interrupted_attempts": 0,
+      "stable_deliveries": 5,
+      "deliveries_with_direct_supplied_estimator_call_in_source": 5,
+      "deliveries_with_interpretable_scientific_error_on_360": 0,
+      "deliveries_with_execution_or_unreadable_output_on_360": 0,
+      "median_agent_seconds": 54.863,
+      "api_receipts": 27,
+      "unreceipted_requests": 0,
+      "estimated_usd": 0.2897773,
+      "per_attempt": [
+        {
+          "attempt": 1,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6.1-sol"
+          ],
+          "termination": "done",
+          "agent_seconds": 81.264,
+          "capture_seconds": 96.525,
+          "usage": {
+            "official_responses": 7,
+            "unreceipted_requests": 0,
+            "input_tokens": 58144,
+            "cached_tokens": 46637,
+            "cache_write_30m": 11486,
+            "cache_write_12h": 0,
+            "output_tokens": 3601,
+            "estimated_usd": 0.0694307
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 136.402,
+              "wall_seconds": 136.402
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 134.231,
+              "wall_seconds": 134.231
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 2,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6.1-sol"
+          ],
+          "termination": "done",
+          "agent_seconds": 66.016,
+          "capture_seconds": 81.115,
+          "usage": {
+            "official_responses": 5,
+            "unreceipted_requests": 0,
+            "input_tokens": 36947,
+            "cached_tokens": 27731,
+            "cache_write_30m": 9201,
+            "cache_write_12h": 0,
+            "output_tokens": 3037,
+            "estimated_usd": 0.0561756
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 129.026,
+              "wall_seconds": 129.026
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 133.007,
+              "wall_seconds": 133.007
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 3,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6.1-sol"
+          ],
+          "termination": "done",
+          "agent_seconds": 54.863,
+          "capture_seconds": 69.894,
+          "usage": {
+            "official_responses": 5,
+            "unreceipted_requests": 0,
+            "input_tokens": 38346,
+            "cached_tokens": 28254,
+            "cache_write_30m": 10077,
+            "cache_write_12h": 0,
+            "output_tokens": 2920,
+            "estimated_usd": 0.0572479
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 119.126,
+              "wall_seconds": 119.123
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 118.364,
+              "wall_seconds": 118.362
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 4,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6.1-sol"
+          ],
+          "termination": "done",
+          "agent_seconds": 52.381,
+          "capture_seconds": 67.475,
+          "usage": {
+            "official_responses": 5,
+            "unreceipted_requests": 0,
+            "input_tokens": 36950,
+            "cached_tokens": 27168,
+            "cache_write_30m": 9767,
+            "cache_write_12h": 0,
+            "output_tokens": 2910,
+            "estimated_usd": 0.0562643
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 130.634,
+              "wall_seconds": 130.631
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 131.91,
+              "wall_seconds": 131.907
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 5,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6.1-sol"
+          ],
+          "termination": "done",
+          "agent_seconds": 51.165,
+          "capture_seconds": 66.303,
+          "usage": {
+            "official_responses": 5,
+            "unreceipted_requests": 0,
+            "input_tokens": 31763,
+            "cached_tokens": 23913,
+            "cache_write_30m": 7835,
+            "cache_write_12h": 0,
+            "output_tokens": 2865,
+            "estimated_usd": 0.0506588
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 141.758,
+              "wall_seconds": 141.755
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 146.507,
+              "wall_seconds": 146.504
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-6.1-terra",
+      "display_name": "GPT-6.1 Terra",
+      "attempts": 5,
+      "delivered": 5,
+      "passed": 5,
+      "pass_rate": 1.0,
+      "wilson_95": [
+        0.565518,
+        1
+      ],
+      "conditional_pass_rate_among_delivered": 1.0,
+      "transport_interrupted_attempts": 0,
+      "stable_deliveries": 5,
+      "deliveries_with_direct_supplied_estimator_call_in_source": 5,
+      "deliveries_with_interpretable_scientific_error_on_360": 0,
+      "deliveries_with_execution_or_unreadable_output_on_360": 0,
+      "median_agent_seconds": 103.64,
+      "api_receipts": 32,
+      "unreceipted_requests": 0,
+      "estimated_usd": 0.1850166,
+      "per_attempt": [
+        {
+          "attempt": 1,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6.1-terra"
+          ],
+          "termination": "done",
+          "agent_seconds": 103.64,
+          "capture_seconds": 118.66,
+          "usage": {
+            "official_responses": 6,
+            "unreceipted_requests": 0,
+            "input_tokens": 47477,
+            "cached_tokens": 35656,
+            "cache_write_30m": 11803,
+            "cache_write_12h": 0,
+            "output_tokens": 4068,
+            "estimated_usd": 0.03689455
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 137.392,
+              "wall_seconds": 137.392
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 148.453,
+              "wall_seconds": 148.453
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 2,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6.1-terra"
+          ],
+          "termination": "done",
+          "agent_seconds": 137.882,
+          "capture_seconds": 153.131,
+          "usage": {
+            "official_responses": 8,
+            "unreceipted_requests": 0,
+            "input_tokens": 66966,
+            "cached_tokens": 55345,
+            "cache_write_30m": 11597,
+            "cache_write_12h": 0,
+            "output_tokens": 5012,
+            "estimated_usd": 0.0423475
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 142.203,
+              "wall_seconds": 142.203
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 195.774,
+              "wall_seconds": 1990.638
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 3,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6.1-terra"
+          ],
+          "termination": "done",
+          "agent_seconds": 140.297,
+          "capture_seconds": 155.332,
+          "usage": {
+            "official_responses": 7,
+            "unreceipted_requests": 0,
+            "input_tokens": 59736,
+            "cached_tokens": 48245,
+            "cache_write_30m": 11470,
+            "cache_write_12h": 0,
+            "output_tokens": 5807,
+            "estimated_usd": 0.04580575
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 130.874,
+              "wall_seconds": 130.871
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 118.938,
+              "wall_seconds": 118.935
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 4,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6.1-terra"
+          ],
+          "termination": "done",
+          "agent_seconds": 69.354,
+          "capture_seconds": 84.414,
+          "usage": {
+            "official_responses": 5,
+            "unreceipted_requests": 0,
+            "input_tokens": 32942,
+            "cached_tokens": 24541,
+            "cache_write_30m": 8386,
+            "cache_write_12h": 0,
+            "output_tokens": 3136,
+            "estimated_usd": 0.02740455
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 134.629,
+              "wall_seconds": 134.626
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 135.841,
+              "wall_seconds": 135.838
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 5,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6.1-terra"
+          ],
+          "termination": "done",
+          "agent_seconds": 88.893,
+          "capture_seconds": 103.948,
+          "usage": {
+            "official_responses": 6,
+            "unreceipted_requests": 0,
+            "input_tokens": 44763,
+            "cached_tokens": 35325,
+            "cache_write_30m": 9420,
+            "cache_write_12h": 0,
+            "output_tokens": 3801,
+            "estimated_usd": 0.03256425
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 142.692,
+              "wall_seconds": 142.689
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 143.621,
+              "wall_seconds": 143.618
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-luna",
+      "display_name": "GPT-6 Luna",
+      "attempts": 5,
+      "delivered": 5,
+      "passed": 5,
+      "pass_rate": 1.0,
+      "wilson_95": [
+        0.565518,
+        1
+      ],
+      "conditional_pass_rate_among_delivered": 1.0,
+      "transport_interrupted_attempts": 0,
+      "stable_deliveries": 5,
+      "deliveries_with_direct_supplied_estimator_call_in_source": 5,
+      "deliveries_with_interpretable_scientific_error_on_360": 0,
+      "deliveries_with_execution_or_unreadable_output_on_360": 0,
+      "median_agent_seconds": 65.124,
+      "api_receipts": 34,
+      "unreceipted_requests": 0,
+      "estimated_usd": 0.02424739,
+      "per_attempt": [
+        {
+          "attempt": 1,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6-luna"
+          ],
+          "termination": "done",
+          "agent_seconds": 65.124,
+          "capture_seconds": 80.295,
+          "usage": {
+            "official_responses": 7,
+            "unreceipted_requests": 0,
+            "input_tokens": 58732,
+            "cached_tokens": 46276,
+            "cache_write_30m": 12435,
+            "cache_write_12h": 0,
+            "output_tokens": 5844,
+            "estimated_usd": 0.004941235
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 154.174,
+              "wall_seconds": 154.174
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 165.182,
+              "wall_seconds": 165.182
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 2,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6-luna"
+          ],
+          "termination": "done",
+          "agent_seconds": 54.635,
+          "capture_seconds": 69.786,
+          "usage": {
+            "official_responses": 6,
+            "unreceipted_requests": 0,
+            "input_tokens": 46793,
+            "cached_tokens": 35952,
+            "cache_write_30m": 10823,
+            "cache_write_12h": 0,
+            "output_tokens": 5029,
+            "estimated_usd": 0.004228695
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 149.022,
+              "wall_seconds": 1048.249
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 115.903,
+              "wall_seconds": 115.901
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 3,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6-luna"
+          ],
+          "termination": "done",
+          "agent_seconds": 73.846,
+          "capture_seconds": 89.125,
+          "usage": {
+            "official_responses": 7,
+            "unreceipted_requests": 0,
+            "input_tokens": 43531,
+            "cached_tokens": 33232,
+            "cache_write_30m": 10278,
+            "cache_write_12h": 0,
+            "output_tokens": 7159,
+            "estimated_usd": 0.00519867
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 130.04,
+              "wall_seconds": 130.037
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 139.231,
+              "wall_seconds": 139.228
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 4,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6-luna"
+          ],
+          "termination": "done",
+          "agent_seconds": 56.423,
+          "capture_seconds": 71.549,
+          "usage": {
+            "official_responses": 5,
+            "unreceipted_requests": 0,
+            "input_tokens": 30112,
+            "cached_tokens": 20929,
+            "cache_write_30m": 9168,
+            "cache_write_12h": 0,
+            "output_tokens": 5530,
+            "estimated_usd": 0.00412179
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 139.128,
+              "wall_seconds": 139.125
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 140.902,
+              "wall_seconds": 140.899
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        },
+        {
+          "attempt": 5,
+          "reward": 1,
+          "delivered": true,
+          "api_interruption": false,
+          "served_model_ids": [
+            "gpt-6-luna"
+          ],
+          "termination": "done",
+          "agent_seconds": 76.956,
+          "capture_seconds": 92.178,
+          "usage": {
+            "official_responses": 9,
+            "unreceipted_requests": 0,
+            "input_tokens": 77267,
+            "cached_tokens": 64280,
+            "cache_write_30m": 12960,
+            "cache_write_12h": 0,
+            "output_tokens": 6983,
+            "estimated_usd": 0.005757
+          },
+          "primary": {
+            "fully_correct": 360,
+            "claims_correct": 360,
+            "permissions_correct": 360,
+            "exact_required_evidence": 84,
+            "correct_required_deferrals": 28,
+            "correct_determinate_despite_pending": 56,
+            "false_support": 0,
+            "unnecessary_deferrals": 0,
+            "correct_decisive_double_gaps": 4,
+            "recodes_passed": 9
+          },
+          "stable": true,
+          "required_evidence_records_by_kind": {
+            "aliquot_trace": {
+              "exact": 24,
+              "required": 24
+            },
+            "investigate_difference": {
+              "exact": 12,
+              "required": 12
+            },
+            "qc_record": {
+              "exact": 24,
+              "required": 24
+            },
+            "qualified_repeat": {
+              "exact": 24,
+              "required": 24
+            },
+            "repeat_reading": {
+              "exact": 12,
+              "required": 12
+            }
+          },
+          "paired_decision_sensitive_restorations": 4,
+          "first_pass_wrong_fields_on_360": {},
+          "first_pass_runtime_or_unreadable_outputs_on_360": 0,
+          "first_pass_interpretable_scientific_mismatch_on_360": false,
+          "passes": [
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 143.95,
+              "wall_seconds": 143.947
+            },
+            {
+              "packets": 369,
+              "passed": 369,
+              "reward": 1,
+              "elapsed_seconds": 160.044,
+              "wall_seconds": 160.04
+            }
+          ],
+          "direct_supplied_estimator_call_in_source": true
+        }
+      ]
+    }
+  ],
+  "controls": {
+    "always_trust": {
+      "reward": 0,
+      "stable": true,
+      "first_pass_correct": 278,
+      "repeat_correct": 278,
+      "primary": {
+        "fully_correct": 276,
+        "claims_correct": 332,
+        "permissions_correct": 276,
+        "exact_required_evidence": 0,
+        "correct_required_deferrals": 0,
+        "correct_determinate_despite_pending": 0,
+        "false_support": 28,
+        "unnecessary_deferrals": 0,
+        "correct_decisive_double_gaps": 0,
+        "recodes_passed": 2
+      }
+    },
+    "reference": {
+      "reward": 1,
+      "stable": true,
+      "first_pass_correct": 369,
+      "repeat_correct": 369,
+      "primary": {
+        "fully_correct": 360,
+        "claims_correct": 360,
+        "permissions_correct": 360,
+        "exact_required_evidence": 84,
+        "correct_required_deferrals": 28,
+        "correct_determinate_despite_pending": 56,
+        "false_support": 0,
+        "unnecessary_deferrals": 0,
+        "correct_decisive_double_gaps": 4,
+        "recodes_passed": 9
+      }
+    }
+  },
+  "phase_times": {
+    "three_new_models": {
+      "capture_seconds": 1399.819,
+      "offline_verifier_seconds": 6883.028,
+      "packet_executions": 11070,
+      "summed_monotonic_verifier_seconds": 4188.958,
+      "within_pass_wall_excess_seconds": 2694.091
+    },
+    "earlier_astra": {
+      "capture_seconds": 403.771,
+      "offline_verifier_seconds": 1657.145,
+      "packet_executions": 3690,
+      "summed_monotonic_verifier_seconds": 1657.136,
+      "within_pass_wall_excess_seconds": 0
+    }
+  },
+  "api_usd_all_four": 1.96350279,
+  "api_usd_three_new": 0.49904129,
+  "receipt_count": 119,
+  "api": "Official OpenAI Responses API",
+  "model_budget": {
+    "reasoning_effort": "high",
+    "max_calls": 40,
+    "max_output_tokens_total": 96000,
+    "max_output_tokens_per_call": 24000,
+    "cumulative_request_bytes": 1500000,
+    "service_tier": "default",
+    "tool_wall_sec_max": 120,
+    "max_observation_chars": 12000,
+    "api_response_timeout_sec": 600,
+    "stop_after_estimated_usd": 12.0
+  },
+  "resource_limits": {
+    "cpu": 1,
+    "memory_mb": 2048,
+    "agent_seconds": 28800,
+    "per_verifier_pass_seconds": 360,
+    "per_packet_seconds": 45,
+    "primary_packets": 360,
+    "recode_packets": 9
+  },
+  "numeric_absolute_tolerance": 0.0001,
+  "pricing": {
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "columns": [
+      "uncached_input",
+      "output",
+      "cached_input",
+      "cache_write_30m",
+      "cache_write_12h"
+    ],
+    "rates_usd_per_million": {
+      "gpt-6-astra": [
+        10,
+        50,
+        1,
+        12.5,
+        25
+      ],
+      "gpt-6.1-sol": [
+        2,
+        10,
+        0.1,
+        2.5,
+        5
+      ],
+      "gpt-6.1-terra": [
+        1,
+        5,
+        0.05,
+        1.25,
+        2.5
+      ],
+      "gpt-6-luna": [
+        0.1,
+        0.5,
+        0.01,
+        0.125,
+        0.25
+      ]
+    }
+  },
+  "scoring": "All required values across both offline passes on the 369 inputs must pass, with stable outputs. Each fresh model attempt counts once. A missing script gets zero. Conditional rates include delivered scripts only."
+}
